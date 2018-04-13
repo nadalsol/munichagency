@@ -4,7 +4,7 @@ title: "Servicios"
 permalink: /servicios/
 ---
 
-<h1>Catalog</h1>
+<h1>{{ page.title }}</h1>
 <div>
   {% for servicio in site.servicios %}
     <p>
