@@ -1,0 +1,136 @@
+// Variables
+// -----------------------------------------------------------------------------
+
+// Naming conventions used for variables inspired by [ZenCSSProperties]
+//
+// Some of the prefixes used:
+// * b = border
+// * bg = background;
+// * c = color
+// * ff = font-family
+// * fz = font-size
+
+
+// Base
+// -----------------------------------------------------------------------------
+
+// Colors
+$c-dark:                 #000 !default;
+$c-dark-soft:            #333 !default;
+$c-neutral:              #666 !default;
+$c-light-soft:           #999 !default;
+$c-light:                #fff !default;
+
+$c-brand-primary:        #ff4e18 !default;
+$c-brand-secondary:      #ffb500 !default;
+
+// Scaffolding
+$assets-path:            "/assets" !default;
+
+$body-bg-c:              #eee !default;
+// $body-bg-img:            "bg-body.jpg" !default;
+
+$text-c:                 $c-dark !default;
+
+$link-c:                 $c-brand-primary !default;
+$link-c-hover:           lighten($link-c, 15%) !default;
+
+// Spacing units
+$sp-base:                5px !default;
+
+$sp-xxsmall:             floor($sp-base * 2) !default;  // 10px
+$sp-xsmall:              floor($sp-base * 3) !default;  // 15px
+$sp-small:               floor($sp-base * 4) !default;  // 20px
+$sp-medium:              floor($sp-base * 5) !default;  // 25px
+$sp-large:               floor($sp-base * 6) !default;  // 30px
+$sp-xlarge:              floor($sp-base * 7) !default;  // 35px
+$sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
+$sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
+$sp-huge:                floor($sp-base * 12) !default; // 60px
+
+// Fonts
+$fonts-path:             "/fonts" !default;
+
+$ff-sans-serif:          "nexa_lightregular", Arial, Helvetica, sans-serif !default;
+$ff-sans-serif-bold:     "nexa_boldregular", Arial, Helvetica, sans-serif !default;
+$ff-serif:               "ITC American Typewriter Bold", "Courier New", Courier, monospace !default;
+$ff-base:                $ff-sans-serif !default;
+
+$fz-base:                14px !default;
+$fz-xsmall:              11px !default;
+$fz-small:               12px !default;
+$fz-medium:              16px !default;
+$fz-large:               18px !default;
+$fz-xlarge:              20px !default;
+$fz-xxlarge:             24px !default;
+
+$fw-base:                400 !default;
+
+$lh-base:                1.5 !default;
+$lh-small:               1 !default;
+$lh-medium:              1.75 !default;
+$lh-large:               2 !default;
+
+// Media queries
+$screen-sm-min:          480px !default;
+$screen-md-min:          768px !default;
+$screen-lg-min:          992px !default;
+$screen-xl-min:          1200px !default;
+$screen-xxl-min:         1440px !default;
+
+$small-up:               "min-width:#{$screen-sm-min}" !default;
+$medium-up:              "min-width:#{$screen-md-min}" !default;
+$large-up:               "min-width:#{$screen-lg-min}" !default;
+$xlarge-up:              "min-width:#{$screen-xl-min}" !default;
+$xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
+
+// Transitions
+$transition-c:           color 250ms !default;
+$transition-bgc:         background-color 250ms !default;
+
+
+// Patterns
+// -----------------------------------------------------------------------------
+
+// Header
+$header-brand-icon-wd:           81px !default;
+$header-brand-icon-ht:           81px !default;
+$header-brand-icon-wd-medium-up: 162px !default;
+$header-brand-icon-ht-medium-up: 162px !default;
+
+$header-brand-wd:                $header-brand-icon-wd !default;
+$header-brand-ht:                $header-brand-icon-ht !default;
+$header-brand-wd-medium-up:      $header-brand-icon-wd-medium-up !default;
+$header-brand-ht-medium-up:      $header-brand-icon-ht-medium-up !default;
+
+// $header-nav-wd:                  100% !default;
+// $header-nav-ht:                  auto !default;
+// $header-nav-bg:                  $c-dark !default;
+// $header-nav-wd-medium-up:        $header-nav-wd !default;
+// $header-nav-ht-medium-up:        $sp-huge !default;
+// $header-nav-bg-medium-up:        rgba(0, 0, 0, .3) !default;
+// $header-nav-bg-opaque:           $header-nav-bg !default;
+
+$header-hamburger-wd:            auto !default;
+$header-hamburger-ht:            auto !default;
+$header-hamburger-pd:            $sp-base $sp-xxsmall !default;
+$header-hamburger-fz:            $fz-xxlarge !default;
+$header-hamburger-c:             $c-dark !default;
+
+$header-wd:                      100% !default;
+$header-ht:                      $header-brand-ht !default;
+$header-wd-medium-up:            $header-wd !default;
+$header-ht-medium-up:            $header-brand-ht-medium-up !default;
+$header-bg:                      $c-light !default;
+
+// Footer
+$footer-wd:                      100% !default;
+$footer-ht:                      auto !default;
+$footer-pd:                      $sp-small !default;
+$footer-c:                       $c-light !default;
+$footer-bg:                      $c-dark !default;
+$footer-pd-medium-up:            $sp-xxxlarge !default;
+
+// Body offset
+$body-offset-top:                $header-ht !default;
+$body-offset-top-medium-up:      $header-ht-medium-up !default;

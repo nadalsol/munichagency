@@ -1,0 +1,28 @@
+// Utility classes
+// -----------------------------------------------------------------------------
+
+
+.center-block {
+  @include center-block;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+// Visibility
+.is-small-hidden {
+  display: none;
+
+  @media ($medium-up) {
+    display: block;
+  }
+}
+
+.is-medium-hidden {
+  display: block;
+
+  @media ($medium-up) {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+
+// Reset box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Basic styling
+body {
+  margin-top: $body-offset-top;
+  font-family: $ff-base;
+  font-size: $fz-base;
+  font-weight: $fw-base;
+  line-height: $lh-base;
+  color: $text-c;
+  background: $body-bg-c;
+  // background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center top;
+
+  @media ($medium-up) {
+    margin-top: $body-offset-top-medium-up;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $ff-serif;
+  font-weight: $fw-base;
+  line-height: $lh-base;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $c-light;
+}
+
+h1 {
+  @include heading($fz-xlarge, $c-dark);
+}
+
+h2 {
+  @include heading($fz-large, $c-dark);
+}
+
+h3 {
+  @include heading($fz-medium, $c-dark);
+}
+
+h4 {
+  @include heading($fz-base, $c-light);
+}
+
+h5 {
+  @include heading($fz-small, $c-light);
+}
+
+h6 {
+  @include heading($fz-xsmall, $c-light);
+}
+
+// Images
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive;
+}
+
+// Links
+a {
+  @include link($link-c, $link-c-hover);
+  text-decoration: none;
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-left: 0;
+  padding-left: $sp-small;
+}
+
+// Main
+// Default value of `display` of `main` element is 'inline' in IE 11
+main {
+  display: block;
+}
+
+// Vertical rhythm
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  @include vertical-rhythm;
+}
+
+// Wrapper
+.wrapper {
+  @include center-block;
+  position: relative;
+  width: 100%;
+
+  @media ($xlarge-up) {
+    width: floor($screen-xl-min - ($footer-pd-medium-up * 2));
+  }
+
+  @media ($xxlarge-up) {
+    width: floor($screen-xxl-min - ($footer-pd-medium-up * 2));
+  }
+}

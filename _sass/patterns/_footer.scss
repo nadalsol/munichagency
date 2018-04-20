@@ -1,0 +1,65 @@
+// Footer
+// -----------------------------------------------------------------------------
+
+
+.footer {
+  @include size($footer-wd, $footer-ht);
+  padding: $footer-pd;
+  color: $footer-c;
+  background-color: $footer-bg;
+
+  @media ($medium-up) {
+    padding: $footer-pd-medium-up;
+  }
+
+  a {
+    @include link($c-light, $c-light-soft);
+  }
+
+  > .wrapper {
+    @media ($medium-up) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__col-l {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+
+    // > p {
+    //   margin-bottom: 0;
+    //
+    //   @media ($medium-up) {
+    //     margin-bottom: $sp-small;
+    //   }
+    // }
+
+    // .icon {
+    //   margin-bottom: $sp-small;
+    //
+    //   @media ($medium-up) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+  }
+
+  &__col-r {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, right);
+    }
+
+    // > p {
+    //   margin-bottom: 0;
+    //
+    //   @media ($medium-up) {
+    //     margin-bottom: $sp-small;
+    //   }
+    // }
+  }
+}

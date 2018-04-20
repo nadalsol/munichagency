@@ -1,0 +1,56 @@
+// Header
+// -----------------------------------------------------------------------------
+
+
+.header {
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
+  background-color: $header-bg;
+
+  @media ($medium-up) {
+    @include size($header-wd-medium-up, $header-ht-medium-up);
+    @include clearfix;
+  }
+
+  &__brand {
+    @include size($header-brand-wd, $header-brand-ht);
+    @include center-block;
+
+    @media ($medium-up) {
+      @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+      margin-left: 0;
+      margin-right: 0;
+      float: left;
+    }
+
+    > a {
+      display: block;
+    }
+  }
+
+  &__nav {
+    // @include size($header-nav-wd, $header-nav-ht);
+    // background-color: $header-nav-bg;
+    // overflow: hidden;
+    // transition: $transition-bgc;
+
+    @media ($medium-up) {
+      float: right;
+    }
+
+    // &.is-opaque {
+    //   background-color: $header-nav-bg-opaque;
+    // }
+  }
+
+  &__hamburger {
+    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
+    padding: $header-hamburger-pd;
+    font-size: $header-hamburger-fz;
+    line-height: $lh-small;
+    color: $header-hamburger-c;
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+}
