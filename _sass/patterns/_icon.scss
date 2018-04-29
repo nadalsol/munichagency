@@ -34,9 +34,18 @@
 
 // brand
 .icon--brand {
-  @include size($header-brand-icon-wd, $header-brand-icon-ht);
+  @include size($header-brand-wd, $header-brand-ht);
 
   @media ($medium-up) {
-    @include size($header-brand-icon-wd-medium-up, $header-brand-icon-ht-medium-up);
+    @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+  }
+}
+
+// contact
+.icon--contact {
+  @include size($header-contact-wd, $header-contact-ht);
+
+  @media ($medium-up) {
+    @include size($header-contact-wd-medium-up, $header-contact-ht-medium-up);
   }
 }

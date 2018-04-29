@@ -10,10 +10,11 @@
   // letter-spacing: 1.5px;
   // text-align: center;
   //
-  // @media ($medium-up) {
-  //   @include list-inline($sp-xsmall, $sp-xsmall);
-  //   padding: $sp-small;
-  // }
+  @media ($medium-up) {
+    @include list-inline($sp-xsmall, $sp-xsmall);
+    padding-top: $sp-medium;
+    padding-bottom: $sp-medium;
+  }
   //
   // &__link {
   //   @include link($c-light, $c-brand-primary);

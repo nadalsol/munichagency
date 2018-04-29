@@ -88,15 +88,10 @@ $transition-bgc:         background-color 250ms !default;
 // -----------------------------------------------------------------------------
 
 // Header
-$header-brand-icon-wd:           81px !default;
-$header-brand-icon-ht:           81px !default;
-$header-brand-icon-wd-medium-up: 162px !default;
-$header-brand-icon-ht-medium-up: 162px !default;
-
-$header-brand-wd:                $header-brand-icon-wd !default;
-$header-brand-ht:                $header-brand-icon-ht !default;
-$header-brand-wd-medium-up:      $header-brand-icon-wd-medium-up !default;
-$header-brand-ht-medium-up:      $header-brand-icon-ht-medium-up !default;
+$header-brand-wd:                81px !default;
+$header-brand-ht:                81px !default;
+$header-brand-wd-medium-up:      floor($header-brand-wd * 2) !default;
+$header-brand-ht-medium-up:      floor($header-brand-ht * 2) !default;
 
 // $header-nav-wd:                  100% !default;
 // $header-nav-ht:                  auto !default;
@@ -111,6 +106,12 @@ $header-hamburger-ht:            auto !default;
 $header-hamburger-pd:            $sp-base $sp-xxsmall !default;
 $header-hamburger-fz:            $fz-xxlarge !default;
 $header-hamburger-c:             $c-dark !default;
+
+$header-contact-wd:              42px !default;
+$header-contact-ht:              42px !default;
+$header-contact-wd-medium-up:    floor($header-contact-wd * 2) !default;
+$header-contact-ht-medium-up:    floor($header-contact-ht * 2) !default;
+$header-contact-pd:              0 !default;
 
 $header-wd:                      100% !default;
 $header-ht:                      $header-brand-ht !default;

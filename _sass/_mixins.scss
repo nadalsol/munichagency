@@ -2,6 +2,14 @@
 // -----------------------------------------------------------------------------
 
 
+// Reset button
+@mixin button-reset() {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 // Center-align a block level element
 @mixin center-block() {
   display: block;
