@@ -17,8 +17,7 @@ body {
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background: $body-bg-c;
-  // background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center top;
+  background-color: $body-bg-c;
 
   @media ($medium-up) {
     margin-top: $body-offset-top-medium-up;
@@ -27,7 +26,7 @@ body {
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  font-family: $ff-serif;
+  font-family: $ff-base;
   font-weight: $fw-base;
   line-height: $lh-base;
   text-transform: uppercase;

@@ -28,7 +28,6 @@ $c-brand-secondary:      #ffb500 !default;
 $assets-path:            "/assets" !default;
 
 $body-bg-c:              #eee !default;
-// $body-bg-img:            "bg-body.jpg" !default;
 
 $text-c:                 $c-dark !default;
 
@@ -49,11 +48,7 @@ $sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
 $sp-huge:                floor($sp-base * 12) !default; // 60px
 
 // Fonts
-$fonts-path:             "/fonts" !default;
-
-$ff-sans-serif:          "nexa_lightregular", Arial, Helvetica, sans-serif !default;
-$ff-sans-serif-bold:     "nexa_boldregular", Arial, Helvetica, sans-serif !default;
-$ff-serif:               "ITC American Typewriter Bold", "Courier New", Courier, monospace !default;
+$ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
 $ff-base:                $ff-sans-serif !default;
 
 $fz-base:                14px !default;
