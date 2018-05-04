@@ -82,7 +82,8 @@
   }
 }
 
-// Turns list items into inline-block (remove padding form first and last items)
+// Turns list items into inline-block
+// Also removes padding from first and last items
 @mixin list-inline-first-last($pdl: $sp-base, $pdr: $sp-base) {
   @include list-reset;
 
@@ -97,6 +98,30 @@
 
     &:last-child {
       padding-right: 0;
+    }
+  }
+}
+
+// Turns list items into inline-block
+// Also adds dashes "-" between list items
+@mixin list-inline-dashed($pdl: $sp-base, $pdr: $sp-base) {
+  @include list-reset;
+
+  > li {
+    position: relative;
+    display: inline-block;
+    padding-left: $pdl;
+    padding-right: $pdr;
+
+    &:before {
+      content: '-';
+      position: absolute;
+      top: 0;
+      left: -$sp-base;
+    }
+
+    &:first-child:before {
+      content: none;
     }
   }
 }

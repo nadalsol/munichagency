@@ -5,15 +5,19 @@
 .footer {
   @include size($footer-wd, $footer-ht);
   padding: $footer-pd;
+  font-size: $footer-fz;
   color: $footer-c;
   background-color: $footer-bg;
 
   @media ($medium-up) {
     padding: $footer-pd-medium-up;
+    font-size: $footer-fz-medium-up;
   }
 
   a {
     @include link($c-light, $c-light-soft);
+    font-weight: $fw-bold;
+    text-decoration: none;
   }
 
   > .wrapper {
@@ -29,22 +33,6 @@
     @media ($medium-up) {
       @include col(50%, left);
     }
-
-    // > p {
-    //   margin-bottom: 0;
-    //
-    //   @media ($medium-up) {
-    //     margin-bottom: $sp-small;
-    //   }
-    // }
-
-    // .icon {
-    //   margin-bottom: $sp-small;
-    //
-    //   @media ($medium-up) {
-    //     margin-bottom: 0;
-    //   }
-    // }
   }
 
   &__col-r {
@@ -53,13 +41,5 @@
     @media ($medium-up) {
       @include col(50%, right);
     }
-
-    // > p {
-    //   margin-bottom: 0;
-    //
-    //   @media ($medium-up) {
-    //     margin-bottom: $sp-small;
-    //   }
-    // }
   }
 }

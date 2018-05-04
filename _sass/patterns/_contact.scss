@@ -1,13 +1,9 @@
-// Address
+// Contact
 // -----------------------------------------------------------------------------
 
 
-.address {
+.contact {
   @media ($medium-up) {
-    margin-bottom: 0;
-  }
-
-  .icon {
-    margin-right: $sp-base;
+    margin-bottom: $sp-xxlarge;
   }
 }

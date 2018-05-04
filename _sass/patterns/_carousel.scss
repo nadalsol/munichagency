@@ -1,0 +1,14 @@
+// Carousel
+// -----------------------------------------------------------------------------
+
+
+.carousel {
+  &--primary {
+    @include size(100%, 780px);
+    background-color: gray;
+
+    @media ($medium-up) {
+      margin-top: -$body-offset-top-medium-up;
+    }
+  }
+}

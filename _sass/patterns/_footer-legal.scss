@@ -1,0 +1,14 @@
+// Footer legal
+// -----------------------------------------------------------------------------
+
+
+.footer-legal {
+  @include size($footer-legal-wd, $footer-legal-ht);
+  padding: $footer-legal-pd;
+  background-color: $footer-legal-bg;
+  text-align: center;
+
+  @media ($medium-up) {
+    padding: $footer-legal-pd-medium-up;
+  }
+}

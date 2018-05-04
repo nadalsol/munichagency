@@ -9,6 +9,15 @@
 
   @media ($medium-up) {
     @include size($header-wd-medium-up, $header-ht-medium-up);
+    background-color: $header-bg-medium-up;
+  }
+
+  &.is-transparent {
+    background-color: $header-bg-transparent;
+
+    @media ($medium-up) {
+      background-color: $header-bg-transparent-medium-up;
+    }
   }
 
   &__brand {
@@ -25,18 +34,20 @@
   }
 
   &__nav {
-    // @include size($header-nav-wd, $header-nav-ht);
-    // background-color: $header-nav-bg;
-    // overflow: hidden;
-    // transition: $transition-bgc;
+    @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, 11);
+    padding-top: $sp-xxsmall;
+    padding-bottom: $sp-xxsmall;
+    background-color: $header-nav-bg;
+    text-align: center;
 
     @media ($medium-up) {
+      @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
+      padding-top: $sp-medium;
+      padding-bottom: $sp-medium;
+      background-color: $header-nav-bg-medium-up;
       float: right;
+      text-align: right;
     }
-
-    // &.is-opaque {
-    //   background-color: $header-nav-bg-opaque;
-    // }
   }
 
   &__hamburger {

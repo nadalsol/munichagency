@@ -32,12 +32,26 @@
   @include size(32px, 32px);
 }
 
+// services
+.icon--large {
+  @include size(75px, 75px);
+}
+
 // brand
 .icon--brand {
   @include size($header-brand-wd, $header-brand-ht);
 
   @media ($medium-up) {
     @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+  }
+}
+
+// brand wide
+.icon--brand-wide {
+  @include size(120px, 32px);
+
+  @media ($medium-up) {
+    @include size(181px, 48px);
   }
 }
 

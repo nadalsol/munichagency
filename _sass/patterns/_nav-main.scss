@@ -1,44 +1,30 @@
-// Main navigation
+// Navigation main
 // -----------------------------------------------------------------------------
 
 
 .nav-main {
-  margin-bottom: 0;
-  // padding: $sp-xxsmall;
-  // font-family: $ff-base;
-  // text-transform: uppercase;
-  // letter-spacing: 1.5px;
-  // text-align: center;
-  //
+  @include list-inline($sp-xsmall, $sp-xsmall);
+  text-transform: lowercase;
+  font-size: $fz-base;
+
   @media ($medium-up) {
-    @include list-inline($sp-xsmall, $sp-xsmall);
-    padding-top: $sp-medium;
-    padding-bottom: $sp-medium;
+    font-size: $fz-xlarge;
   }
-  //
-  // &__link {
-  //   @include link($c-light, $c-brand-primary);
-  //   display: block;
-  //   padding: $sp-base;
-  //
-  //   @media ($medium-up) {
-  //     display: inline;
-  //     padding: 0;
-  //   }
-  //
-  //   &.is-active,
-  //   &:active {
-  //     position: relative;
-  //     color: $c-brand-primary;
-  //
-  //     &::after {
-  //       @media ($medium-up) {
-  //         @include positioner-center-h(80%, 2px);
-  //         content: '';
-  //         bottom: -7px;
-  //         border-bottom: 2px dotted $c-light;
-  //       }
-  //     }
-  //   }
-  // }
+
+  &__link {
+    @include link(white, $nav-main-c-hover);
+
+    @media ($medium-up) {
+      @include link($nav-main-c, $nav-main-c-hover);
+    }
+
+    // &.is-active,
+    // &:active {
+    //   //
+    // }
+
+    .is-transparent & {
+      @include link($nav-main-c-transparent, $nav-main-c-transparent-hover);
+    }
+  }
 }

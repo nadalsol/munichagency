@@ -27,7 +27,7 @@ $c-brand-secondary:      #ffb500 !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 
-$body-bg-c:              #eee !default;
+$body-bg-c:              #eee !default; // TODO : replace for $c-light
 
 $text-c:                 $c-dark !default;
 
@@ -59,7 +59,13 @@ $fz-large:               18px !default;
 $fz-xlarge:              20px !default;
 $fz-xxlarge:             24px !default;
 
+// TODO : remove none used font weights
 $fw-base:                400 !default;
+$fw-thin:                100 !default;
+$fw-extra-light:         200 !default;
+$fw-light:               300 !default;
+$fw-bold:                700 !default;
+$fw-black:               900 !default;
 
 $lh-base:                1.5 !default;
 $lh-small:               1 !default;
@@ -87,46 +93,71 @@ $transition-bgc:         background-color 250ms !default;
 // Patterns
 // -----------------------------------------------------------------------------
 
-// Header
-$header-brand-wd:                81px !default;
-$header-brand-ht:                81px !default;
-$header-brand-wd-medium-up:      floor($header-brand-wd * 2) !default;
-$header-brand-ht-medium-up:      floor($header-brand-ht * 2) !default;
-
-// $header-nav-wd:                  100% !default;
-// $header-nav-ht:                  auto !default;
-// $header-nav-bg:                  $c-dark !default;
-// $header-nav-wd-medium-up:        $header-nav-wd !default;
-// $header-nav-ht-medium-up:        $sp-huge !default;
-// $header-nav-bg-medium-up:        rgba(0, 0, 0, .3) !default;
-// $header-nav-bg-opaque:           $header-nav-bg !default;
-
-$header-hamburger-wd:            auto !default;
-$header-hamburger-ht:            auto !default;
-$header-hamburger-pd:            $sp-base $sp-xxsmall !default;
-$header-hamburger-fz:            $fz-xxlarge !default;
-$header-hamburger-c:             $c-dark !default;
-
-$header-contact-wd:              42px !default;
-$header-contact-ht:              42px !default;
-$header-contact-wd-medium-up:    floor($header-contact-wd * 2) !default;
-$header-contact-ht-medium-up:    floor($header-contact-ht * 2) !default;
-$header-contact-pd:              0 !default;
-
-$header-wd:                      100% !default;
-$header-ht:                      $header-brand-ht !default;
-$header-wd-medium-up:            $header-wd !default;
-$header-ht-medium-up:            $header-brand-ht-medium-up !default;
-$header-bg:                      $c-light !default;
-
 // Footer
-$footer-wd:                      100% !default;
-$footer-ht:                      auto !default;
-$footer-pd:                      $sp-small !default;
-$footer-c:                       $c-light !default;
-$footer-bg:                      $c-dark !default;
-$footer-pd-medium-up:            $sp-xxxlarge !default;
+$footer-wd:                       100% !default;
+$footer-ht:                       auto !default;
+$footer-pd:                       $sp-small !default;
+$footer-fz:                       $fz-medium !default;
+$footer-c:                        $c-light !default;
+$footer-bg:                       $c-dark !default;
+$footer-pd-medium-up:             $sp-xxxlarge !default;
+$footer-fz-medium-up:             $fz-xlarge !default;
 
-// Body offset
-$body-offset-top:                $header-ht !default;
-$body-offset-top-medium-up:      $header-ht-medium-up !default;
+// Footer legal
+$footer-legal-wd:                 100% !default;
+$footer-legal-ht:                 auto !default;
+$footer-legal-pd:                 $sp-small !default;
+$footer-legal-pd-medium-up:       $sp-xxlarge !default;
+$footer-legal-bg:                 $c-light !default;
+
+// Header
+$header-brand-wd:                 81px !default;
+$header-brand-ht:                 81px !default;
+$header-brand-wd-medium-up:       floor($header-brand-wd * 2) !default;
+$header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
+
+$header-nav-po:                   absolute !default;
+$header-nav-wd:                   100% !default;
+$header-nav-ht:                   auto !default;
+$header-nav-bg:                   $c-dark !default;
+$header-nav-po-medium-up:         static !default;
+$header-nav-wd-medium-up:         auto !default;
+$header-nav-ht-medium-up:         auto !default;
+$header-nav-bg-medium-up:         transparent !default;
+
+$header-hamburger-wd:             auto !default;
+$header-hamburger-ht:             auto !default;
+$header-hamburger-pd:             $sp-base $sp-xxsmall !default;
+$header-hamburger-fz:             $fz-xxlarge !default;
+$header-hamburger-c:              $c-dark !default;
+
+$header-contact-wd:               42px !default;
+$header-contact-ht:               42px !default;
+$header-contact-wd-medium-up:     floor($header-contact-wd * 2) !default;
+$header-contact-ht-medium-up:     floor($header-contact-ht * 2) !default;
+$header-contact-pd:               0 !default;
+
+$header-wd:                       100% !default;
+$header-ht:                       $header-brand-ht !default;
+$header-wd-medium-up:             $header-wd !default;
+$header-ht-medium-up:             $header-brand-ht-medium-up !default;
+$header-bg:                       $c-light !default;
+$header-bg-medium-up:             $c-light !default;
+
+$header-bg-transparent:           transparent !default;
+$header-bg-transparent-medium-up: transparent !default;
+
+// Body offset (should go after Header)
+$body-offset-top:                 $header-ht !default;
+$body-offset-top-medium-up:       $header-ht-medium-up !default;
+
+// Navigation legal
+$nav-legal-c:                     $c-dark !default;
+$nav-legal-c-hover:               $c-brand-primary !default;
+
+// Navigation main
+$nav-main-c:                      $c-dark !default;
+$nav-main-c-hover:                $c-brand-primary !default;
+
+$nav-main-c-transparent:          $c-light !default;
+$nav-main-c-transparent-hover:    $c-brand-primary !default;
