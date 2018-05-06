@@ -2,7 +2,10 @@
 // -----------------------------------------------------------------------------
 
 .contact {
+  font-size: $fz-small;
+
   @media ($medium-up) {
     margin-bottom: $sp-xxlarge;
+    font-size: $fz-base;
   }
 }

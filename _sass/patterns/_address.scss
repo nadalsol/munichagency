@@ -2,8 +2,11 @@
 // -----------------------------------------------------------------------------
 
 .address {
+  font-size: $fz-small;
+
   @media ($medium-up) {
     margin-bottom: 0;
+    font-size: $fz-base;
   }
 
   .icon {

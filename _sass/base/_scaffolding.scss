@@ -24,45 +24,33 @@ body {
 }
 
 // Headings
-h1, h2, h3, h4, h5, h6 {
-  font-family: $ff-base;
-  font-weight: $fw-base;
-  line-height: $lh-base;
-  color: $c-light;
+h1, .h1 {
+  @include heading($fz-xxxlarge, $fw-extra-light, $c-dark);
 }
 
-h1 {
-  @include heading($fz-xlarge, $c-dark);
+h2, .h2 {
+  @include heading($fz-xxlarge, $fw-black, $c-dark);
 }
 
-h2 {
-  @include heading($fz-large, $c-dark);
+h3, .h3 {
+  @include heading($fz-xlarge, $fw-thin, $c-dark);
 }
 
-h3 {
-  @include heading($fz-medium, $c-dark);
+h4, .h4 {
+  @include heading($fz-large, $fw-bold, $c-dark);
 }
 
-h4 {
-  @include heading($fz-base, $c-light);
+h5, .h5 {
+  @include heading($fz-medium, $fw-base, $c-dark);
 }
 
-h5 {
-  @include heading($fz-small, $c-light);
-}
-
-h6 {
-  @include heading($fz-xsmall, $c-light);
+h6, .h6 {
+  @include heading($fz-base, $fw-base, $c-dark);
 }
 
 // Images
 img {
   vertical-align: middle;
-}
-
-// Responsive images (ensure images don't scale beyond their parents)
-.img-responsive {
-  @include img-responsive;
 }
 
 // Links

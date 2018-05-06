@@ -16,7 +16,7 @@
   margin-right: auto;
 }
 
-// Clearfix
+// Clear of floats
 @mixin clearfix() {
   &:before,
   &:after {
@@ -35,8 +35,11 @@
 }
 
 // Headings
-@mixin heading($fz, $c) {
+@mixin heading($fz, $fw, $c) {
+  font-family: $ff-base;
+  line-height: $lh-base;
   font-size: $fz;
+  font-weight: $fw;
   color: $c;
 }
 

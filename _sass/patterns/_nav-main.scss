@@ -3,11 +3,10 @@
 
 .nav-main {
   @include list-inline($sp-xsmall, $sp-xsmall);
-  text-transform: lowercase;
-  font-size: $fz-base;
+  font-size: $fz-small;
 
   @media ($medium-up) {
-    font-size: $fz-xlarge;
+    font-size: $fz-base;
   }
 
   &__link {

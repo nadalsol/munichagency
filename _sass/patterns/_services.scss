@@ -4,10 +4,12 @@
 .services {
   @include list-reset;
   width: 100%;
+  font-size: $fz-small;
   text-align: center;
 
   @media ($medium-up) {
     display: flex;
+    font-size: $fz-base;
   }
 
   &__item {
@@ -23,7 +25,6 @@
     > a {
       @include link($c-neutral, $c-brand-primary);
       display: block;
-      font-size: $fz-xlarge;
     }
 
     svg {

@@ -49,15 +49,16 @@ $sp-huge:                floor($sp-base * 12) !default; // 60px
 $ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
 $ff-base:                $ff-sans-serif !default;
 
-$fz-base:                14px !default;
-$fz-xsmall:              11px !default;
-$fz-small:               12px !default;
-$fz-medium:              16px !default;
-$fz-large:               18px !default;
-$fz-xlarge:              20px !default;
-$fz-xxlarge:             24px !default;
+$fz-base:                20px !default;
+$fz-xsmall:              14px !default;
+$fz-small:               16px !default;
+$fz-medium:              24px !default;
+$fz-large:               28px !default;
+$fz-xlarge:              36px !default;
+$fz-xxlarge:             48px !default;
+$fz-xxxlarge:            100px !default;
 
-// TODO : remove none used font weights
+// TODO : remove none used font weights (to improve performace)
 $fw-base:                400 !default;
 $fw-thin:                100 !default;
 $fw-extra-light:         200 !default;
@@ -95,11 +96,9 @@ $transition-bgc:         background-color 250ms !default;
 $footer-wd:                       100% !default;
 $footer-ht:                       auto !default;
 $footer-pd:                       $sp-small !default;
-$footer-fz:                       $fz-medium !default;
 $footer-c:                        $c-light !default;
 $footer-bg:                       $c-dark !default;
 $footer-pd-medium-up:             $sp-xxxlarge !default;
-$footer-fz-medium-up:             $fz-xlarge !default;
 
 // Footer legal
 $footer-legal-wd:                 100% !default;
@@ -126,7 +125,6 @@ $header-nav-bg-medium-up:         transparent !default;
 $header-hamburger-wd:             auto !default;
 $header-hamburger-ht:             auto !default;
 $header-hamburger-pd:             $sp-base $sp-xxsmall !default;
-$header-hamburger-fz:             $fz-xxlarge !default;
 $header-hamburger-c:              $c-dark !default;
 
 $header-contact-wd:               42px !default;

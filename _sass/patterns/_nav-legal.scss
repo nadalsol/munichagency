@@ -3,10 +3,10 @@
 
 .nav-legal {
   @include list-inline-dashed($sp-xxsmall, $sp-xxsmall);
-  font-size: $fz-base;
+  font-size: $fz-xsmall;
 
   @media ($medium-up) {
-    font-size: $fz-medium;
+    font-size: $fz-small;
   }
 
   &__link {

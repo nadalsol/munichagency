@@ -1,0 +1,62 @@
+// Utility classes
+// -----------------------------------------------------------------------------
+
+// Center-align a block level element
+.u-center-block {
+  @include center-block;
+}
+
+// Clear of floats
+.u-clearfix {
+  @include clearfix;
+}
+
+// Inners
+.u-inner {
+  padding-top: $sp-xxlarge;
+  padding-bottom: $sp-xxlarge;
+
+  @media ($medium-up) {
+    padding-top: $sp-huge;
+    padding-bottom: $sp-huge;
+  }
+}
+
+.u-inner-large {
+  padding: $sp-xxlarge;
+
+  @media ($medium-up) {
+    padding: $sp-huge 90px;
+  }
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.u-img-responsive {
+  @include img-responsive;
+}
+
+// Text
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase;
+}
+
+// Visibility
+.is-small-hidden {
+  display: none;
+
+  @media ($medium-up) {
+    display: block;
+  }
+}
+
+.is-medium-hidden {
+  display: block;
+
+  @media ($medium-up) {
+    display: none;
+  }
+}

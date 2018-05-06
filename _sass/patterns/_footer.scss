@@ -4,13 +4,11 @@
 .footer {
   @include size($footer-wd, $footer-ht);
   padding: $footer-pd;
-  font-size: $footer-fz;
   color: $footer-c;
   background-color: $footer-bg;
 
   @media ($medium-up) {
     padding: $footer-pd-medium-up;
-    font-size: $footer-fz-medium-up;
   }
 
   a {

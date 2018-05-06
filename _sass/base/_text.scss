@@ -1,0 +1,13 @@
+// Text
+// -----------------------------------------------------------------------------
+//
+// Usually applied to regular text paragraphs
+//
+
+.text {
+  &:only-of-type,
+  &:only-child,
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -53,7 +53,7 @@
     @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
     @include button-reset;
     padding: $header-hamburger-pd;
-    font-size: $header-hamburger-fz;
+    font-size: $fz-large;
     line-height: $lh-small;
     color: $header-hamburger-c;
   }

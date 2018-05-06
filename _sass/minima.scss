@@ -21,6 +21,10 @@
 
 // Base
 @import "base/scaffolding";
+@import "base/text";
+
+// Helpers
+@import "helpers/utilities";
 
 // Patterns
 @import "patterns/address";
@@ -39,4 +43,3 @@
 @import "patterns/nav-social";
 @import "patterns/panel";
 @import "patterns/services";
-@import "patterns/utilities";
