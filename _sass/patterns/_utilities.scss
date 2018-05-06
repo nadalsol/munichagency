@@ -1,12 +1,11 @@
 // Utility classes
 // -----------------------------------------------------------------------------
 
-
-.center-block {
+.u-center-block {
   @include center-block;
 }
 
-.clearfix {
+.u-clearfix {
   @include clearfix;
 }
 
@@ -24,5 +23,16 @@
 
   @media ($medium-up) {
     display: none;
+  }
+}
+
+// Inner
+.u-inner {
+  padding-top: $sp-xxlarge;
+  padding-bottom: $sp-xxlarge;
+
+  @media ($medium-up) {
+    padding-top: $sp-huge;
+    padding-bottom: $sp-huge;
   }
 }

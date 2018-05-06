@@ -1,7 +1,6 @@
 // Header
 // -----------------------------------------------------------------------------
 
-
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
   @include clearfix;

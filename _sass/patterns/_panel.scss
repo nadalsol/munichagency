@@ -1,8 +1,6 @@
-// Contact
+// Panel
 // -----------------------------------------------------------------------------
 
-.contact {
-  @media ($medium-up) {
-    margin-bottom: $sp-xxlarge;
-  }
+.panel {
+  background-color: $c-light;
 }

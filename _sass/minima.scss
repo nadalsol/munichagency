@@ -11,7 +11,6 @@
 // Created: May 2018
 //
 
-
 // Variables and mixins
 @import "variables";
 @import "mixins";
@@ -25,13 +24,19 @@
 
 // Patterns
 @import "patterns/address";
-@import "patterns/carousel";
+@import "patterns/approach";
+@import "patterns/carousel-primary";
+@import "patterns/carousel-secondary";
+@import "patterns/clients";
 @import "patterns/contact";
-@import "patterns/footer";
 @import "patterns/footer-legal";
+@import "patterns/footer";
 @import "patterns/header";
 @import "patterns/icon";
+@import "patterns/lead";
 @import "patterns/nav-legal";
 @import "patterns/nav-main";
 @import "patterns/nav-social";
+@import "patterns/panel";
+@import "patterns/services";
 @import "patterns/utilities";

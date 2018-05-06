@@ -1,7 +1,6 @@
 // Navigation legal
 // -----------------------------------------------------------------------------
 
-
 .nav-legal {
   @include list-inline-dashed($sp-xxsmall, $sp-xxsmall);
   font-size: $fz-base;

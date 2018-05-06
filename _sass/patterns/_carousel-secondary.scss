@@ -1,0 +1,11 @@
+// Carousel secondary
+// -----------------------------------------------------------------------------
+
+.carousel-secondary {
+  @include size(100%, 550px);
+  background-color: gray;
+
+  // @media ($medium-up) {
+  //   margin-top: -$body-offset-top-medium-up;
+  // }
+}
