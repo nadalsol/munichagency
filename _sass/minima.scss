@@ -20,6 +20,7 @@
 @import "reset/print";
 
 // Base
+@import "base/heading";
 @import "base/scaffolding";
 @import "base/text";
 
@@ -27,12 +28,10 @@
 @import "helpers/utilities";
 
 // Patterns
-@import "patterns/address";
 @import "patterns/approach";
 @import "patterns/carousel-primary";
 @import "patterns/carousel-secondary";
 @import "patterns/clients";
-@import "patterns/contact";
 @import "patterns/footer-legal";
 @import "patterns/footer";
 @import "patterns/header";

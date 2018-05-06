@@ -3,11 +3,7 @@
 
 .nav-main {
   @include list-inline($sp-xsmall, $sp-xsmall);
-  font-size: $fz-small;
-
-  @media ($medium-up) {
-    font-size: $fz-base;
-  }
+  @include text;
 
   &__link {
     @include link(white, $nav-main-c-hover);

@@ -3,13 +3,12 @@
 
 .services {
   @include list-reset;
+  @include text;
   width: 100%;
-  font-size: $fz-small;
   text-align: center;
 
   @media ($medium-up) {
     display: flex;
-    font-size: $fz-base;
   }
 
   &__item {

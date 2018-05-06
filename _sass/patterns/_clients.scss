@@ -2,7 +2,9 @@
 // -----------------------------------------------------------------------------
 
 .clients {
-  // @media ($medium-up) {
-  //   margin-bottom: $sp-xxlarge;
-  // }
+  @extend .services;
+
+  &__item {
+    @extend .services__item;
+  }
 }

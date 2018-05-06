@@ -1,10 +1,12 @@
 // Text
 // -----------------------------------------------------------------------------
 //
-// Usually applied to regular text paragraphs
+// Regular text paragraphs
 //
 
 .text {
+  @include text;
+
   &:only-of-type,
   &:only-child,
   &:last-child {
