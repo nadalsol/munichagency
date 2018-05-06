@@ -2,7 +2,33 @@
 // -----------------------------------------------------------------------------
 
 .services {
-  // @media ($medium-up) {
-  //   margin-bottom: $sp-xxlarge;
-  // }
+  @include list-reset;
+  width: 100%;
+  text-align: center;
+
+  @media ($medium-up) {
+    display: flex;
+  }
+
+  &__item {
+    margin-bottom: $sp-xxlarge;
+    padding-left: $sp-small;
+    padding-right: $sp-small;
+
+    @media ($medium-up) {
+      flex: 1 1 0;
+      margin-bottom: 0;
+    }
+
+    > a {
+      @include link($c-neutral, $c-brand-primary);
+      display: block;
+      font-size: $fz-xlarge;
+    }
+
+    svg {
+      @include center-block;
+      margin-bottom: $sp-small;
+    }
+  }
 }

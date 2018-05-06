@@ -28,10 +28,16 @@
   }
 }
 
-// Column
+// Column generation
 @mixin col($wd, $ta) {
   width: $wd;
   text-align: $ta;
+}
+
+// Headings
+@mixin heading($fz, $c) {
+  font-size: $fz;
+  color: $c;
 }
 
 // Responsive image
@@ -44,6 +50,24 @@
   display: $dp;
   max-width: 100%; // 1
   height: auto; // 2
+}
+
+// Link generation with states
+@mixin link($c, $c-hover) {
+  color: $c;
+  transition: $transition-c;
+
+  &:visited {
+    color: $c;
+  }
+
+  &:hover {
+    color: $c-hover;
+  }
+
+  &:active {
+    color: $c;
+  }
 }
 
 // Sizing shortcuts
@@ -142,30 +166,6 @@
   height: $ht;
   left: 50%;
   margin-left: -($wd / 2);
-}
-
-// Headings
-@mixin heading($fz, $c) {
-  font-size: $fz;
-  color: $c;
-}
-
-// Links
-@mixin link($c, $c-hover) {
-  color: $c;
-  transition: $transition-c;
-
-  &:visited {
-    color: $c;
-  }
-
-  &:hover {
-    color: $c-hover;
-  }
-
-  &:active {
-    color: $c;
-  }
 }
 
 // Vertical rhythm

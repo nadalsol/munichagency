@@ -1,4 +1,4 @@
-<svg width="67" height="63" viewBox="0 0 67 63" xmlns="http://www.w3.org/2000/svg">
+<svg class="{{ include.css-class }}" width="67" height="63" viewBox="0 0 67 63" xmlns="http://www.w3.org/2000/svg">
   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <g id="Munich_Home-DESK_01" transform="translate(-146.000000, -962.000000)" fill="#1D1D1B">
       <g id="Servicios" transform="translate(71.000000, 959.000000)">
