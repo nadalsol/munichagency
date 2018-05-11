@@ -45,7 +45,8 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  @include heading($fz-base, $fw-base, $c-dark);
+  @include heading($fz-small, $fw-base, $c-dark);
+  text-transform: uppercase;
 }
 
 // Images

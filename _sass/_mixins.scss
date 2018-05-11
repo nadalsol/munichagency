@@ -37,7 +37,7 @@
 // Headings
 @mixin heading($fz, $fw, $c) {
   font-family: $ff-base;
-  line-height: $lh-base;
+  line-height: $lh-small;
   font-size: $fz;
   font-weight: $fw;
   color: $c;
@@ -97,7 +97,7 @@
 
 // Regular text paragraphs
 @mixin text() {
-  font-size: $fz-small;
+  font-size: $fz-xsmall;
 
   @media ($medium-up) {
     font-size: $fz-base;

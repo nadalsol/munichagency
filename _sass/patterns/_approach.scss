@@ -2,7 +2,57 @@
 // -----------------------------------------------------------------------------
 
 .approach {
-  // @media ($medium-up) {
-  //   margin-bottom: $sp-xxlarge;
-  // }
+  @include list-reset;
+  width: 100%;
+
+  @media ($medium-up) {
+    display: flex;
+  }
+
+  &__item {
+    @include size(100%, 230px);
+    margin-bottom: $sp-xxlarge;
+    padding: $sp-xxsmall $sp-small;
+    overflow: hidden;
+    background: $c-neutral no-repeat center center;
+    background-size: cover;
+
+    @media ($medium-up) {
+      @include size(auto, 300px);
+      flex: 1 1 0;
+      margin-bottom: 0;
+      padding: $sp-xsmall $sp-medium;
+      border-left: 2px solid $c-light;
+      border-right: 2px solid $c-light;
+    }
+
+    &--client {
+      // background-image: url("#{$assets-path}/bg-approach-client.jpg");
+      background-image: url("http://via.placeholder.com/350x150");
+    }
+
+    &--team {
+      // background-image: url("#{$assets-path}/bg-approach-team.jpg");
+      background-image: url("http://via.placeholder.com/350x150");
+    }
+
+    &--target {
+      // background-image: url("#{$assets-path}/bg-approach-target.jpg");
+      background-image: url("http://via.placeholder.com/350x150");
+    }
+
+    > a {
+      @include size(100%, 100%);
+      @include link($c-light, $c-brand-primary);
+      display: block;
+    }
+
+    .h2 {
+      color: $c-light;
+    }
+
+    .h6 {
+      color: $c-light;
+    }
+  }
 }

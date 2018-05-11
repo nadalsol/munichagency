@@ -25,7 +25,7 @@ $c-brand-secondary:      #ffb500 !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 
-$body-bg-c:              #eee !default; // TODO : replace for $c-light
+$body-bg-c:              $c-light !default;
 
 $text-c:                 $c-dark !default;
 
@@ -50,8 +50,9 @@ $ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
 $ff-base:                $ff-sans-serif !default;
 
 $fz-base:                20px !default;
-$fz-xsmall:              14px !default;
-$fz-small:               16px !default;
+$fz-xxsmall:             14px !default;
+$fz-xsmall:              16px !default;
+$fz-small:               18px !default;
 $fz-medium:              24px !default;
 $fz-large:               28px !default;
 $fz-xlarge:              36px !default;
@@ -67,7 +68,8 @@ $fw-bold:                700 !default;
 $fw-black:               900 !default;
 
 $lh-base:                1.5 !default;
-$lh-small:               1 !default;
+$lh-xsmall:              1 !default;
+$lh-small:               1.25 !default;
 $lh-medium:              1.75 !default;
 $lh-large:               2 !default;
 
