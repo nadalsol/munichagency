@@ -132,7 +132,7 @@ Dashboards:
 
 ## Authors
 
-This project has been designed and developed by 🎩 🐧 [Mr. Puffin](http://mrpuffin.cat/), a communication studio based in Vilassar de Mar, Barcelona (Catalunya).
+This project has been designed and developed by 🎩 🐧 [Mr. Puffin Studio](http://mrpuffin.studio/), a communication studio based in Vilassar de Mar, Barcelona.
 
 <table>
   <tbody>
