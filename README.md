@@ -146,7 +146,7 @@ This project has been designed and developed by 🎩 🐧 [Mr. Puffin](http://mr
         <p>Front-end Web Developer</p>
       </td>
       <td align="center" valign="top">
-        <img width="150" height="150" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_150_150/p/4/005/06b/33f/3a3caff.jpg">
+        <img width="150" height="150" src="https://media.licdn.com/dms/image/C5103AQHege8bS0fxaA/profile-displayphoto-shrink_800_800/0?e=1531958400&v=beta&t=nds5VmSUEdw6C4owLp1JzxAbLuVvAintm0tFBM2Ou5M">
         <br>
         <a href="https://www.linkedin.com/in/miriamsoto/">Miriam Soto</a>
         <p>@coolcolors</p>
