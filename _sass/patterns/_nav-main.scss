@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .nav-main {
-  @include list-inline-first-last($sp-xsmall, $sp-xsmall);
+  @include list-inline($sp-xsmall, $sp-xsmall);
   @include text;
 
   &__link {
