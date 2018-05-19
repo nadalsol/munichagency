@@ -2,11 +2,11 @@
 // -----------------------------------------------------------------------------
 
 .nav-main {
-  @include list-inline($sp-xsmall, $sp-xsmall);
+  @include list-inline-first-last($sp-xsmall, $sp-xsmall);
   @include text;
 
   &__link {
-    @include link(white, $nav-main-c-hover);
+    @include link($c-light, $nav-main-c-hover);
 
     @media ($medium-up) {
       @include link($nav-main-c, $nav-main-c-hover);

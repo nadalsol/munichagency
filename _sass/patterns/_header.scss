@@ -21,10 +21,10 @@
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
-    float: left;
 
     @media ($medium-up) {
       @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+      float: left;
     }
 
     > a {
