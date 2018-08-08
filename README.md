@@ -3,12 +3,13 @@
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Deploy](#deploy)
+4. [Configuration](#configuration)
+5. [Deploy](#deploy)
     * [Possible issues](#possible-issues)
-5. [Publish content](#publish-content)
-6. [Manage DatoCMS records](#manage-datocms-records)
-7. [Resources](#resources)
-8. [Authors](#authors)
+6. [Publish content](#publish-content)
+7. [Manage DatoCMS records](#manage-datocms-records)
+8. [Resources](#resources)
+9. [Authors](#authors)
 
 ## Description
 
@@ -50,6 +51,20 @@ $ bundle exec jekyll server
 ```
 
 Now browse to http://localhost:4000
+
+♻️&nbsp;**Don't forget to reload your browser to apply new changes.**
+
+## Configuration
+
+Site settings in the `_config.yml` file, are used to personalize your new site.
+If you look in the HTML files, you will see them accessed via
+`{{ site.title }}`, `{{ site.email }}`, and so on. You can create any custom
+variable you would like, and they will be accessible in the templates via
+`{{ site.myvariable }}`.
+
+⚠️&nbsp;For technical reasons, the `_config.yml` file is *NOT* reloaded automatically
+when you use `$ bundle exec jekyll serve`. **If you change this file, please
+restart the server process.**
 
 ## Deploy
 
