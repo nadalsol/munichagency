@@ -153,7 +153,7 @@ This project has been designed and developed by&nbsp;🎩&nbsp;🐧&nbsp;[Mr. Pu
         <a href="https://www.linkedin.com/in/miriamsoto/">Miriam Soto</a>
         <p>@coolcolors</p>
         <br>
-        <p>Senior UI & Visual Designer / Creative Director</p>
+        <p>UI & Visual Designer</p>
       </td>
       <td align="center" valign="top">
         <img width="150" height="150" src="https://media.licdn.com/dms/image/C4D03AQG6vMfNJnCUQw/profile-displayphoto-shrink_800_800/0?e=1539216000&v=beta&t=brfXxuTCxSKSm-5FDgtkxdTOWLiO6U1Nhc5RNiucu6U">
