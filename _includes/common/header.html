@@ -2,12 +2,12 @@
 
   <div class="header__brand">
     <a rel="author" href="{{ "/" | relative_url }}">
-      {% include svg/brand.svg css-class="icon icon--brand" %}
+      {% include icons/brand.svg css-class="icon icon--brand" %}
     </a>
   </div>
 
   <nav id="header-nav" class="header__nav is-small-hidden">
-    {% include nav-main.html %}
+    {% include patterns/nav-main.html %}
   </nav>
 
   <button id="header-hamburger" class="header__hamburger is-medium-hidden">
@@ -15,7 +15,7 @@
   </button>
 
   <button id="header-contact" class="header__contact">
-    {% include svg/contact.svg css-class="icon icon--contact" %}
+    {% include icons/contact.svg css-class="icon icon--contact" %}
   </button>
 
 </header>

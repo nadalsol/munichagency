@@ -1,5 +1,5 @@
 ---
-layout: servicio
+layout: default
 title: Identidad corporativa
 ---
 
