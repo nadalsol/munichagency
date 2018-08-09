@@ -1,14 +1,11 @@
 <ul class="nav-legal">
   <li>
-    <a class="nav-legal__link" href="{{ "/" | relative_url }}"><strong>&copy; Munich 2018</strong></a>
+    <a id="modal-trigger-privacy" class="nav-legal__link" href="#">{{ site.footer_legal.privacy }}</a>
   </li>
   <li>
-    <a class="nav-legal__link" href="{{ "/privacidad" | relative_url }}">Privacidad</a>
+    <a id="modal-trigger-cookie" class="nav-legal__link" href="#">{{ site.footer_legal.cookies }}</a>
   </li>
   <li>
-    <a class="nav-legal__link" href="{{ "/cookies" | relative_url }}">Cookies</a>
-  </li>
-  <li>
-    <a class="nav-legal__link" href="{{ "/aviso-legal" | relative_url }}">Aviso legal</a>
+    <a id="modal-trigger-terms" class="nav-legal__link" href="#">{{ site.footer_legal.terms }}</a>
   </li>
 </ul>

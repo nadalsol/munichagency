@@ -2,12 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .nav-legal {
-  @include list-inline-dashed($sp-xxsmall, $sp-xxsmall);
-  font-size: $fz-xxsmall;
-
-  @media ($medium-up) {
-    font-size: $fz-xsmall;
-  }
+  @include list-inline-dashed($sp-xsmall, $sp-xsmall);
 
   &__link {
     @include link($nav-legal-c, $nav-legal-c-hover);

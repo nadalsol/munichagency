@@ -1,0 +1,19 @@
+// Form mixins
+// -----------------------------------------------------------------------------
+
+@mixin field-and-textarea($ht) {
+  width: 100%;
+  height: $ht;
+  padding: $form-field-pd;
+  font-family: $form-field-ff;
+  font-size: $form-field-fz;
+  font-weight: $form-field-fw;
+  color: $form-field-c;
+  transition: $form-field-trn;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border-color: $form-field-c;
+  }
+}

@@ -1,7 +1,101 @@
 // Heading
 // -----------------------------------------------------------------------------
 
-.h3 {
-  letter-spacing: 12px;
-  text-transform: lowercase;
+// h1
+h1,
+.heading1 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-xxxlarge,
+    $fw-thin,
+    $lh-small,
+    $c-dark,
+    none,
+    normal,
+    normal
+  );
+}
+
+// h2
+h2,
+.heading2 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-xxlarge,
+    $fw-black,
+    $lh-small,
+    $c-dark,
+    none,
+    normal,
+    normal
+  );
+}
+
+// h3
+h3,
+.heading3 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-xlarge,
+    $fw-thin,
+    $lh-small,
+    $c-dark,
+    lowercase,
+    normal,
+    12px
+  );
+}
+
+// h4
+h4,
+.heading4 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-large,
+    $fw-bold,
+    $lh-small,
+    $c-dark,
+    none,
+    normal,
+    normal
+  );
+}
+
+// h5
+h5,
+.heading5 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-medium,
+    $fw-base,
+    $lh-small,
+    $c-dark,
+    none,
+    normal,
+    normal
+  );
+}
+
+// h6
+h6,
+.heading6 {
+  @include heading(
+    $ff-sans-serif,
+    $fz-small,
+    $fw-base,
+    $lh-small,
+    $c-dark,
+    uppercase,
+    normal,
+    normal
+  );
+}
+
+.heading1--light,
+.heading2--light,
+.heading3--light,
+.heading4--light,
+.heading5--light,
+.heading6--light {
+  color: $c-light;
 }

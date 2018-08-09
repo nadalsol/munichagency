@@ -12,25 +12,54 @@
 // Base
 // -----------------------------------------------------------------------------
 
+// Borders
+$br-small:               1px !default;
+$br-base:                2px !default;
+
+// Border radius
+$brr-small:              2px !default;
+$brr-base:               3px !default;
+$brr-circle:             50% !default;
+
 // Colors
 $c-dark:                 #000 !default;
-$c-dark-soft:            #333 !default;
-$c-neutral:              #666 !default;
-$c-light-soft:           #999 !default;
 $c-light:                #fff !default;
 
-$c-brand-primary:        #ff4e18 !default;
-$c-brand-secondary:      #ffb500 !default;
+$c-downriver:            #0f1d5e !default;
+$c-balticsea:            #342d38 !default;
+$c-pelorous:             #33a5b4 !default;
+$c-java:                 #21b7ca !default;
+$c-surfie:               #0c7987 !default;
+$c-lynch:                #606c8c !default;
+$c-chetwode:             #869fe1 !default;
+$c-fiord:                #434f70 !default;
+$c-eastbay:              #455378 !default;
+$c-manatee:              #7481a3 !default;
+$c-jaggedice:            #c6e7eb !default;
+$c-mischka:              #d5d8e2 !default;
+$c-athens:               #edeff4 !default;
+$c-lilac:                #eef0f8 !default;
+$c-citron:               #95c11f !default;
+$c-watercourse:          #047154 !default;
+$c-cosmic:               #683361 !default;
 
 // Scaffolding
 $assets-path:            "/assets" !default;
+$assets-img-path:        $assets-path + "/img" !default;
+// $icons-path:             "/_includes/icons" !default;
 
-$body-bg-c:              $c-light !default;
+$body-bg:                $c-light !default;
 
 $text-c:                 $c-dark !default;
 
-$link-c:                 $c-brand-primary !default;
-$link-c-hover:           lighten($link-c, 15%) !default;
+$link-c:                 $c-java !default;
+$link-c-hover:           $c-surfie !default;
+
+// $link-secondary-c:       $c-light !default;
+// $link-secondary-hover-c: $c-manatee !default;
+//
+// $link-tertiary-c:        $c-lynch !default;
+// $link-tertiary-hover-c:  $c-manatee !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -43,27 +72,36 @@ $sp-large:               floor($sp-base * 6) !default;  // 30px
 $sp-xlarge:              floor($sp-base * 7) !default;  // 35px
 $sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
 $sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
-$sp-huge:                floor($sp-base * 12) !default; // 60px
+$sp-big:                 floor($sp-base * 12) !default; // 60px
+$sp-huge:                floor($sp-base * 15) !default; // 75px
+$sp-giant:               floor($sp-base * 18) !default; // 90px
+$sp-colossal:            floor($sp-base * 30) !default; // 150px
 
 // Fonts
-$ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
+$ff-sans-serif:          'Barlow', sans-serif !default;
 $ff-base:                $ff-sans-serif !default;
 
-$fz-base:                20px !default;
-$fz-xxsmall:             14px !default;
-$fz-xsmall:              16px !default;
-$fz-small:               18px !default;
-$fz-medium:              24px !default;
+$fz-base:                18px !default;
+$fz-xxsmall:             12px !default;
+$fz-xsmall:              14px !default;
+$fz-small:               16px !default;
+$fz-medium:              22px !default;
 $fz-large:               28px !default;
-$fz-xlarge:              36px !default;
-$fz-xxlarge:             48px !default;
-$fz-xxxlarge:            100px !default;
+$fz-xlarge:              40px !default;
+$fz-xxlarge:             65px !default;
+$fz-xxxlarge:            80px !default;
+// $fz-base:                20px !default;
+// $fz-xxsmall:             14px !default;
+// $fz-xsmall:              16px !default;
+// $fz-small:               18px !default;
+// $fz-medium:              24px !default;
+// $fz-large:               28px !default;
+// $fz-xlarge:              36px !default;
+// $fz-xxlarge:             48px !default;
+// $fz-xxxlarge:            100px !default;
 
-// TODO : remove none used font weights (to improve performace)
-$fw-base:                400 !default;
 $fw-thin:                100 !default;
-$fw-extra-light:         200 !default;
-$fw-light:               300 !default;
+$fw-base:                400 !default;
 $fw-bold:                700 !default;
 $fw-black:               900 !default;
 
@@ -72,6 +110,7 @@ $lh-xsmall:              1 !default;
 $lh-small:               1.25 !default;
 $lh-medium:              1.75 !default;
 $lh-large:               2 !default;
+$lh-xlarge:              2.5 !default;
 
 // Media queries
 $screen-sm-min:          480px !default;
@@ -87,76 +126,268 @@ $xlarge-up:              "min-width:#{$screen-xl-min}" !default;
 $xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
+$transition-all:         all 250ms !default;
+$transition-bg:          background-color 250ms !default;
+$transition-bc:          border-color 250ms !default;
 $transition-c:           color 250ms !default;
-$transition-bgc:         background-color 250ms !default;
+$transition-m:           margin 250ms !default;
+$transition-trf:         transform 250ms !default;
+
+// Z-index table
+$zi-100:                 100 !default;
+$zi-900:                 900 !default;
+
+
+// Helpers
+// -----------------------------------------------------------------------------
+$u-inner-xxsmall-pd:              $sp-small !default;
+$u-inner-xxsmall-pd-medium-up:    $sp-small $sp-big !default;
+
+$u-inner-xsmall-pdv:              $sp-small !default;
+$u-inner-xsmall-pdh:              $sp-small !default;
+$u-inner-xsmall-pdv-medium-up:    $sp-xxlarge !default;
+$u-inner-xsmall-pdh-medium-up:    $sp-big !default;
+
+$u-inner-small-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-small-pd-medium-up:      80px $sp-big !default;
+
+$u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
+$u-inner-medium-pd-medium-up:     80px $sp-colossal !default;
+
+$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-large-pd-medium-up:      80px $sp-colossal !default;
+$u-inner-large-pd-large-up:       80px 250px !default;
+
+$u-inner-xlarge-pd:               $sp-small !default;
+$u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
+
+$u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
+$u-inner-xxlarge-pd-medium-up:    580px $sp-big 0 !default;
+
+
+// Common
+// -----------------------------------------------------------------------------
+
+// Cookie message
+$cookie-msg-wd:                   100% !default;
+$cookie-msg-ht:                   100px !default;
+$cookie-msg-bg:                   $c-dark !default;
+
+$cookie-msg-close-t:              $sp-xxsmall !default;
+$cookie-msg-close-r:              $sp-xxsmall !default;
+$cookie-msg-close-t-medium-up:    $sp-xlarge !default;
+$cookie-msg-close-r-medium-up:    $sp-big !default;
+
+// Footer
+$footer-wd:                       100% !default;
+$footer-ht:                       auto !default;
+$footer-c:                        $c-dark !default;
+$footer-bg:                       $c-light !default;
+
+// Footer legal
+$footer-legal-wd:                 100% !default;
+$footer-legal-ht:                 auto !default;
+$footer-legal-c:                  $c-dark !default;
+$footer-legal-bg:                 $c-lilac !default;
+
+// Header (should go after Helpers)
+$header-brand-wd:                 168px !default;
+$header-brand-ht:                 20px !default;
+$header-brand-wd-medium-up:       267px !default;
+$header-brand-ht-medium-up:       32px !default;
+
+$header-nav-po:                   absolute !default;
+$header-nav-wd:                   100% !default;
+$header-nav-ht:                   100vh !default;
+$header-nav-po-medium-up:         static !default;
+$header-nav-wd-medium-up:         auto !default;
+$header-nav-ht-medium-up:         auto !default;
+
+$header-wd:                       100% !default;
+$header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
+$header-wd-medium-up:             $header-wd !default;
+$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
+$header-bg:                       $c-light !default;
+
+$header-is-cookie-top:            $cookie-msg-ht !default;
+
+$header-hamburger-wd:             $header-ht !default;
+$header-hamburger-ht:             $header-ht !default;
+$header-hamburger-bg:             $c-eastbay !default;
+
+// Body (should go after Header)
+$body-mt:                         $header-ht !default;
+$body-mt-medium-up:               $header-ht-medium-up !default;
+
+$body-is-cookie-mt:               floor($header-ht + $cookie-msg-ht) !default;
+$body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !default;
+
+// Modal
+$modal-bg:                        rgba(255, 255, 255, .85) !default;
+$modal-zi:                        $zi-900 !default;
+
+$modal-dialog-m:                  $sp-xxsmall !default;
+$modal-dialog-maxw-medium-up:     $screen-md-min !default;
+
+$modal-content-bg:                $c-dark !default;
+
+$modal-pd:                        $sp-small !default;
+$modal-pd-medium-up:              $sp-xxlarge !default;
 
 
 // Patterns
 // -----------------------------------------------------------------------------
 
-// Footer
-$footer-wd:                       100% !default;
-$footer-ht:                       auto !default;
-$footer-pd:                       $sp-small !default;
-$footer-c:                        $c-light !default;
-$footer-bg:                       $c-dark !default;
-$footer-pd-medium-up:             $sp-xxxlarge !default;
+// Button base
+$button-pd:                       $sp-medium 120px !default;
+$button-ff:                       $ff-sans-serif !default;
+$button-fz:                       $fz-base !default;
+$button-fw:                       $fw-bold !default;
+$button-lh:                       $lh-base !default;
+$button-brr:                      $brr-base !default;
+$button-trn:                      $transition-all !default;
 
-// Footer legal
-$footer-legal-wd:                 100% !default;
-$footer-legal-ht:                 auto !default;
-$footer-legal-pd:                 $sp-small !default;
-$footer-legal-pd-medium-up:       $sp-xxlarge !default;
-$footer-legal-bg:                 $c-light !default;
+// Button type: primary
+$button-primary-bg:               transparent !default;
+$button-primary-br:               $br-base solid $c-java !default;
+$button-primary-c:                $c-java !default;
+$button-primary-td:               none !default;
 
-// Header
-$header-brand-wd:                 81px !default;
-$header-brand-ht:                 81px !default;
-$header-brand-wd-medium-up:       floor($header-brand-wd * 2) !default;
-$header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
+$button-primary-visited-bg:       $button-primary-bg !default;
+$button-primary-visited-br:       $button-primary-br !default;
+$button-primary-visited-c:        $button-primary-c !default;
+$button-primary-visited-td:       $button-primary-td !default;
 
-$header-nav-po:                   absolute !default;
-$header-nav-wd:                   100% !default;
-$header-nav-ht:                   auto !default;
-$header-nav-bg:                   $c-dark !default;
-$header-nav-po-medium-up:         static !default;
-$header-nav-wd-medium-up:         auto !default;
-$header-nav-ht-medium-up:         auto !default;
-$header-nav-bg-medium-up:         transparent !default;
+$button-primary-hover-bg:         transparent !default;
+$button-primary-hover-br:         $br-base solid $c-light !default;
+$button-primary-hover-c:          $c-light;
+$button-primary-hover-td:         none !default;
 
-$header-hamburger-wd:             auto !default;
-$header-hamburger-ht:             auto !default;
-$header-hamburger-pd:             $sp-base $sp-xxsmall !default;
-$header-hamburger-c:              $c-dark !default;
-$header-hamburger-bg:             $c-light !default;
+$button-primary-active-bg:        transparent !default;
+$button-primary-active-br:        $br-base solid $c-surfie !default;
+$button-primary-active-c:         $c-surfie;
+$button-primary-active-td:        none !default;
 
-$header-contact-wd:               42px !default;
-$header-contact-ht:               42px !default;
-$header-contact-wd-medium-up:     floor($header-contact-wd * 2) !default;
-$header-contact-ht-medium-up:     floor($header-contact-ht * 2) !default;
-$header-contact-pd:               0 !default;
+// Button type: secondary
+$button-secondary-bg:             transparent !default;
+$button-secondary-br:             $br-base solid $c-light !default;
+$button-secondary-c:              $c-light !default;
+$button-secondary-td:             none !default;
 
-$header-wd:                       100% !default;
-$header-ht:                       $header-brand-ht !default;
-$header-wd-medium-up:             $header-wd !default;
-$header-ht-medium-up:             $header-brand-ht-medium-up !default;
-$header-bg:                       $c-light !default;
-$header-bg-medium-up:             $c-light !default;
+$button-secondary-visited-bg:     $button-secondary-c !default;
+$button-secondary-visited-br:     $button-secondary-br !default;
+$button-secondary-visited-c:      $button-secondary-c !default;
+$button-secondary-visited-td:     $button-secondary-td !default;
 
-$header-bg-transparent:           transparent !default;
-$header-bg-transparent-medium-up: transparent !default;
+$button-secondary-hover-bg:       rgba(0, 0, 0, .2) !default;
+$button-secondary-hover-br:       $br-base solid $c-light !default;
+$button-secondary-hover-c:        $c-light !default;
+$button-secondary-hover-td:       none !default;
 
-// Body offset (should go after Header)
-$body-offset-top:                 $header-ht !default;
-$body-offset-top-medium-up:       $header-ht-medium-up !default;
+$button-secondary-active-bg:      $c-light !default;
+$button-secondary-active-br:      $br-base solid $c-light !default;
+$button-secondary-active-c:       $c-java !default;
+$button-secondary-active-td:      none !default;
+
+// Button type: tertiary
+$button-tertiary-bg:              transparent !default;
+$button-tertiary-br:              $br-base solid $c-mischka !default;
+$button-tertiary-c:               $c-lynch !default;
+$button-tertiary-td:              none !default;
+
+$button-tertiary-visited-bg:      $button-tertiary-c !default;
+$button-tertiary-visited-br:      $button-tertiary-br !default;
+$button-tertiary-visited-c:       $button-tertiary-c !default;
+$button-tertiary-visited-td:      $button-tertiary-td !default;
+
+$button-tertiary-hover-bg:        $c-mischka !default;
+$button-tertiary-hover-br:        $br-base solid $c-mischka !default;
+$button-tertiary-hover-c:         $c-lynch !default;
+$button-tertiary-hover-td:        none !default;
+
+$button-tertiary-active-bg:       $c-mischka !default;
+$button-tertiary-active-br:       $br-base solid $c-mischka !default;
+$button-tertiary-active-c:        $c-java !default;
+$button-tertiary-active-td:       none !default;
+
+// Button size
+$button-xxsmall-pd:               $sp-xsmall $sp-xxlarge !default;
+$button-xxsmall-fz:               $fz-xxsmall !default;
+
+$button-small-pd:                 $sp-small 100px !default;
+$button-small-fz:                 $fz-small !default;
+
+// Button icon
+$button-icon-wd:                  $sp-xsmall !default;
+$button-icon-ht:                  $sp-xsmall !default;
+$button-icon-wd-medium-up:        $sp-large !default;
+$button-icon-ht-medium-up:        $sp-large !default;
+
+// Button state
+$button-disabled-o:               .5 !default;
+
+// Carousel
+$carousel-item-ht-medium-up:      585px !default;
+$carousel-item-display-duration:  5 !default; // seconds
+
+$carousel-item-bgc-1:             $c-lynch !default;
+$carousel-item-bgi-1:             $assets-img-path + "/bg-carousel-us.jpg" !default;
+$carousel-item-bgi-1-medium-up:   $assets-img-path + "/medium-up/bg-carousel-us.jpg" !default;
+
+$carousel-item-bgc-2:             $c-watercourse !default;
+$carousel-item-bgi-2:             $assets-img-path + "/bg-carousel-team.jpg" !default;
+$carousel-item-bgi-2-medium-up:   $assets-img-path + "/medium-up/bg-carousel-team.jpg" !default;
+
+$carousel-item-bgc-3:             $c-cosmic !default;
+$carousel-item-bgi-3:             $assets-img-path + "/bg-carousel-solutions.jpg" !default;
+$carousel-item-bgi-3-medium-up:   $assets-img-path + "/medium-up/bg-carousel-solutions.jpg" !default;
+
+$carousel-transition-duration:    2 !default; // seconds
+$carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
+
+$carousel-control-button-wd:      6px !default;
+$carousel-control-button-ht:      $carousel-control-button-wd !default;
+$carousel-control-button-m:       $sp-xsmall !default;
+
+$carousel-controls-bot:           $sp-medium !default;
+$carousel-controls-wd:            100% !default;
+$carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
+
+// Forms
+$form-group-mb:                   $sp-big !default;
+
+$form-label-mb:                   $sp-base !default;
+$form-label-ff:                   $ff-sans-serif !default;
+$form-label-fz:                   $fz-xxsmall !default;
+$form-label-fw:                   $fw-bold !default;
+$form-label-c:                    $text-c !default;
+
+$form-field-ht:                   $sp-xlarge !default;
+$form-field-pd:                   $sp-base $sp-xxsmall !default;
+$form-field-ff:                   $ff-sans-serif !default;
+$form-field-fz:                   $fz-base !default;
+$form-field-fw:                   $fw-base !default;
+$form-field-c:                    $c-light !default;
+$form-field-trn:                  $transition-bc;
+
+$form-textarea-ht:                153px !default;
 
 // Navigation legal
-$nav-legal-c:                     $c-dark !default;
-$nav-legal-c-hover:               $c-brand-primary !default;
+$nav-legal-c:                             $c-dark !default;
+$nav-legal-c-hover:                       $c-lynch !default;
 
 // Navigation main
-$nav-main-c:                      $c-dark !default;
-$nav-main-c-hover:                $c-brand-primary !default;
+$nav-main-link-c:                         $c-light !default;
+$nav-main-link-bgc:                       $c-eastbay !default;
+$nav-main-link-c-medium-up:               $c-lynch !default;
+$nav-main-link-bgc-medium-up:             transparent !default;
 
-$nav-main-c-transparent:          $c-light !default;
-$nav-main-c-transparent-hover:    $c-brand-primary !default;
+$nav-main-link-c-hover:                   $c-light !default;
+$nav-main-link-bgc-hover:                 $c-manatee !default;
+$nav-main-link-c-hover-medium-up:         $c-manatee !default;
+$nav-main-link-bgc-hover-medium-up:       transparent !default;
+
+$nav-main-link-c-active:                  $c-light !default;
+$nav-main-link-bgc-active:                $c-lynch !default;
+$nav-main-link-c-active-medium-up:        $c-lynch !default;
+$nav-main-link-bgc-active-medium-up:      transparent !default;

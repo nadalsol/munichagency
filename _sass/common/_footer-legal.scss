@@ -1,0 +1,34 @@
+// Footer legal
+// -----------------------------------------------------------------------------
+
+.footer-legal {
+  @include size($footer-legal-wd, $footer-legal-ht);
+  font-family: $ff-sans-serif;
+  font-size: $fz-xxsmall;
+  font-weight: $fw-bold;
+  color: $footer-legal-c;
+  background-color: $footer-legal-bg;
+
+  .u-inner-xxsmall {
+    @media ($medium-up) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__col-l {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+  }
+
+  &__col-r {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, right);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Positioning mixins
+// -----------------------------------------------------------------------------
+
+// Positioner
+@mixin positioner($po, $wd, $ht, $v-property, $v-value, $h-property, $h-value, $zi: auto) {
+  position: $po;
+  width: $wd;
+  height: $ht;
+  #{$v-property}: $v-value;
+  #{$h-property}: $h-value;
+  z-index: $zi;
+}
+
+// Positioner for horizontal centering
+@mixin positioner-center-h($wd, $ht, $top: auto, $zi: auto) {
+  position: absolute;
+  width: $wd;
+  height: $ht;
+  top: $top;
+  left: 50%;
+  margin-left: -($wd / 2);
+  z-index: $zi;
+}
+
+// Positioner for horizontal and vertical centering
+@mixin positioner-center-all($zi: auto) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: $zi;
+}

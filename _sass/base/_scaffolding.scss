@@ -10,43 +10,38 @@
 
 // Basic styling
 body {
-  margin-top: $body-offset-top;
+  margin-top: $body-mt;
   font-family: $ff-base;
   font-size: $fz-base;
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background-color: $body-bg-c;
+  background-color: $body-bg;
 
   @media ($medium-up) {
-    margin-top: $body-offset-top-medium-up;
+    margin-top: $body-mt-medium-up;
+  }
+
+  // When `is-cookie-message` class, `body` is repositioned
+  &.is-cookie-message {
+    margin-top: $body-is-cookie-mt;
+
+    @media ($medium-up) {
+      margin-top: $body-is-cookie-mt-medium-up;
+    }
+  }
+
+  // When `is-modal-open` class, `body` scroll is removed so that modal
+  // content scrolls instead
+  &.is-modal-open {
+    overflow: hidden;
   }
 }
 
-// Headings
-h1, .h1 {
-  @include heading($fz-xxxlarge, $fw-extra-light, $c-dark);
-}
-
-h2, .h2 {
-  @include heading($fz-xxlarge, $fw-black, $c-dark);
-}
-
-h3, .h3 {
-  @include heading($fz-xlarge, $fw-thin, $c-dark);
-}
-
-h4, .h4 {
-  @include heading($fz-large, $fw-bold, $c-dark);
-}
-
-h5, .h5 {
-  @include heading($fz-medium, $fw-base, $c-dark);
-}
-
-h6, .h6 {
-  @include heading($fz-small, $fw-base, $c-dark);
-  text-transform: uppercase;
+// Font weight
+b,
+strong {
+  font-weight: $fw-bold;
 }
 
 // Images
@@ -87,14 +82,12 @@ ul, ol, dl, figure {
 // Wrapper
 .wrapper {
   @include center-block;
-  position: relative;
-  width: 100%;
 
-  @media ($xlarge-up) {
-    width: floor($screen-xl-min - ($footer-pd-medium-up * 2));
+  @media ($large-up) {
+    max-width: $screen-xl-min;
   }
 
-  @media ($xxlarge-up) {
-    width: floor($screen-xxl-min - ($footer-pd-medium-up * 2));
+  @media ($xlarge-up) {
+    max-width: $screen-xxl-min;
   }
 }

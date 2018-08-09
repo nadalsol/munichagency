@@ -21,30 +21,9 @@
 //
 // Purpose: Size class, to specify different icon sizes.
 //
-// Possible values: `Icon--small`, `Icon--medium`...
+// Possible values: `icon--small`, `icon--medium`...
 //
-// address
 
-.icon--small {
-  @include size(13px, 19px);
-}
-
-// social
-.icon--medium {
-  @include size(32px, 32px);
-}
-
-// services
-.icon--large {
-  @include size(75px, 75px);
-}
-
-// clients
-.icon--xlarge {
-  @include size(130px, 82px);
-}
-
-// brand
 .icon--brand {
   @include size($header-brand-wd, $header-brand-ht);
 
@@ -53,20 +32,24 @@
   }
 }
 
-// brand wide
-.icon--brand-wide {
-  @include size(120px, 32px);
+// .icon--chevron {
+//   @include size(19px, 60px);
+// }
+
+.icon--close {
+  @include size($button-icon-wd, $button-icon-ht);
 
   @media ($medium-up) {
-    @include size(181px, 48px);
+    @include size($button-icon-wd-medium-up, $button-icon-ht-medium-up);
   }
 }
 
-// contact
-.icon--contact {
-  @include size($header-contact-wd, $header-contact-ht);
+.icon--hamburger {
+  @include size(20px, 16px);
+  vertical-align: middle;
+}
 
-  @media ($medium-up) {
-    @include size($header-contact-wd-medium-up, $header-contact-ht-medium-up);
-  }
+.icon--small {
+  @include size(30px, 30px);
+  vertical-align: middle;
 }

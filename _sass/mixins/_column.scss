@@ -1,0 +1,8 @@
+// Column mixins
+// -----------------------------------------------------------------------------
+
+// Column generation
+@mixin col($wd, $ta) {
+  width: $wd;
+  text-align: $ta;
+}

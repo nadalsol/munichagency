@@ -1,0 +1,10 @@
+// Copyright legal
+// -----------------------------------------------------------------------------
+
+.copyright-legal {
+  margin-bottom: $sp-xxsmall;
+
+  @media ($medium-up) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,13 @@
+// Heading mixins
+// -----------------------------------------------------------------------------
+
+@mixin heading($ff, $fz, $fw, $lh, $c, $tt, $fs, $ls) {
+  font-family: $ff;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $c;
+  text-transform: $tt;
+  font-style: $fs;
+  letter-spacing: $ls;
+}

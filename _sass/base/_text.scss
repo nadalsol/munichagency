@@ -1,15 +1,49 @@
 // Text
 // -----------------------------------------------------------------------------
-//
-// Regular text paragraphs
-//
 
 .text {
-  @include text;
+  font-family: $ff-sans-serif;
+  font-size: $fz-base;
 
   &:only-of-type,
   &:only-child,
   &:last-child {
     margin-bottom: 0;
+  }
+
+  > a {
+    font-weight: $fw-bold;
+  }
+
+  &--small {
+    font-size: $fz-small;
+  }
+
+  &--cookie-message {
+    font-size: $fz-xsmall;
+    color: $c-light;
+
+    > a {
+      @include link($c-light, $c-mischka);
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: $fw-base;
+    }
+  }
+
+  &--fiord {
+    color: $c-fiord;
+  }
+
+  &--mischka {
+    color: $c-mischka;
+
+    > a {
+      font-weight: $fw-base;
+    }
+  }
+
+  &--light {
+    color: $c-light;
   }
 }

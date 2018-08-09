@@ -8,12 +8,24 @@
 //          https://github.com/nadalsol
 //          https://twitter.com/nadalsol
 //
-// Created: May 2018
+// Created: August 2018
 //
 
 // Variables and mixins
 @import "variables";
-@import "mixins";
+@import "mixins/button";
+@import "mixins/item-background";
+@import "mixins/column";
+@import "mixins/focus";
+@import "mixins/form";
+@import "mixins/heading";
+@import "mixins/link";
+@import "mixins/list";
+@import "mixins/positioning";
+@import "mixins/pseudo-shape";
+@import "mixins/rhythm";
+@import "mixins/sizing";
+@import "mixins/utilities";
 
 // Reset
 @import "reset/normalize";
@@ -24,17 +36,23 @@
 @import "base/scaffolding";
 @import "base/text";
 
+// Common
+@import "common/cookie-message";
+@import "common/footer-legal";
+@import "common/footer";
+@import "common/header";
+@import "common/modal";
+
 // Helpers
 @import "helpers/utilities";
 
 // Patterns
+@import "patterns/404";
 @import "patterns/approach";
 @import "patterns/carousel-primary";
 @import "patterns/carousel-secondary";
 @import "patterns/clients";
-@import "patterns/footer-legal";
-@import "patterns/footer";
-@import "patterns/header";
+@import "patterns/copyright-legal";
 @import "patterns/icon";
 @import "patterns/lead";
 @import "patterns/nav-legal";

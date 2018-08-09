@@ -3,24 +3,16 @@
 
 .footer {
   @include size($footer-wd, $footer-ht);
-  padding: $footer-pd;
   color: $footer-c;
   background-color: $footer-bg;
 
-  @media ($medium-up) {
-    padding: $footer-pd-medium-up;
-  }
-
   a {
-    @include link($c-light, $c-light-soft);
-    font-weight: $fw-bold;
-    text-decoration: none;
+    @include link($c-dark, $c-java);
   }
 
-  > .wrapper {
+  .u-inner-xlarge {
     @media ($medium-up) {
       display: flex;
-      align-items: flex-end;
     }
   }
 
@@ -28,7 +20,7 @@
     text-align: center;
 
     @media ($medium-up) {
-      @include col(50%, left);
+      @include col(25%, left);
     }
   }
 
@@ -37,6 +29,30 @@
 
     @media ($medium-up) {
       @include col(50%, right);
+    }
+  }
+
+  &__heading {
+    margin-bottom: $sp-xxsmall;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-small;
+    }
+
+    &__address {
+      margin-left: $sp-base;
+    }
+
+    &__contact {
+      margin-left: $sp-xsmall;
+    }
+  }
+
+  .text {
+    margin-bottom: $sp-large;
+
+    @media ($medium-up) {
+      margin-bottom: 0;
     }
   }
 }

@@ -1,24 +1,73 @@
 // Navigation main
 // -----------------------------------------------------------------------------
+//
+// 1. Touch device friendly
+//
 
 .nav-main {
-  @include list-inline($sp-xsmall, $sp-xsmall);
-  @include text;
+  @include list-reset;
+  font-family: $ff-sans-serif;
+  font-size: $fz-base;
+  line-height: $lh-small;
 
-  &__link {
-    @include link($c-light, $nav-main-c-hover);
+  @media ($medium-up) {
+    @include list-inline-last($sp-xsmall, $sp-xsmall);
+    float: left;
+  }
+
+  > li {
+    position: relative;
+    border-bottom: $br-small solid $c-light;
 
     @media ($medium-up) {
-      @include link($nav-main-c, $nav-main-c-hover);
+      border-bottom: 0;
+    }
+  }
+
+  &__link {
+    @include link($nav-main-link-c, $nav-main-link-c-hover);
+    position: relative;
+    display: block; // 1
+    padding: $sp-small;
+    background-color: $nav-main-link-bgc;
+    transition: $transition-bg;
+
+    @media ($medium-up) {
+      @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
+      font-size: $fz-xsmall;
+      font-weight: $fw-bold;
+      letter-spacing: 1px;
+      padding: $sp-xxsmall 0;
+      background-color: $nav-main-link-bgc-medium-up;
     }
 
-    // &.is-active,
-    // &:active {
-    //   //
-    // }
+    &:hover {
+      background-color: $nav-main-link-bgc-hover;
 
-    .is-transparent & {
-      @include link($nav-main-c-transparent, $nav-main-c-transparent-hover);
+      @media ($medium-up) {
+        background-color: $nav-main-link-bgc-hover-medium-up;
+      }
+    }
+
+    &.is-subitem:after {
+      @include pseudo-chevron($sp-xsmall, -$sp-xsmall);
+      transition: $transition-trf;
+    }
+
+    &.is-active {
+      color: $nav-main-link-c-active;
+      background-color: $nav-main-link-bgc-active;
+
+      @media ($medium-up) {
+        color: $nav-main-link-c-active-medium-up;
+        background-color: $nav-main-link-bgc-active-medium-up;
+      }
+
+      &:before {
+        @media ($medium-up) {
+          @include pseudo-rectangle($sp-xsmall, 4px, $c-dark);
+        }
+      }
     }
   }
 }

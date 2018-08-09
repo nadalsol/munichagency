@@ -20,7 +20,13 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.munichagency.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: munichagency
+facebook_username: munichagency
 github_username: nadalsol
+phone_country_code: 34
+phone: 123 456 789
+map_link: https://goo.gl/maps/Nf5eoogtrDn
+address_1: C/ Lancelot, 22.
+address_2: 29738 - Torrre de Benagalbón, Málaga.
 lang: es
 
 # Build settings
@@ -45,31 +51,40 @@ sass:
 
 # Translations
 # common
-# cookie_message:
-#   text: "Munich Agency utiliza cookies para esegurar una mejor experiencia en su web. Por favor, lee nuestra"
-#   text_link: "política de cookies"
-# footer_legal:
-#   privacy: "Privacidad"
-#   cookies: "Cookies"
-#   terms: "Aviso legal"
-# footer:
-#   location: "Ubicación"
-#   contact: "Contactar"
-# header:
-#   home_link: ""
-# modal_cookie:
-#   heading: "Cookies"
-#   text: "Sus datos formarán parte de un fichero titularidad de Munich Agency y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@themountdata.com. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes."
-# modal_privacy:
-#   heading: "Privacidad"
-#   text: "De conformidad con lo dispuesto en el Reglamento General de Protección de Datos, UE 2016/679, le informamos que sus datos personales son tratados y almacenados por Munich Agency, como responsable del tratamiento, con domicilio social en C/Còrsega 329, 7-B 08037 Barcelona, con la finalidad del mantenimiento de la relación necesaria con usted y de gestionar comunicaciones promocionales e informativas por correo electrónico acerca de The Mount Data, así como sus actividades y eventos que puedan resultar de su interés. Sus datos serán conservados para futuras comunicaciones y almacenaremos sus datos el tiempo necesario para realizar dicha gestión, hasta que solicite su supresión. Usted podrá ejercitar sus derechos de acceso, rectificación, oposición, supresión, limitación y portabilidad, así como su derecho a revocar el consentimiento otorgado por la presente en cualquier momento, mediante comunicación escrita, acompañada de copia de DNI, dirigida a la dirección citada anteriormente o a través del envío de un correo electrónico con firma digital reconocida a la siguiente dirección <a href=\"mailto:info@munichagency.com\">info@munichagency.com</a>. Dicha comunicación deberá incluir nombre y apellidos, petición en que se concreta la solicitud, dirección a efectos de notificaciones, fecha, firma y fotocopia del DNI u otro documento válido que lo identifique. Usted tiene derecho, además, a presentar una reclamación ante la autoridad de control competente."
-# modal_terms:
-#   heading: "Aviso legal"
-#   text: "..."
+cookie_message:
+  text: "Munich Agency utiliza cookies para esegurar una mejor experiencia en su web. Por favor, lee nuestra"
+  text_link: "política de cookies"
+footer_legal:
+  privacy: "Privacidad"
+  cookies: "Cookies"
+  terms: "Aviso legal"
+footer:
+  location: "Ubicación"
+  contact: "Contactar"
+header:
+  home_link: ""
+modal_cookie:
+  heading: "Cookies"
+  text: "Sus datos formarán parte de un fichero titularidad de Munich Agency y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@munichagency. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes."
+modal_privacy:
+  heading: "Privacidad"
+  text: "De conformidad con lo dispuesto en el Reglamento General de Protección de Datos, UE 2016/679, le informamos que sus datos personales son tratados y almacenados por Munich Agency, como responsable del tratamiento, con domicilio social en C/Còrsega 329, 7-B 08037 Barcelona, con la finalidad del mantenimiento de la relación necesaria con usted y de gestionar comunicaciones promocionales e informativas por correo electrónico acerca de Munich Agency, así como sus actividades y eventos que puedan resultar de su interés. Sus datos serán conservados para futuras comunicaciones y almacenaremos sus datos el tiempo necesario para realizar dicha gestión, hasta que solicite su supresión. Usted podrá ejercitar sus derechos de acceso, rectificación, oposición, supresión, limitación y portabilidad, así como su derecho a revocar el consentimiento otorgado por la presente en cualquier momento, mediante comunicación escrita, acompañada de copia de DNI, dirigida a la dirección citada anteriormente o a través del envío de un correo electrónico con firma digital reconocida a la siguiente dirección <a href=\"mailto:info@munichagency.com\">info@munichagency.com</a>. Dicha comunicación deberá incluir nombre y apellidos, petición en que se concreta la solicitud, dirección a efectos de notificaciones, fecha, firma y fotocopia del DNI u otro documento válido que lo identifique. Usted tiene derecho, además, a presentar una reclamación ante la autoridad de control competente."
+modal_terms:
+  heading: "Aviso legal"
+  text: "..."
 # patterns
 404:
   text_1: "Página no encontrada :("
   text_2: "No hemos encontrado la página solicitada."
+nav_main:
+  link_1: "quienes-somos"
+  text_1: "Quienes somos"
+  link_2: "servicios"
+  text_2: "Servicios"
+  link_3: "proyectos"
+  text_3: "Proyectos"
+  link_4: "contacto"
+  text_4: "Contacto"
 
 # Collections
 collections:

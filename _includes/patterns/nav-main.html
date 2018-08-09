@@ -1,14 +1,25 @@
-<ul class="nav-main u-text-lowercase">
+{% comment %}
+  Automatically highlight current tab in menu bar
+  https://stackoverflow.com/a/19273580
+{% endcomment %}
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_text_1 = site.nav_main.text_1 | downcase %}
+{% assign current_text_2 = site.nav_main.text_2 | downcase %}
+{% assign current_text_3 = site.nav_main.text_3 | downcase %}
+{% assign current_text_4 = site.nav_main.text_4 | downcase %}
+{% assign current_section = current_url[1] %}
+
+<ul class="nav-main u-text-uppercase">
   <li>
-    <a class="nav-main__link" href="{{ "/approach" | relative_url }}">Approach</a>
+    <a class="nav-main__link {% if current_section == current_text_1 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_1 }}">{{ site.nav_main.text_1 }}</a>
   </li>
   <li>
-    <a class="nav-main__link" href="{{ "/servicios" | relative_url }}">Servicios</a>
+    <a class="nav-main__link {% if current_section == current_text_2 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}">{{ site.nav_main.text_2 }}</a>
   </li>
   <li>
-    <a class="nav-main__link" href="{{ "/proyectos" | relative_url }}">Proyectos</a>
+    <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_3 }}">{{ site.nav_main.text_3 }}</a>
   </li>
   <li>
-    <a class="nav-main__link" href="{{ "/contacto" | relative_url }}">Contacto</a>
+    <a id="nav-main-contact" class="nav-main__link {% if current_section == current_text_4 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_4 }}">{{ site.nav_main.text_4 }}</a>
   </li>
 </ul>

@@ -14,7 +14,7 @@
     margin-bottom: $sp-xxlarge;
     padding: $sp-xxsmall $sp-small;
     overflow: hidden;
-    background: $c-neutral no-repeat center center;
+    background: $c-lynch no-repeat center center;
     background-size: cover;
 
     @media ($medium-up) {
@@ -46,7 +46,7 @@
 
     > a {
       @include size(100%, 100%);
-      @include link($c-light, $c-brand-primary);
+      @include link($c-lynch, $c-surfie);
       display: block;
     }
 

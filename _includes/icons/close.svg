@@ -1,0 +1,1 @@
+<svg class="{{ include.css-class }}" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><title>Close</title><g stroke="#21B7CA" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M1.5 28.5L28.519 1.481M28.5 28.5L1.481 1.481"/></g></svg>
