@@ -96,115 +96,22 @@ $(document).ready(function() {
   (function() {
     var header = $('#header'),
         headerHamburger = $('#header-hamburger'),
-        headerNav = $('#header-nav'),
-        navMainServices = $('#nav-main-services'),
-        navSecondaryServices = $('#nav-secondary-services'),
-        navMainSolutions = $('#nav-main-solutions'),
-        navSecondarySolutions = $('#nav-secondary-solutions'),
-        navMainLangCa = $('#nav-main-lang-ca'),
-        navMainLangEn = $('#nav-main-lang-en'),
-        navMainLangEs = $('#nav-main-lang-es'),
-        navSecondaryLangCa = $('#nav-secondary-lang-ca'),
-        navSecondaryLangEn = $('#nav-secondary-lang-en'),
-        navSecondaryLangEs = $('#nav-secondary-lang-es'),
-        navSecondaryServicesLink = navSecondaryServices.find('.js-nav-secondary-link');
+        headerHamburgerOpen = $('#header-hamburger-open'),
+        headerHamburgerClose = $('#header-hamburger-close'),
+        headerNav = $('#header-nav');
 
     //
-    // Toggle `nav-secondary-services` visibility, via nav-main menu
+    // Hamburger menu
     //
-    navMainServices.click(function(event) {
-      event.preventDefault();
-
-      navSecondaryServices.toggleClass('is-medium-hidden');
-      navSecondarySolutions.addClass('is-medium-hidden');
-
-      navSecondaryLangCa.addClass('is-medium-hidden');
-      navSecondaryLangEn.addClass('is-medium-hidden');
-      navSecondaryLangEs.addClass('is-medium-hidden');
-    });
-
-    //
-    // Toggle `nav-tertiary` visibility, via nav-main menu
-    //
-    // 1. Remove all `is-active` classes from `nav-secondary-link` items.
-    // 2. Add `is-active` class to current `nav-secondary-link` item.
-    // 3. Hide all `nav-tertiary` items.
-    // 4. Show current `nav-tertiary` item.
-    //
-    navSecondaryServicesLink.click(function(event) {
-      event.preventDefault();
-
-      var $this = $(this);
-
-      navSecondaryServicesLink.removeClass('is-active'); // 1
-      $this.addClass('is-active'); // 2
-
-      navSecondaryServicesLink.next('.js-nav-tertiary').addClass('is-hidden'); // 3
-      $this.next('.js-nav-tertiary').removeClass('is-hidden'); // 4
-    });
-
-    //
-    // Toggle `nav-secondary-solutions` visibility, via nav-main menu
-    //
-    navMainSolutions.click(function(event) {
-      event.preventDefault();
-
-      navSecondaryServices.addClass('is-medium-hidden');
-      navSecondarySolutions.toggleClass('is-medium-hidden');
-
-      navSecondaryLangCa.addClass('is-medium-hidden');
-      navSecondaryLangEn.addClass('is-medium-hidden');
-      navSecondaryLangEs.addClass('is-medium-hidden');
-    });
-
-    //
-    // Toggle `nav-secondary-lang-ca` visibility, via nav-lang menu
-    //
-    navMainLangCa.click(function(event) {
-      event.preventDefault();
-
-      navSecondaryLangCa.toggleClass('is-medium-hidden');
-      navSecondaryLangEn.addClass('is-medium-hidden');
-      navSecondaryLangEs.addClass('is-medium-hidden');
-
-      navSecondaryServices.addClass('is-medium-hidden');
-      navSecondarySolutions.addClass('is-medium-hidden');
-    });
-
-    //
-    // Toggle `nav-secondary-lang-en` visibility, via nav-lang menu
-    //
-    navMainLangEn.click(function(event) {
-      event.preventDefault();
-
-      navSecondaryLangCa.addClass('is-medium-hidden');
-      navSecondaryLangEn.toggleClass('is-medium-hidden');
-      navSecondaryLangEs.addClass('is-medium-hidden');
-
-      navSecondaryServices.addClass('is-medium-hidden');
-      navSecondarySolutions.addClass('is-medium-hidden');
-    });
-
-    //
-    // Toggle `nav-secondary-lang-es` visibility, via nav-lang menu
-    //
-    navMainLangEs.click(function(event) {
-      event.preventDefault();
-
-      navSecondaryLangCa.addClass('is-medium-hidden');
-      navSecondaryLangEn.addClass('is-medium-hidden');
-      navSecondaryLangEs.toggleClass('is-medium-hidden');
-
-      navSecondaryServices.addClass('is-medium-hidden');
-      navSecondarySolutions.addClass('is-medium-hidden');
-    });
-
-    //
-    // Toggle `header-nav` visibility, via hamburger menu
+    // 1. Toggle `header-nav` visibility.
+    // 2. Toggle `header-hamburger-open` and `header-hamburger-close` icons.
     //
     headerHamburger.click(function(event) {
       event.preventDefault();
-      headerNav.toggleClass('is-small-hidden');
+      headerNav.toggleClass('is-small-hidden'); // 1
+
+      headerHamburgerOpen.toggleClass('is-hidden'); // 2
+      headerHamburgerClose.toggleClass('is-hidden'); // 2
     });
   })();
 
@@ -226,10 +133,6 @@ $(document).ready(function() {
         modalTriggerTerms = $('#modal-trigger-terms'),
         modalTerms = $('#modal-terms'),
         modalCloseTerms = modalTerms.find('.js-modal-close'),
-        modalTriggerVideo = $('#modal-trigger-video'),
-        modalVideo = $('#modal-video'),
-        modalCloseVideo = modalVideo.find('.js-modal-close'),
-        modalBodyVideo = modalVideo.find('.js-modal-body'),
         modalTriggerPrivacyForm = $('#modal-trigger-privacy-form');
 
     //
@@ -237,8 +140,6 @@ $(document).ready(function() {
     //
     // 1. Body scroll is removed.
     // 2. Modal is visible.
-    // 3. Append `<video>` to the DOM, only when the play trigger gets
-    // fired, to prevent unnecessary video requests on page load.
     //
     modalTriggerCookieMessage.click(function(event) {
       event.preventDefault();
@@ -264,13 +165,6 @@ $(document).ready(function() {
       modalTerms.removeClass('is-hidden'); // 2
     });
 
-    modalTriggerVideo.click(function() {
-      body.addClass('is-modal-open'); // 1
-      modalVideo.removeClass('is-hidden'); // 2
-      // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-      modalBodyVideo.append('<video poster="/assets/img/medium-up/bg-hero-intro.jpg" controls autoplay preload><source src="/assets/video/the-mount-data.webm" type="video/webm"><source src="/assets/video/the-mount-data.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
-    });
-
     modalTriggerPrivacyForm.click(function(event) {
       event.preventDefault();
       body.addClass('is-modal-open'); // 1
@@ -282,7 +176,6 @@ $(document).ready(function() {
     //
     // 1. Body scroll is back.
     // 2. Modal is hidden.
-    // 3. Remove `<video>` from the DOM, to stop playing in background.
     //
     modalCloseCookieMessage.click(function() {
       body.removeClass('is-modal-open'); // 1
@@ -304,18 +197,11 @@ $(document).ready(function() {
       modalTerms.addClass('is-hidden'); // 2
     });
 
-    modalCloseVideo.click(function() {
-      body.removeClass('is-modal-open'); // 1
-      modalVideo.addClass('is-hidden'); // 2
-      modalBodyVideo.find('video').remove(); // 3
-    });
-
     //
     // Modal close (ESC key)
     //
     // 1. Body scroll is back.
     // 2. Modal is hidden.
-    // 3. Remove `<video>` from the DOM, to stop playing in background.
     //
     $(document).keydown(function(event) {
       if (event.keyCode == 27 && body.hasClass('is-modal-open')) {
@@ -324,8 +210,6 @@ $(document).ready(function() {
         modalPrivacy.addClass('is-hidden'); // 2
         modalCookie.addClass('is-hidden'); // 2
         modalTerms.addClass('is-hidden'); // 2
-        modalVideo.addClass('is-hidden'); // 2
-        modalBodyVideo.find('video').remove(); // 3
       }
     });
   })();

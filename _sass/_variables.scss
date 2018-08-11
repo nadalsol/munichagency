@@ -25,6 +25,10 @@ $brr-circle:             50% !default;
 $c-dark:                 #000 !default;
 $c-light:                #fff !default;
 
+// Munich
+$c-chartreuse:           #e5ff00 !default;
+
+// TMD
 $c-downriver:            #0f1d5e !default;
 $c-balticsea:            #342d38 !default;
 $c-pelorous:             #33a5b4 !default;
@@ -55,11 +59,11 @@ $text-c:                 $c-dark !default;
 $link-c:                 $c-java !default;
 $link-c-hover:           $c-surfie !default;
 
-// $link-secondary-c:       $c-light !default;
-// $link-secondary-hover-c: $c-manatee !default;
-//
-// $link-tertiary-c:        $c-lynch !default;
-// $link-tertiary-hover-c:  $c-manatee !default;
+$link-secondary-c:       $c-light !default;
+$link-secondary-hover-c: $c-manatee !default;
+
+$link-tertiary-c:        $c-lynch !default;
+$link-tertiary-hover-c:  $c-manatee !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -85,25 +89,22 @@ $fz-base:                18px !default;
 $fz-xxsmall:             12px !default;
 $fz-xsmall:              14px !default;
 $fz-small:               16px !default;
-$fz-medium:              22px !default;
-$fz-large:               28px !default;
-$fz-xlarge:              40px !default;
-$fz-xxlarge:             65px !default;
-$fz-xxxlarge:            80px !default;
-// $fz-base:                20px !default;
-// $fz-xxsmall:             14px !default;
-// $fz-xsmall:              16px !default;
-// $fz-small:               18px !default;
-// $fz-medium:              24px !default;
-// $fz-large:               28px !default;
-// $fz-xlarge:              36px !default;
-// $fz-xxlarge:             48px !default;
-// $fz-xxxlarge:            100px !default;
+$fz-medium:              20px !default;
+$fz-large:               22px !default;
+$fz-xlarge:              24px !default;
+$fz-xxlarge:             30px !default;
+$fz-xxxlarge:            36px !default;
+$fz-big:                 40px !default;
+$fz-huge:                48px !default; // rounded from 50 to 48
+$fz-giant:               60px !default;
+$fz-colossal:            70px !default; // rounded from 72 to 70
+$fz-titanic:             80px !default;
+$fz-galactic:            100px !default;
 
 $fw-thin:                100 !default;
 $fw-base:                400 !default;
-$fw-bold:                700 !default;
-$fw-black:               900 !default;
+$fw-semi-bold:           600 !default;
+$fw-extra-bold:          800 !default;
 
 $lh-base:                1.5 !default;
 $lh-xsmall:              1 !default;
@@ -191,10 +192,10 @@ $footer-legal-c:                  $c-dark !default;
 $footer-legal-bg:                 $c-lilac !default;
 
 // Header (should go after Helpers)
-$header-brand-wd:                 168px !default;
-$header-brand-ht:                 20px !default;
-$header-brand-wd-medium-up:       267px !default;
-$header-brand-ht-medium-up:       32px !default;
+$header-brand-wd:                 100px !default;
+$header-brand-ht:                 100px !default;
+$header-brand-wd-medium-up:       120px !default;
+$header-brand-ht-medium-up:       120px !default;
 
 $header-nav-po:                   absolute !default;
 $header-nav-wd:                   100% !default;
@@ -204,16 +205,16 @@ $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
 
 $header-wd:                       100% !default;
-$header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
+$header-ht:                       $header-brand-ht !default;
 $header-wd-medium-up:             $header-wd !default;
-$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
+$header-ht-medium-up:             $header-brand-ht-medium-up !default;
 $header-bg:                       $c-light !default;
 
 $header-is-cookie-top:            $cookie-msg-ht !default;
 
 $header-hamburger-wd:             $header-ht !default;
 $header-hamburger-ht:             $header-ht !default;
-$header-hamburger-bg:             $c-eastbay !default;
+$header-hamburger-bg:             $header-bg !default;
 
 // Body (should go after Header)
 $body-mt:                         $header-ht !default;
@@ -242,7 +243,7 @@ $modal-pd-medium-up:              $sp-xxlarge !default;
 $button-pd:                       $sp-medium 120px !default;
 $button-ff:                       $ff-sans-serif !default;
 $button-fz:                       $fz-base !default;
-$button-fw:                       $fw-bold !default;
+$button-fw:                       $fw-semi-bold !default;
 $button-lh:                       $lh-base !default;
 $button-brr:                      $brr-base !default;
 $button-trn:                      $transition-all !default;
@@ -359,7 +360,7 @@ $form-group-mb:                   $sp-big !default;
 $form-label-mb:                   $sp-base !default;
 $form-label-ff:                   $ff-sans-serif !default;
 $form-label-fz:                   $fz-xxsmall !default;
-$form-label-fw:                   $fw-bold !default;
+$form-label-fw:                   $fw-semi-bold !default;
 $form-label-c:                    $text-c !default;
 
 $form-field-ht:                   $sp-xlarge !default;
@@ -377,17 +378,17 @@ $nav-legal-c:                             $c-dark !default;
 $nav-legal-c-hover:                       $c-lynch !default;
 
 // Navigation main
-$nav-main-link-c:                         $c-light !default;
-$nav-main-link-bgc:                       $c-eastbay !default;
-$nav-main-link-c-medium-up:               $c-lynch !default;
+$nav-main-link-c:                         $c-dark !default;
+$nav-main-link-bgc:                       $c-light !default;
+$nav-main-link-c-medium-up:               $c-dark !default;
 $nav-main-link-bgc-medium-up:             transparent !default;
 
-$nav-main-link-c-hover:                   $c-light !default;
-$nav-main-link-bgc-hover:                 $c-manatee !default;
-$nav-main-link-c-hover-medium-up:         $c-manatee !default;
+$nav-main-link-c-hover:                   $c-dark !default;
+$nav-main-link-bgc-hover:                 $c-chartreuse !default;
+$nav-main-link-c-hover-medium-up:         purple !default;
 $nav-main-link-bgc-hover-medium-up:       transparent !default;
 
-$nav-main-link-c-active:                  $c-light !default;
-$nav-main-link-bgc-active:                $c-lynch !default;
-$nav-main-link-c-active-medium-up:        $c-lynch !default;
+$nav-main-link-c-active:                  $c-dark !default;
+$nav-main-link-bgc-active:                $c-chartreuse !default;
+$nav-main-link-c-active-medium-up:        purple !default;
 $nav-main-link-bgc-active-medium-up:      transparent !default;

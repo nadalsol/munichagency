@@ -7,37 +7,28 @@
 .nav-main {
   @include list-reset;
   font-family: $ff-sans-serif;
-  font-size: $fz-base;
-  line-height: $lh-small;
+  font-size: $fz-big;
+  border-bottom: $br-small solid $c-dark;
 
   @media ($medium-up) {
-    @include list-inline-last($sp-xsmall, $sp-xsmall);
+    @include list-inline(0, 0);
     float: left;
-  }
-
-  > li {
-    position: relative;
-    border-bottom: $br-small solid $c-light;
-
-    @media ($medium-up) {
-      border-bottom: 0;
-    }
+    font-size: $fz-xlarge;
+    font-weight: $fw-semi-bold;
+    line-height: $header-ht-medium-up;
+    border-bottom: 0;
   }
 
   &__link {
     @include link($nav-main-link-c, $nav-main-link-c-hover);
-    position: relative;
     display: block; // 1
-    padding: $sp-small;
+    padding: $sp-small $sp-xxlarge;
     background-color: $nav-main-link-bgc;
     transition: $transition-bg;
 
     @media ($medium-up) {
       @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
-      font-size: $fz-xsmall;
-      font-weight: $fw-bold;
-      letter-spacing: 1px;
-      padding: $sp-xxsmall 0;
+      padding: 0 $sp-small;
       background-color: $nav-main-link-bgc-medium-up;
     }
 
@@ -49,11 +40,6 @@
       }
     }
 
-    &.is-subitem:after {
-      @include pseudo-chevron($sp-xsmall, -$sp-xsmall);
-      transition: $transition-trf;
-    }
-
     &.is-active {
       color: $nav-main-link-c-active;
       background-color: $nav-main-link-bgc-active;
@@ -61,12 +47,6 @@
       @media ($medium-up) {
         color: $nav-main-link-c-active-medium-up;
         background-color: $nav-main-link-bgc-active-medium-up;
-      }
-
-      &:before {
-        @media ($medium-up) {
-          @include pseudo-rectangle($sp-xsmall, 4px, $c-dark);
-        }
       }
     }
   }

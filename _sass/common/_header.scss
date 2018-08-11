@@ -9,7 +9,7 @@
     @include size($header-wd-medium-up, $header-ht-medium-up);
   }
 
-  .u-inner-xsmall {
+  .wrapper {
     @media ($medium-up) {
       @include clearfix;
     }

@@ -1,0 +1,40 @@
+// Contact
+// -----------------------------------------------------------------------------
+
+.contact {
+  background-color: $c-dark;
+
+  &__header {
+    margin-bottom: $sp-giant;
+  }
+
+  &__heading {
+    color: $c-light;
+  }
+
+  &__content {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col25 {
+    @media ($medium-up) {
+      @include col(25%, left);
+      margin-left: $sp-medium;
+      margin-right: $sp-medium;
+    }
+  }
+
+  &__col50 {
+    @media ($medium-up) {
+      @include col(50%, left);
+      margin-left: $sp-medium;
+      margin-right: $sp-medium;
+    }
+  }
+
+  .form__label {
+    color: $c-light;
+  }
+}
