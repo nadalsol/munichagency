@@ -53,3 +53,11 @@
   @include size(30px, 30px);
   vertical-align: middle;
 }
+
+.icon--social {
+  @include size($icon-social-wd, $icon-social-ht);
+
+  @media ($medium-up) {
+    @include size($icon-social-wd-medium-up, $icon-social-ht-medium-up);
+  }
+}

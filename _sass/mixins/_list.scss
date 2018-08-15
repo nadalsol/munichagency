@@ -95,7 +95,7 @@
 
 // Turns list items into inline-block
 // Also adds pipes "|" between list items
-@mixin list-inline-pipped($pdl: $sp-base, $pdr: $sp-base) {
+@mixin list-inline-pipped($pdl: $sp-base, $pdr: $sp-base, $pipe-top: $sp-base, $pipe-wd: 1px, $pipe-ht: $sp-xsmall, $pipe-bg: $c-chartreuse) {
   @include list-reset;
 
   > li {
@@ -107,11 +107,11 @@
     &:before {
       content: '';
       position: absolute;
-      top: $sp-base;
+      top: $pipe-top;
       left: 0;
-      width: 1px;
-      height: $sp-small;
-      background-color: $c-java;
+      width: $pipe-wd;
+      height: $pipe-ht;
+      background-color: $pipe-bg;
     }
 
     &:first-child:before {

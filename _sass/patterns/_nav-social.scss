@@ -2,5 +2,5 @@
 // -----------------------------------------------------------------------------
 
 .nav-social {
-  @include list-inline-pipped($sp-xsmall, $sp-xsmall);
+  @include list-inline-last(0, 0);
 }

@@ -2,14 +2,13 @@
 // -----------------------------------------------------------------------------
 
 .nav-legal {
-  @include list-inline-dashed($sp-xsmall, $sp-xsmall);
+  @include list-inline-pipped($pdl: $sp-xsmall, $pdr: $sp-xsmall, $pipe-top: 7px, $pipe-wd: 2px, $pipe-ht: 12px);
 
   &__link {
     @include link($nav-legal-c, $nav-legal-c-hover);
 
-    // &.is-active,
-    // &:active {
-    //   //
-    // }
+    @media ($medium-up) {
+      @include link($nav-legal-c-medium-up, $nav-legal-c-hover-medium-up);
+    }
   }
 }

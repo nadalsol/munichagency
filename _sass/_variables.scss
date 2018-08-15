@@ -141,8 +141,8 @@ $zi-900:                 900 !default;
 
 // Helpers
 // -----------------------------------------------------------------------------
-$u-inner-xxsmall-pd:              $sp-small !default;
-$u-inner-xxsmall-pd-medium-up:    $sp-small $sp-big !default;
+// $u-inner-xxsmall-pd:              $sp-small !default;
+// $u-inner-xxsmall-pd-medium-up:    $sp-small $sp-big !default;
 
 $u-inner-xsmall-pdv:              $sp-small !default;
 $u-inner-xsmall-pdh:              $sp-small !default;
@@ -165,6 +165,8 @@ $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 $u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
 $u-inner-xxlarge-pd-medium-up:    580px $sp-big 0 !default;
 
+$u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
+
 
 // Common
 // -----------------------------------------------------------------------------
@@ -180,16 +182,11 @@ $cookie-msg-close-t-medium-up:    $sp-xlarge !default;
 $cookie-msg-close-r-medium-up:    $sp-big !default;
 
 // Footer
-$footer-wd:                       100% !default;
-$footer-ht:                       auto !default;
-$footer-c:                        $c-dark !default;
-$footer-bg:                       $c-light !default;
-
-// Footer legal
 $footer-legal-wd:                 100% !default;
 $footer-legal-ht:                 auto !default;
 $footer-legal-c:                  $c-dark !default;
-$footer-legal-bg:                 $c-lilac !default;
+$footer-legal-c-medium-up:        $c-light !default;
+$footer-legal-bg:                 $c-dark !default;
 
 // Header (should go after Helpers)
 $header-brand-wd:                 100px !default;
@@ -373,9 +370,19 @@ $form-field-trn:                  $transition-bc;
 
 $form-textarea-ht:                153px !default;
 
+// Icon
+$icon-social-wd:                  65px !default;
+$icon-social-ht:                  65px !default;
+$icon-social-top:                 -(floor($icon-social-ht / 2)) !default;
+$icon-social-wd-medium-up:        85px !default;
+$icon-social-ht-medium-up:        85px !default;
+$icon-social-top-medium-up:       -(floor($icon-social-ht-medium-up / 2)) !default;
+
 // Navigation legal
 $nav-legal-c:                             $c-dark !default;
-$nav-legal-c-hover:                       $c-lynch !default;
+$nav-legal-c-hover:                       purple !default;
+$nav-legal-c-medium-up:                   $c-light !default;
+$nav-legal-c-hover-medium-up:             purple !default;
 
 // Navigation main
 $nav-main-link-c:                         $c-dark !default;
