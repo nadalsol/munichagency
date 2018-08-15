@@ -1,0 +1,14 @@
+- img: bg-carousel-1.jpg
+  text_secondary: El corazón de la creatividad está en identificar el problema.
+  text: Problema y oportunidad son lo mismo.
+  link: link-1
+
+- img: bg-carousel-2.jpg
+  text_secondary: Text secondary 2
+  text: Text 2
+  link: link-2
+
+- img: bg-carousel-3.jpg
+  text_secondary: Text secondary 3
+  text: Text 3
+  link: link-3

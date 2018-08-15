@@ -1,0 +1,54 @@
+{% comment %}Getting the number of carousel items{% endcomment %}
+{% for carousel in site.data.carousels %}
+  {% if forloop.first %}
+    {% assign carousel_length = forloop.length %}
+  {% endif %}
+{% endfor %}
+
+<div class="carousel is-items-{{ carousel_length }}">
+
+  {% for carousel in site.data.carousels %}
+    <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
+  {% endfor %}
+
+  {% for carousel in site.data.carousels %}
+    <figure class="carousel__item" style="background-image: url({{ site.baseurl }}/assets/img/{{ carousel.img }});">
+      <div class="wrapper">
+        <div class="u-inner-xxlarge">
+          <p class="carousel__text">
+            <span class="carousel__text-secondary">{{ carousel.text_secondary }}</span>
+            {{ carousel.text }}
+          </p>
+          <a class="button button--primary button--square" href="{{ site.baseurl }}/{{ carousel.link | slugify: 'latin' }}">
+            +
+          </a>
+        </div>
+      </div>
+      {% if forloop.first %}
+      <a class="carousel__control-secondary-r" href="#slide-2">
+        {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+      </a>
+      {% elsif forloop.last %}
+      <a class="carousel__control-secondary-l" href="#slide-2">
+        {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+      </a>
+      {% else %}
+      <a class="carousel__control-secondary-l" href="#slide-1">
+        {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+      </a>
+      <a class="carousel__control-secondary-r" href="#slide-3">
+        {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+      </a>
+      {% endif %}
+    </figure>
+  {% endfor %}
+
+  <div class="carousel__controls">
+    <div class="wrapper">
+    {% for carousel in site.data.carousels %}
+      <a class="carousel__controls__control-button" href="#slide-{{ forloop.index }}"></a>
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

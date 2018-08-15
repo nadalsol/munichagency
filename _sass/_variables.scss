@@ -23,10 +23,12 @@ $brr-circle:             50% !default;
 
 // Colors
 $c-dark:                 #000 !default;
+$c-neutral:              #808080 !default;
 $c-light:                #fff !default;
 
-// Munich
 $c-chartreuse:           #e5ff00 !default;
+$c-tradewind:            #71b5a8 !default;
+$c-waterleaf:            #9ce8da !default;
 
 // TMD
 $c-downriver:            #0f1d5e !default;
@@ -163,7 +165,7 @@ $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 
 $u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
-$u-inner-xxlarge-pd-medium-up:    580px $sp-big 0 !default;
+$u-inner-xxlarge-pd-medium-up:    500px $sp-big 0 !default;
 
 $u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
 
@@ -237,7 +239,7 @@ $modal-pd-medium-up:              $sp-xxlarge !default;
 // -----------------------------------------------------------------------------
 
 // Button base
-$button-pd:                       $sp-medium 120px !default;
+$button-pd:                       12px $sp-xxxlarge !default;
 $button-ff:                       $ff-sans-serif !default;
 $button-fz:                       $fz-base !default;
 $button-fw:                       $fw-semi-bold !default;
@@ -277,43 +279,22 @@ $button-secondary-visited-br:     $button-secondary-br !default;
 $button-secondary-visited-c:      $button-secondary-c !default;
 $button-secondary-visited-td:     $button-secondary-td !default;
 
-$button-secondary-hover-bg:       rgba(0, 0, 0, .2) !default;
-$button-secondary-hover-br:       $br-base solid $c-light !default;
-$button-secondary-hover-c:        $c-light !default;
+$button-secondary-hover-bg:       $c-mischka !default;
+$button-secondary-hover-br:       $br-base solid $c-mischka !default;
+$button-secondary-hover-c:        $c-lynch !default;
 $button-secondary-hover-td:       none !default;
 
-$button-secondary-active-bg:      $c-light !default;
-$button-secondary-active-br:      $br-base solid $c-light !default;
+$button-secondary-active-bg:      $c-mischka !default;
+$button-secondary-active-br:      $br-base solid $c-mischka !default;
 $button-secondary-active-c:       $c-java !default;
 $button-secondary-active-td:      none !default;
 
-// Button type: tertiary
-$button-tertiary-bg:              transparent !default;
-$button-tertiary-br:              $br-base solid $c-mischka !default;
-$button-tertiary-c:               $c-lynch !default;
-$button-tertiary-td:              none !default;
-
-$button-tertiary-visited-bg:      $button-tertiary-c !default;
-$button-tertiary-visited-br:      $button-tertiary-br !default;
-$button-tertiary-visited-c:       $button-tertiary-c !default;
-$button-tertiary-visited-td:      $button-tertiary-td !default;
-
-$button-tertiary-hover-bg:        $c-mischka !default;
-$button-tertiary-hover-br:        $br-base solid $c-mischka !default;
-$button-tertiary-hover-c:         $c-lynch !default;
-$button-tertiary-hover-td:        none !default;
-
-$button-tertiary-active-bg:       $c-mischka !default;
-$button-tertiary-active-br:       $br-base solid $c-mischka !default;
-$button-tertiary-active-c:        $c-java !default;
-$button-tertiary-active-td:       none !default;
-
 // Button size
-$button-xxsmall-pd:               $sp-xsmall $sp-xxlarge !default;
-$button-xxsmall-fz:               $fz-xxsmall !default;
+$button-large-pd:                 $sp-xsmall $sp-big !default;
+$button-large-fz:                 $fz-xlarge !default;
 
-$button-small-pd:                 $sp-small 100px !default;
-$button-small-fz:                 $fz-small !default;
+$button-square-pd:                12px $sp-medium !default;
+$button-square-fz:                $fz-xlarge !default;
 
 // Button icon
 $button-icon-wd:                  $sp-xsmall !default;
@@ -325,7 +306,7 @@ $button-icon-ht-medium-up:        $sp-large !default;
 $button-disabled-o:               .5 !default;
 
 // Carousel
-$carousel-item-ht-medium-up:      585px !default;
+$carousel-item-ht-medium-up:      735px !default;
 $carousel-item-display-duration:  5 !default; // seconds
 
 $carousel-item-bgc-1:             $c-lynch !default;
@@ -343,7 +324,7 @@ $carousel-item-bgi-3-medium-up:   $assets-img-path + "/medium-up/bg-carousel-sol
 $carousel-transition-duration:    2 !default; // seconds
 $carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
 
-$carousel-control-button-wd:      6px !default;
+$carousel-control-button-wd:      10px !default;
 $carousel-control-button-ht:      $carousel-control-button-wd !default;
 $carousel-control-button-m:       $sp-xsmall !default;
 

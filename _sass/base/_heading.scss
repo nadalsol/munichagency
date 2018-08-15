@@ -6,12 +6,11 @@ h1,
 .heading1 {
   @include heading(
     $ff-sans-serif,
-    $fz-xxxlarge,
+    $fz-galactic,
     $fw-thin,
     $lh-small,
     $c-dark,
-    none,
-    normal,
+    uppercase,
     normal
   );
 }
@@ -21,12 +20,11 @@ h2,
 .heading2 {
   @include heading(
     $ff-sans-serif,
-    $fz-xxlarge,
-    $fw-extra-bold,
+    $fz-titanic,
+    $fw-thin,
     $lh-small,
     $c-dark,
-    none,
-    normal,
+    uppercase,
     normal
   );
 }
@@ -36,13 +34,12 @@ h3,
 .heading3 {
   @include heading(
     $ff-sans-serif,
-    $fz-xlarge,
-    $fw-thin,
+    $fz-giant,
+    $fw-extra-bold,
     $lh-small,
     $c-dark,
-    lowercase,
-    normal,
-    12px
+    uppercase,
+    normal
   );
 }
 
@@ -51,12 +48,11 @@ h4,
 .heading4 {
   @include heading(
     $ff-sans-serif,
-    $fz-large,
-    $fw-semi-bold,
+    $fz-huge,
+    $fw-extra-bold,
     $lh-small,
     $c-dark,
-    none,
-    normal,
+    lowercase,
     normal
   );
 }
@@ -66,14 +62,18 @@ h5,
 .heading5 {
   @include heading(
     $ff-sans-serif,
-    $fz-medium,
-    $fw-base,
+    $fz-large,
+    $fw-semi-bold,
     $lh-small,
     $c-dark,
-    none,
-    normal,
+    uppercase,
     normal
   );
+}
+
+.heading5__prominent {
+  display: block;
+  color: $c-waterleaf;
 }
 
 // h6
@@ -81,21 +81,21 @@ h6,
 .heading6 {
   @include heading(
     $ff-sans-serif,
-    $fz-small,
-    $fw-base,
+    $fz-xlarge,
+    $fw-semi-bold,
     $lh-small,
     $c-dark,
-    uppercase,
-    normal,
+    none,
     normal
   );
 }
 
+// modifiers
 .heading1--light,
-.heading2--light,
-.heading3--light,
-.heading4--light,
-.heading5--light,
+.heading2--light
+.heading3--light
+.heading4--light
+.heading5--light
 .heading6--light {
   color: $c-light;
 }

@@ -1,0 +1,32 @@
+// Blockquote
+// -----------------------------------------------------------------------------
+
+.blockquote {
+  @include heading(
+    $ff-sans-serif,
+    $fz-giant,
+    $fw-thin,
+    $lh-xsmall,
+    $c-tradewind,
+    none,
+    italic
+  );
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+
+  &:before,
+  &:after {
+    position: absolute;
+  }
+
+  &:before {
+    content: '“';
+    left: -$sp-xsmall;
+  }
+
+  &:after {
+    content: '”';
+  }
+}

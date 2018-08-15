@@ -15,7 +15,6 @@
   line-height: $button-lh;
   border-radius: $button-brr;
   transition: $button-trn;
-  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 
@@ -137,43 +136,18 @@
   );
 }
 
-// Button type: tertiary
-@mixin button-tertiary {
-  @include button-type(
-    $button-tertiary-bg,
-    $button-tertiary-br,
-    $button-tertiary-c,
-    $button-tertiary-td,
-
-    $button-tertiary-visited-bg,
-    $button-tertiary-visited-br,
-    $button-tertiary-visited-c,
-    $button-tertiary-visited-td,
-
-    $button-tertiary-hover-bg,
-    $button-tertiary-hover-br,
-    $button-tertiary-hover-c,
-    $button-tertiary-hover-td,
-
-    $button-tertiary-active-bg,
-    $button-tertiary-active-br,
-    $button-tertiary-active-c,
-    $button-tertiary-active-td
-  );
-}
-
 
 //
 // Button size
 //
-@mixin button-xxsmall {
-  padding: $button-xxsmall-pd;
-  font-size: $button-xxsmall-fz;
+@mixin button-large {
+  padding: $button-large-pd;
+  font-size: $button-large-fz;
 }
 
-@mixin button-small {
-  padding: $button-small-pd;
-  font-size: $button-small-fz;
+@mixin button-square {
+  padding: $button-square-pd;
+  font-size: $button-square-fz;
 }
 
 

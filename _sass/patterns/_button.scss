@@ -60,21 +60,16 @@ input[type="submit"],
   @include button-secondary;
 }
 
-.button--tertiary {
-  @include button-tertiary;
-}
-
 
 //
 // Button size
 //
-.button--xxsmall {
-  @include button-xxsmall;
-  letter-spacing: 1px;
+.button--large {
+  @include button-large;
 }
 
-.button--small {
-  @include button-small;
+.button--square {
+  @include button-square;
 }
 
 

@@ -132,54 +132,29 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    background-color: $c-neutral;
 
     @media ($medium-up) {
       height: $carousel-item-ht-medium-up;
+      text-align: left;
     }
   }
 
-  .carousel__item:nth-of-type(1) {
-    @include item-background($carousel-item-bgc-1, $carousel-item-bgi-1, $carousel-item-bgi-1-medium-up);
+  .carousel__text {
+    @include heading(
+      $ff-sans-serif,
+      $fz-colossal,
+      $fw-semi-bold,
+      $lh-xsmall,
+      $c-light,
+      none,
+      normal
+    );
   }
 
-  .carousel__item:nth-of-type(2) {
-    @include item-background($carousel-item-bgc-2, $carousel-item-bgi-2, $carousel-item-bgi-2-medium-up);
-  }
-
-  .carousel__item:nth-of-type(3) {
-    @include item-background($carousel-item-bgc-3, $carousel-item-bgi-3, $carousel-item-bgi-3-medium-up);
-  }
-
-  .u-inner-medium {
-    @media ($medium-up) {
-      display: flex;
-    }
-  }
-
-  .carousel__item__col-l {
-    margin-bottom: $sp-xxlarge;
-
-    @media ($medium-up) {
-      @include col(50%, left);
-      margin-left: $sp-xxsmall;
-      margin-right: $sp-xxsmall;
-      margin-bottom: 0;
-    }
-  }
-
-  .carousel__item__col-r {
-    margin-bottom: $sp-xxlarge;
-
-    @media ($medium-up) {
-      @include col(50%, center);
-      margin-left: $sp-xxsmall;
-      margin-right: $sp-xxsmall;
-      margin-bottom: 0;
-    }
-  }
-
-  .text {
-    margin-bottom: $sp-xxlarge;
+  .carousel__text-secondary {
+    display: block;
+    font-size: $fz-xxxlarge;
   }
 
   // Controls (bullets)
@@ -187,7 +162,7 @@
     @include size($carousel-controls-wd, $carousel-controls-ht);
     position: absolute;
     bottom: $carousel-controls-bot;
-    text-align: center;
+    text-align: right;
   }
 
   .carousel__controls__control-button {
