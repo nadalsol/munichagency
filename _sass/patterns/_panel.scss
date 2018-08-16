@@ -1,6 +1,14 @@
 // Panel
 // -----------------------------------------------------------------------------
 
-.panel {
+.panel-dark {
+  background-color: $c-dark;
+}
+
+.panel-neutral {
+  background-color: $c-neutral;
+}
+
+.panel-light {
   background-color: $c-light;
 }

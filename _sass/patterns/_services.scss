@@ -3,7 +3,6 @@
 
 .services {
   @include list-reset;
-  // @include text;
   width: 100%;
   text-align: center;
 
@@ -22,7 +21,7 @@
     }
 
     > a {
-      @include link($c-lynch, $c-surfie);
+      @include link($c-light, $c-chartreuse);
       display: block;
     }
 
