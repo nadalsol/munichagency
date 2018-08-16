@@ -244,13 +244,13 @@ $button-ff:                       $ff-sans-serif !default;
 $button-fz:                       $fz-base !default;
 $button-fw:                       $fw-semi-bold !default;
 $button-lh:                       $lh-base !default;
-$button-brr:                      $brr-base !default;
+$button-brr:                      0 !default;
 $button-trn:                      $transition-all !default;
 
 // Button type: primary
 $button-primary-bg:               transparent !default;
-$button-primary-br:               $br-base solid $c-java !default;
-$button-primary-c:                $c-java !default;
+$button-primary-br:               $br-small solid $c-chartreuse !default;
+$button-primary-c:                $c-chartreuse !default;
 $button-primary-td:               none !default;
 
 $button-primary-visited-bg:       $button-primary-bg !default;
@@ -259,34 +259,34 @@ $button-primary-visited-c:        $button-primary-c !default;
 $button-primary-visited-td:       $button-primary-td !default;
 
 $button-primary-hover-bg:         transparent !default;
-$button-primary-hover-br:         $br-base solid $c-light !default;
-$button-primary-hover-c:          $c-light;
+$button-primary-hover-br:         $br-small solid $c-light !default;
+$button-primary-hover-c:          $c-light !default;
 $button-primary-hover-td:         none !default;
 
 $button-primary-active-bg:        transparent !default;
-$button-primary-active-br:        $br-base solid $c-surfie !default;
-$button-primary-active-c:         $c-surfie;
+$button-primary-active-br:        $br-small solid $c-light !default;
+$button-primary-active-c:         $c-light !default;
 $button-primary-active-td:        none !default;
 
 // Button type: secondary
 $button-secondary-bg:             transparent !default;
-$button-secondary-br:             $br-base solid $c-light !default;
+$button-secondary-br:             $br-small solid $c-light !default;
 $button-secondary-c:              $c-light !default;
 $button-secondary-td:             none !default;
 
-$button-secondary-visited-bg:     $button-secondary-c !default;
+$button-secondary-visited-bg:     $button-secondary-bg !default;
 $button-secondary-visited-br:     $button-secondary-br !default;
 $button-secondary-visited-c:      $button-secondary-c !default;
 $button-secondary-visited-td:     $button-secondary-td !default;
 
-$button-secondary-hover-bg:       $c-mischka !default;
-$button-secondary-hover-br:       $br-base solid $c-mischka !default;
-$button-secondary-hover-c:        $c-lynch !default;
+$button-secondary-hover-bg:       transparent !default;
+$button-secondary-hover-br:       $br-small solid $c-chartreuse !default;
+$button-secondary-hover-c:        $c-chartreuse !default;
 $button-secondary-hover-td:       none !default;
 
-$button-secondary-active-bg:      $c-mischka !default;
-$button-secondary-active-br:      $br-base solid $c-mischka !default;
-$button-secondary-active-c:       $c-java !default;
+$button-secondary-active-bg:      transparent !default;
+$button-secondary-active-br:      $br-small solid $c-chartreuse !default;
+$button-secondary-active-c:       $c-chartreuse !default;
 $button-secondary-active-td:      none !default;
 
 // Button size
