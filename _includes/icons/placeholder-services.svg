@@ -1,6 +1,6 @@
 <svg class="{{ include.css-class }}" width="67" height="63" viewBox="0 0 67 63" xmlns="http://www.w3.org/2000/svg">
-  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="Munich_Home-DESK_01" transform="translate(-146.000000, -962.000000)" fill="#1D1D1B">
+  <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+    <g id="Munich_Home-DESK_01" transform="translate(-146.000000, -962.000000)">
       <g id="Servicios" transform="translate(71.000000, 959.000000)">
         <g id="Page-1" transform="translate(75.000000, 3.000000)">
           <path d="M34.6444834,32.1211649 L19.4478255,32.1211649 C17.9831703,32.1211649 16.7935676,30.9355932 16.7935676,29.480988 L16.7935676,14.364949 L13.8138308,14.364949 L13.8138308,29.480988 C13.8138308,32.5703142 16.3420229,35.0850941 19.4478255,35.0850941 L22.1020834,35.0850941 L22.1020834,40.4748854 L25.0818203,40.4748854 L25.0818203,35.0850941 L34.6444834,35.0850941 L34.6444834,32.1211649 Z" id="Fill-1"></path>

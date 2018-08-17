@@ -143,9 +143,6 @@ $zi-900:                 900 !default;
 
 // Helpers
 // -----------------------------------------------------------------------------
-// $u-inner-xxsmall-pd:              $sp-small !default;
-// $u-inner-xxsmall-pd-medium-up:    $sp-small $sp-big !default;
-
 $u-inner-xsmall-pdv:              $sp-small !default;
 $u-inner-xsmall-pdh:              $sp-small !default;
 $u-inner-xsmall-pdv-medium-up:    $sp-xxlarge !default;
@@ -154,18 +151,21 @@ $u-inner-xsmall-pdh-medium-up:    $sp-big !default;
 $u-inner-small-pd:                $sp-xxlarge $sp-small !default;
 $u-inner-small-pd-medium-up:      80px $sp-big !default;
 
-$u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
-$u-inner-medium-pd-medium-up:     80px $sp-colossal !default;
+// $u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
+// $u-inner-medium-pd-medium-up:     80px $sp-colossal !default;
 
-$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
-$u-inner-large-pd-medium-up:      80px $sp-colossal !default;
-$u-inner-large-pd-large-up:       80px 250px !default;
+// $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
+// $u-inner-large-pd-medium-up:      80px $sp-colossal !default;
+// $u-inner-large-pd-large-up:       80px 250px !default;
 
-$u-inner-xlarge-pd:               $sp-small !default;
-$u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
+// $u-inner-xlarge-pd:               $sp-small !default;
+// $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 
-$u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
-$u-inner-xxlarge-pd-medium-up:    500px $sp-big 0 !default;
+$u-inner-carousel-pd:             $sp-big $sp-small $sp-giant !default;
+$u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
+$u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
+$u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
+$u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
 
 $u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
 
@@ -306,7 +306,7 @@ $button-icon-ht-medium-up:        $sp-large !default;
 $button-disabled-o:               .5 !default;
 
 // Carousel
-$carousel-item-ht-medium-up:      735px !default;
+$carousel-item-ht-medium-up:      660px !default;
 $carousel-item-display-duration:  5 !default; // seconds
 
 $carousel-item-bgc-1:             $c-lynch !default;

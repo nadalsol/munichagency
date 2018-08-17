@@ -10,6 +10,10 @@
     display: flex;
   }
 
+  @media ($xlarge-up) {
+    white-space: nowrap;
+  }
+
   &__item {
     margin-bottom: $sp-xxlarge;
     padding-left: $sp-small;
@@ -19,15 +23,15 @@
       flex: 1 1 0;
       margin-bottom: 0;
     }
+  }
 
-    > a {
-      @include link($c-light, $c-chartreuse);
-      display: block;
-    }
+  &__link {
+    @include link($c-light, $c-chartreuse);
+    display: block;
+  }
 
-    svg {
-      @include center-block;
-      margin-bottom: $sp-small;
-    }
+  .icon {
+    @include center-block;
+    margin-bottom: $sp-small;
   }
 }

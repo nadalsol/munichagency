@@ -162,7 +162,11 @@
     @include size($carousel-controls-wd, $carousel-controls-ht);
     position: absolute;
     bottom: $carousel-controls-bot;
-    text-align: right;
+    text-align: center;
+
+    @media ($medium-up) {
+      text-align: right;
+    }
   }
 
   .carousel__controls__control-button {

@@ -1,11 +1,11 @@
 <div class="panel-dark">
   <div class="wrapper">
-    <div class="u-inner">
-      <ul class="services">
+    <div class="u-inner-xsmall">
+      <ul class="services u-text-uppercase">
       {% for service in site.servicios %}
-        <li class="services__item u-text-uppercase">
-          <a href="#">
-            {% include icons/services/placeholder.svg css-class="icon icon--large" %}
+        <li class="services__item">
+          <a class="services__link" href="#">
+            {% include icons/placeholder-services.svg css-class="icon icon--large" %}
             {{ service.title }}
           </a>
         </li>
