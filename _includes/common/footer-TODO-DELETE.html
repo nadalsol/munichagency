@@ -6,7 +6,7 @@
         {% include icons/address.svg css-class="icon icon--small" %}
         <span class="footer__heading__address">{{ site.footer.location }}</span>
       </h6>
-      <p class="text text--small">
+      <p class="text">
         <a href="{{ site.map_link }}" target="_blank">
           {{ site.address_1 }}<br>
           {{ site.address_2 }}
@@ -19,7 +19,7 @@
         {% include icons/contact.svg css-class="icon icon--small" %}
         <span class="footer__heading__contact">{{ site.footer.contact }}</span>
       </h6>
-      <p class="text text--small">
+      <p class="text">
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         <br>
         <a href="tel:{{ site.phone_country_code }}{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>

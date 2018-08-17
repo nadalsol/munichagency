@@ -2,20 +2,22 @@
 // -----------------------------------------------------------------------------
 
 .approach {
-  @include list-reset;
-  width: 100%;
+  &__list {
+    @include list-reset;
+    width: 100%;
 
-  @media ($medium-up) {
-    display: flex;
+    @media ($medium-up) {
+      display: flex;
+    }
   }
 
   &__item {
     @include size(100%, 230px);
     margin-bottom: $sp-xxlarge;
     padding: $sp-xxsmall $sp-small;
-    overflow: hidden;
     background: $c-lynch no-repeat center center;
     background-size: cover;
+    overflow: hidden;
 
     @media ($medium-up) {
       @include size(auto, 300px);
@@ -25,37 +27,11 @@
       border-left: 2px solid $c-light;
       border-right: 2px solid $c-light;
     }
+  }
 
-    &--client {
-      // TODO : replace for final bg image
-      // background-image: url("#{$assets-path}/bg-approach-client.jpg");
-      background-image: url("http://via.placeholder.com/350x150");
-    }
-
-    &--team {
-      // TODO : replace for final bg image
-      // background-image: url("#{$assets-path}/bg-approach-team.jpg");
-      background-image: url("http://via.placeholder.com/350x150");
-    }
-
-    &--target {
-      // TODO : replace for final bg image
-      // background-image: url("#{$assets-path}/bg-approach-target.jpg");
-      background-image: url("http://via.placeholder.com/350x150");
-    }
-
-    > a {
-      @include size(100%, 100%);
-      @include link($c-lynch, $c-surfie);
-      display: block;
-    }
-
-    .h2 {
-      color: $c-light;
-    }
-
-    .h6 {
-      color: $c-light;
-    }
+  &__link {
+    @include size(100%, 100%);
+    @include link($c-lynch, $c-surfie);
+    display: block;
   }
 }

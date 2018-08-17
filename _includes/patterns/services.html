@@ -5,8 +5,9 @@
       <ul class="services u-text-uppercase">
       {% for service in site.services %}
         <li class="services__item">
-          <a class="services__link" href="#">
-            {% include icons/placeholder-services.svg css-class="icon icon--large" %}
+          <a class="services__link" href="{{ service.link }}">
+            {% comment %}{% include icons/placeholder-services.svg css-class="icon icon--service" %}{% endcomment %}
+            <img src="{{ service.icon }}" width="67" height="63" class="icon icon--service" alt="{{ service.icon_alt }}">
             {{ service.title }}
           </a>
         </li>

@@ -88,9 +88,15 @@ nav_main:
 
 # Collections
 collections:
-  services:
+  approaches:
     output: true
-    permalink: /servicios/:path/
+    permalink: /approaches/:path/
   carousels:
     output: true
     permalink: /carousels/:path/
+  leads:
+    output: true
+    permalink: /leads/:path/
+  services:
+    output: true
+    permalink: /servicios/:path/

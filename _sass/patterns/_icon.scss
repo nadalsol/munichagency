@@ -54,6 +54,10 @@
   vertical-align: middle;
 }
 
+.icon--service {
+  @include size(67px, 63px);
+}
+
 .icon--social {
   @include size($icon-social-wd, $icon-social-ht);
 

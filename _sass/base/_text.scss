@@ -11,12 +11,8 @@
     margin-bottom: 0;
   }
 
-  > a {
-    font-weight: $fw-semi-bold;
-  }
-
-  &--small {
-    font-size: $fz-small;
+  &--medium {
+    font-size: $fz-medium;
   }
 
   &--cookie-message {
@@ -27,18 +23,6 @@
       @include link($c-light, $c-mischka);
       text-decoration: underline;
       text-transform: uppercase;
-      font-weight: $fw-base;
-    }
-  }
-
-  &--fiord {
-    color: $c-fiord;
-  }
-
-  &--mischka {
-    color: $c-mischka;
-
-    > a {
       font-weight: $fw-base;
     }
   }
