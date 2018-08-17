@@ -80,6 +80,8 @@
 }
 
 .carousel {
+  border-bottom: $br-base solid $c-light;
+
   .carousel__item:first-of-type { // 1
     position: static;
     pointer-events: auto;
@@ -140,7 +142,7 @@
     }
   }
 
-  .carousel__text {
+  .carousel__title {
     @include heading(
       $ff-sans-serif,
       $fz-colossal,
@@ -152,7 +154,7 @@
     );
   }
 
-  .carousel__text-secondary {
+  .carousel__subtitle {
     display: block;
     font-size: $fz-xxxlarge;
   }
