@@ -10,6 +10,7 @@
   background-color: $footer-legal-bg;
 
   @media ($medium-up) {
+    margin-top: $sp-titanic;
     color: $footer-legal-c-medium-up;
   }
 

@@ -1,20 +1,18 @@
 <div class="panel-light">
   <div class="wrapper">
-    <div class="u-inner-medium">
+    <div class="u-inner-small">
 
-      <div class="approach">
-        <h2 class="heading2 u-text-center">Filosofía</h2>
-        <ul class="approach__list">
-          {% for approach in site.approaches %}
-          <li class="approach__item u-text-lowercase" style="background-image: url({{ approach.img }});">
-            <a class="approach__link" href="{{ approach.link }}">
-              <h3 class="heading4">{{ approach.title }}</h3>
-              <h4 class="heading5">{{ approach.description }}</h4>
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <h2 class="heading2 u-text-center">Filosofía</h2>
+      <ul class="approach">
+      {% for approach in site.approaches %}
+        <li class="approach__item" style="background-image: url({{ approach.img }});">
+          <a class="approach__link" href="{{ approach.link }}">
+            <h3 class="heading4 heading4--light">{{ approach.title }}</h3>
+            <p class="text text--light u-text-uppercase">{{ approach.description }}</p>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
 
     </div>
   </div>

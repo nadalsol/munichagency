@@ -82,6 +82,7 @@ $sp-big:                 floor($sp-base * 12) !default; // 60px
 $sp-huge:                floor($sp-base * 15) !default; // 75px
 $sp-giant:               floor($sp-base * 18) !default; // 90px
 $sp-colossal:            floor($sp-base * 30) !default; // 150px
+$sp-titanic:             floor($sp-base * 40) !default; // 200px
 
 // Fonts
 $ff-sans-serif:          'Barlow', sans-serif !default;
@@ -143,23 +144,18 @@ $zi-900:                 900 !default;
 
 // Helpers
 // -----------------------------------------------------------------------------
-$u-inner-xsmall-pdv:              $sp-small !default;
-$u-inner-xsmall-pdh:              $sp-small !default;
-$u-inner-xsmall-pdv-medium-up:    $sp-xxlarge !default;
-$u-inner-xsmall-pdh-medium-up:    $sp-big !default;
+$u-inner-small-pd:                $sp-small 0 !default;
+$u-inner-small-pd-medium-up:      $sp-large 0 !default;
 
-$u-inner-small-pd:                $sp-xxlarge $sp-small !default;
-$u-inner-small-pd-medium-up:      80px $sp-big !default;
+$u-inner-medium-pdv:              $sp-small !default;
+$u-inner-medium-pdh:              $sp-small !default;
+$u-inner-medium-pdv-medium-up:    $sp-xxlarge !default;
+$u-inner-medium-pdh-medium-up:    $sp-big !default;
 
-$u-inner-medium-pd:               $sp-small 0 !default;
-$u-inner-medium-pd-medium-up:     $sp-large 0 !default;
+$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-large-pd-medium-up:      80px $sp-big !default;
 
-// $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
-// $u-inner-large-pd-medium-up:      80px $sp-colossal !default;
-// $u-inner-large-pd-large-up:       80px 250px !default;
-
-// $u-inner-xlarge-pd:               $sp-small !default;
-// $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
+$u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
 
 $u-inner-lead-pd:                 $sp-small !default;
 $u-inner-lead-pd-medium-up:       120px 200px $sp-large !default;
@@ -169,8 +165,6 @@ $u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
 $u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
 $u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
 $u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
-
-$u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
 
 
 // Common

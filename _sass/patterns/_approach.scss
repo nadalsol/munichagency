@@ -2,20 +2,18 @@
 // -----------------------------------------------------------------------------
 
 .approach {
-  &__list {
-    @include list-reset;
-    width: 100%;
+  @include list-reset;
+  width: 100%;
 
-    @media ($medium-up) {
-      display: flex;
-    }
+  @media ($medium-up) {
+    display: flex;
   }
 
   &__item {
     @include size(100%, 230px);
     margin-bottom: $sp-xxlarge;
     padding: $sp-xxsmall $sp-small;
-    background: $c-lynch no-repeat center center;
+    background: $c-neutral no-repeat center center;
     background-size: cover;
     overflow: hidden;
 
@@ -23,15 +21,15 @@
       @include size(auto, 300px);
       flex: 1 1 0;
       margin-bottom: 0;
-      padding: $sp-xsmall $sp-medium;
-      border-left: 2px solid $c-light;
-      border-right: 2px solid $c-light;
+      padding: $sp-medium;
+      border-left: $br-base solid $c-light;
+      border-right: $br-base solid $c-light;
     }
   }
 
   &__link {
     @include size(100%, 100%);
-    @include link($c-lynch, $c-surfie);
+    @include link($c-light, $c-light);
     display: block;
   }
 }
