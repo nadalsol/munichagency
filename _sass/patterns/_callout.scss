@@ -1,0 +1,48 @@
+// Callout
+// -----------------------------------------------------------------------------
+
+.callout {
+  margin-bottom: $sp-base;
+
+  .wrapper {
+    @include clearfix;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+
+  &--carnation .wrapper {
+    @include item-background($callout-bgc-carnation, $callout-bgi-carnation, $callout-bgi-carnation-medium-up);
+  }
+
+  &--dark .wrapper {
+    @include item-background($callout-bgc-dark, $callout-bgi-dark, $callout-bgi-dark-medium-up);
+  }
+
+  &--waterleaf .wrapper {
+    @include item-background($callout-bgc-waterleaf, $callout-bgi-waterleaf, $callout-bgi-waterleaf-medium-up);
+    padding: $sp-giant;
+  }
+
+  .panel-carnation,
+  .panel-dark {
+    float: right;
+    width: 50%;
+
+    .heading2,
+    .heading6,
+    p {
+      color: $c-light;
+    }
+  }
+
+  .panel-waterleaf {
+    float: left;
+    width: 70%;
+  }
+
+  p {
+    @extend .text;
+    @extend .text--medium;
+  }
+}

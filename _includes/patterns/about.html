@@ -1,0 +1,14 @@
+<div class="panel-light">
+  <div class="wrapper">
+    <div class="u-inner-xlarge">
+
+      {% for about in site.abouts %}
+      <div class="about">
+        <blockquote class="blockquote">{{ about.title }}</blockquote>
+        {{ about.description }}
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

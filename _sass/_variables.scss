@@ -26,6 +26,7 @@ $c-dark:                 #000 !default;
 $c-neutral:              #808080 !default;
 $c-light:                #fff !default;
 
+$c-carnation:            #fb6152 !default;
 $c-chartreuse:           #e5ff00 !default;
 $c-tradewind:            #71b5a8 !default;
 $c-waterleaf:            #9ce8da !default;
@@ -155,10 +156,13 @@ $u-inner-medium-pdh-medium-up:    $sp-big !default;
 $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
 $u-inner-large-pd-medium-up:      80px $sp-big !default;
 
+$u-inner-xlarge-pd:               $sp-xxlarge $sp-small !default;
+$u-inner-xlarge-pd-medium-up:     80px $sp-colossal !default;
+
 $u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
 
-$u-inner-lead-pd:                 $sp-small !default;
-$u-inner-lead-pd-medium-up:       120px 200px $sp-large !default;
+$u-inner-vision-pd:               $sp-small !default;
+$u-inner-vision-pd-medium-up:     120px 200px $sp-large !default;
 
 $u-inner-carousel-pd:             $sp-big $sp-small $sp-giant !default;
 $u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
@@ -302,6 +306,19 @@ $button-icon-ht-medium-up:        $sp-large !default;
 // Button state
 $button-disabled-o:               .5 !default;
 
+// Callout
+$callout-bgc-carnation:           $c-neutral !default;
+$callout-bgi-carnation:           $assets-img-path + "/bg-callout-carnation.jpg" !default;
+$callout-bgi-carnation-medium-up: $assets-img-path + "/medium-up/bg-callout-carnation.jpg" !default;
+
+$callout-bgc-dark:                $c-neutral !default;
+$callout-bgi-dark:                $assets-img-path + "/bg-callout-dark.jpg" !default;
+$callout-bgi-dark-medium-up:      $assets-img-path + "/medium-up/bg-callout-dark.jpg" !default;
+
+$callout-bgc-waterleaf:           $c-neutral !default;
+$callout-bgi-waterleaf:           $assets-img-path + "/bg-callout-waterleaf.jpg" !default;
+$callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/bg-callout-waterleaf.jpg" !default;
+
 // Carousel
 $carousel-item-ht-medium-up:      660px !default;
 $carousel-item-display-duration:  5 !default; // seconds
@@ -347,6 +364,24 @@ $form-field-c:                    $c-light !default;
 $form-field-trn:                  $transition-bc;
 
 $form-textarea-ht:                153px !default;
+
+// Hero
+$hero-wd:                         100% !default;
+$hero-ht:                         auto !default;
+$hero-wd-medium-up:               100% !default;
+$hero-ht-medium-up:               425px !default;
+
+$hero-bgc-about:                  $c-neutral !default;
+$hero-bgi-about:                  $assets-img-path + "/bg-hero-about.jpg" !default;
+$hero-bgi-about-medium-up:        $assets-img-path + "/medium-up/bg-hero-about.jpg" !default;
+
+$hero-bgc-projects:               $c-neutral !default;
+$hero-bgi-projects:               $assets-img-path + "/bg-hero-projects.jpg" !default;
+$hero-bgi-projects-medium-up:     $assets-img-path + "/medium-up/bg-hero-projects.jpg" !default;
+
+$hero-bgc-services:               $c-neutral !default;
+$hero-bgi-services:               $assets-img-path + "/bg-hero-services.jpg" !default;
+$hero-bgi-services-medium-up:     $assets-img-path + "/medium-up/bg-hero-services.jpg" !default;
 
 // Icon
 $icon-social-wd:                  65px !default;

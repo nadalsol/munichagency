@@ -10,9 +10,14 @@ title: Pattern Library
     background-color: #f2f2f2;
   }
 
-  .patlab-panel {
+  .patlab-panel-main {
     border-radius: 3px;
     box-shadow: 0px 0px 30px #ccc;
+  }
+
+  .patlab-panel {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .patlab-section {
@@ -40,14 +45,17 @@ title: Pattern Library
 
   .patlab-inner {
     text-align: center;
-    color: #fff;
     background-color: #808080;
     margin-bottom: 20px;
+  }
+
+  .patlab-c-light {
+    color: #fff;
   }
 </style>
 
 <div class="wrapper">
-  <div class="patlab-panel panel-light">
+  <div class="patlab-panel-main panel-light">
     <div class="u-inner-large">
 
       <h1 class="patlab-heading1">Pattern Library</h1>
@@ -63,21 +71,38 @@ title: Pattern Library
               <a href="#patlab-button">Button</a>
             </li>
             <li>
+              <a href="#patlab-callout">Callout</a>
+            </li>
+            <li>
               <a href="#patlab-heading">Heading</a>
+            </li>
+            <li>
+              <a href="#patlab-hero">Hero</a>
             </li>
             <li>
               <a href="#patlab-inner">Inner</a>
             </li>
+            <li>
+              <a href="#patlab-panel">Panel</a>
+            </li>
           </ul>
         </nav>
+      </div>
+
+      <div class="patlab-section">
+        <ul>
+          {% for p in site.pages %}
+            <li>{{ p.title }} : <a href="{{ p.url | absolute_url }}">{{ p.url | absolute_url }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
 
       <!-- Blockquote -->
       <div class="patlab-section" id="patlab-blockquote">
         <h2 class="patlab-heading2">Blockquote</h2>
         <blockquote class="blockquote">
-          Impacta, conecta, moviliza y crea una experiencia única para el
-          cliente, acabas de conseguir un "match". #munichesmatch
+          Officia do illum, legam singulis imitarentur, aute fabulas appellat,
+          probant anim occaecat. Incurreret instituendarum est cupidatat
         </blockquote>
       </div>
 
@@ -112,6 +137,12 @@ title: Pattern Library
         </div>
       </div>
 
+      <!-- Callout -->
+      <div class="patlab-section" id="patlab-callout">
+        <h2 class="patlab-heading2">Callout</h2>
+        {% include patterns/callout.html %}
+      </div>
+
       <!-- Heading -->
       <div class="patlab-section" id="patlab-heading">
         <h2 class="patlab-heading2">Heading</h2>
@@ -127,6 +158,12 @@ title: Pattern Library
         <h6 class="heading6">h6. This is a heading</h6>
       </div>
 
+      <!-- Hero -->
+      <div class="patlab-section" id="patlab-hero">
+        <h2 class="patlab-heading2">Hero</h2>
+        {% include patterns/hero.html css-class='hero--about' %}
+      </div>
+
       <!-- Inner -->
       <div class="patlab-section" id="patlab-inner">
         <h2 class="patlab-heading2">Inner</h2>
@@ -139,14 +176,37 @@ title: Pattern Library
         <div class="patlab-inner u-inner-large">
           u-inner-large
         </div>
+        <div class="patlab-inner u-inner-xlarge">
+          u-inner-xlarge
+        </div>
         <div class="patlab-inner u-inner-footer">
           u-inner-footer
         </div>
-        <div class="patlab-inner u-inner-lead">
-          u-inner-lead
+        <div class="patlab-inner u-inner-vision">
+          u-inner-vision
         </div>
         <div class="patlab-inner u-inner-carousel">
           u-inner-carousel
+        </div>
+      </div>
+
+      <!-- Panel -->
+      <div class="patlab-section" id="patlab-panel">
+        <h2 class="patlab-heading2">Panel</h2>
+        <div class="patlab-panel panel-dark">
+          <span class="patlab-c-light">panel-dark</span>
+        </div>
+        <div class="patlab-panel panel-neutral">
+          panel-neutral
+        </div>
+        <div class="patlab-panel panel-light">
+          panel-light
+        </div>
+        <div class="patlab-panel panel-carnation">
+          <span class="patlab-c-light">panel-carnation</span>
+        </div>
+        <div class="patlab-panel panel-waterleaf">
+          panel-waterleaf
         </div>
       </div>
 

@@ -76,27 +76,41 @@ modal_terms:
 404:
   text_1: "Página no encontrada :("
   text_2: "No hemos encontrado la página solicitada."
+about_us:
+  heading: "Quiénes somos"
+approach:
+  heading: "Filosofía"
+clients:
+  heading: "Clientes"
 nav_main:
   link_1: "quienes-somos"
-  text_1: "Quienes somos"
+  text_1: "Quiénes somos"
   link_2: "servicios"
   text_2: "Servicios"
   link_3: "proyectos"
   text_3: "Proyectos"
   link_4: "contacto"
   text_4: "Contacto"
+projects:
+  heading: "Proyectos"
 
 # Collections
 collections:
+  abouts:
+    output: true
+    permalink: /abouts/:path/
   approaches:
     output: true
     permalink: /approaches/:path/
+  callouts:
+    output: true
+    permalink: /callouts/:path/
   carousels:
     output: true
     permalink: /carousels/:path/
-  leads:
-    output: true
-    permalink: /leads/:path/
   services:
     output: true
     permalink: /servicios/:path/
+  visions:
+    output: true
+    permalink: /visions/:path/

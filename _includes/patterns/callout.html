@@ -1,0 +1,15 @@
+{% for callout in site.callouts %}
+<div class="callout {% cycle 'callout--dark', 'callout--waterleaf', 'callout--carnation' %}">
+  <div class="wrapper">
+
+    <div class="{% cycle 'panel-dark', 'panel-waterleaf', 'panel-carnation' %}">
+      <div class="u-inner-large">
+        <h2 class="heading2">{{ callout.title }}</h2>
+        <h3 class="heading6">{{ callout.subtitle }}</h3>
+        {{ callout.description }}
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endfor %}

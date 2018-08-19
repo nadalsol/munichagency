@@ -45,17 +45,25 @@
   }
 }
 
+.u-inner-xlarge {
+  padding: $u-inner-xlarge-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-xlarge-pd-medium-up;
+  }
+}
+
 .u-inner-footer {
   @media ($medium-up) {
     padding: $u-inner-footer-pd-medium-up;
   }
 }
 
-.u-inner-lead {
-  padding: $u-inner-lead-pd;
+.u-inner-vision {
+  padding: $u-inner-vision-pd;
 
   @media ($medium-up) {
-    padding: $u-inner-lead-pd-medium-up;
+    padding: $u-inner-vision-pd-medium-up;
   }
 }
 

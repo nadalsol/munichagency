@@ -1,0 +1,30 @@
+// Hero
+// -----------------------------------------------------------------------------
+
+.hero {
+  @include size($hero-wd, $hero-ht);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media ($medium-up) {
+    @include size($hero-wd-medium-up, $hero-ht-medium-up);
+    overflow: hidden;
+  }
+
+  &--about {
+    @include item-background($hero-bgc-about, $hero-bgi-about, $hero-bgi-about-medium-up);
+  }
+
+  &--projects {
+    @include item-background($hero-bgc-projects, $hero-bgi-projects, $hero-bgi-projects-medium-up);
+  }
+
+  &--services {
+    @include item-background($hero-bgc-services, $hero-bgi-services, $hero-bgi-services-medium-up);
+  }
+
+  .heading1 {
+    margin-bottom: 0;
+  }
+}
