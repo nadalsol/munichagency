@@ -1,7 +1,7 @@
-// Services
+// Navigation category
 // -----------------------------------------------------------------------------
 
-.services {
+.nav-category {
   @include list-reset;
   width: 100%;
   text-align: center;
@@ -10,9 +10,9 @@
     display: flex;
   }
 
-  @media ($xlarge-up) {
-    white-space: nowrap;
-  }
+  // @media ($xlarge-up) {
+  //   white-space: nowrap;
+  // }
 
   &__item {
     margin-bottom: $sp-xxlarge;

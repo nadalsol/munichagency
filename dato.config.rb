@@ -47,15 +47,15 @@ directory "_carousels" do
   end
 end
 
-directory "_services" do
-  dato.services.each do |service|
-    create_post "#{service.title.parameterize}.md" do
+directory "_nav_categories" do
+  dato.nav_categories.each do |nav_category|
+    create_post "#{nav_category.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "default",
-        title: service.title,
-        link: service.link,
-        icon: service.icon.url,
-        icon_alt: service.icon.alt
+        title: nav_category.title,
+        link: nav_category.link,
+        icon: nav_category.icon.url,
+        icon_alt: nav_category.icon.alt
       }
     end
   end

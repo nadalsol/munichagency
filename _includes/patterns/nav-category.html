@@ -1,0 +1,19 @@
+<div class="panel-dark">
+  <div class="wrapper">
+    <div class="u-inner-medium">
+
+      <ul class="nav-category u-text-uppercase">
+      {% for nav_category in site.nav_categories %}
+        <li class="nav-category__item">
+          <a class="nav-category__link" href="{{ nav_category.link }}">
+            {% comment %}{% include icons/placeholder-services.svg css-class="icon icon--service" %}{% endcomment %}
+            <img src="{{ nav_category.icon }}" width="67" height="63" class="icon icon--service" alt="{{ nav_category.icon_alt }}">
+            {{ nav_category.title }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -4,6 +4,7 @@
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, $zi-100);
   background-color: $header-bg;
+  box-shadow: 0 $br-base $c-light;
 
   @media ($medium-up) {
     @include size($header-wd-medium-up, $header-ht-medium-up);

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 
 .clients {
-  @extend .services;
+  @extend .nav-category;
 
   &__item {
-    @extend .services__item;
+    @extend .nav-category__item;
   }
 }

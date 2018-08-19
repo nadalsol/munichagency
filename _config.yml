@@ -108,9 +108,9 @@ collections:
   carousels:
     output: true
     permalink: /carousels/:path/
-  services:
+  nav_categories:
     output: true
-    permalink: /servicios/:path/
+    permalink: /nav_categories/:path/
   visions:
     output: true
     permalink: /visions/:path/

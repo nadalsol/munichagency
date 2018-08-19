@@ -83,6 +83,9 @@ title: Pattern Library
               <a href="#patlab-inner">Inner</a>
             </li>
             <li>
+              <a href="#patlab-nav-category">Nav category</a>
+            </li>
+            <li>
               <a href="#patlab-panel">Panel</a>
             </li>
           </ul>
@@ -161,7 +164,15 @@ title: Pattern Library
       <!-- Hero -->
       <div class="patlab-section" id="patlab-hero">
         <h2 class="patlab-heading2">Hero</h2>
-        {% include patterns/hero.html css-class='hero--about' %}
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-about.html %}
+        </div>
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-projects.html %}
+        </div>
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-services.html %}
+        </div>
       </div>
 
       <!-- Inner -->
@@ -188,6 +199,12 @@ title: Pattern Library
         <div class="patlab-inner u-inner-carousel">
           u-inner-carousel
         </div>
+      </div>
+
+      <!-- Nav category -->
+      <div class="patlab-section" id="patlab-nav-category">
+        <h2 class="patlab-heading2">Nav category</h2>
+        {% include patterns/nav-category.html css-class='panel-dark' %}
       </div>
 
       <!-- Panel -->

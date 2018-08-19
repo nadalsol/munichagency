@@ -27,4 +27,12 @@
   .heading1 {
     margin-bottom: 0;
   }
+
+  .panel-dark {
+    background-color: transparent;
+
+    @media ($medium-up) {
+      margin-top: -$sp-big;
+    }
+  }
 }
