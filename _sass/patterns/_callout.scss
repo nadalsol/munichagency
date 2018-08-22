@@ -5,29 +5,57 @@
   margin-bottom: $sp-base;
 
   .wrapper {
-    @include clearfix;
     background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
   }
 
   &--carnation .wrapper {
     @include item-background($callout-bgc-carnation, $callout-bgi-carnation, $callout-bgi-carnation-medium-up);
+    background-position: center top;
+    background-size: contain;
+    padding-top: 180px;
+
+    @media ($medium-up) {
+      @include clearfix;
+      background-position: left top;
+      background-size: auto;
+      padding: 0;
+    }
   }
 
   &--dark .wrapper {
     @include item-background($callout-bgc-dark, $callout-bgi-dark, $callout-bgi-dark-medium-up);
+    background-position: center top;
+    background-size: contain;
+    padding-top: 180px;
+
+    @media ($medium-up) {
+      @include clearfix;
+      background-position: left top;
+      background-size: auto;
+      padding: 0;
+    }
   }
 
   &--waterleaf .wrapper {
     @include item-background($callout-bgc-waterleaf, $callout-bgi-waterleaf, $callout-bgi-waterleaf-medium-up);
-    padding: $sp-giant;
+    background-position: center top;
+    background-size: cover;
+    padding: $sp-xxlarge;
+
+    @media ($medium-up) {
+      @include clearfix;
+      background-position: left top;
+      background-size: cover;
+      padding: $sp-giant;
+    }
   }
 
   .panel-carnation,
   .panel-dark {
-    float: right;
-    width: 50%;
+    @media ($medium-up) {
+      float: right;
+      width: 50%;
+    }
 
     .heading2,
     .heading6,
@@ -37,8 +65,10 @@
   }
 
   .panel-waterleaf {
-    float: left;
-    width: 70%;
+    @media ($medium-up) {
+      float: left;
+      width: 70%;
+    }
   }
 
   p {

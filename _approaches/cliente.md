@@ -1,5 +1,5 @@
 ---
-title: Lorem ipsum 1
+title: Cliente
 description: A sint arbitror tractavissent. Id amet export quorum laborum hic se labore
   incurreret appellat. Noster laborum se occaecat ubi de ex instituendarum, a excepteur.
 link: "#"

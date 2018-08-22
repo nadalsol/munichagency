@@ -12,7 +12,7 @@
   {% endfor %}
 
   {% for carousel in site.carousels %}
-    <figure class="carousel__item" style="background-image: url({{ carousel.img }});">
+    <figure class="carousel__item" style="background-image: url({{ carousel.img }}); background-color: {{ carousel.color }};">
       <div class="wrapper">
         <div class="u-inner-carousel">
           <p class="carousel__title">

@@ -308,32 +308,20 @@ $button-disabled-o:               .5 !default;
 
 // Callout
 $callout-bgc-carnation:           $c-neutral !default;
-$callout-bgi-carnation:           $assets-img-path + "/bg-callout-carnation.jpg" !default;
-$callout-bgi-carnation-medium-up: $assets-img-path + "/medium-up/bg-callout-carnation.jpg" !default;
+$callout-bgi-carnation:           $assets-img-path + "/callout-carnation.jpg" !default;
+$callout-bgi-carnation-medium-up: $assets-img-path + "/medium-up/callout-carnation.jpg" !default;
 
 $callout-bgc-dark:                $c-neutral !default;
-$callout-bgi-dark:                $assets-img-path + "/bg-callout-dark.jpg" !default;
-$callout-bgi-dark-medium-up:      $assets-img-path + "/medium-up/bg-callout-dark.jpg" !default;
+$callout-bgi-dark:                $assets-img-path + "/callout-dark.jpg" !default;
+$callout-bgi-dark-medium-up:      $assets-img-path + "/medium-up/callout-dark.jpg" !default;
 
 $callout-bgc-waterleaf:           $c-neutral !default;
-$callout-bgi-waterleaf:           $assets-img-path + "/bg-callout-waterleaf.jpg" !default;
-$callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/bg-callout-waterleaf.jpg" !default;
+$callout-bgi-waterleaf:           $assets-img-path + "/callout-waterleaf.jpg" !default;
+$callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/callout-waterleaf.jpg" !default;
 
 // Carousel
 $carousel-item-ht-medium-up:      660px !default;
 $carousel-item-display-duration:  5 !default; // seconds
-
-$carousel-item-bgc-1:             $c-lynch !default;
-$carousel-item-bgi-1:             $assets-img-path + "/bg-carousel-us.jpg" !default;
-$carousel-item-bgi-1-medium-up:   $assets-img-path + "/medium-up/bg-carousel-us.jpg" !default;
-
-$carousel-item-bgc-2:             $c-watercourse !default;
-$carousel-item-bgi-2:             $assets-img-path + "/bg-carousel-team.jpg" !default;
-$carousel-item-bgi-2-medium-up:   $assets-img-path + "/medium-up/bg-carousel-team.jpg" !default;
-
-$carousel-item-bgc-3:             $c-cosmic !default;
-$carousel-item-bgi-3:             $assets-img-path + "/bg-carousel-solutions.jpg" !default;
-$carousel-item-bgi-3-medium-up:   $assets-img-path + "/medium-up/bg-carousel-solutions.jpg" !default;
 
 $carousel-transition-duration:    2 !default; // seconds
 $carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
@@ -372,16 +360,16 @@ $hero-wd-medium-up:               100% !default;
 $hero-ht-medium-up:               425px !default;
 
 $hero-bgc-about:                  $c-neutral !default;
-$hero-bgi-about:                  $assets-img-path + "/bg-hero-about.jpg" !default;
-$hero-bgi-about-medium-up:        $assets-img-path + "/medium-up/bg-hero-about.jpg" !default;
+$hero-bgi-about:                  $assets-img-path + "/hero-about.jpg" !default;
+$hero-bgi-about-medium-up:        $assets-img-path + "/medium-up/hero-about.jpg" !default;
 
 $hero-bgc-projects:               $c-neutral !default;
-$hero-bgi-projects:               $assets-img-path + "/bg-hero-projects.jpg" !default;
-$hero-bgi-projects-medium-up:     $assets-img-path + "/medium-up/bg-hero-projects.jpg" !default;
+$hero-bgi-projects:               $assets-img-path + "/hero-projects.jpg" !default;
+$hero-bgi-projects-medium-up:     $assets-img-path + "/medium-up/hero-projects.jpg" !default;
 
 $hero-bgc-services:               $c-neutral !default;
-$hero-bgi-services:               $assets-img-path + "/bg-hero-services.jpg" !default;
-$hero-bgi-services-medium-up:     $assets-img-path + "/medium-up/bg-hero-services.jpg" !default;
+$hero-bgi-services:               $assets-img-path + "/hero-services.jpg" !default;
+$hero-bgi-services-medium-up:     $assets-img-path + "/medium-up/hero-services.jpg" !default;
 
 // Icon
 $icon-social-wd:                  65px !default;
