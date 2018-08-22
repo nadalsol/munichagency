@@ -110,7 +110,7 @@ collections:
     permalink: /:collection/:path/
   services:
     output: true
-    permalink: /:collection/:path/
+    permalink: /servicios/:path/
   visions:
     output: true
     permalink: /:collection/:path/
