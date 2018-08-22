@@ -26,22 +26,30 @@
           </a>
         </div>
       </div>
-      {% if forloop.first %}
-      <a class="carousel__control-secondary-r" href="#slide-2">
-        {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-      </a>
-      {% elsif forloop.last %}
-      <a class="carousel__control-secondary-l" href="#slide-2">
-        {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-      </a>
-      {% else %}
-      <a class="carousel__control-secondary-l" href="#slide-1">
-        {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-      </a>
-      <a class="carousel__control-secondary-r" href="#slide-3">
-        {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-      </a>
-      {% endif %}
+      {% case forloop.index %}
+        {% when 1 %}
+          <a class="carousel__control-secondary-r" href="#slide-2">
+            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+          </a>
+        {% when 2 %}
+          <a class="carousel__control-secondary-l" href="#slide-1">
+            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+          </a>
+          <a class="carousel__control-secondary-r" href="#slide-3">
+            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+          </a>
+        {% when 3 %}
+          <a class="carousel__control-secondary-l" href="#slide-2">
+            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+          </a>
+          <a class="carousel__control-secondary-r" href="#slide-4">
+            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+          </a>
+        {% when 4 %}
+          <a class="carousel__control-secondary-l" href="#slide-3">
+            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+          </a>
+      {% endcase %}
     </figure>
   {% endfor %}
 
