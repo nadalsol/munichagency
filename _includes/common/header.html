@@ -3,7 +3,8 @@
 
     <div class="header__brand">
       <a rel="author" href="{{ site.baseurl }}/{{ site.header.home_link }}">
-        {% include icons/brand.svg css-class="icon icon--brand" %}
+        <span class="is-medium-hidden">{% include icons/brand.svg css-class="icon icon--brand" %}</span>
+        <span class="is-small-hidden">{% include icons/brand-medium-up.svg css-class="icon icon--brand" %}</span>
       </a>
     </div>
 
@@ -12,8 +13,8 @@
     </nav>
 
     <button id="header-hamburger" class="header__hamburger is-medium-hidden">
-      {% include icons/hamburger.svg css-class="icon icon--hamburger" id="header-hamburger-open" %}
-      {% include icons/close.svg css-class="icon icon--close is-hidden" id="header-hamburger-close" %}
+      {% include icons/hamburger-open.svg css-class="icon icon--medium" id="header-hamburger-open" %}
+      {% include icons/hamburger-close.svg css-class="icon icon--medium is-hidden" id="header-hamburger-close" %}
     </button>
 
   </div>

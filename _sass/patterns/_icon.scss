@@ -24,6 +24,10 @@
 // Possible values: `icon--small`, `icon--medium`...
 //
 
+.icon--address {
+  @include size(23px, 28px);
+}
+
 .icon--brand {
   @include size($header-brand-wd, $header-brand-ht);
 
@@ -32,30 +36,16 @@
   }
 }
 
+.icon--brand-secondary {
+  @include size(185px, 50px);
+}
+
 // .icon--chevron {
 //   @include size(19px, 60px);
 // }
 
 .icon--close {
   @include size($button-icon-wd, $button-icon-ht);
-
-  @media ($medium-up) {
-    @include size($button-icon-wd-medium-up, $button-icon-ht-medium-up);
-  }
-}
-
-.icon--hamburger {
-  @include size(20px, 16px);
-  vertical-align: middle;
-}
-
-.icon--small {
-  @include size(30px, 30px);
-  vertical-align: middle;
-}
-
-.icon--service {
-  @include size(67px, 63px);
 }
 
 .icon--social {
@@ -64,4 +54,14 @@
   @media ($medium-up) {
     @include size($icon-social-wd-medium-up, $icon-social-ht-medium-up);
   }
+}
+
+.icon--small {
+  @include size(30px, 30px);
+  vertical-align: middle;
+}
+
+.icon--medium {
+  @include size(100px, 100px);
+  vertical-align: middle;
 }

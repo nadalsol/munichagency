@@ -159,7 +159,7 @@ $u-inner-large-pd-medium-up:      80px $sp-big !default;
 $u-inner-xlarge-pd:               $sp-xxlarge $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     80px $sp-colossal !default;
 
-$u-inner-footer-pd-medium-up:     $sp-giant $sp-big $sp-xxxlarge !default;
+$u-inner-footer-pd-medium-up:     $sp-big $sp-big 50px !default;
 
 $u-inner-vision-pd:               $sp-small !default;
 $u-inner-vision-pd-medium-up:     120px 200px $sp-large !default;
@@ -298,8 +298,8 @@ $button-square-pd:                12px $sp-medium !default;
 $button-square-fz:                $fz-xlarge !default;
 
 // Button icon
-$button-icon-wd:                  $sp-xsmall !default;
-$button-icon-ht:                  $sp-xsmall !default;
+$button-icon-wd:                  $sp-large !default;
+$button-icon-ht:                  $sp-large !default;
 $button-icon-wd-medium-up:        $sp-large !default;
 $button-icon-ht-medium-up:        $sp-large !default;
 
