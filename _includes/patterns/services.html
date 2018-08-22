@@ -1,0 +1,41 @@
+{% for service in site.services %}
+<div class="panel-light">
+  <div class="wrapper">
+    <div class="u-inner-xlarge">
+
+      <div class="service">
+        <h2 class="heading2">{{ service.title }}</h2>
+        <div class="description">
+          {{ service.description }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel-light">
+  <div class="wrapper">
+    <div class="u-inner-xlarge">
+
+      <!-- carousel here -->
+      <p>carousel here</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel-light">
+  <div class="wrapper">
+    <div class="u-inner-xlarge">
+
+      <div class="service">
+        <div class="description">
+          {{ service.description_extended }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endfor %}

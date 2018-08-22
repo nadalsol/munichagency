@@ -98,19 +98,19 @@ projects:
 collections:
   abouts:
     output: true
-    permalink: /abouts/:path/
+    permalink: /:collection/:path/
   approaches:
     output: true
-    permalink: /approaches/:path/
+    permalink: /:collection/:path/
   callouts:
     output: true
-    permalink: /callouts/:path/
+    permalink: /:collection/:path/
   carousels:
     output: true
-    permalink: /carousels/:path/
-  nav_categories:
+    permalink: /:collection/:path/
+  services:
     output: true
-    permalink: /nav_categories/:path/
+    permalink: /:collection/:path/
   visions:
     output: true
-    permalink: /visions/:path/
+    permalink: /:collection/:path/

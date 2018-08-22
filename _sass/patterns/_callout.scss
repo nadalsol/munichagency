@@ -70,9 +70,4 @@
       width: 70%;
     }
   }
-
-  p {
-    @extend .text;
-    @extend .text--medium;
-  }
 }

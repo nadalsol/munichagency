@@ -5,7 +5,9 @@
       {% for about in site.abouts %}
       <div class="about">
         <blockquote class="blockquote">{{ about.title }}</blockquote>
-        {{ about.description }}
+        <div class="description">
+          {{ about.description }}
+        </div>
       </div>
       {% endfor %}
 

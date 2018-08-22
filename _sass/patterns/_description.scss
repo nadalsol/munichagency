@@ -1,7 +1,9 @@
-// About
+// Description
 // -----------------------------------------------------------------------------
 
-.about {
+.description {
+  ul,
+  ol,
   p {
     @extend .text;
     @extend .text--medium;
