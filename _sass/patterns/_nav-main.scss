@@ -8,7 +8,7 @@
   @include list-reset;
   font-family: $ff-sans-serif;
   font-size: $fz-big;
-  border-bottom: $br-small solid $c-dark;
+  box-shadow: 0 $br-base $c-dark;
 
   @media ($medium-up) {
     @include list-inline(0, 0);
@@ -16,7 +16,7 @@
     font-size: $fz-xlarge;
     font-weight: $fw-semi-bold;
     line-height: $header-ht-medium-up;
-    border-bottom: 0;
+    box-shadow: none;
   }
 
   &__link {

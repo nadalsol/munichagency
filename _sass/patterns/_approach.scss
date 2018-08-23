@@ -10,20 +10,19 @@
   }
 
   &__item {
-    @include size(100%, 230px);
-    margin-bottom: $sp-xxlarge;
-    padding: $sp-xxsmall $sp-small;
+    padding: $sp-small $sp-small $sp-big;
+    border-bottom: $br-base solid $c-light;
     background: $c-neutral no-repeat center center;
     background-size: cover;
     overflow: hidden;
 
     @media ($medium-up) {
-      @include size(auto, 300px);
+      @include size(100%, 300px);
       flex: 1 1 0;
-      margin-bottom: 0;
       padding: $sp-medium;
-      border-left: $br-base solid $c-light;
       border-right: $br-base solid $c-light;
+      border-bottom: 0;
+      border-left: $br-base solid $c-light;
     }
   }
 
