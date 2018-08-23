@@ -129,7 +129,6 @@
   // Item (slide)
   .carousel__item {
     overflow: hidden;
-    text-align: center;
     margin: 0;
     background-repeat: no-repeat;
     background-position: center top;
@@ -137,25 +136,32 @@
 
     @media ($medium-up) {
       height: $carousel-item-ht-medium-up;
-      text-align: left;
     }
   }
 
   .carousel__title {
     @include heading(
       $ff-sans-serif,
-      $fz-colossal,
+      $fz-big,
       $fw-semi-bold,
       $lh-xsmall,
       $c-light,
       none,
       normal
     );
+
+    @media ($medium-up) {
+      font-size: $fz-colossal;
+    }
   }
 
   .carousel__subtitle {
-    display: block;
-    font-size: $fz-xxxlarge;
+    font-size: $fz-xlarge;
+
+    @media ($medium-up) {
+      display: block;
+      font-size: $fz-xxxlarge;
+    }
   }
 
   // Controls (bullets)
