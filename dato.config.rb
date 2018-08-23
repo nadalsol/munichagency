@@ -51,12 +51,14 @@ directory "_services" do
   dato.services.each do |service|
     create_post "#{service.title.parameterize}.md" do
       frontmatter :yaml, {
+        layout: "services",
         title: service.title,
         description: service.description,
         description_extended: service.description_extended,
         link: service.link,
         icon: service.icon.url,
-        icon_alt: service.icon.alt
+        icon_alt: service.icon.alt,
+        cat: service.title.parameterize
       }
     end
   end
