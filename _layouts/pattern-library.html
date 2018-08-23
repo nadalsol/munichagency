@@ -6,15 +6,7 @@
   <body>
 
     {% include common/content.html %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      // If jQuery is not initialized (CDN is down), load from local source
-      if (typeof jQuery === 'undefined') {
-        document.write(unescape('%3Cscript src="{{ site.baseurl }}/assets/scripts/jquery-3.3.1.min.js"%3E%3C/script%3E'));
-      }
-    </script>
-    <script src="{{ site.baseurl }}/assets/scripts/main.js"></script>
+    {% include common/jquery.html %}
 
   </body>
 
