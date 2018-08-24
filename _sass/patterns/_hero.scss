@@ -6,10 +6,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  overflow: hidden;
+  text-align: center;
 
   @media ($medium-up) {
-    @include size($hero-wd-medium-up, $hero-ht-medium-up);
-    overflow: hidden;
+    text-align: left;
   }
 
   &--about {
