@@ -31,4 +31,8 @@
     @include link($c-light, $c-light);
     display: block;
   }
+
+  .heading4 {
+    margin-bottom: $sp-small;
+  }
 }
