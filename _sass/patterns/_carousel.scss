@@ -147,13 +147,10 @@
       $lh-xsmall,
       $c-light,
       none,
-      normal
+      normal,
+      $fz-colossal
     );
     margin-bottom: $sp-small;
-
-    @media ($medium-up) {
-      font-size: $fz-colossal;
-    }
   }
 
   .carousel__subtitle {

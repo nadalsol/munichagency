@@ -2,17 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .link {
-  font-family: $ff-sans-serif;
-  font-size: $fz-xxsmall;
-  font-weight: $fw-semi-bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
   &--secondary {
     @include link($link-secondary-c, $link-secondary-hover-c);
-  }
-
-  &--tertiary {
-    @include link($link-tertiary-c, $link-tertiary-hover-c);
   }
 }

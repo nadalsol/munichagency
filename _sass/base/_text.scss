@@ -15,6 +15,10 @@
     font-size: $fz-medium;
   }
 
+  &--light {
+    color: $c-light;
+  }
+
   &--cookie-message {
     font-size: $fz-xsmall;
     color: $c-light;
@@ -25,9 +29,5 @@
       text-transform: uppercase;
       font-weight: $fw-base;
     }
-  }
-
-  &--light {
-    color: $c-light;
   }
 }

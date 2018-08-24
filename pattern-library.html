@@ -15,11 +15,6 @@ title: Pattern Library
     box-shadow: 0px 0px 30px #ccc;
   }
 
-  .patlab-panel {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
   .patlab-section {
     padding-bottom: 40px;
     border-bottom: 1px dashed #ccc;
@@ -83,10 +78,16 @@ title: Pattern Library
               <a href="#patlab-inner">Inner</a>
             </li>
             <li>
+              <a href="#patlab-link">Link</a>
+            </li>
+            <li>
               <a href="#patlab-nav-category">Nav category</a>
             </li>
             <li>
               <a href="#patlab-panel">Panel</a>
+            </li>
+            <li>
+              <a href="#patlab-text">Text</a>
             </li>
           </ul>
         </nav>
@@ -118,10 +119,23 @@ title: Pattern Library
               <a class="button button--primary" href="#">
                 Button primary
               </a>
+              <a class="button button--primary is-disabled" href="#">
+                Button primary disabled
+              </a>
+              <br>
+              <br>
               <a class="button button--primary button--large" href="#">
                 Button primary large
               </a>
+              <a class="button button--primary button--large is-disabled" href="#">
+                Button primary large disabled
+              </a>
+              <br>
+              <br>
               <a class="button button--primary button--square" href="#">
+                +
+              </a>
+              <a class="button button--primary button--square is-disabled" href="#">
                 +
               </a>
             </div>
@@ -129,10 +143,23 @@ title: Pattern Library
               <a class="button button--secondary" href="#">
                 Button secondary
               </a>
+              <a class="button button--secondary is-disabled" href="#">
+                Button secondary disabled
+              </a>
+              <br>
+              <br>
               <a class="button button--secondary button--large" href="#">
                 Button secondary large
               </a>
+              <a class="button button--secondary button--large is-disabled" href="#">
+                Button secondary large disabled
+              </a>
+              <br>
+              <br>
               <a class="button button--secondary button--square" href="#">
+                +
+              </a>
+              <a class="button button--secondary button--square is-disabled" href="#">
                 +
               </a>
             </div>
@@ -201,6 +228,13 @@ title: Pattern Library
         </div>
       </div>
 
+      <!-- Link -->
+      <div class="patlab-section" id="patlab-link">
+        <h2 class="patlab-heading2">Link</h2>
+        <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        <p class="text">This is <a class="link link--secondary" href="#">link secondary</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+      </div>
+
       <!-- Nav category -->
       <div class="patlab-section" id="patlab-nav-category">
         <h2 class="patlab-heading2">Nav category</h2>
@@ -210,20 +244,37 @@ title: Pattern Library
       <!-- Panel -->
       <div class="patlab-section" id="patlab-panel">
         <h2 class="patlab-heading2">Panel</h2>
-        <div class="patlab-panel panel-dark">
+        <div class="patlab-margin-bottom u-text-center panel-dark">
           <span class="patlab-c-light">panel-dark</span>
         </div>
-        <div class="patlab-panel panel-neutral">
+        <div class="patlab-margin-bottom u-text-center panel-neutral">
           panel-neutral
         </div>
-        <div class="patlab-panel panel-light">
+        <div class="patlab-margin-bottom u-text-center panel-light">
           panel-light
         </div>
-        <div class="patlab-panel panel-carnation">
+        <div class="patlab-margin-bottom u-text-center panel-carnation">
           <span class="patlab-c-light">panel-carnation</span>
         </div>
-        <div class="patlab-panel panel-waterleaf">
+        <div class="patlab-margin-bottom u-text-center panel-waterleaf">
           panel-waterleaf
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="patlab-section" id="patlab-text">
+        <h2 class="patlab-heading2">Text</h2>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text">This is <strong>text</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--light">This is <strong>text light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text text--medium">This is <strong>text medium</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--medium text--light">This is <strong>text medium light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
         </div>
       </div>
 

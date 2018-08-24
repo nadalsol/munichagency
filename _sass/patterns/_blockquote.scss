@@ -4,12 +4,13 @@
 .blockquote {
   @include heading(
     $ff-sans-serif,
-    $fz-giant,
+    $fz-huge,
     $fw-thin,
     $lh-xsmall,
     $c-tradewind,
     none,
-    italic
+    italic,
+    $fz-giant
   );
   position: relative;
   margin: 0 0 $sp-xxlarge;

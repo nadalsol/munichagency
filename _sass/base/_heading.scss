@@ -6,12 +6,13 @@ h1,
 .heading1 {
   @include heading(
     $ff-sans-serif,
-    $fz-galactic,
+    $fz-titanic,
     $fw-thin,
     $lh-small,
     $c-dark,
     uppercase,
-    normal
+    normal,
+    $fz-galactic
   );
 }
 
@@ -20,12 +21,13 @@ h2,
 .heading2 {
   @include heading(
     $ff-sans-serif,
-    $fz-titanic,
+    $fz-giant,
     $fw-thin,
     $lh-small,
     $c-dark,
     uppercase,
-    normal
+    normal,
+    $fz-titanic
   );
 }
 
@@ -34,12 +36,13 @@ h3,
 .heading3 {
   @include heading(
     $ff-sans-serif,
-    $fz-giant,
+    $fz-huge,
     $fw-extra-bold,
     $lh-small,
     $c-dark,
     uppercase,
-    normal
+    normal,
+    $fz-giant
   );
 }
 
@@ -53,7 +56,8 @@ h4,
     $lh-xsmall,
     $c-dark,
     lowercase,
-    normal
+    normal,
+    $fz-huge
   );
 }
 
@@ -67,7 +71,8 @@ h5,
     $lh-small,
     $c-dark,
     uppercase,
-    normal
+    normal,
+    $fz-large
   );
 }
 
@@ -86,7 +91,8 @@ h6,
     $lh-small,
     $c-dark,
     none,
-    normal
+    normal,
+    $fz-xlarge
   );
 }
 

@@ -1,7 +1,7 @@
 // Heading mixins
 // -----------------------------------------------------------------------------
 
-@mixin heading($ff, $fz, $fw, $lh, $c, $tt, $fs) {
+@mixin heading($ff, $fz, $fw, $lh, $c, $tt, $fs, $fz-mu) {
   font-family: $ff;
   font-size: $fz;
   font-weight: $fw;
@@ -9,4 +9,8 @@
   color: $c;
   text-transform: $tt;
   font-style: $fs;
+
+  @media ($medium-up) {
+    font-size: $fz-mu;
+  }
 }
