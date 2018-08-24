@@ -4,11 +4,11 @@
 
       <h2 class="heading2 u-text-center">{{ site.approach.heading }}</h2>
       <ul class="approach">
-      {% for approach in site.approaches %}
-        <li class="approach__item" style="background-image: url({{ approach.img }});">
-          <a class="approach__link" href="{{ approach.link }}">
-            <h3 class="heading4 heading4--light">{{ approach.title }}</h3>
-            <p class="text text--light u-text-uppercase">{{ approach.description }}</p>
+      {% for home_approach in site.home_approaches %}
+        <li class="approach__item" style="background-image: url({{ home_approach.img }});">
+          <a class="approach__link" href="{{ home_approach.link }}">
+            <h3 class="heading4 heading4--light">{{ home_approach.title }}</h3>
+            <p class="text text--light u-text-uppercase">{{ home_approach.description }}</p>
           </a>
         </li>
       {% endfor %}

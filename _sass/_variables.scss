@@ -317,6 +317,7 @@ $callout-bgi-waterleaf:           $assets-img-path + "/callout-waterleaf.jpg" !d
 $callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/callout-waterleaf.jpg" !default;
 
 // Carousel
+$carousel-item-bgc:               $c-neutral !default;
 $carousel-item-ht-medium-up:      660px !default;
 $carousel-item-display-duration:  5 !default; // seconds
 

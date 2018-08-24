@@ -1,47 +1,58 @@
-directory "_abouts" do
-  dato.abouts.each do |about|
-    create_post "#{about.title.parameterize}.md" do
+directory "_about_callouts" do
+  dato.about_callouts.each do |about_callout|
+    create_post "#{about_callout.title.parameterize}.md" do
       frontmatter :yaml, {
-        title: about.title,
-        description: about.description
+        title: about_callout.title,
+        subtitle: about_callout.subtitle,
+        description: about_callout.description
       }
     end
   end
 end
 
-directory "_approaches" do
-  dato.approaches.each do |approach|
-    create_post "#{approach.title.parameterize}.md" do
+directory "_about_mains" do
+  dato.about_mains.each do |about_main|
+    create_post "#{about_main.title.parameterize}.md" do
       frontmatter :yaml, {
-        title: approach.title,
-        description: approach.description,
-        link: approach.link,
-        img: approach.img.url
+        title: about_main.title,
+        description: about_main.description
       }
     end
   end
 end
 
-directory "_callouts" do
-  dato.callouts.each do |callout|
-    create_post "#{callout.title.parameterize}.md" do
+directory "_home_approaches" do
+  dato.home_approaches.each do |home_approach|
+    create_post "#{home_approach.title.parameterize}.md" do
       frontmatter :yaml, {
-        title: callout.title,
-        subtitle: callout.subtitle,
-        description: callout.description
+        title: home_approach.title,
+        description: home_approach.description,
+        link: home_approach.link,
+        img: home_approach.img.url
       }
     end
   end
 end
 
-directory "_carousels" do
-  dato.carousels.each do |carousel|
-    create_post "#{carousel.title.parameterize}.md" do
+directory "_home_carousels" do
+  dato.home_carousels.each do |home_carousel|
+    create_post "#{home_carousel.title.parameterize}.md" do
       frontmatter :yaml, {
-        title: carousel.title,
-        subtitle: carousel.subtitle,
-        link: carousel.link,
-        img: carousel.img.url
+        title: home_carousel.title,
+        subtitle: home_carousel.subtitle,
+        link: home_carousel.link,
+        img: home_carousel.img.url
+      }
+    end
+  end
+end
+
+directory "_home_visions" do
+  dato.home_visions.each do |home_vision|
+    create_post "#{home_vision.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: home_vision.title,
+        description: home_vision.description
       }
     end
   end
@@ -59,17 +70,6 @@ directory "_services" do
         icon: service.icon.url,
         icon_alt: service.icon.alt,
         cat: service.title.parameterize
-      }
-    end
-  end
-end
-
-directory "_visions" do
-  dato.visions.each do |vision|
-    create_post "#{vision.title.parameterize}.md" do
-      frontmatter :yaml, {
-        title: vision.title,
-        description: vision.description
       }
     end
   end

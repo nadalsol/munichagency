@@ -1,25 +1,25 @@
 {% comment %}Getting the number of carousel items{% endcomment %}
-{% for carousel in site.carousels %}
+{% for home_carousel in site.home_carousels %}
   {% if forloop.first %}
-    {% assign carousel_length = forloop.length %}
+    {% assign home_carousel_length = forloop.length %}
   {% endif %}
 {% endfor %}
 
-<div class="carousel is-items-{{ carousel_length }}">
+<div class="carousel is-items-{{ home_carousel_length }}">
 
-  {% for carousel in site.carousels %}
+  {% for home_carousel in site.home_carousels %}
     <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
   {% endfor %}
 
-  {% for carousel in site.carousels %}
-    <figure class="carousel__item" style="background-image: url({{ carousel.img }}); background-color: {{ carousel.color }};">
+  {% for home_carousel in site.home_carousels %}
+    <figure class="carousel__item" style="background-image: url({{ home_carousel.img }});">
       <div class="wrapper">
         <div class="u-inner-carousel">
           <p class="carousel__title">
-            {% if carousel.subtitle %}
-            <span class="carousel__subtitle">{{ carousel.subtitle }}</span>
+            {% if home_carousel.subtitle %}
+            <span class="carousel__subtitle">{{ home_carousel.subtitle }}</span>
             {% endif %}
-            {{ carousel.title }}
+            {{ home_carousel.title }}
           </p>
           <a class="button button--primary button--square" href="{{ carousel.link }}">
             +
@@ -55,7 +55,7 @@
 
   <div class="carousel__controls">
     <div class="wrapper">
-    {% for carousel in site.carousels %}
+    {% for home_carousel in site.home_carousels %}
       <a class="carousel__controls__control-button" href="#slide-{{ forloop.index }}"></a>
     {% endfor %}
     </div>

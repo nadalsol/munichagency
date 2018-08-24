@@ -76,8 +76,6 @@ modal_terms:
 404:
   text_1: "Página no encontrada :("
   text_2: "No hemos encontrado la página solicitada."
-about_us:
-  heading: "Quiénes somos"
 approach:
   heading: "Filosofía"
 clients:
@@ -96,21 +94,21 @@ projects:
 
 # Collections
 collections:
-  abouts:
+  about_callouts:
     output: true
     permalink: /:collection/:path/
-  approaches:
+  about_mains:
     output: true
     permalink: /:collection/:path/
-  callouts:
+  home_approaches:
     output: true
     permalink: /:collection/:path/
-  carousels:
+  home_carousels:
+    output: true
+    permalink: /:collection/:path/
+  home_visions:
     output: true
     permalink: /:collection/:path/
   services:
     output: true
     permalink: /servicios/:path/
-  visions:
-    output: true
-    permalink: /:collection/:path/

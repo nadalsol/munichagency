@@ -133,6 +133,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    background-color: $carousel-item-bgc;
 
     @media ($medium-up) {
       height: $carousel-item-ht-medium-up;
@@ -204,7 +205,6 @@
       line-height: $carousel-item-ht-medium-up;
       text-align: center;
       color: $c-light;
-      background-color: rgba(0, 0, 0, .2);
     }
   }
 
