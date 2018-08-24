@@ -1,5 +1,8 @@
 // Heading mixins
 // -----------------------------------------------------------------------------
+//
+// 1. Prevents long words from breaking layout, in small devices.
+//
 
 @mixin heading($ff, $fz, $fw, $lh, $c, $tt, $fs, $fz-mu) {
   font-family: $ff;
@@ -9,6 +12,7 @@
   color: $c;
   text-transform: $tt;
   font-style: $fs;
+  word-break: break-word; // 1
 
   @media ($medium-up) {
     font-size: $fz-mu;

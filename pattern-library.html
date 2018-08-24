@@ -3,16 +3,10 @@ layout: pattern-library
 title: Pattern Library
 ---
 
-<style media="screen">
+<style>
   body {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 0; /* overriding fixed header space */
     background-color: #f2f2f2;
-  }
-
-  .patlab-panel-main {
-    border-radius: 3px;
-    box-shadow: 0px 0px 30px #ccc;
   }
 
   .patlab-section {
@@ -46,6 +40,18 @@ title: Pattern Library
 
   .patlab-c-light {
     color: #fff;
+  }
+
+  @media (min-width: 1440px) {
+    body {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .patlab-panel-main {
+      border-radius: 3px;
+      box-shadow: 0px 0px 30px #ccc;
+    }
   }
 </style>
 
