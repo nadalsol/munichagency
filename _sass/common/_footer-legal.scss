@@ -1,0 +1,64 @@
+// Footer legal
+// -----------------------------------------------------------------------------
+
+.footer-legal {
+  @include size($footer-legal-wd, $footer-legal-ht);
+  font-family: $ff-sans-serif;
+  font-size: $fz-small;
+  font-weight: $fw-base;
+  color: $footer-legal-c;
+  background-color: $footer-legal-bg;
+
+  @media ($medium-up) {
+    margin-top: $sp-titanic;
+    color: $footer-legal-c-medium-up;
+  }
+
+  > .wrapper {
+    position: relative;
+  }
+
+  &__social {
+    @include positioner(absolute, auto, auto, top, $icon-social-top, right, 0, $zi-100);
+
+    @media ($medium-up) {
+      top: $icon-social-top-medium-up;
+    }
+  }
+
+  .u-inner-footer {
+    @media ($medium-up) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__col-l {
+    text-align: left;
+    padding: $sp-big $sp-small;
+
+    @media ($medium-up) {
+      @include col(30%, left);
+      padding: 0;
+    }
+  }
+
+  &__col-r {
+    text-align: center;
+    padding: $sp-small $sp-small $sp-big;
+    background-color: $c-light;
+
+    @media ($medium-up) {
+      @include col(70%, right);
+      padding: 0;
+      background-color: transparent;
+    }
+
+    > nav,
+    > .copyright-legal {
+      @media ($medium-up) {
+        display: inline-block;
+      }
+    }
+  }
+}

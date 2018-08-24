@@ -1,0 +1,21 @@
+<header id="header" class="header" role="banner">
+  <div class="wrapper">
+
+    <div class="header__brand">
+      <a rel="author" href="{{ site.baseurl }}/{{ site.header.home_link }}">
+        <span class="is-medium-hidden">{% include icons/brand.svg css-class="icon icon--brand" %}</span>
+        <span class="is-small-hidden">{% include icons/brand-medium-up.svg css-class="icon icon--brand" %}</span>
+      </a>
+    </div>
+
+    <nav id="header-nav" class="header__nav is-small-hidden">
+      {% include patterns/nav-main.html %}
+    </nav>
+
+    <button id="header-hamburger" class="header__hamburger is-medium-hidden">
+      {% include icons/hamburger-open.svg css-class="icon icon--medium" id="header-hamburger-open" %}
+      {% include icons/hamburger-close.svg css-class="icon icon--medium is-hidden" id="header-hamburger-close" %}
+    </button>
+
+  </div>
+</header>

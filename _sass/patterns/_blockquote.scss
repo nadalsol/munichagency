@@ -1,0 +1,37 @@
+// Blockquote
+// -----------------------------------------------------------------------------
+
+.blockquote {
+  @include heading(
+    $ff-sans-serif,
+    $fz-huge,
+    $fw-thin,
+    $lh-xsmall,
+    $c-tradewind,
+    none,
+    italic,
+    $fz-giant
+  );
+  position: relative;
+  margin: 0 0 $sp-xxlarge;
+  padding: 0;
+  text-align: center;
+
+  @media ($medium-up) {
+    text-align: left;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+  }
+
+  &:before {
+    content: '“';
+    margin-left: -$sp-xsmall;
+  }
+
+  &:after {
+    content: '”';
+  }
+}

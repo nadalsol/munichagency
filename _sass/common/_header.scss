@@ -1,0 +1,58 @@
+// Header
+// -----------------------------------------------------------------------------
+
+.header {
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, $zi-100);
+  background-color: $header-bg;
+  box-shadow: 0 $br-base $c-light;
+
+  @media ($medium-up) {
+    @include size($header-wd-medium-up, $header-ht-medium-up);
+  }
+
+  .wrapper {
+    @media ($medium-up) {
+      @include clearfix;
+    }
+  }
+
+  &__brand {
+    @include size($header-brand-wd, $header-brand-ht);
+
+    @media ($medium-up) {
+      @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+      float: left;
+    }
+
+    > a {
+      display: block;
+    }
+  }
+
+  &__nav {
+    @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, $zi-100);
+    overflow-y: auto;
+
+    @media ($medium-up) {
+      @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
+      @include clearfix;
+      float: right;
+      overflow-y: visible;
+    }
+  }
+
+  &__hamburger {
+    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, $zi-100);
+    line-height: $header-hamburger-ht;
+    background-color: $header-hamburger-bg;
+  }
+
+  .icon--brand {
+    vertical-align: top;
+  }
+}
+
+// When `is-cookie-message` on the `body`, `header` gets repositioned
+.is-cookie-message > .header {
+  top: $header-is-cookie-top;
+}

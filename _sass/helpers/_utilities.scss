@@ -1,0 +1,140 @@
+// Utility classes
+// -----------------------------------------------------------------------------
+
+// Center-align a block level element
+.u-center-block {
+  @include center-block;
+}
+
+// Clear of floats
+.u-clearfix {
+  @include clearfix;
+}
+
+// Floats
+.u-float-l {
+  float: left;
+}
+
+.u-float-r {
+  float: right;
+}
+
+// Inners
+.u-inner-small {
+  padding: $u-inner-small-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-small-pd-medium-up;
+  }
+}
+
+.u-inner-medium {
+  padding: $u-inner-medium-pdv $u-inner-medium-pdh;
+
+  @media ($medium-up) {
+    padding: $u-inner-medium-pdv-medium-up $u-inner-medium-pdh-medium-up;
+  }
+}
+
+.u-inner-large {
+  padding: $u-inner-large-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-large-pd-medium-up;
+  }
+}
+
+.u-inner-xlarge {
+  padding: $u-inner-xlarge-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-xlarge-pd-medium-up;
+  }
+}
+
+.u-inner-footer {
+  @media ($medium-up) {
+    padding: $u-inner-footer-pd-medium-up;
+  }
+}
+
+.u-inner-vision {
+  padding: $u-inner-vision-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-vision-pd-medium-up;
+  }
+}
+
+.u-inner-carousel {
+  padding: $u-inner-carousel-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-carousel-pd-medium-up;
+  }
+
+  @media ($large-up) {
+    padding: $u-inner-carousel-pd-large-up;
+  }
+
+  @media ($xlarge-up) {
+    padding: $u-inner-carousel-pd-xlarge-up;
+  }
+
+  @media ($xxlarge-up) {
+    padding: $u-inner-carousel-pd-xxlarge-up;
+  }
+}
+
+// Responsive images
+.u-img-responsive {
+  @include img-responsive;
+}
+
+.u-img-responsive-full {
+  @include img-responsive-full;
+}
+
+// Text
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase;
+}
+
+// Visibility
+.is-hidden {
+  display: none !important;
+}
+
+.is-small-hidden {
+  display: none;
+
+  @media ($medium-up) {
+    display: block;
+  }
+}
+
+.is-medium-hidden {
+  display: block;
+
+  @media ($medium-up) {
+    display: none;
+  }
+}
+
+// Word break
+.u-word-break {
+  word-break: break-all;
+}

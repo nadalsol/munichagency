@@ -1,0 +1,53 @@
+// Navigation main
+// -----------------------------------------------------------------------------
+//
+// 1. Touch device friendly
+//
+
+.nav-main {
+  @include list-reset;
+  font-family: $ff-sans-serif;
+  font-size: $fz-big;
+  box-shadow: 0 $br-base $c-dark;
+
+  @media ($medium-up) {
+    @include list-inline(0, 0);
+    float: left;
+    font-size: $fz-xlarge;
+    font-weight: $fw-semi-bold;
+    line-height: $header-ht-medium-up;
+    box-shadow: none;
+  }
+
+  &__link {
+    @include link($nav-main-link-c, $nav-main-link-c-hover);
+    display: block; // 1
+    padding: $sp-small $sp-xxlarge;
+    background-color: $nav-main-link-bgc;
+    transition: $transition-bg;
+
+    @media ($medium-up) {
+      @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
+      padding: 0 $sp-small;
+      background-color: $nav-main-link-bgc-medium-up;
+    }
+
+    &:hover {
+      background-color: $nav-main-link-bgc-hover;
+
+      @media ($medium-up) {
+        background-color: $nav-main-link-bgc-hover-medium-up;
+      }
+    }
+
+    &.is-active {
+      color: $nav-main-link-c-active;
+      background-color: $nav-main-link-bgc-active;
+
+      @media ($medium-up) {
+        color: $nav-main-link-c-active-medium-up;
+        background-color: $nav-main-link-bgc-active-medium-up;
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+// Button mixins
+// -----------------------------------------------------------------------------
+
+//
+// Button base
+//
+// Immutable properties (NO need to be customised).
+//
+@mixin button-base {
+  display: inline-block;
+  padding: $button-pd;
+  font-family: $button-ff;
+  font-size: $button-fz;
+  font-weight: $button-fw;
+  line-height: $button-lh;
+  border-radius: $button-brr;
+  transition: $button-trn;
+  text-align: center;
+  cursor: pointer;
+
+  &:focus {
+    @include tab-focus;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    opacity: $button-disabled-o;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+
+//
+// Button type
+//
+// Mutable properties (need to be customised).
+// Pseudo-class order is important, so please follow the "LoVe HAte" rule.
+//
+@mixin button-type(
+  $mx-button-bg: $button-bg,
+  $mx-button-br: $button-br,
+  $mx-button-c: $c-button-c,
+  $mx-button-td: $button-td,
+
+  $mx-button-visited-bg: $button-visited-bg,
+  $mx-button-visited-br: $button-visited-br,
+  $mx-button-visited-c: $c-button-visited-c,
+  $mx-button-visited-td: $button-visited-td,
+
+  $mx-button-hover-bg: $button-hover-bg,
+  $mx-button-hover-br: $button-hover-br,
+  $mx-button-hover-c: $c-button-hover-c,
+  $mx-button-hover-td: $button-hover-td,
+
+  $mx-button-active-bg: $button-active-bg,
+  $mx-button-active-br: $button-active-br,
+  $mx-button-active-c: $c-button-active-c,
+  $mx-button-active-td: $button-active-td
+) {
+  background-color: $mx-button-bg;
+  border: $mx-button-br;
+  color: $mx-button-c;
+  text-decoration: $mx-button-td;
+
+  &:visited {
+    background-color: $mx-button-visited-bg;
+    border: $mx-button-visited-br;
+    color: $mx-button-visited-c;
+    text-decoration: $mx-button-visited-td;
+  }
+
+  &:hover {
+    background-color: $mx-button-hover-bg;
+    border: $mx-button-hover-br;
+    color: $mx-button-hover-c;
+    text-decoration: $mx-button-hover-td;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mx-button-active-bg;
+    border: $mx-button-active-br;
+    color: $mx-button-active-c;
+    text-decoration: $mx-button-active-td;
+  }
+}
+
+// Button type: primary
+@mixin button-primary {
+  @include button-type(
+    $button-primary-bg,
+    $button-primary-br,
+    $button-primary-c,
+    $button-primary-td,
+
+    $button-primary-visited-bg,
+    $button-primary-visited-br,
+    $button-primary-visited-c,
+    $button-primary-visited-td,
+
+    $button-primary-hover-bg,
+    $button-primary-hover-br,
+    $button-primary-hover-c,
+    $button-primary-hover-td,
+
+    $button-primary-active-bg,
+    $button-primary-active-br,
+    $button-primary-active-c,
+    $button-primary-active-td
+  );
+}
+
+// Button type: secondary
+@mixin button-secondary {
+  @include button-type(
+    $button-secondary-bg,
+    $button-secondary-br,
+    $button-secondary-c,
+    $button-secondary-td,
+
+    $button-secondary-visited-bg,
+    $button-secondary-visited-br,
+    $button-secondary-visited-c,
+    $button-secondary-visited-td,
+
+    $button-secondary-hover-bg,
+    $button-secondary-hover-br,
+    $button-secondary-hover-c,
+    $button-secondary-hover-td,
+
+    $button-secondary-active-bg,
+    $button-secondary-active-br,
+    $button-secondary-active-c,
+    $button-secondary-active-td
+  );
+}
+
+
+//
+// Button size
+//
+@mixin button-large {
+  padding: $button-large-pd;
+  font-size: $button-large-fz;
+}
+
+@mixin button-square {
+  padding: $button-square-pd;
+  font-size: $button-square-fz;
+  font-weight: $fw-thin;
+}
+
+
+//
+// Button icon
+//
+@mixin button-icon {
+  @include size($button-icon-wd, $button-icon-ht);
+  display: block;
+  padding: 0;
+
+  @media ($medium-up) {
+    @include size($button-icon-wd-medium-up, $button-icon-ht-medium-up);
+  }
+
+  > svg,
+  > img {
+    vertical-align: top;
+  }
+}

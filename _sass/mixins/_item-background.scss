@@ -1,0 +1,12 @@
+// Item background mixins
+// -----------------------------------------------------------------------------
+
+// Item background color and images
+@mixin item-background($bgc, $bgi, $bgi-mu) {
+  background-color: $bgc;
+  background-image: url($bgi);
+
+  @media ($medium-up) {
+    background-image: url($bgi-mu);
+  }
+}

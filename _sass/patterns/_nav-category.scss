@@ -1,0 +1,41 @@
+// Navigation category
+// -----------------------------------------------------------------------------
+
+.nav-category {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  font-size: $fz-medium;
+  text-transform: lowercase;
+
+  @media ($medium-up) {
+    font-size: $fz-base;
+    text-transform: uppercase;
+  }
+
+  // @media ($xlarge-up) {
+  //   white-space: nowrap;
+  // }
+
+  &__item {
+    flex: 1 1 0;
+    margin-bottom: $sp-xxlarge;
+    padding-left: $sp-small;
+    padding-right: $sp-small;
+
+    @media ($medium-up) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    @include link($c-light, $c-chartreuse);
+    display: block;
+  }
+
+  .icon {
+    @include center-block;
+  }
+}

@@ -1,0 +1,8 @@
+// Link
+// -----------------------------------------------------------------------------
+
+.link {
+  &--secondary {
+    @include link($link-secondary-c, $link-secondary-hover-c);
+  }
+}

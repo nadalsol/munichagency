@@ -1,0 +1,289 @@
+---
+layout: pattern-library
+title: Pattern Library
+---
+
+<style>
+  body {
+    margin-top: 0; /* overriding fixed header space */
+    background-color: #f2f2f2;
+  }
+
+  .patlab-section {
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 40px;
+  }
+
+  .patlab-heading1 {
+    font-size: 48px;
+    text-transform: none;
+    border-bottom: 2px solid #e5ff00;
+    margin-bottom: 40px;
+  }
+
+  .patlab-heading2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .patlab-margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .patlab-inner {
+    text-align: center;
+    background-color: #808080;
+    margin-bottom: 20px;
+  }
+
+  .patlab-c-light {
+    color: #fff;
+  }
+
+  @media (min-width: 1440px) {
+    body {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .patlab-panel-main {
+      border-radius: 3px;
+      box-shadow: 0px 0px 30px #ccc;
+    }
+  }
+</style>
+
+<div class="wrapper">
+  <div class="patlab-panel-main panel-light">
+    <div class="u-inner-large">
+
+      <h1 class="patlab-heading1">Pattern Library</h1>
+
+      <!-- TOC -->
+      <div class="patlab-section" id="patlab-toc">
+        <nav>
+          <ul>
+            <li>
+              <a href="#patlab-blockquote">Blockquote</a>
+            </li>
+            <li>
+              <a href="#patlab-button">Button</a>
+            </li>
+            <li>
+              <a href="#patlab-callout">Callout</a>
+            </li>
+            <li>
+              <a href="#patlab-heading">Heading</a>
+            </li>
+            <li>
+              <a href="#patlab-hero">Hero</a>
+            </li>
+            <li>
+              <a href="#patlab-inner">Inner</a>
+            </li>
+            <li>
+              <a href="#patlab-link">Link</a>
+            </li>
+            <li>
+              <a href="#patlab-nav-category">Nav category</a>
+            </li>
+            <li>
+              <a href="#patlab-panel">Panel</a>
+            </li>
+            <li>
+              <a href="#patlab-text">Text</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="patlab-section">
+        <ul>
+          {% for p in site.pages %}
+            <li>{{ p.title }} : <a href="{{ p.url | absolute_url }}">{{ p.url | absolute_url }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Blockquote -->
+      <div class="patlab-section" id="patlab-blockquote">
+        <h2 class="patlab-heading2">Blockquote</h2>
+        <blockquote class="blockquote">
+          Officia do illum, legam singulis imitarentur, aute fabulas appellat,
+          probant anim occaecat. Incurreret instituendarum est cupidatat
+        </blockquote>
+      </div>
+
+      <!-- Button -->
+      <div class="patlab-section" id="patlab-button">
+        <h2 class="patlab-heading2">Button</h2>
+        <div class="panel-neutral">
+          <div class="u-inner-medium">
+            <div class="patlab-margin-bottom">
+              <a class="button button--primary" href="#">
+                Button primary
+              </a>
+              <a class="button button--primary is-disabled" href="#">
+                Button primary disabled
+              </a>
+              <br>
+              <br>
+              <a class="button button--primary button--large" href="#">
+                Button primary large
+              </a>
+              <a class="button button--primary button--large is-disabled" href="#">
+                Button primary large disabled
+              </a>
+              <br>
+              <br>
+              <a class="button button--primary button--square" href="#">
+                +
+              </a>
+              <a class="button button--primary button--square is-disabled" href="#">
+                +
+              </a>
+            </div>
+            <div>
+              <a class="button button--secondary" href="#">
+                Button secondary
+              </a>
+              <a class="button button--secondary is-disabled" href="#">
+                Button secondary disabled
+              </a>
+              <br>
+              <br>
+              <a class="button button--secondary button--large" href="#">
+                Button secondary large
+              </a>
+              <a class="button button--secondary button--large is-disabled" href="#">
+                Button secondary large disabled
+              </a>
+              <br>
+              <br>
+              <a class="button button--secondary button--square" href="#">
+                +
+              </a>
+              <a class="button button--secondary button--square is-disabled" href="#">
+                +
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callout -->
+      <div class="patlab-section" id="patlab-callout">
+        <h2 class="patlab-heading2">Callout</h2>
+        {% include patterns/callout.html %}
+      </div>
+
+      <!-- Heading -->
+      <div class="patlab-section" id="patlab-heading">
+        <h2 class="patlab-heading2">Heading</h2>
+        <h1 class="heading1">h1. This is a heading</h1>
+        <h2 class="heading2">h2. This is a heading</h2>
+        <h3 class="heading3">h3. This is a heading</h3>
+        <h4 class="heading4">h4. This is a heading</h4>
+        <h5 class="heading5">h5. This is a heading</h5>
+        <h5 class="heading5">
+          h5. This is a heading
+          <span class="heading5__prominent">with prominent content</span>
+        </h5>
+        <h6 class="heading6">h6. This is a heading</h6>
+      </div>
+
+      <!-- Hero -->
+      <div class="patlab-section" id="patlab-hero">
+        <h2 class="patlab-heading2">Hero</h2>
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-about.html %}
+        </div>
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-projects.html %}
+        </div>
+        <div class="patlab-margin-bottom">
+          {% include patterns/hero-services.html %}
+        </div>
+      </div>
+
+      <!-- Inner -->
+      <div class="patlab-section" id="patlab-inner">
+        <h2 class="patlab-heading2">Inner</h2>
+        <div class="patlab-inner u-inner-small">
+          u-inner-small
+        </div>
+        <div class="patlab-inner u-inner-medium">
+          u-inner-medium
+        </div>
+        <div class="patlab-inner u-inner-large">
+          u-inner-large
+        </div>
+        <div class="patlab-inner u-inner-xlarge">
+          u-inner-xlarge
+        </div>
+        <div class="patlab-inner u-inner-footer">
+          u-inner-footer
+        </div>
+        <div class="patlab-inner u-inner-vision">
+          u-inner-vision
+        </div>
+        <div class="patlab-inner u-inner-carousel">
+          u-inner-carousel
+        </div>
+      </div>
+
+      <!-- Link -->
+      <div class="patlab-section" id="patlab-link">
+        <h2 class="patlab-heading2">Link</h2>
+        <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        <p class="text">This is <a class="link link--secondary" href="#">link secondary</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+      </div>
+
+      <!-- Nav category -->
+      <div class="patlab-section" id="patlab-nav-category">
+        <h2 class="patlab-heading2">Nav category</h2>
+        {% include patterns/nav-category.html css-class='panel-dark' %}
+      </div>
+
+      <!-- Panel -->
+      <div class="patlab-section" id="patlab-panel">
+        <h2 class="patlab-heading2">Panel</h2>
+        <div class="patlab-margin-bottom u-text-center panel-dark">
+          <span class="patlab-c-light">panel-dark</span>
+        </div>
+        <div class="patlab-margin-bottom u-text-center panel-neutral">
+          panel-neutral
+        </div>
+        <div class="patlab-margin-bottom u-text-center panel-light">
+          panel-light
+        </div>
+        <div class="patlab-margin-bottom u-text-center panel-carnation">
+          <span class="patlab-c-light">panel-carnation</span>
+        </div>
+        <div class="patlab-margin-bottom u-text-center panel-waterleaf">
+          panel-waterleaf
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="patlab-section" id="patlab-text">
+        <h2 class="patlab-heading2">Text</h2>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text">This is <strong>text</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--light">This is <strong>text light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text text--medium">This is <strong>text medium</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--medium text--light">This is <strong>text medium light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

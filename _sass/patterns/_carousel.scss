@@ -1,0 +1,239 @@
+// Carousel
+// -----------------------------------------------------------------------------
+// Based on Gallery CSS: "Pure CSS, not a script to be found" carousel
+// http://benschwarz.github.io/gallery-css/
+// https://github.com/benschwarz/gallery-css
+//
+// 1. Set the first item to be visible.
+// 2. Stop hash links from scrolling up and down.
+// 3. Unselected image.
+// 4. Kill button animation when there is a selected image.
+//
+
+@mixin carousel-inactive-button {
+  border: $br-base solid $c-light;
+  background-color: transparent;
+}
+
+@mixin carousel-active-button {
+  border: $br-base solid $c-light;
+  background-color: $c-light;
+}
+
+%carousel-inactive-button {
+  @include carousel-inactive-button;
+}
+
+%carousel-active-button {
+  @include carousel-active-button;
+}
+
+@mixin carousel( $carousel-item-count ) {
+  $carousel-total-duration: $carousel-display-duration * $carousel-item-count;
+
+  @keyframes controlAnimation-#{$carousel-item-count} {
+    0% { @include carousel-inactive-button; }
+    #{100% * $carousel-transition-duration / $carousel-total-duration},
+    #{100% * $carousel-display-duration / $carousel-total-duration} { @include carousel-active-button; }
+    #{100% * ($carousel-display-duration + $carousel-transition-duration) / $carousel-total-duration},
+    100% { @include carousel-inactive-button; }
+  }
+
+  @keyframes carouselAnimation-#{$carousel-item-count} {
+    0% { opacity: 0; }
+    #{100% * $carousel-transition-duration / $carousel-total-duration},
+    #{100% * $carousel-display-duration / $carousel-total-duration} { opacity: 1; }
+    #{100% * ($carousel-display-duration + $carousel-transition-duration) / $carousel-total-duration},
+    100% { opacity: 0; }
+  }
+
+  .carousel {
+    @for $j from 1 through $carousel-item-count {
+      .carousel__control-operator:nth-of-type(#{$j}):target ~ .carousel__item:nth-of-type(#{$j}) {
+        pointer-events: auto;
+        opacity: 1;
+      }
+
+      .carousel__control-operator:nth-of-type(#{$j}):target ~ .carousel__controls .carousel__controls__control-button:nth-of-type(#{$j}) {
+        @extend %carousel-active-button;
+      }
+    }
+  }
+
+  .is-items-#{$carousel-item-count} {
+    &.is-autoplay .carousel__controls__control-button {
+      animation: controlAnimation-#{$carousel-item-count} #{$carousel-total-duration}s infinite;
+    }
+
+    &.is-autoplay .carousel__item {
+      animation: carouselAnimation-#{$carousel-item-count} #{$carousel-total-duration}s infinite;
+    }
+
+    @for $j from 1 through $carousel-item-count {
+      .carousel__controls__control-button:nth-of-type(#{$j}),
+      .carousel__item:nth-of-type(#{$j}) {
+        $delay: #{($j - 1) * ($carousel-display-duration) - $carousel-transition-duration}s;
+        animation-delay: #{$delay};
+      }
+    }
+  }
+}
+
+.carousel {
+  border-bottom: $br-base solid $c-light;
+
+  .carousel__item:first-of-type { // 1
+    position: static;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  .carousel__control-operator { // 2
+    display: none;
+  }
+
+  .carousel__control-operator:target ~ .carousel__item { // 3
+    pointer-events: none;
+    opacity: 0;
+    animation: none;
+  }
+
+  .carousel__controls__control-button:first-of-type {
+    @extend %carousel-active-button;
+  }
+
+  .carousel__control-operator:target ~ .carousel__controls .carousel__controls__control-button { // 4
+    @extend %carousel-inactive-button;
+    animation: none;
+  }
+}
+
+
+//
+// Theme: controls how everything looks in Gallery CSS
+//
+.carousel {
+  position: relative;
+
+  // Item (slide)
+  .carousel__item {
+    overflow: hidden;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @media ($medium-up) {
+      height: $carousel-item-ht-medium-up;
+    }
+  }
+
+  .carousel__title {
+    @include heading(
+      $ff-sans-serif,
+      $fz-big,
+      $fw-semi-bold,
+      $lh-xsmall,
+      $c-light,
+      none,
+      normal,
+      $fz-colossal
+    );
+    margin-bottom: $sp-small;
+  }
+
+  .carousel__subtitle {
+    font-size: $fz-xlarge;
+
+    @media ($medium-up) {
+      display: block;
+      font-size: $fz-xxxlarge;
+    }
+  }
+
+  // Controls (bullets)
+  .carousel__controls {
+    @include size($carousel-controls-wd, $carousel-controls-ht);
+    position: absolute;
+    bottom: $carousel-controls-bot;
+    text-align: center;
+
+    @media ($medium-up) {
+      text-align: right;
+    }
+  }
+
+  .carousel__controls__control-button {
+    @include size($carousel-control-button-wd, $carousel-control-button-ht);
+    display: inline-block;
+    margin: $carousel-control-button-m;
+    border-radius: $brr-circle;
+    text-align: center;
+    text-decoration: none;
+    transition: $transition-bg;
+
+    @extend %carousel-inactive-button;
+
+    &:hover {
+      @extend %carousel-active-button;
+    }
+  }
+
+  // Secondary controls (chevrons)
+  .carousel__control-secondary-l,
+  .carousel__control-secondary-r {
+    display: none;
+
+    @media ($medium-up) {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      line-height: $carousel-item-ht-medium-up;
+      text-align: center;
+      color: $c-light;
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+
+  .carousel__control-secondary-l {
+    left: 0;
+
+    &:hover > .icon--chevron {
+      margin-right: $sp-xxsmall;
+    }
+  }
+
+  .carousel__control-secondary-r {
+    right: 0;
+
+    &:hover > .icon--chevron {
+      margin-left: $sp-xxsmall;
+    }
+  }
+
+  .icon--chevron {
+    vertical-align: middle;
+    transition: $transition-m;
+  }
+}
+
+
+//
+// Build
+//
+@for $i from 2 through 5 {
+  @include carousel($i);
+}

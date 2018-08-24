@@ -1,0 +1,1 @@
+<svg class="{{ include.css-class }}" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Anterior</title><g fill="none" fill-rule="evenodd"><path fill="#EEE" d="M.418.5h85v85h-85z"/><path fill="#FFF" fill-rule="nonzero" d="M52.29 23.28L50.01 21.33 32.54 41.73 49.93 63.664l2.35-1.864-15.855-19.996z"/></g></svg>

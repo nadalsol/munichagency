@@ -1,0 +1,35 @@
+// Cookie message
+// -----------------------------------------------------------------------------
+// Based on the code of [Studio 24](https://github.com/studio24/cookie-message)
+//
+// 1. You need this CSS to ensure the cookie message is initially hidden if
+// JavaScript is supported. Without this there will be a flash of content as the
+// cookie message appears and then is hidden after the DOM has loaded.
+//
+
+.js #cookie-message { // 1
+  display: none;
+}
+
+.cookie-message {
+  @include positioner(fixed, $cookie-msg-wd, $cookie-msg-ht, top, 0, left, 0, $zi-100);
+  background-color: $cookie-msg-bg;
+  overflow: hidden;
+  border-bottom: $br-small solid $c-mischka;
+
+  > .wrapper {
+    position: relative;
+  }
+
+  .button--icon {
+    position: absolute;
+    top: $cookie-msg-close-t;
+    right: $cookie-msg-close-r;
+    z-index: $zi-100;
+
+    @media ($medium-up) {
+      top: $cookie-msg-close-t-medium-up;
+      right: $cookie-msg-close-r-medium-up;
+    }
+  }
+}

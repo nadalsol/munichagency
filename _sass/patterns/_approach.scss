@@ -1,0 +1,38 @@
+// Approach
+// -----------------------------------------------------------------------------
+
+.approach {
+  @include list-reset;
+  width: 100%;
+
+  @media ($medium-up) {
+    display: flex;
+  }
+
+  &__item {
+    padding: $sp-small $sp-small $sp-big;
+    border-bottom: $br-base solid $c-light;
+    background: $c-neutral no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+    @media ($medium-up) {
+      @include size(100%, 300px);
+      flex: 1 1 0;
+      padding: $sp-medium;
+      border-right: $br-base solid $c-light;
+      border-bottom: 0;
+      border-left: $br-base solid $c-light;
+    }
+  }
+
+  &__link {
+    @include size(100%, 100%);
+    @include link($c-light, $c-light);
+    display: block;
+  }
+
+  .heading4 {
+    margin-bottom: $sp-small;
+  }
+}

@@ -1,0 +1,9 @@
+// Page not found (404)
+// -----------------------------------------------------------------------------
+//
+// 1. Class names can't start with a number, so `404` can't be used.
+//
+
+.page-not-found { // 1
+  background-color: $c-chartreuse;
+}

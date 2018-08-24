@@ -1,0 +1,10 @@
+// Clients
+// -----------------------------------------------------------------------------
+
+.clients {
+  @extend .nav-category;
+
+  &__item {
+    @extend .nav-category__item;
+  }
+}

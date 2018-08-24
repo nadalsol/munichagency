@@ -1,25 +1,26 @@
 # Munich Agency
 
-1. [Introduction](#introduction)
-2. [Install](#install)
-3. [Deploy](#deploy)
-4. [Use DatoCMS to publish content](#use-datocms-to-publish-content)
-5. [Manage DatoCMS records](#manage-datocms-records)
-6. [Resources](#resources)
-7. [Authors](#authors)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Configuration](#configuration)
+5. [Deploy](#deploy)
+    * [Possible issues](#possible-issues)
+6. [Publish content](#publish-content)
+7. [Manage DatoCMS records](#manage-datocms-records)
+8. [Resources](#resources)
+9. [Authors](#authors)
 
-## Introduction
+## Description
 
-**Munich Agency** is an advertising and communication studio located in Málaga (Spain).
-
-The site has been created using [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/), [Netlify](https://www.netlify.com/) and [DatoCMS](https://www.datocms.com/).
+This site has been created using [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/), [Netlify](https://www.netlify.com/) and [DatoCMS](https://www.datocms.com/).
 
 * **Jekyll** is a simple, blog-aware, static site generator.
 * **GitHub** is a development platform where you can host and review code.
 * **Netlify** is a platform to deploy modern static websites with an automated process.
 * **DatoCMS** is an API-based administrative area for your static websites, to let your clients publish new content independently.
 
-## Install
+## Installation
 
 First install [Ruby](https://www.ruby-lang.org/) and [RubyGems](https://rubygems.org/).
 
@@ -35,6 +36,8 @@ Clone GitHub repo:
 $ git clone git@github.com:yourusername/yoursitename.git
 ```
 
+## Usage
+
 Change into your new directory:
 
 ```
@@ -49,11 +52,25 @@ $ bundle exec jekyll server
 
 Now browse to http://localhost:4000
 
+♻️&nbsp;**Don't forget to reload your browser to apply new changes.**
+
+## Configuration
+
+Site settings in the `_config.yml` file, are used to personalize your new site.
+If you look in the HTML files, you will see them accessed via
+`{{ site.title }}`, `{{ site.email }}`, and so on. You can create any custom
+variable you would like, and they will be accessible in the templates via
+`{{ site.myvariable }}`.
+
+⚠️&nbsp;For technical reasons, the `_config.yml` file is *NOT* reloaded automatically
+when you use `$ bundle exec jekyll serve`. **If you change this file, please
+restart the server process.**
+
 ## Deploy
 
 We linked the Netlify site to the GitHub repo to allow an automated deploy on every commit.
 
-Now, everytime you push some change to GitHub, Netlify will repeat the build process and deploy a new version of the site, to your custom domain:
+Now, everytime you push some change to GitHub's `master` branch, Netlify will repeat the build process and deploy a new version of the site, to your custom domain:
 
 http://www.yoursitename.com/
 
@@ -87,7 +104,7 @@ Netlify's default Ruby version is `2.1.2` but you can pick a different version b
 2.4.2
 ```
 
-## Use DatoCMS to publish content
+## Publish content
 
 The deploy process described above can be fine, but it certainly cannot be done if the person in charge of updating catalog is not a programmer and or is not comfortable with terminal.
 
@@ -132,7 +149,7 @@ Dashboards:
 
 ## Authors
 
-This project has been designed and developed by 🎩 🐧 [Mr. Puffin](http://mrpuffin.cat/), a communication studio based in Vilassar de Mar, Barcelona (Catalunya).
+This project has been designed and developed by&nbsp;🎩&nbsp;🐧&nbsp;[Mr. Puffin Studio](http://mrpuffin.studio/), a communication studio based in Vilassar de Mar, Barcelona.
 
 <table>
   <tbody>
@@ -146,15 +163,15 @@ This project has been designed and developed by 🎩 🐧 [Mr. Puffin](http://mr
         <p>Front-end Web Developer</p>
       </td>
       <td align="center" valign="top">
-        <img width="150" height="150" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_150_150/p/4/005/06b/33f/3a3caff.jpg">
+        <img width="150" height="150" src="https://media.licdn.com/dms/image/C5103AQHege8bS0fxaA/profile-displayphoto-shrink_200_200/0?e=1539216000&v=beta&t=a81fi0ZeilAuA8mOyozSP-ArGRIRaIZ168gt0WRKmws">
         <br>
         <a href="https://www.linkedin.com/in/miriamsoto/">Miriam Soto</a>
         <p>@coolcolors</p>
         <br>
-        <p>Senior UI & Visual Designer / Creative Director</p>
+        <p>UI & Visual Designer</p>
       </td>
       <td align="center" valign="top">
-        <img width="150" height="150" src="https://media.licdn.com/dms/image/C4D03AQG6vMfNJnCUQw/profile-displayphoto-shrink_200_200/0?e=1528822800&v=beta&t=s922e_3FBvctXMB2DJwyVez1sPkPZ7vF6HW4xpN9h9w">
+        <img width="150" height="150" src="https://media.licdn.com/dms/image/C4D03AQG6vMfNJnCUQw/profile-displayphoto-shrink_800_800/0?e=1539216000&v=beta&t=brfXxuTCxSKSm-5FDgtkxdTOWLiO6U1Nhc5RNiucu6U">
         <br>
         <a href="https://www.linkedin.com/in/molinairene/">Irene Molina</a>
         <p>@molinairene</p>

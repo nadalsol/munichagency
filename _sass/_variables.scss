@@ -1,0 +1,397 @@
+// Variables
+// -----------------------------------------------------------------------------
+// Naming conventions used for variables inspired by [ZenCSSProperties]
+//
+// Some of the prefixes used:
+// * b = border
+// * bg = background;
+// * c = color
+// * ff = font-family
+// * fz = font-size
+
+// Base
+// -----------------------------------------------------------------------------
+
+// Borders
+$br-small:               1px !default;
+$br-base:                2px !default;
+
+// Border radius
+$brr-small:              2px !default;
+$brr-base:               3px !default;
+$brr-circle:             50% !default;
+
+// Colors
+$c-dark:                 #000 !default;
+$c-neutral:              #808080 !default;
+$c-light:                #fff !default;
+
+$c-carnation:            #fb6152 !default;
+$c-chartreuse:           #e5ff00 !default;
+$c-tradewind:            #71b5a8 !default;
+$c-waterleaf:            #9ce8da !default;
+
+// TODO : remove TMD colors
+$c-downriver:            #0f1d5e !default;
+$c-balticsea:            #342d38 !default;
+$c-pelorous:             #33a5b4 !default;
+$c-java:                 #21b7ca !default;
+$c-surfie:               #0c7987 !default;
+$c-lynch:                #606c8c !default;
+$c-chetwode:             #869fe1 !default;
+$c-fiord:                #434f70 !default;
+$c-eastbay:              #455378 !default;
+$c-manatee:              #7481a3 !default;
+$c-jaggedice:            #c6e7eb !default;
+$c-mischka:              #d5d8e2 !default;
+$c-athens:               #edeff4 !default;
+$c-lilac:                #eef0f8 !default;
+$c-citron:               #95c11f !default;
+$c-watercourse:          #047154 !default;
+$c-cosmic:               #683361 !default;
+
+// Scaffolding
+$assets-path:            "/assets" !default;
+$assets-img-path:        $assets-path + "/images" !default;
+// $icons-path:             "/_includes/icons" !default;
+
+$body-bg:                $c-light !default;
+
+$text-c:                 $c-dark !default;
+
+$link-c:                 $c-chartreuse !default;
+$link-c-hover:           purple !default; // TODO : replace color
+
+$link-secondary-c:       $c-carnation !default;
+$link-secondary-hover-c: purple !default; // TODO : replace color
+
+// Spacing units
+$sp-base:                5px !default;
+
+$sp-xxsmall:             floor($sp-base * 2) !default;  // 10px
+$sp-xsmall:              floor($sp-base * 3) !default;  // 15px
+$sp-small:               floor($sp-base * 4) !default;  // 20px
+$sp-medium:              floor($sp-base * 5) !default;  // 25px
+$sp-large:               floor($sp-base * 6) !default;  // 30px
+$sp-xlarge:              floor($sp-base * 7) !default;  // 35px
+$sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
+$sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
+$sp-big:                 floor($sp-base * 12) !default; // 60px
+$sp-huge:                floor($sp-base * 15) !default; // 75px
+$sp-giant:               floor($sp-base * 18) !default; // 90px
+$sp-colossal:            floor($sp-base * 30) !default; // 150px
+$sp-titanic:             floor($sp-base * 40) !default; // 200px
+
+// Fonts
+$ff-sans-serif:          'Barlow', sans-serif !default;
+$ff-base:                $ff-sans-serif !default;
+
+$fz-base:                18px !default;
+$fz-xxsmall:             12px !default;
+$fz-xsmall:              14px !default;
+$fz-small:               16px !default;
+$fz-medium:              20px !default;
+$fz-large:               22px !default;
+$fz-xlarge:              24px !default;
+$fz-xxlarge:             30px !default;
+$fz-xxxlarge:            36px !default;
+$fz-big:                 40px !default;
+$fz-huge:                48px !default; // TODO : rounded from 50 to 48
+$fz-giant:               60px !default;
+$fz-colossal:            70px !default; // TODO : rounded from 72 to 70
+$fz-titanic:             80px !default;
+$fz-galactic:            100px !default;
+
+$fw-thin:                100 !default;
+$fw-base:                400 !default;
+$fw-semi-bold:           600 !default;
+$fw-extra-bold:          800 !default;
+
+$lh-base:                1.5 !default;
+$lh-xsmall:              1 !default;
+$lh-small:               1.25 !default;
+$lh-medium:              1.75 !default;
+$lh-large:               2 !default;
+$lh-xlarge:              2.5 !default;
+
+// Media queries
+$screen-sm-min:          480px !default;
+$screen-md-min:          768px !default;
+$screen-lg-min:          992px !default;
+$screen-xl-min:          1200px !default;
+$screen-xxl-min:         1440px !default;
+
+$small-up:               "min-width:#{$screen-sm-min}" !default;
+$medium-up:              "min-width:#{$screen-md-min}" !default;
+$large-up:               "min-width:#{$screen-lg-min}" !default;
+$xlarge-up:              "min-width:#{$screen-xl-min}" !default;
+$xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
+
+// Transitions
+$transition-all:         all 250ms !default;
+$transition-bg:          background-color 250ms !default;
+$transition-bc:          border-color 250ms !default;
+$transition-c:           color 250ms !default;
+$transition-m:           margin 250ms !default;
+$transition-trf:         transform 250ms !default;
+
+// Z-index table
+$zi-100:                 100 !default;
+$zi-900:                 900 !default;
+
+
+// Helpers
+// -----------------------------------------------------------------------------
+$u-inner-small-pd:                $sp-small 0 !default;
+$u-inner-small-pd-medium-up:      $sp-large 0 !default;
+
+$u-inner-medium-pdv:              $sp-small !default;
+$u-inner-medium-pdh:              $sp-small !default;
+$u-inner-medium-pdv-medium-up:    $sp-xxlarge !default;
+$u-inner-medium-pdh-medium-up:    $sp-big !default;
+
+$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-large-pd-medium-up:      80px $sp-big !default;
+
+$u-inner-xlarge-pd:               $sp-xxlarge $sp-small !default;
+$u-inner-xlarge-pd-medium-up:     80px $sp-colossal !default;
+
+$u-inner-footer-pd-medium-up:     $sp-big $sp-big 50px !default;
+
+$u-inner-vision-pd:               $sp-small !default;
+$u-inner-vision-pd-medium-up:     120px 200px $sp-large !default;
+
+$u-inner-carousel-pd:             100px $sp-small $sp-giant !default;
+$u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
+$u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
+$u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
+$u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
+
+
+// Common
+// -----------------------------------------------------------------------------
+
+// Cookie message
+$cookie-msg-wd:                   100% !default;
+$cookie-msg-ht:                   100px !default;
+$cookie-msg-bg:                   $c-dark !default;
+
+$cookie-msg-close-t:              $sp-xxsmall !default;
+$cookie-msg-close-r:              $sp-xxsmall !default;
+$cookie-msg-close-t-medium-up:    $sp-xlarge !default;
+$cookie-msg-close-r-medium-up:    $sp-big !default;
+
+// Footer
+$footer-legal-wd:                 100% !default;
+$footer-legal-ht:                 auto !default;
+$footer-legal-c:                  $c-dark !default;
+$footer-legal-c-medium-up:        $c-light !default;
+$footer-legal-bg:                 $c-dark !default;
+
+// Header (should go after Helpers)
+$header-brand-wd:                 100px !default;
+$header-brand-ht:                 100px !default;
+$header-brand-wd-medium-up:       120px !default;
+$header-brand-ht-medium-up:       120px !default;
+
+$header-nav-po:                   absolute !default;
+$header-nav-wd:                   100% !default;
+$header-nav-ht:                   100vh !default;
+$header-nav-po-medium-up:         static !default;
+$header-nav-wd-medium-up:         auto !default;
+$header-nav-ht-medium-up:         auto !default;
+
+$header-wd:                       100% !default;
+$header-ht:                       $header-brand-ht !default;
+$header-wd-medium-up:             $header-wd !default;
+$header-ht-medium-up:             $header-brand-ht-medium-up !default;
+$header-bg:                       $c-light !default;
+
+$header-is-cookie-top:            $cookie-msg-ht !default;
+
+$header-hamburger-wd:             $header-ht !default;
+$header-hamburger-ht:             $header-ht !default;
+$header-hamburger-bg:             $header-bg !default;
+
+// Body (should go after Header)
+$body-mt:                         $header-ht !default;
+$body-mt-medium-up:               $header-ht-medium-up !default;
+
+$body-is-cookie-mt:               floor($header-ht + $cookie-msg-ht) !default;
+$body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !default;
+
+// Modal
+$modal-bg:                        rgba(255, 255, 255, .85) !default;
+$modal-zi:                        $zi-900 !default;
+
+$modal-dialog-m:                  $sp-xxsmall !default;
+$modal-dialog-maxw-medium-up:     $screen-md-min !default;
+
+$modal-content-bg:                $c-dark !default;
+
+$modal-pd:                        $sp-small !default;
+$modal-pd-medium-up:              $sp-xxlarge !default;
+
+
+// Patterns
+// -----------------------------------------------------------------------------
+
+// Button base
+$button-pd:                       12px $sp-xxxlarge !default;
+$button-ff:                       $ff-sans-serif !default;
+$button-fz:                       $fz-base !default;
+$button-fw:                       $fw-semi-bold !default;
+$button-lh:                       $lh-base !default;
+$button-brr:                      0 !default;
+$button-trn:                      $transition-all !default;
+
+// Button type: primary
+$button-primary-bg:               transparent !default;
+$button-primary-br:               $br-small solid $c-chartreuse !default;
+$button-primary-c:                $c-chartreuse !default;
+$button-primary-td:               none !default;
+
+$button-primary-visited-bg:       $button-primary-bg !default;
+$button-primary-visited-br:       $button-primary-br !default;
+$button-primary-visited-c:        $button-primary-c !default;
+$button-primary-visited-td:       $button-primary-td !default;
+
+$button-primary-hover-bg:         transparent !default;
+$button-primary-hover-br:         $br-small solid $c-light !default;
+$button-primary-hover-c:          $c-light !default;
+$button-primary-hover-td:         none !default;
+
+$button-primary-active-bg:        transparent !default;
+$button-primary-active-br:        $br-small solid $c-light !default;
+$button-primary-active-c:         $c-light !default;
+$button-primary-active-td:        none !default;
+
+// Button type: secondary
+$button-secondary-bg:             transparent !default;
+$button-secondary-br:             $br-small solid $c-light !default;
+$button-secondary-c:              $c-light !default;
+$button-secondary-td:             none !default;
+
+$button-secondary-visited-bg:     $button-secondary-bg !default;
+$button-secondary-visited-br:     $button-secondary-br !default;
+$button-secondary-visited-c:      $button-secondary-c !default;
+$button-secondary-visited-td:     $button-secondary-td !default;
+
+$button-secondary-hover-bg:       transparent !default;
+$button-secondary-hover-br:       $br-small solid $c-chartreuse !default;
+$button-secondary-hover-c:        $c-chartreuse !default;
+$button-secondary-hover-td:       none !default;
+
+$button-secondary-active-bg:      transparent !default;
+$button-secondary-active-br:      $br-small solid $c-chartreuse !default;
+$button-secondary-active-c:       $c-chartreuse !default;
+$button-secondary-active-td:      none !default;
+
+// Button size
+$button-large-pd:                 $sp-xsmall $sp-big !default;
+$button-large-fz:                 $fz-xlarge !default;
+
+$button-square-pd:                12px $sp-medium !default;
+$button-square-fz:                $fz-xlarge !default;
+
+// Button icon
+$button-icon-wd:                  $sp-large !default;
+$button-icon-ht:                  $sp-large !default;
+$button-icon-wd-medium-up:        $sp-large !default;
+$button-icon-ht-medium-up:        $sp-large !default;
+
+// Button state
+$button-disabled-o:               .5 !default;
+
+// Callout
+$callout-bgc-carnation:           $c-neutral !default;
+$callout-bgi-carnation:           $assets-img-path + "/callout-carnation.jpg" !default;
+$callout-bgi-carnation-medium-up: $assets-img-path + "/medium-up/callout-carnation.jpg" !default;
+
+$callout-bgc-dark:                $c-neutral !default;
+$callout-bgi-dark:                $assets-img-path + "/callout-dark.jpg" !default;
+$callout-bgi-dark-medium-up:      $assets-img-path + "/medium-up/callout-dark.jpg" !default;
+
+$callout-bgc-waterleaf:           $c-neutral !default;
+$callout-bgi-waterleaf:           $assets-img-path + "/callout-waterleaf.jpg" !default;
+$callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/callout-waterleaf.jpg" !default;
+
+// Carousel
+$carousel-item-ht-medium-up:      660px !default;
+$carousel-item-display-duration:  5 !default; // seconds
+
+$carousel-transition-duration:    2 !default; // seconds
+$carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
+
+$carousel-control-button-wd:      10px !default;
+$carousel-control-button-ht:      $carousel-control-button-wd !default;
+$carousel-control-button-m:       $sp-xsmall !default;
+
+$carousel-controls-bot:           $sp-medium !default;
+$carousel-controls-wd:            100% !default;
+$carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
+
+// Forms
+$form-group-mb:                   $sp-big !default;
+
+$form-label-mb:                   $sp-base !default;
+$form-label-ff:                   $ff-sans-serif !default;
+$form-label-fz:                   $fz-xxsmall !default;
+$form-label-fw:                   $fw-semi-bold !default;
+$form-label-c:                    $text-c !default;
+
+$form-field-ht:                   $sp-xlarge !default;
+$form-field-pd:                   $sp-base $sp-xxsmall !default;
+$form-field-ff:                   $ff-sans-serif !default;
+$form-field-fz:                   $fz-base !default;
+$form-field-fw:                   $fw-base !default;
+$form-field-c:                    $c-light !default;
+$form-field-trn:                  $transition-bc;
+
+$form-textarea-ht:                153px !default;
+
+// Hero
+$hero-wd:                         100% !default;
+$hero-ht:                         425px !default;
+
+$hero-bgc-about:                  $c-neutral !default;
+$hero-bgi-about:                  $assets-img-path + "/hero-about.jpg" !default;
+$hero-bgi-about-medium-up:        $assets-img-path + "/medium-up/hero-about.jpg" !default;
+
+$hero-bgc-projects:               $c-neutral !default;
+$hero-bgi-projects:               $assets-img-path + "/hero-projects.jpg" !default;
+$hero-bgi-projects-medium-up:     $assets-img-path + "/medium-up/hero-projects.jpg" !default;
+
+$hero-bgc-services:               $c-neutral !default;
+$hero-bgi-services:               $assets-img-path + "/hero-services.jpg" !default;
+$hero-bgi-services-medium-up:     $assets-img-path + "/medium-up/hero-services.jpg" !default;
+
+// Icon
+$icon-social-wd:                  65px !default;
+$icon-social-ht:                  65px !default;
+$icon-social-top:                 -(floor($icon-social-ht / 2)) !default;
+$icon-social-wd-medium-up:        85px !default;
+$icon-social-ht-medium-up:        85px !default;
+$icon-social-top-medium-up:       -(floor($icon-social-ht-medium-up / 2)) !default;
+
+// Navigation legal
+$nav-legal-c:                             $c-dark !default;
+$nav-legal-c-hover:                       purple !default; // TODO : replace color
+$nav-legal-c-medium-up:                   $c-light !default;
+$nav-legal-c-hover-medium-up:             purple !default; // TODO : replace color
+
+// Navigation main
+$nav-main-link-c:                         $c-dark !default;
+$nav-main-link-bgc:                       $c-light !default;
+$nav-main-link-c-medium-up:               $c-dark !default;
+$nav-main-link-bgc-medium-up:             transparent !default;
+
+$nav-main-link-c-hover:                   $c-dark !default;
+$nav-main-link-bgc-hover:                 $c-chartreuse !default;
+$nav-main-link-c-hover-medium-up:         purple !default; // TODO : replace color
+$nav-main-link-bgc-hover-medium-up:       transparent !default;
+
+$nav-main-link-c-active:                  $c-dark !default;
+$nav-main-link-bgc-active:                $c-chartreuse !default;
+$nav-main-link-c-active-medium-up:        purple !default; // TODO : replace color
+$nav-main-link-bgc-active-medium-up:      transparent !default;

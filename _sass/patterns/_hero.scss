@@ -1,0 +1,39 @@
+// Hero
+// -----------------------------------------------------------------------------
+
+.hero {
+  @include size($hero-wd, $hero-ht);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+
+  @media ($medium-up) {
+    text-align: left;
+  }
+
+  &--about {
+    @include item-background($hero-bgc-about, $hero-bgi-about, $hero-bgi-about-medium-up);
+  }
+
+  &--projects {
+    @include item-background($hero-bgc-projects, $hero-bgi-projects, $hero-bgi-projects-medium-up);
+  }
+
+  &--services {
+    @include item-background($hero-bgc-services, $hero-bgi-services, $hero-bgi-services-medium-up);
+  }
+
+  .heading1 {
+    margin-bottom: 0;
+  }
+
+  .panel-dark {
+    background-color: transparent;
+
+    @media ($medium-up) {
+      margin-top: -$sp-big;
+    }
+  }
+}
