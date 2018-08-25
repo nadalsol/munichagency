@@ -78,7 +78,7 @@ modal_terms:
   text_2: "No hemos encontrado la página solicitada."
 approach:
   heading: "Filosofía"
-clients:
+customers:
   heading: "Clientes"
 nav_main:
   link_1: "quienes-somos"
@@ -104,6 +104,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   home_carousels:
+    output: true
+    permalink: /:collection/:path/
+  home_customers:
     output: true
     permalink: /:collection/:path/
   home_visions:

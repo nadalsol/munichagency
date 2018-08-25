@@ -2,16 +2,16 @@
   <div class="wrapper">
     <div class="u-inner-medium">
 
-      <ul class="nav-category">
-      {% for service in site.services %}
-        <li class="nav-category__item">
-          <a class="nav-category__link" href="{{ service.link }}">
+      <ul class="nav-secondary">
+        {% for service in site.services %}
+        <li class="nav-secondary__item">
+          <a class="nav-secondary__link" href="{{ service.link }}">
             {% comment %}{% include icons/placeholder.svg css-class="icon icon--medium" %}{% endcomment %}
             <img src="{{ service.icon }}" width="100" height="100" class="icon icon--medium" alt="{{ service.icon_alt }}">
             {{ service.title }}
           </a>
         </li>
-      {% endfor %}
+        {% endfor %}
       </ul>
 
     </div>

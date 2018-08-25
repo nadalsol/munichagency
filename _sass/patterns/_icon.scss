@@ -48,6 +48,10 @@
   @include size($button-icon-wd, $button-icon-ht);
 }
 
+.icon--customers {
+  @include size(140px, 80px);
+}
+
 .icon--social {
   @include size($icon-social-wd, $icon-social-ht);
 

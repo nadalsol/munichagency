@@ -1,0 +1,16 @@
+<div class="panel-light is-hidden">
+  <div class="wrapper">
+    <div class="u-inner-medium">
+
+      <h2 class="heading2 u-text-center">{{ site.customers.heading }}</h2>
+      <ul class="customers">
+        {% for home_customer in site.home_customers %}
+        <li class="customers__item">
+          <img src="{{ home_customer.icon }}" class="u-img-responsive-full" alt="{{ home_customer.icon_alt }}">
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>

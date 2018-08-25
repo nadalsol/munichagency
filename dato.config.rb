@@ -47,6 +47,18 @@ directory "_home_carousels" do
   end
 end
 
+directory "_home_customers" do
+  dato.home_customers.each do |home_customer|
+    create_post "#{home_customer.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: home_customer.title,
+        icon: home_customer.icon.url,
+        icon_alt: home_customer.icon.alt
+      }
+    end
+  end
+end
+
 directory "_home_visions" do
   dato.home_visions.each do |home_vision|
     create_post "#{home_vision.title.parameterize}.md" do

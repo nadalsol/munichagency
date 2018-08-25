@@ -169,10 +169,6 @@
     position: absolute;
     bottom: $carousel-controls-bot;
     text-align: center;
-
-    @media ($medium-up) {
-      text-align: right;
-    }
   }
 
   .carousel__controls__control-button {
