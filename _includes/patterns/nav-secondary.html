@@ -3,7 +3,8 @@
     <div class="u-inner-medium">
 
       <ul class="nav-secondary">
-        {% for service in site.services %}
+        {% assign services_sorted = site.services | sort: "order" %}
+        {% for service in services_sorted %}
         <li class="nav-secondary__item">
           <a class="nav-secondary__link" href="{{ service.link }}">
             {% comment %}{% include icons/placeholder.svg css-class="icon icon--medium" %}{% endcomment %}

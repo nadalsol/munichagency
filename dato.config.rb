@@ -81,6 +81,7 @@ directory "_services" do
         link: service.link,
         icon: service.icon.url,
         icon_alt: service.icon.alt,
+        order: service.order,
         cat: service.title.parameterize
       }
     end
