@@ -28,9 +28,8 @@
     margin-bottom: 0;
   }
 
+  .panel-transparent,
   .panel-dark {
-    background-color: transparent;
-
     @media ($medium-up) {
       margin-top: -$sp-big;
     }

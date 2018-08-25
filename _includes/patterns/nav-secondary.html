@@ -1,4 +1,11 @@
-<div class="panel-dark">
+{% comment %}
+  Automatically highlight current tab in menu bar
+  https://stackoverflow.com/a/19273580
+{% endcomment %}
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_section = current_url[2] %}
+
+<div class="{{ include.css-class }}">
   <div class="wrapper">
     <div class="u-inner-medium">
 
@@ -6,7 +13,7 @@
         {% assign services_sorted = site.services | sort: "order" %}
         {% for service in services_sorted %}
         <li class="nav-secondary__item">
-          <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}/{{ service.cat }}">
+          <a class="nav-secondary__link {% if current_section == service.cat %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}/{{ service.cat }}">
             {% comment %}{% include icons/placeholder.svg css-class="icon icon--medium" %}{% endcomment %}
             <img src="{{ service.icon }}" width="100" height="100" class="icon icon--medium" alt="{{ service.icon_alt }}">
             {{ service.title }}
