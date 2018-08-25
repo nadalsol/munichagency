@@ -221,7 +221,7 @@ $body-is-cookie-mt:               floor($header-ht + $cookie-msg-ht) !default;
 $body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !default;
 
 // Modal
-$modal-bg:                        rgba(255, 255, 255, .85) !default;
+$modal-bg:                        rgba(0, 0, 0, .5) !default;
 $modal-zi:                        $zi-900 !default;
 
 $modal-dialog-m:                  $sp-xxsmall !default;
@@ -231,6 +231,15 @@ $modal-content-bg:                $c-dark !default;
 
 $modal-pd:                        $sp-small !default;
 $modal-pd-medium-up:              $sp-xxlarge !default;
+
+// Modal contact
+$modal-contact-bg:                rgba(0, 0, 0, .5) !default;
+$modal-contact-zi:                $zi-900 !default;
+
+$modal-contact-content-bg:        $c-tradewind !default;
+
+$modal-contact-pd:                $sp-small !default;
+$modal-contact-pd-medium-up:      $sp-xxlarge !default;
 
 
 // Patterns

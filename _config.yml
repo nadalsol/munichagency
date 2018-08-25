@@ -63,6 +63,9 @@ footer:
   contact: "Contactar"
 header:
   home_link: ""
+modal_contact:
+  heading: "Contáctanos"
+  text: "Lorem ipsum"
 modal_cookie:
   heading: "Cookies"
   text: "Sus datos formarán parte de un fichero titularidad de Munich Agency y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@munichagency. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes."
