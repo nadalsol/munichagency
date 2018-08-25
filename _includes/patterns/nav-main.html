@@ -9,12 +9,22 @@
 {% assign current_text_4 = site.nav_main.text_4 | downcase %}
 {% assign current_section = current_url[1] %}
 
+{% comment %}
+  Get the first `services` category, in order to build dynamic urls from the CMS
+{% endcomment %}
+{% assign services_sorted = site.services | sort: "order" %}
+{% for service in services_sorted %}
+  {% if forloop.first %}
+    {% assign service_cat = service.cat %}
+  {% endif %}
+{% endfor %}
+
 <ul class="nav-main u-text-uppercase">
   <li>
     <a class="nav-main__link {% if current_section == current_text_1 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_1 }}">{{ site.nav_main.text_1 }}</a>
   </li>
   <li>
-    <a class="nav-main__link {% if current_section == current_text_2 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}">{{ site.nav_main.text_2 }}</a>
+    <a class="nav-main__link {% if current_section == current_text_2 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}/{{ service_cat }}">{{ site.nav_main.text_2 }}</a>
   </li>
   <li>
     <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_3 }}">{{ site.nav_main.text_3 }}</a>

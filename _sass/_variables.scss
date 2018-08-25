@@ -352,8 +352,7 @@ $form-field-trn:                  $transition-bc;
 $form-textarea-ht:                153px !default;
 
 // Hero
-$hero-wd:                         100% !default;
-$hero-ht:                         425px !default;
+$hero-mht:                        425px !default;
 
 $hero-bgc-about:                  $c-neutral !default;
 $hero-bgi-about:                  $assets-img-path + "/hero-about.jpg" !default;
@@ -396,3 +395,8 @@ $nav-main-link-c-active:                  $c-dark !default;
 $nav-main-link-bgc-active:                $c-chartreuse !default;
 $nav-main-link-c-active-medium-up:        purple !default; // TODO : replace color
 $nav-main-link-bgc-active-medium-up:      transparent !default;
+
+// Navigation secondary
+$nav-secondary-link-c:                    $c-light !default;
+$nav-secondary-link-c-hover:              $c-chartreuse !default;
+$nav-secondary-link-c-active:             purple !default; // TODO : replace color

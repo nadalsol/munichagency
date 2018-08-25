@@ -32,8 +32,12 @@
   }
 
   &__link {
-    @include link($c-light, $c-chartreuse);
+    @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
     display: block;
+
+    &.is-active {
+      color: $nav-secondary-link-c-active;
+    }
   }
 
   .icon {

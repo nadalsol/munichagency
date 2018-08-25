@@ -2,11 +2,10 @@
 // -----------------------------------------------------------------------------
 
 .hero {
-  @include size($hero-wd, $hero-ht);
+  min-height: $hero-mht;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  overflow: hidden;
   text-align: center;
 
   @media ($medium-up) {
