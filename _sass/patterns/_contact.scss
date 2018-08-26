@@ -2,39 +2,46 @@
 // -----------------------------------------------------------------------------
 
 .contact {
-  background-color: $c-dark;
-
   &__header {
-    margin-bottom: $sp-giant;
+    margin-bottom: $sp-large;
   }
 
   &__heading {
-    color: $c-light;
-  }
+    font-size: $fz-huge;
 
-  &__content {
     @media ($medium-up) {
-      display: flex;
+      font-size: $fz-giant;
+    }
+
+    > .icon {
+      display: none;
+
+      @media ($large-up) {
+        display: inline-block;
+        margin-right: $sp-xxsmall;
+      }
     }
   }
 
-  &__col25 {
+  &__cols {
     @media ($medium-up) {
-      @include col(25%, left);
-      margin-left: $sp-medium;
-      margin-right: $sp-medium;
+      @include clearfix;
     }
   }
 
-  &__col50 {
+  &__col-l {
     @media ($medium-up) {
-      @include col(50%, left);
-      margin-left: $sp-medium;
-      margin-right: $sp-medium;
+      @include col(48%, left);
+      float: left;
+      margin-right: 2%;
     }
   }
 
-  .form__label {
-    color: $c-light;
+  &__col-r {
+    @media ($medium-up) {
+      @include col(48%, left);
+      float: left;
+      margin-left: 2%;
+    }
   }
 }

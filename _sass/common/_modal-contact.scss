@@ -25,11 +25,16 @@
     pointer-events: none;
 
     @media ($medium-up) {
-      max-width: 75%;
-      right: -25%;
+      max-width: 70%;
+      right: -30%;
     }
 
     @media ($large-up) {
+      max-width: 60%;
+      right: -40%;
+    }
+
+    @media ($xlarge-up) {
       max-width: 50%;
       right: -50%;
     }
@@ -48,36 +53,40 @@
   }
 
   &__header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: $modal-contact-pd;
+    @include clearfix;
+    padding: $modal-contact-pdv $modal-contact-pdh;
+    background-color: $modal-contact-content-bg;
 
     @media ($medium-up) {
-      padding: $modal-contact-pd-medium-up;
+      padding: $modal-contact-pdv-medium-up $modal-contact-pdh-medium-up;
+    }
+
+    > .button {
+      float: right;
     }
   }
 
   &__body {
     position: relative;
     flex: 1 1 auto;
-    padding: $modal-contact-pd;
+    padding: $modal-contact-pdv $modal-contact-pdh;
+    background-color: $modal-contact-content-bg;
 
     @media ($medium-up) {
-      padding: $modal-contact-pd-medium-up;
+      padding: $modal-contact-pdv-medium-up $modal-contact-pdh-medium-up;
     }
   }
 
   &__header + &__body {
-    margin-top: -$modal-contact-pd;
+    margin-top: -$modal-contact-pdv;
 
     @media ($medium-up) {
-      margin-top: -$modal-contact-pd-medium-up;
+      margin-top: -$modal-contact-pdv-medium-up;
     }
   }
 }
 
-body.is-modal-open .modal { // 3
+body.is-modal-open .modal-contact { // 3
   overflow-x: hidden;
   overflow-y: auto;
 }

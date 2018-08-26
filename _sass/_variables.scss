@@ -24,6 +24,7 @@ $brr-circle:             50% !default;
 // Colors
 $c-dark:                 #000 !default;
 $c-neutral:              #808080 !default;
+$c-dove:                 #6e6e6e !default;
 $c-light:                #fff !default;
 
 $c-carnation:            #fb6152 !default;
@@ -53,7 +54,7 @@ $c-cosmic:               #683361 !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/images" !default;
-// $icons-path:             "/_includes/icons" !default;
+$assets-ico-path:        $assets-path + "/icons" !default;
 
 $body-bg:                $c-light !default;
 
@@ -224,26 +225,34 @@ $body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !
 $modal-bg:                        rgba(0, 0, 0, .5) !default;
 $modal-zi:                        $zi-900 !default;
 
+$modal-content-bg:                $c-dark !default;
+
+$modal-pdv:                       $sp-small !default;
+$modal-pdh:                       $sp-small !default;
+$modal-pdv-medium-up:             $sp-xxlarge !default;
+$modal-pdh-medium-up:             $sp-big !default;
+
 $modal-dialog-m:                  $sp-xxsmall !default;
 $modal-dialog-maxw-medium-up:     $screen-md-min !default;
 
-$modal-content-bg:                $c-dark !default;
-
-$modal-pd:                        $sp-small !default;
-$modal-pd-medium-up:              $sp-xxlarge !default;
-
 // Modal contact
-$modal-contact-bg:                rgba(0, 0, 0, .5) !default;
-$modal-contact-zi:                $zi-900 !default;
+$modal-contact-bg:                $modal-bg !default;
+$modal-contact-zi:                $modal-zi !default;
 
 $modal-contact-content-bg:        $c-tradewind !default;
 
-$modal-contact-pd:                $sp-small !default;
-$modal-contact-pd-medium-up:      $sp-xxlarge !default;
+$modal-contact-pdv:               $modal-pdv !default;
+$modal-contact-pdh:               $modal-pdh !default;
+$modal-contact-pdv-medium-up:     $modal-pdv-medium-up !default;
+$modal-contact-pdh-medium-up:     $modal-pdh-medium-up !default;
 
 
 // Patterns
 // -----------------------------------------------------------------------------
+
+// Address
+$address-pd:                      $sp-xlarge !default;
+$address-bgi:                     $assets-ico-path + "/address.svg" !default;
 
 // Button base
 $button-pd:                       12px $sp-xxxlarge !default;
@@ -342,23 +351,33 @@ $carousel-controls-wd:            100% !default;
 $carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
 
 // Forms
-$form-group-mb:                   $sp-big !default;
+$form-group-mb:                   $sp-small !default;
 
 $form-label-mb:                   $sp-base !default;
 $form-label-ff:                   $ff-sans-serif !default;
-$form-label-fz:                   $fz-xxsmall !default;
-$form-label-fw:                   $fw-semi-bold !default;
+$form-label-fz:                   $fz-base !default;
+$form-label-fw:                   $fw-base !default;
 $form-label-c:                    $text-c !default;
 
-$form-field-ht:                   $sp-xlarge !default;
-$form-field-pd:                   $sp-base $sp-xxsmall !default;
+$form-field-ht:                   $sp-xxxlarge !default;
+$form-field-pd:                   $sp-xxsmall $sp-small !default;
 $form-field-ff:                   $ff-sans-serif !default;
 $form-field-fz:                   $fz-base !default;
 $form-field-fw:                   $fw-base !default;
-$form-field-c:                    $c-light !default;
-$form-field-trn:                  $transition-bc;
+$form-field-lh:                   $form-field-ht !default;
+$form-field-c:                    $text-c !default;
+$form-field-trn:                  $transition-bc !default;
+$form-field-bg:                   $c-light;
+$form-field-br:                   $br-small solid $c-light !default;
+$form-field-brr:                  $brr-base !default;
 
-$form-textarea-ht:                153px !default;
+$form-field-brc-focus:            $c-chartreuse !default;
+
+$form-field-phr-c:                $c-dove !default;
+$form-field-phr-fs:               italic !default;
+
+$form-textarea-ht:                $sp-colossal !default;
+$form-textarea-lh:                $lh-base !default;
 
 // Hero
 $hero-mht:                        425px !default;

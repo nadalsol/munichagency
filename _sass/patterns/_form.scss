@@ -1,13 +1,11 @@
 // Form
 // -----------------------------------------------------------------------------
-//
-// 1. Removes ugly rounding for Safari in iOS
-//
 
 .form {
   &__fieldset {
-    border: 0;
+    margin: 0;
     padding: 0;
+    border: 0;
   }
 
   &__group {
@@ -26,32 +24,25 @@
     font-size: $form-label-fz;
     font-weight: $form-label-fw;
     color: $form-label-c;
-    letter-spacing: 1px;
     text-align: left;
 
-    &.is-required:after {
-      content: '*';
+    &--light {
+      color: $c-light;
     }
   }
 
   &__field {
-    @include field-and-textarea($form-field-ht);
-    border-top: 0;
-    border-right: 0;
-    border-bottom: $br-base solid $c-lynch;
-    border-left: 0;
-    border-radius: 0; // 1
+    @include field-and-textarea($form-field-ht, $form-field-lh);
   }
 
   &__textarea {
-    @include field-and-textarea($form-textarea-ht);
-    border: $br-base solid $c-lynch;
-    border-radius: $brr-small;
+    @include field-and-textarea($form-textarea-ht, $form-textarea-lh);
     resize: none;
   }
 
   &__checkbox {
     display: inline-block;
+    margin-top: -$sp-base;
     margin-right: $sp-base;
     vertical-align: middle;
   }

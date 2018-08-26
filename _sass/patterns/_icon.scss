@@ -24,10 +24,6 @@
 // Possible values: `icon--small`, `icon--medium`...
 //
 
-.icon--address {
-  @include size(23px, 28px);
-}
-
 .icon--brand {
   @include size($header-brand-wd, $header-brand-ht);
 
@@ -40,9 +36,9 @@
   @include size(185px, 50px);
 }
 
-// .icon--chevron {
-//   @include size(19px, 60px);
-// }
+.icon--contact-form {
+  @include size(64px, 79px);
+}
 
 .icon--close {
   @include size($button-icon-wd, $button-icon-ht);

@@ -135,7 +135,8 @@ $(document).ready(function() {
         modalCloseTerms = modalTerms.find('.js-modal-close'),
         modalTriggerContact = $('#modal-trigger-contact'),
         modalContact = $('#modal-contact'),
-        modalCloseContact = modalContact.find('.js-modal-close');
+        modalCloseContact = modalContact.find('.js-modal-close'),
+        modalTriggerPrivacyForm = $('#modal-trigger-privacy-form');
 
     //
     // Modal open
@@ -171,6 +172,12 @@ $(document).ready(function() {
       event.preventDefault();
       body.addClass('is-modal-open'); // 1
       modalContact.removeClass('is-hidden'); // 2
+    });
+
+    modalTriggerPrivacyForm.click(function(event) {
+      event.preventDefault();
+      body.addClass('is-modal-open'); // 1
+      modalPrivacy.removeClass('is-hidden'); // 2
     });
 
     //

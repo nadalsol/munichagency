@@ -1,0 +1,56 @@
+<div class="contact">
+
+  <div class="contact__header">
+    <h2 class="heading2 heading2--light contact__heading">
+      {% include icons/contact-form.svg css-class="icon icon--contact-form" %}
+      {{ site.contact.heading }}
+    </h2>
+    {% include patterns/address.html %}
+  </div>
+
+  <form class="contact__content form" action="https://formspree.io/{{ site.email }}" method="POST">
+
+    <fieldset class="form__fieldset contact__cols">
+
+      <div class="form__group contact__col-l">
+        <label class="form__label form__label--light is-hidden" for="name">{{ site.contact.name }}</label>
+        <input class="form__field" type="text" id="name" name="name" tabindex="1" placeholder="{{ site.contact.name }}" required>
+      </div>
+
+      <div class="form__group contact__col-r">
+        <label class="form__label form__label--light is-hidden" for="phone">{{ site.contact.phone }}</label>
+        <input class="form__field" type="tel" id="phone" name="phone" tabindex="2" placeholder="{{ site.contact.phone }}">
+      </div>
+
+    </fieldset>
+
+    <fieldset class="form__fieldset">
+
+      <div class="form__group">
+        <label class="form__label form__label--light is-hidden" for="email">{{ site.contact.email }}</label>
+        <input class="form__field" type="email" id="email" name="_replyto" tabindex="3" placeholder="{{ site.contact.email }}" required>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label form__label--light is-hidden" for="message">{{ site.contact.message }}</label>
+        <textarea class="form__textarea" id="message" name="message" rows="5" cols="80" tabindex="4" placeholder="{{ site.contact.message }}"></textarea>
+      </div>
+
+      <input type="hidden" id="subject" name="_subject" value="{{ site.contact.subject }} {{ site.title }}">
+
+      <div class="button-set button-set--form">
+        <div class="form__group form__group--inline">
+          <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="on" tabindex="5" required>
+          <label class="form__label form__label--light" for="privacy">
+            {{ site.contact.privacy_text_1 }}
+            <a href="#" id="modal-trigger-privacy-form">{{ site.contact.privacy_text_2 }}</a>
+          </label>
+        </div>
+        <button type="submit" class="button button--primary button--small">{{ site.contact.submit }}</button>
+      </div>
+
+    </fieldset>
+
+  </form>
+
+</div>
