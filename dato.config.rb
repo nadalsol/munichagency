@@ -70,6 +70,24 @@ directory "_home_visions" do
   end
 end
 
+directory "_projects" do
+  dato.projects.each do |project|
+    create_post "#{project.title.parameterize}.md" do
+      frontmatter :yaml, {
+        layout: "projects",
+        title: project.title,
+        cat: project.cat,
+        sector: project.sector,
+        description: project.description,
+        link: project.link,
+        img_cover: project.img_cover.url,
+        img_cover_alt: project.img_cover.alt,
+        img_carousel: project.img_carousel
+      }
+    end
+  end
+end
+
 directory "_services" do
   dato.services.each do |service|
     create_post "#{service.title.parameterize}.md" do
