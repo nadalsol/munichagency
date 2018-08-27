@@ -52,7 +52,6 @@ img {
 // Links
 a {
   @include link($link-c, $link-c-hover);
-  text-decoration: none;
 
   &:focus {
     @include tab-focus;

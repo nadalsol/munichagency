@@ -11,23 +11,15 @@
     margin-bottom: 0;
   }
 
+  &--small {
+    font-size: $fz-xsmall;
+  }
+
   &--medium {
     font-size: $fz-medium;
   }
 
   &--light {
     color: $c-light;
-  }
-
-  &--cookie-message {
-    font-size: $fz-xsmall;
-    color: $c-light;
-
-    > a {
-      @include link($c-light, $c-mischka);
-      text-decoration: underline;
-      text-transform: uppercase;
-      font-weight: $fw-base;
-    }
   }
 }

@@ -60,11 +60,11 @@ $body-bg:                $c-light !default;
 
 $text-c:                 $c-dark !default;
 
-$link-c:                 $c-chartreuse !default;
+$link-c:                 $text-c !default;
 $link-c-hover:           purple !default; // TODO : replace color
 
-$link-secondary-c:       $c-carnation !default;
-$link-secondary-hover-c: purple !default; // TODO : replace color
+$link-light-c:           $c-light !default;
+$link-light-hover-c:     purple !default; // TODO : replace color
 
 // Spacing units
 $sp-base:                5px !default;

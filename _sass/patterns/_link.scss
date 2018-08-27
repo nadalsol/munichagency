@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .link {
-  &--secondary {
-    @include link($link-secondary-c, $link-secondary-hover-c);
+  &--light {
+    @include link($link-light-c, $link-light-hover-c);
   }
 }

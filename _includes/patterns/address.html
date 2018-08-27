@@ -1,7 +1,7 @@
 <div class="address">
-  <p class="text text--light">
-    <a href="{{ site.address_link }}" target="_blank">{{ site.address }}</a>
+  <p class="text {{ include.css-class-text }}">
+    <a class="link {{ include.css-class-link }}" href="{{ site.address_link }}" target="_blank">{{ site.address }}</a>
     <br>
-    <a href="tel:{{ site.phone_country_code }}{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
+    <a class="link {{ include.css-class-link }}" href="tel:{{ site.phone_country_code }}{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
   </p>
 </div>

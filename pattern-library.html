@@ -114,7 +114,12 @@ title: Pattern Library
       <!-- Address -->
       <div class="patlab-section" id="patlab-address">
         <h2 class="patlab-heading2">Address</h2>
-        {% include patterns/address.html %}
+        <div class="patlab-margin-bottom panel-light">
+          {% include patterns/address.html %}
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          {% include patterns/address.html css-class-text="text--light" css-class-link="link--light" %}
+        </div>
       </div>
 
       <!-- Blockquote -->
@@ -247,8 +252,12 @@ title: Pattern Library
       <!-- Link -->
       <div class="patlab-section" id="patlab-link">
         <h2 class="patlab-heading2">Link</h2>
-        <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
-        <p class="text">This is <a class="link link--secondary" href="#">link secondary</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--light">This is <a class="link link--light" href="#">link light</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
       </div>
 
       <!-- Nav secondary -->
@@ -296,6 +305,12 @@ title: Pattern Library
         </div>
         <div class="patlab-margin-bottom panel-neutral">
           <p class="text text--medium text--light">This is <strong>text medium light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text text--small">This is <strong>text small</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--small text--light">This is <strong>text small light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
         </div>
       </div>
 
