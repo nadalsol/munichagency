@@ -34,7 +34,7 @@ title: Pattern Library
 
   .patlab-inner {
     text-align: center;
-    background-color: #808080;
+    background-color: #e5ff00;
     margin-bottom: 20px;
   }
 
@@ -66,6 +66,9 @@ title: Pattern Library
         <nav>
           <ul>
             <li>
+              <a href="#patlab-address">Address</a>
+            </li>
+            <li>
               <a href="#patlab-blockquote">Blockquote</a>
             </li>
             <li>
@@ -87,7 +90,7 @@ title: Pattern Library
               <a href="#patlab-link">Link</a>
             </li>
             <li>
-              <a href="#patlab-nav-category">Nav category</a>
+              <a href="#patlab-nav-secondary">Nav secondary</a>
             </li>
             <li>
               <a href="#patlab-panel">Panel</a>
@@ -99,12 +102,19 @@ title: Pattern Library
         </nav>
       </div>
 
+      <!-- Pages -->
       <div class="patlab-section">
         <ul>
           {% for p in site.pages %}
             <li>{{ p.title }} : <a href="{{ p.url | absolute_url }}">{{ p.url | absolute_url }}</a></li>
           {% endfor %}
         </ul>
+      </div>
+
+      <!-- Address -->
+      <div class="patlab-section" id="patlab-address">
+        <h2 class="patlab-heading2">Address</h2>
+        {% include patterns/address.html %}
       </div>
 
       <!-- Blockquote -->
@@ -241,29 +251,34 @@ title: Pattern Library
         <p class="text">This is <a class="link link--secondary" href="#">link secondary</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
       </div>
 
-      <!-- Nav category -->
-      <div class="patlab-section" id="patlab-nav-category">
-        <h2 class="patlab-heading2">Nav category</h2>
-        {% include patterns/nav-category.html css-class='panel-dark' %}
+      <!-- Nav secondary -->
+      <div class="patlab-section" id="patlab-nav-secondary">
+        <h2 class="patlab-heading2">Nav secondary</h2>
+        {% include patterns/nav-secondary.html css-class='panel-dark' %}
       </div>
 
       <!-- Panel -->
       <div class="patlab-section" id="patlab-panel">
         <h2 class="patlab-heading2">Panel</h2>
-        <div class="patlab-margin-bottom u-text-center panel-dark">
-          <span class="patlab-c-light">panel-dark</span>
-        </div>
-        <div class="patlab-margin-bottom u-text-center panel-neutral">
-          panel-neutral
-        </div>
-        <div class="patlab-margin-bottom u-text-center panel-light">
-          panel-light
-        </div>
-        <div class="patlab-margin-bottom u-text-center panel-carnation">
-          <span class="patlab-c-light">panel-carnation</span>
-        </div>
-        <div class="patlab-margin-bottom u-text-center panel-waterleaf">
-          panel-waterleaf
+        <div class="patlab-inner u-inner-medium">
+          <div class="patlab-margin-bottom u-text-center panel-dark">
+            <span class="patlab-c-light">panel-dark</span>
+          </div>
+          <div class="patlab-margin-bottom u-text-center panel-neutral">
+            panel-neutral
+          </div>
+          <div class="patlab-margin-bottom u-text-center panel-light">
+            panel-light
+          </div>
+          <div class="patlab-margin-bottom u-text-center panel-transparent">
+            panel-transparent
+          </div>
+          <div class="patlab-margin-bottom u-text-center panel-carnation">
+            <span class="patlab-c-light">panel-carnation</span>
+          </div>
+          <div class="u-text-center panel-waterleaf">
+            panel-waterleaf
+          </div>
         </div>
       </div>
 

@@ -1,0 +1,92 @@
+// Modal contact
+// -----------------------------------------------------------------------------
+// Based on the code of [Bootstrap Modals](https://getbootstrap.com/docs/4.0/components/modal/)
+//
+// 3. Enable modal scrolling.
+//
+
+.modal-contact {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $modal-contact-bg;
+  overflow: hidden;
+  outline: 0;
+  z-index: $modal-contact-zi;
+
+  &__dialog {
+    position: relative;
+    width: auto;
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    @media ($medium-up) {
+      max-width: 70%;
+      right: -30%;
+    }
+
+    @media ($large-up) {
+      max-width: 60%;
+      right: -40%;
+    }
+
+    @media ($xlarge-up) {
+      max-width: 50%;
+      right: -50%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    background-color: $modal-contact-content-bg;
+    background-clip: padding-box;
+    outline: 0;
+  }
+
+  &__header {
+    @include clearfix;
+    padding: $modal-contact-pdv $modal-contact-pdh;
+    background-color: $modal-contact-content-bg;
+
+    @media ($medium-up) {
+      padding: $modal-contact-pdv-medium-up $modal-contact-pdh-medium-up;
+    }
+
+    > .button {
+      float: right;
+    }
+  }
+
+  &__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: $modal-contact-pdv $modal-contact-pdh;
+    background-color: $modal-contact-content-bg;
+
+    @media ($medium-up) {
+      padding: $modal-contact-pdv-medium-up $modal-contact-pdh-medium-up;
+    }
+  }
+
+  &__header + &__body {
+    margin-top: -$modal-contact-pdv;
+
+    @media ($medium-up) {
+      margin-top: -$modal-contact-pdv-medium-up;
+    }
+  }
+}
+
+body.is-modal-open .modal-contact { // 3
+  overflow-x: hidden;
+  overflow-y: auto;
+}

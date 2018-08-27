@@ -42,31 +42,33 @@
   }
 
   &__header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: $modal-pd;
+    @include clearfix;
+    padding: $modal-pdv $modal-pdh;
 
     @media ($medium-up) {
-      padding: $modal-pd-medium-up;
+      padding: $modal-pdv-medium-up $modal-pdh-medium-up;
+    }
+
+    > .button {
+      float: right;
     }
   }
 
   &__body {
     position: relative;
     flex: 1 1 auto;
-    padding: $modal-pd;
+    padding: $modal-pdv $modal-pdh;
 
     @media ($medium-up) {
-      padding: $modal-pd-medium-up;
+      padding: $modal-pdv-medium-up $modal-pdh-medium-up;
     }
   }
 
   &__header + &__body {
-    margin-top: -$modal-pd;
+    margin-top: -$modal-pdv;
 
     @media ($medium-up) {
-      margin-top: -$modal-pd-medium-up;
+      margin-top: -$modal-pdv-medium-up;
     }
   }
 

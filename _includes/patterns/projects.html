@@ -1,12 +1,31 @@
-<div class="panel-light">
-  <div class="wrapper">
-    <div class="u-inner-small">
+<main class="page-content" aria-label="Content">
 
-      <h2 class="heading2 u-text-center">{{ site.projects.heading }}</h2>
-      <div class="projects">
-        ...
+  {% include patterns/hero-projects.html %}
+
+  {% for project in site.projects %}
+    <div class="panel-light">
+      <div class="wrapper">
+        <div class="u-inner-xlarge">
+
+          <div class="project">
+            {% if forloop.first %}
+            <ul>
+              <li>layout: {{ project.layout }}</li>
+              <li>title: {{ project.title }}</li>
+              <!-- <li>cat: {{ project.cat }}</li> -->
+              <li>sector: {{ project.sector }}</li>
+              <li>description: {{ project.description }}</li>
+              <li>link: {{ project.link }}</li>
+              <li>img_cover: {{ project.img_cover }}</li>
+              <li>img_cover_alt: {{ project.img_cover_alt }}</li>
+              <li>img_carousel: {{ project.img_carousel }}</li>
+            </ul>
+            {% endif %}
+          </div>
+
+        </div>
       </div>
-
     </div>
-  </div>
-</div>
+  {% endfor %}
+
+</main>

@@ -133,6 +133,9 @@ $(document).ready(function() {
         modalTriggerTerms = $('#modal-trigger-terms'),
         modalTerms = $('#modal-terms'),
         modalCloseTerms = modalTerms.find('.js-modal-close'),
+        modalTriggerContact = $('#modal-trigger-contact'),
+        modalContact = $('#modal-contact'),
+        modalCloseContact = modalContact.find('.js-modal-close'),
         modalTriggerPrivacyForm = $('#modal-trigger-privacy-form');
 
     //
@@ -163,6 +166,12 @@ $(document).ready(function() {
       event.preventDefault();
       body.addClass('is-modal-open'); // 1
       modalTerms.removeClass('is-hidden'); // 2
+    });
+
+    modalTriggerContact.click(function(event) {
+      event.preventDefault();
+      body.addClass('is-modal-open'); // 1
+      modalContact.removeClass('is-hidden'); // 2
     });
 
     modalTriggerPrivacyForm.click(function(event) {
@@ -197,6 +206,11 @@ $(document).ready(function() {
       modalTerms.addClass('is-hidden'); // 2
     });
 
+    modalCloseContact.click(function() {
+      body.removeClass('is-modal-open'); // 1
+      modalContact.addClass('is-hidden'); // 2
+    });
+
     //
     // Modal close (ESC key)
     //
@@ -210,6 +224,7 @@ $(document).ready(function() {
         modalPrivacy.addClass('is-hidden'); // 2
         modalCookie.addClass('is-hidden'); // 2
         modalTerms.addClass('is-hidden'); // 2
+        modalContact.addClass('is-hidden'); // 2
       }
     });
   })();

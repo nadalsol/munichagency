@@ -1,0 +1,32 @@
+// Button set
+// -----------------------------------------------------------------------------
+
+.button-set {
+  @media ($large-up) {
+    display: flex;
+  }
+
+  .button + .button {
+    margin-top: $sp-small;
+
+    @media ($large-up) {
+      margin-top: 0;
+      margin-left: $sp-xxlarge;
+    }
+  }
+
+  &--form {
+    @media ($large-up) {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .form__group {
+      margin-bottom: $sp-small;
+
+      @media ($large-up) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

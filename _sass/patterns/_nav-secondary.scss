@@ -1,7 +1,7 @@
-// Navigation category
+// Navigation secondary
 // -----------------------------------------------------------------------------
 
-.nav-category {
+.nav-secondary {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
@@ -15,24 +15,29 @@
     text-transform: uppercase;
   }
 
-  // @media ($xlarge-up) {
-  //   white-space: nowrap;
-  // }
-
   &__item {
-    flex: 1 1 0;
+    width: 50%;
     margin-bottom: $sp-xxlarge;
     padding-left: $sp-small;
     padding-right: $sp-small;
 
     @media ($medium-up) {
+      width: 33.333%;
+    }
+
+    @media ($large-up) {
+      width: 16.666%;
       margin-bottom: 0;
     }
   }
 
   &__link {
-    @include link($c-light, $c-chartreuse);
+    @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
     display: block;
+
+    &.is-active {
+      color: $nav-secondary-link-c-active;
+    }
   }
 
   .icon {
