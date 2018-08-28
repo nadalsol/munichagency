@@ -41,7 +41,15 @@
 }
 
 .icon--close {
-  @include size($button-icon-wd, $button-icon-ht);
+  @include size($sp-large, $sp-large);
+}
+
+.icon--cookie-message-close {
+  @include size($sp-xsmall, $sp-xsmall);
+
+  @media ($medium-up) {
+    @include size($sp-large, $sp-large);
+  }
 }
 
 .icon--customers {
@@ -57,7 +65,7 @@
 }
 
 .icon--small {
-  @include size(30px, 30px);
+  @include size($sp-large, $sp-large);
   vertical-align: middle;
 }
 
