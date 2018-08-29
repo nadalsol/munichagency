@@ -70,13 +70,18 @@ directory "_home_visions" do
   end
 end
 
+#
+# 1. Possible valuses from Servicio: id, title, description,
+# description_extended, link, icon, order.
+#
 directory "_projects" do
   dato.projects.each do |project|
     create_post "#{project.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "projects",
         title: project.title,
-        cat: project.cat,
+        cat: project.cat.title.parameterize, # 1
+        permalink: "/proyectos/#{project.cat.title.parameterize}",
         sector: project.sector,
         description: project.description,
         link: project.link,
@@ -94,13 +99,14 @@ directory "_services" do
       frontmatter :yaml, {
         layout: "services",
         title: service.title,
+        cat: service.title.parameterize,
+        permalink: "/servicios/#{service.title.parameterize}",
         description: service.description,
         description_extended: service.description_extended,
         link: service.link,
         icon: service.icon.url,
         icon_alt: service.icon.alt,
-        order: service.order,
-        cat: service.title.parameterize
+        order: service.order
       }
     end
   end

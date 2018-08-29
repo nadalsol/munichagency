@@ -1,12 +1,13 @@
 ---
 layout: services
 title: Identidad corporativa
+cat: identidad-corporativa
+permalink: "/servicios/identidad-corporativa"
 description: "<p>Lorem ipsum Redes</p>"
 description_extended: "<p>Dolor sit amet Redes</p>"
 link: "#"
 icon: https://www.datocms-assets.com/5249/1534934555-branding.png
 icon_alt: Identidad corporativa
 order: 3
-cat: identidad-corporativa
 ---
 

@@ -1,31 +1,40 @@
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_section = current_url[2] %}
+
 <main class="page-content" aria-label="Content">
 
   {% include patterns/hero-projects.html %}
 
   {% for project in site.projects %}
+    {% if project.cat == current_section %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">
 
           <div class="project">
-            {% if forloop.first %}
             <ul>
-              <li>layout: {{ project.layout }}</li>
-              <li>title: {{ project.title }}</li>
-              <!-- <li>cat: {{ project.cat }}</li> -->
-              <li>sector: {{ project.sector }}</li>
-              <li>description: {{ project.description }}</li>
-              <li>link: {{ project.link }}</li>
-              <li>img_cover: {{ project.img_cover }}</li>
-              <li>img_cover_alt: {{ project.img_cover_alt }}</li>
-              <li>img_carousel: {{ project.img_carousel }}</li>
+              <li><strong>layout:</strong> {{ project.layout }}</li>
+              <li><strong>title:</strong> {{ project.title }}</li>
+              <li><strong>cat:</strong> {{ project.cat }}</li>
+              <li><strong>permalink:</strong> {{ project.permalink }}</li>
+              <li><strong>sector:</strong> {{ project.sector }}</li>
+              <li><strong>description:</strong> {{ project.description }}</li>
+              <li><strong>link:</strong> {{ project.link }}</li>
+              <li><strong>img_cover:</strong> {{ project.img_cover }}</li>
+              <li><strong>img_cover_alt:</strong> {{ project.img_cover_alt }}</li>
+              <li>
+                <strong>img_carousel:</strong>
+                {% for project_img_carousel in project.img_carousel %}
+                  {{ project_img_carousel.imgix_host }}{{ project_img_carousel.path }}<br>
+                {% endfor %}
+              </li>
             </ul>
-            {% endif %}
           </div>
 
         </div>
       </div>
     </div>
+    {% endif %}
   {% endfor %}
 
 </main>

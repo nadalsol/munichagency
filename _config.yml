@@ -120,7 +120,7 @@ collections:
     permalink: /:collection/:path/
   projects:
     output: true
-    permalink: /proyectos/:path/
+    permalink: /:collection/:path/
   services:
     output: true
-    permalink: /servicios/:path/
+    permalink: /:collection/:path/
