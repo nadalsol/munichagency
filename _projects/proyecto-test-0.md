@@ -6,8 +6,8 @@ permalink: "/proyectos/redes-sociales"
 sector: What
 description: "<p>Bla bla bla...</p>"
 link: https://www.eldiario.es/
-img_cover: https://www.datocms-assets.com/5249/1535302946-brand-2x.png
-img_cover_alt: Munich Agency
+img_cover: https://www.datocms-assets.com/5249/1535301691-placeholder-350x350.png
+img_cover_alt: 
 img_carousel:
 - !ruby/object:Dato::Local::FieldType::Image
   path: "/5249/1534833345-carousel-02.jpg"

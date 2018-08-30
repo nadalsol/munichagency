@@ -11,7 +11,7 @@ description: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
   qui officia deserunt mollit anim id est laborum.</p>"
 link: https://mashable.com/
-img_cover: https://www.datocms-assets.com/5249/1534833349-carousel-03.jpg
+img_cover: https://www.datocms-assets.com/5249/1535301691-placeholder-350x350.png
 img_cover_alt: 
 img_carousel:
 - !ruby/object:Dato::Local::FieldType::Image

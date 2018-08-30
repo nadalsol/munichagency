@@ -87,6 +87,14 @@
   }
 }
 
+.u-inner-projects {
+  padding: $u-inner-projects-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-projects-pd-medium-up;
+  }
+}
+
 // Responsive images
 .u-img-responsive {
   @include img-responsive;

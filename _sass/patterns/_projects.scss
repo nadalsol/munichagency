@@ -2,9 +2,58 @@
 // -----------------------------------------------------------------------------
 
 .projects {
-  //
+  @include list-reset;
+  width: 100%;
 
   @media ($medium-up) {
-    //
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: $sp-xxsmall;
+    background-color: $c-dark;
+
+    @media ($medium-up) {
+      width: 48%;
+    }
+  }
+
+  &__item:nth-child(odd) {
+    @media ($medium-up) {
+      margin-right: $sp-small;
+    }
+  }
+
+  &__item:nth-child(even) {
+    @media ($medium-up) {
+      margin-left: $sp-small;
+    }
+  }
+
+  &__link {
+    @include size(100%, 100%);
+    @include link($c-light, purple, none);
+    display: block;
+
+    @media ($medium-up) {
+      @include clearfix;
+    }
+  }
+
+  &__img {
+    @media ($medium-up) {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  &__content {
+    padding: $sp-small;
+
+    @media ($medium-up) {
+      float: left;
+      width: 50%;
+    }
   }
 }

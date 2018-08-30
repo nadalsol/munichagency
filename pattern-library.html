@@ -102,23 +102,18 @@ title: Pattern Library
         </nav>
       </div>
 
-      <!-- Pages -->
-      <div class="patlab-section">
-        <ul>
-          {% for p in site.pages %}
-            <li>{{ p.title }} : <a href="{{ p.url | absolute_url }}">{{ p.url | absolute_url }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-
       <!-- Address -->
       <div class="patlab-section" id="patlab-address">
         <h2 class="patlab-heading2">Address</h2>
         <div class="patlab-margin-bottom panel-light">
-          {% include patterns/address.html %}
+          <div class="u-inner-medium">
+            {% include patterns/address.html %}
+          </div>
         </div>
         <div class="patlab-margin-bottom panel-neutral">
-          {% include patterns/address.html css-class-text="text--light" css-class-link="link--light" %}
+          <div class="u-inner-medium">
+            {% include patterns/address.html css-class-text="text--light" css-class-link="link--light" %}
+          </div>
         </div>
       </div>
 

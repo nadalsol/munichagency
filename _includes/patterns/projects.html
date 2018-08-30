@@ -5,13 +5,29 @@
 
   {% include patterns/hero-projects.html %}
 
-  {% for project in site.projects %}
-    {% if project.cat == current_section %}
-    <div class="panel-light">
-      <div class="wrapper">
-        <div class="u-inner-xlarge">
+  <div class="panel-light">
+    <div class="wrapper">
+      <div class="u-inner-projects">
 
-          <div class="project">
+        <ul class="projects">
+        {% for project in site.projects %}
+          {% if project.cat == current_section %}
+          <li class="projects__item">
+            <a class="projects__link" href="{{ project.link }}">
+              <div class="projects__img">
+                <img class="u-img-responsive-full" src="{{ project.img_cover }}" alt="{{ project.img_cover_alt }}">
+              </div>
+              <div class="projects__content">
+                <h2 class="heading4 heading4--light u-text-uppercase">{{ project.title }}</h2>
+                <h3 class="heading5 heading5--light">
+                  <span class="heading5__prominent">{{ project.cat }}:</span>
+                  {{ project.sector }}
+                </h3>
+              </div>
+            </a>
+          </li>
+          {% comment %}
+          <li>
             <ul>
               <li><strong>layout:</strong> {{ project.layout }}</li>
               <li><strong>title:</strong> {{ project.title }}</li>
@@ -29,12 +45,14 @@
                 {% endfor %}
               </li>
             </ul>
-          </div>
+          </li>
+          {% endcomment %}
+          {% endif %}
+        {% endfor %}
+        </ul>
 
-        </div>
       </div>
     </div>
-    {% endif %}
-  {% endfor %}
+  </div>
 
 </main>
