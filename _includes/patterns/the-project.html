@@ -1,44 +1,42 @@
 {% assign current_url = page.url | downcase | split: '/' %}
-{% assign current_section = current_url[2] %}
+{% assign current_section = current_url[3] %}
 
 <main class="page-content" aria-label="Content">
 
-  <div class="panel-light">
-    <div class="wrapper">
+  {% for the_project in site.the_projects %}
+    {% if the_project.slug == current_section %}
 
-      <ul class="the-project">
-      {% for the_project in site.the_projects %}
-        {% if the_project.cat == current_section %}
-        <li class="the_project__item">
-          {{ the_project.title }}
-        </li>
-        {% comment %}
-        <li>
-          <ul>
-            <li><strong>layout:</strong> {{ project.layout }}</li>
-            <li><strong>title:</strong> {{ project.title }}</li>
-            <li><strong>cat:</strong> {{ project.cat }}</li>
-            <li><strong>permalink:</strong> {{ project.permalink }}</li>
-            <li><strong>permalink_to:</strong> {{ project.permalink_to }}</li>
-            <li><strong>sector:</strong> {{ project.sector }}</li>
-            <li><strong>description:</strong> {{ project.description }}</li>
-            <li><strong>link:</strong> {{ project.link }}</li>
-            <li><strong>img_cover:</strong> {{ project.img_cover }}</li>
-            <li><strong>img_cover_alt:</strong> {{ project.img_cover_alt }}</li>
-            <li>
-              <strong>img_carousel:</strong>
-              {% for project_img_carousel in project.img_carousel %}
-                {{ project_img_carousel.imgix_host }}{{ project_img_carousel.path }}<br>
-              {% endfor %}
-            </li>
-          </ul>
-        </li>
-        {% endcomment %}
-        {% endif %}
-      {% endfor %}
-      </ul>
+      {% include patterns/carousel-the-project.html %}
 
-    </div>
-  </div>
+      <div class="panel-dark">
+        <div class="wrapper">
+          <div class="u-inner-the-project">
+
+            <div class="u-divider u-divider--light">
+              <h1 class="heading3 heading3--light">{{ the_project.title }}</h1>
+              <p class="heading5 heading5--light">
+                <span class="heading5__prominent">{{ the_project.cat }}</span>
+                {% if the_project.sector %}{{ the_project.sector }}{% endif %}
+              </p>
+            </div>
+
+            {% if the_project.link %}
+            <div class="u-margin-bottom">
+              <p class="text text--medium">
+                <a class="link link--chartreuse" href="{{ the_project.link }}" target="_blank">{{ the_project.link }}</a>
+              </p>
+            </div>
+            {% endif %}
+
+            <div class="description description--light">
+              {{ the_project.description }}
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+  {% endfor %}
 
 </main>

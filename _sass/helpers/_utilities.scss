@@ -11,6 +11,27 @@
   @include clearfix;
 }
 
+// Divider
+.u-divider {
+  position: relative;
+  padding-bottom: $sp-base;
+  margin-bottom: $sp-large;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $br-base;
+    background-color: $c-dark;
+  }
+
+  &--light:before {
+    background-color: $c-light;
+  }
+}
+
 // Floats
 .u-float-l {
   float: left;
@@ -67,6 +88,22 @@
   }
 }
 
+.u-inner-projects {
+  padding: $u-inner-projects-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-projects-pd-medium-up;
+  }
+}
+
+.u-inner-the-project {
+  padding: $u-inner-the-project-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-the-project-pd-medium-up;
+  }
+}
+
 .u-inner-carousel {
   padding: $u-inner-carousel-pd;
 
@@ -87,14 +124,6 @@
   }
 }
 
-.u-inner-projects {
-  padding: $u-inner-projects-pd;
-
-  @media ($medium-up) {
-    padding: $u-inner-projects-pd-medium-up;
-  }
-}
-
 // Responsive images
 .u-img-responsive {
   @include img-responsive;
@@ -102,6 +131,11 @@
 
 .u-img-responsive-full {
   @include img-responsive-full;
+}
+
+// Margin
+.u-margin-bottom {
+  margin-bottom: $sp-large;
 }
 
 // Text

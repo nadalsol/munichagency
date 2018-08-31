@@ -19,5 +19,23 @@ img_carousel:
   height: 735
   alt: 
   title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1534833353-carousel-04.jpg"
+  format: jpg
+  size: 188289
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 735
+  alt: 
+  title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1534833349-carousel-03.jpg"
+  format: jpg
+  size: 138277
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 735
+  alt: 
+  title: 
 ---
 

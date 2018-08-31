@@ -27,7 +27,7 @@
 
   &__link {
     @include size(100%, 100%);
-    @include link($c-light, purple, none);
+    @include link($c-light, $c-chartreuse, none); // TODO : replace color
     display: block;
   }
 

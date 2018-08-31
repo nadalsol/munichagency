@@ -61,10 +61,13 @@ $body-bg:                $c-light !default;
 $text-c:                 $c-dark !default;
 
 $link-c:                 $text-c !default;
-$link-c-hover:           purple !default; // TODO : replace color
+$link-c-hover:           $c-chartreuse !default; // TODO : replace color
+
+$link-chartreuse-c:      $c-chartreuse !default;
+$link-chartreuse-hover-c:$c-waterleaf !default;
 
 $link-light-c:           $c-light !default;
-$link-light-hover-c:     purple !default; // TODO : replace color
+$link-light-hover-c:     $c-chartreuse !default; // TODO : replace color
 
 // Spacing units
 $sp-base:                5px !default;
@@ -162,14 +165,17 @@ $u-inner-footer-pd-medium-up:     $sp-big $sp-big 50px !default;
 $u-inner-vision-pd:               $sp-small !default;
 $u-inner-vision-pd-medium-up:     120px 200px $sp-large !default;
 
+$u-inner-projects-pd:             0 0 $sp-xxlarge !default;
+$u-inner-projects-pd-medium-up:   100px 0 !default;
+
+$u-inner-the-project-pd:          $sp-xxlarge $sp-small $sp-colossal !default;
+$u-inner-the-project-pd-medium-up:$sp-xxlarge 80px $sp-colossal !default;
+
 $u-inner-carousel-pd:             100px $sp-small $sp-giant !default;
 $u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
 $u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
 $u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
 $u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
-
-$u-inner-projects-pd:             0 0 $sp-xxlarge !default;
-$u-inner-projects-pd-medium-up:   100px 0 !default;
 
 
 // Common
@@ -400,28 +406,28 @@ $icon-social-ht-medium-up:        85px !default;
 $icon-social-top-medium-up:       -(floor($icon-social-ht-medium-up / 2)) !default;
 
 // Navigation legal
-$nav-legal-c:                             $c-dark !default;
-$nav-legal-c-hover:                       purple !default; // TODO : replace color
-$nav-legal-c-medium-up:                   $c-light !default;
-$nav-legal-c-hover-medium-up:             purple !default; // TODO : replace color
+$nav-legal-c:                        $c-dark !default;
+$nav-legal-c-hover:                  $c-chartreuse !default; // TODO : replace color
+$nav-legal-c-medium-up:              $c-light !default;
+$nav-legal-c-hover-medium-up:        $c-chartreuse !default; // TODO : replace color
 
 // Navigation main
-$nav-main-link-c:                         $c-dark !default;
-$nav-main-link-bgc:                       $c-light !default;
-$nav-main-link-c-medium-up:               $c-dark !default;
-$nav-main-link-bgc-medium-up:             transparent !default;
+$nav-main-link-c:                    $c-dark !default;
+$nav-main-link-bgc:                  $c-light !default;
+$nav-main-link-c-medium-up:          $c-dark !default;
+$nav-main-link-bgc-medium-up:        transparent !default;
 
-$nav-main-link-c-hover:                   $c-dark !default;
-$nav-main-link-bgc-hover:                 $c-chartreuse !default;
-$nav-main-link-c-hover-medium-up:         purple !default; // TODO : replace color
-$nav-main-link-bgc-hover-medium-up:       transparent !default;
+$nav-main-link-c-hover:              $c-dark !default;
+$nav-main-link-bgc-hover:            $c-chartreuse !default;
+$nav-main-link-c-hover-medium-up:    $c-chartreuse !default; // TODO : replace color
+$nav-main-link-bgc-hover-medium-up:  transparent !default;
 
-$nav-main-link-c-active:                  $c-dark !default;
-$nav-main-link-bgc-active:                $c-chartreuse !default;
-$nav-main-link-c-active-medium-up:        purple !default; // TODO : replace color
-$nav-main-link-bgc-active-medium-up:      transparent !default;
+$nav-main-link-c-active:             $c-dark !default;
+$nav-main-link-bgc-active:           $c-chartreuse !default;
+$nav-main-link-c-active-medium-up:   $c-chartreuse !default; // TODO : replace color
+$nav-main-link-bgc-active-medium-up: transparent !default;
 
 // Navigation secondary
-$nav-secondary-link-c:                    $c-light !default;
-$nav-secondary-link-c-hover:              $c-chartreuse !default;
-$nav-secondary-link-c-active:             purple !default; // TODO : replace color
+$nav-secondary-link-c:               $c-light !default;
+$nav-secondary-link-c-hover:         $c-chartreuse !default;
+$nav-secondary-link-c-active:        $c-chartreuse !default; // TODO : replace color

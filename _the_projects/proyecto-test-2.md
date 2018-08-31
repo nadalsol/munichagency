@@ -3,6 +3,7 @@ layout: the-project
 title: Proyecto test 2
 cat: web
 permalink: "/proyectos/web/proyecto-test-2"
+slug: proyecto-test-2
 sector: Front-end
 description: "<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation

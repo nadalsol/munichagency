@@ -113,6 +113,7 @@ directory "_the_projects" do
         title: project.title,
         cat: project.cat.title.parameterize,
         permalink: "/proyectos/#{project.cat.title.parameterize}/#{project.title.parameterize}",
+        slug: "#{project.title.parameterize}",
         sector: project.sector,
         description: project.description,
         link: project.link,

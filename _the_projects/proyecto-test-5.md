@@ -3,6 +3,7 @@ layout: the-project
 title: Proyecto test 5
 cat: seo-sem
 permalink: "/proyectos/seo-sem/proyecto-test-5"
+slug: proyecto-test-5
 sector: Lalaland
 description: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

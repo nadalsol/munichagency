@@ -105,3 +105,9 @@ h6,
 .heading6--light {
   color: $c-light;
 }
+
+// vertical rhythm exceptions
+.heading3 + .heading5,
+.heading4 + .heading5 {
+  margin-top: -$sp-small;
+}
