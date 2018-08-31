@@ -84,7 +84,7 @@ $sp-colossal:            floor($sp-base * 30) !default; // 150px
 $sp-titanic:             floor($sp-base * 40) !default; // 200px
 
 // Fonts
-$ff-sans-serif:          'Barlow', sans-serif !default;
+$ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
 $ff-base:                $ff-sans-serif !default;
 
 $fz-base:                18px !default;
@@ -168,7 +168,7 @@ $u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
 $u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
 $u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
 
-$u-inner-projects-pd:             $sp-xxlarge 0 !default;
+$u-inner-projects-pd:             0 0 $sp-xxlarge !default;
 $u-inner-projects-pd-medium-up:   100px 0 !default;
 
 

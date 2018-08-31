@@ -80,7 +80,7 @@
 }
 
 .carousel {
-  border-bottom: $br-base solid $c-light;
+  margin-bottom: $br-base;
 
   .carousel__item:first-of-type { // 1
     position: static;
