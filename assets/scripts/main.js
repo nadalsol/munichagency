@@ -130,9 +130,6 @@ $(document).ready(function() {
         modalTriggerCookie = $('#modal-trigger-cookie'),
         modalCookie = $('#modal-cookie'),
         modalCloseCookie = modalCookie.find('.js-modal-close'),
-        modalTriggerTerms = $('#modal-trigger-terms'),
-        modalTerms = $('#modal-terms'),
-        modalCloseTerms = modalTerms.find('.js-modal-close'),
         modalTriggerContact = $('#modal-trigger-contact'),
         modalContact = $('#modal-contact'),
         modalCloseContact = modalContact.find('.js-modal-close'),
@@ -160,12 +157,6 @@ $(document).ready(function() {
       event.preventDefault();
       body.addClass('is-modal-open'); // 1
       modalCookie.removeClass('is-hidden'); // 2
-    });
-
-    modalTriggerTerms.click(function(event) {
-      event.preventDefault();
-      body.addClass('is-modal-open'); // 1
-      modalTerms.removeClass('is-hidden'); // 2
     });
 
     modalTriggerContact.click(function(event) {
@@ -201,11 +192,6 @@ $(document).ready(function() {
       modalCookie.addClass('is-hidden'); // 2
     });
 
-    modalCloseTerms.click(function() {
-      body.removeClass('is-modal-open'); // 1
-      modalTerms.addClass('is-hidden'); // 2
-    });
-
     modalCloseContact.click(function() {
       body.removeClass('is-modal-open'); // 1
       modalContact.addClass('is-hidden'); // 2
@@ -223,7 +209,6 @@ $(document).ready(function() {
         modalCookieMessage.addClass('is-hidden'); // 2
         modalPrivacy.addClass('is-hidden'); // 2
         modalCookie.addClass('is-hidden'); // 2
-        modalTerms.addClass('is-hidden'); // 2
         modalContact.addClass('is-hidden'); // 2
       }
     });

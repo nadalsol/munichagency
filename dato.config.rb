@@ -85,6 +85,28 @@ directory "_home_visions" do
   end
 end
 
+directory "_legal_cookies" do
+  dato.legal_cookies.each do |legal_cookie|
+    create_post "#{legal_cookie.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: legal_cookie.title,
+        description: legal_cookie.description
+      }
+    end
+  end
+end
+
+directory "_legal_privacies" do
+  dato.legal_privacies.each do |legal_privacy|
+    create_post "#{legal_privacy.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: legal_privacy.title,
+        description: legal_privacy.description
+      }
+    end
+  end
+end
+
 directory "_projects" do
   dato.projects.each do |project|
     create_post "#{project.title.parameterize}.md" do
