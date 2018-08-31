@@ -1,0 +1,44 @@
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_section = current_url[2] %}
+
+<main class="page-content" aria-label="Content">
+
+  <div class="panel-light">
+    <div class="wrapper">
+
+      <ul class="the-project">
+      {% for the_project in site.the_projects %}
+        {% if the_project.cat == current_section %}
+        <li class="the_project__item">
+          {{ the_project.title }}
+        </li>
+        {% comment %}
+        <li>
+          <ul>
+            <li><strong>layout:</strong> {{ project.layout }}</li>
+            <li><strong>title:</strong> {{ project.title }}</li>
+            <li><strong>cat:</strong> {{ project.cat }}</li>
+            <li><strong>permalink:</strong> {{ project.permalink }}</li>
+            <li><strong>permalink_to:</strong> {{ project.permalink_to }}</li>
+            <li><strong>sector:</strong> {{ project.sector }}</li>
+            <li><strong>description:</strong> {{ project.description }}</li>
+            <li><strong>link:</strong> {{ project.link }}</li>
+            <li><strong>img_cover:</strong> {{ project.img_cover }}</li>
+            <li><strong>img_cover_alt:</strong> {{ project.img_cover_alt }}</li>
+            <li>
+              <strong>img_carousel:</strong>
+              {% for project_img_carousel in project.img_carousel %}
+                {{ project_img_carousel.imgix_host }}{{ project_img_carousel.path }}<br>
+              {% endfor %}
+            </li>
+          </ul>
+        </li>
+        {% endcomment %}
+        {% endif %}
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+
+</main>

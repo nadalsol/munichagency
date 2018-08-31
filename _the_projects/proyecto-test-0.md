@@ -1,9 +1,8 @@
 ---
-layout: projects
+layout: the-project
 title: Proyecto test 0
 cat: redes-sociales
-permalink: "/proyectos/redes-sociales"
-permalink_to: "/proyectos/redes-sociales/proyecto-test-0"
+permalink: "/proyectos/redes-sociales/proyecto-test-0"
 sector: What
 description: "<p>Bla bla bla...</p>"
 link: https://www.eldiario.es/

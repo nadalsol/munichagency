@@ -1,9 +1,8 @@
 ---
-layout: projects
+layout: the-project
 title: Proyecto test 3
 cat: identidad-corporativa
-permalink: "/proyectos/identidad-corporativa"
-permalink_to: "/proyectos/identidad-corporativa/proyecto-test-3"
+permalink: "/proyectos/identidad-corporativa/proyecto-test-3"
 sector: Lorem ipsum
 description: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

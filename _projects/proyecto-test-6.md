@@ -1,8 +1,9 @@
 ---
 layout: projects
 title: Proyecto test 6
-cat: marketing-digital
-permalink: "/proyectos/marketing-digital"
+cat: digital
+permalink: "/proyectos/digital"
+permalink_to: "/proyectos/digital/proyecto-test-6"
 sector: Hello world
 description: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

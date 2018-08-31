@@ -13,7 +13,7 @@
         {% for project in site.projects %}
           {% if project.cat == current_section %}
           <li class="projects__item">
-            <a class="projects__link" href="{{ project.link }}">
+            <a class="projects__link" href="{{ site.baseurl }}{{ project.permalink_to }}">
               <div class="projects__img">
                 <img class="u-img-responsive-full" src="{{ project.img_cover }}" alt="{{ project.img_cover_alt }}">
               </div>
@@ -26,27 +26,6 @@
               </div>
             </a>
           </li>
-          {% comment %}
-          <li>
-            <ul>
-              <li><strong>layout:</strong> {{ project.layout }}</li>
-              <li><strong>title:</strong> {{ project.title }}</li>
-              <li><strong>cat:</strong> {{ project.cat }}</li>
-              <li><strong>permalink:</strong> {{ project.permalink }}</li>
-              <li><strong>sector:</strong> {{ project.sector }}</li>
-              <li><strong>description:</strong> {{ project.description }}</li>
-              <li><strong>link:</strong> {{ project.link }}</li>
-              <li><strong>img_cover:</strong> {{ project.img_cover }}</li>
-              <li><strong>img_cover_alt:</strong> {{ project.img_cover_alt }}</li>
-              <li>
-                <strong>img_carousel:</strong>
-                {% for project_img_carousel in project.img_carousel %}
-                  {{ project_img_carousel.imgix_host }}{{ project_img_carousel.path }}<br>
-                {% endfor %}
-              </li>
-            </ul>
-          </li>
-          {% endcomment %}
           {% endif %}
         {% endfor %}
         </ul>

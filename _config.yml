@@ -124,3 +124,6 @@ collections:
   services:
     output: true
     permalink: /:collection/:path/
+  the_projects:
+    output: true
+    permalink: /:collection/:path/
