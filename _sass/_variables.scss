@@ -35,7 +35,6 @@ $c-waterleaf:            #9ce8da !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/images" !default;
-$assets-ico-path:        $assets-path + "/icons" !default;
 
 $body-bg:                $c-light !default;
 
@@ -242,10 +241,6 @@ $modal-contact-pdh-medium-up:     $modal-pdh-medium-up !default;
 
 // Patterns
 // -----------------------------------------------------------------------------
-
-// Address
-$address-pd:                      $sp-xlarge !default;
-$address-bgi:                     $assets-ico-path + "/address.svg" !default;
 
 // Button base
 $button-pd:                       12px $sp-xxxlarge !default;

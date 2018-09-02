@@ -5,14 +5,14 @@
   ul,
   ol,
   p {
-    @extend .text;
+    @include text;
   }
 
   &--small {
     ul,
     ol,
     p {
-      @extend .text--small;
+      font-size: $fz-xsmall;
     }
   }
 
@@ -20,7 +20,7 @@
     ul,
     ol,
     p {
-      @extend .text--medium;
+      font-size: $fz-medium;
     }
   }
 
@@ -28,7 +28,7 @@
     ul,
     ol,
     p {
-      @extend .text--light;
+      color: $c-light;
     }
   }
 }
