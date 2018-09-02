@@ -1,5 +1,5 @@
 ---
-title: MATCH EN EL EQUIPO
+title: Match con el equipo
 subtitle: Solo conocemos una manera de conectar con las mejores ideas, tener el mejor
   equipo.
 description: |-
