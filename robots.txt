@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /pattern-library/
 Disallow: /site.pdf
-Disallow: /TODO.md
 Disallow: /

@@ -1,5 +1,5 @@
 ---
-title: MATCH CON NUESTROS CLIENTES
+title: Match con nuestros clientes
 subtitle: Los problemas se ven mejor desde fuera, se solucionan mejor desde dentro.
 description: "<p>La conexi&oacute;n con los clientes es parte fundamental de nuestra
   manera de trabajar, por ello dedicamos el tiempo necesario para conocer su empresa,

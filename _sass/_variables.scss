@@ -35,20 +35,19 @@ $c-waterleaf:            #9ce8da !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/images" !default;
-$assets-ico-path:        $assets-path + "/icons" !default;
 
 $body-bg:                $c-light !default;
 
 $text-c:                 $c-dark !default;
 
 $link-c:                 $text-c !default;
-$link-c-hover:           $c-chartreuse !default; // TODO : replace color
+$link-c-hover:           $c-chartreuse !default;
 
 $link-chartreuse-c:      $c-chartreuse !default;
 $link-chartreuse-hover-c:$c-waterleaf !default;
 
 $link-light-c:           $c-light !default;
-$link-light-hover-c:     $c-chartreuse !default; // TODO : replace color
+$link-light-hover-c:     $c-chartreuse !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -243,10 +242,6 @@ $modal-contact-pdh-medium-up:     $modal-pdh-medium-up !default;
 // Patterns
 // -----------------------------------------------------------------------------
 
-// Address
-$address-pd:                      $sp-xlarge !default;
-$address-bgi:                     $assets-ico-path + "/address.svg" !default;
-
 // Button base
 $button-pd:                       12px $sp-xxxlarge !default;
 $button-ff:                       $ff-sans-serif !default;
@@ -392,9 +387,9 @@ $icon-social-top-medium-up:       -(floor($icon-social-ht-medium-up / 2)) !defau
 
 // Navigation legal
 $nav-legal-c:                        $c-dark !default;
-$nav-legal-c-hover:                  $c-chartreuse !default; // TODO : replace color
+$nav-legal-c-hover:                  $c-chartreuse !default;
 $nav-legal-c-medium-up:              $c-light !default;
-$nav-legal-c-hover-medium-up:        $c-chartreuse !default; // TODO : replace color
+$nav-legal-c-hover-medium-up:        $c-chartreuse !default;
 
 // Navigation main
 $nav-main-link-c:                    $c-dark !default;
@@ -404,15 +399,15 @@ $nav-main-link-bgc-medium-up:        transparent !default;
 
 $nav-main-link-c-hover:              $c-dark !default;
 $nav-main-link-bgc-hover:            $c-chartreuse !default;
-$nav-main-link-c-hover-medium-up:    $c-chartreuse !default; // TODO : replace color
+$nav-main-link-c-hover-medium-up:    $c-dark !default;
 $nav-main-link-bgc-hover-medium-up:  transparent !default;
 
 $nav-main-link-c-active:             $c-dark !default;
 $nav-main-link-bgc-active:           $c-chartreuse !default;
-$nav-main-link-c-active-medium-up:   $c-chartreuse !default; // TODO : replace color
+$nav-main-link-c-active-medium-up:   $c-dark !default;
 $nav-main-link-bgc-active-medium-up: transparent !default;
 
 // Navigation secondary
 $nav-secondary-link-c:               $c-light !default;
-$nav-secondary-link-c-hover:         $c-chartreuse !default;
-$nav-secondary-link-c-active:        $c-chartreuse !default; // TODO : replace color
+$nav-secondary-link-c-hover:         $c-light !default;
+$nav-secondary-link-c-active:        $c-light !default;

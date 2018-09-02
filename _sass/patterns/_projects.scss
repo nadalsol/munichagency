@@ -43,7 +43,7 @@
   &__link {
     @include clearfix;
     @include size(100%, 100%);
-    @include link($c-light, $c-chartreuse, none); // TODO : replace color
+    @include link($c-light, $c-chartreuse, none);
     display: block;
   }
 

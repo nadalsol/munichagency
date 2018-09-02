@@ -18,18 +18,13 @@
         </div>
       </div>
     </div>
+    {% endif %}
+  {% endfor %}
 
-    <div class="panel-light">
-      <div class="wrapper">
-        <div class="u-inner-xlarge">
+  {% include patterns/carousel-secondary-services.html %}
 
-          <!-- carousel here -->
-          <p>carousel here</p>
-
-        </div>
-      </div>
-    </div>
-
+  {% for service in site.services %}
+    {% if service.cat == page.slug %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">

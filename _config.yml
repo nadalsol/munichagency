@@ -23,7 +23,9 @@ twitter_username: munichagency
 facebook_username: munichagency
 github_username: nadalsol
 address_link: https://goo.gl/maps/1tMN7qASPXF2
-address: C/ Lancelot, 22 - 29738 - Torrre de Benagalbón, Málaga.
+address_1: C/ Lancelot, 22 - 29738
+address_2: Torrre de Benagalbón, Málaga.
+address_location: ubicación
 phone_country_code: 34
 phone: 627 81 50 41
 lang: es
@@ -105,6 +107,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   home_customers:
+    output: true
+    permalink: /:collection/:path/
+  home_carousel_projects:
     output: true
     permalink: /:collection/:path/
   home_visions:

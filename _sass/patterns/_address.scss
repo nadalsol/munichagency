@@ -2,6 +2,19 @@
 // -----------------------------------------------------------------------------
 
 .address {
-  padding-left: $address-pd;
-  background: url($address-bgi) no-repeat left top;
+  @media ($large-up) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .text {
+    @media ($large-up) {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon--address {
+    margin-right: $sp-base;
+  }
 }

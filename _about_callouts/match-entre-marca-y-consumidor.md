@@ -1,5 +1,5 @@
 ---
-title: MATCH ENTRE MARCA Y CONSUMIDOR
+title: Match entre marca y consumidor
 subtitle: Para impactar al consumidor, además de visible, hay que ser memorable.
 description: "<p>Ya sea una campa&ntilde;a digital, una identidad corporativa o cualquier
   trabajo de Munich, es una oportunidad de entrar en la mente del consumidor e introducir

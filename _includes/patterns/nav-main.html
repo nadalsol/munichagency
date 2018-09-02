@@ -4,10 +4,10 @@
 {% endcomment %}
 {% assign current_url = page.url | downcase | split: '/' %}
 {% assign current_section = current_url[1] %}
-{% assign current_text_1 = site.nav_main.text_1 | downcase %}
-{% assign current_text_2 = site.nav_main.text_2 | downcase %}
-{% assign current_text_3 = site.nav_main.text_3 | downcase %}
-{% assign current_text_4 = site.nav_main.text_4 | downcase %}
+{% assign current_text_1 = site.nav_main.text_1 | downcase | slugify: 'latin' %}
+{% assign current_text_2 = site.nav_main.text_2 | downcase | slugify: 'latin' %}
+{% assign current_text_3 = site.nav_main.text_3 | downcase | slugify: 'latin' %}
+{% assign current_text_4 = site.nav_main.text_4 | downcase | slugify: 'latin' %}
 
 {% comment %}
   Get the first `service`, in order to build dynamic urls from the CMS
