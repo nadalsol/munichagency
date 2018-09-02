@@ -83,8 +83,10 @@
   margin-bottom: $br-base;
 
   &--secondary {
-    @include center-block;
-    width: 70%;
+    @media ($large-up) {
+      @include center-block;
+      width: 70%;
+    }
   }
 
   .carousel__item:first-of-type { // 1
