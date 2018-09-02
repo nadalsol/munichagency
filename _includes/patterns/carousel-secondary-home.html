@@ -1,0 +1,74 @@
+<div class="panel-light">
+  <div class="wrapper">
+    <div class="u-inner-small">
+
+      <h2 class="heading2 u-text-center">{{ site.nav_main.text_3 }}</h2>
+
+      {% comment %}Getting the number of carousel items{% endcomment %}
+      {% for home_carousel_project in site.home_carousel_projects %}
+        {% if forloop.first %}
+          {% assign home_carousel_project_length = forloop.length %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="carousel carousel--secondary is-items-{{ home_carousel_project_length }}">
+
+        {% for home_carousel_project in site.home_carousel_projects %}
+          <div class="carousel__control-operator" id="proyecto-{{ forloop.index }}"></div>
+        {% endfor %}
+
+        {% for home_carousel_project in site.home_carousel_projects %}
+          <figure class="carousel__item" style="background-image: url({{ home_carousel_project.img }});">
+            <div class="carousel__callout">
+              <div class="carousel__callout-l">
+                <p class="heading4 heading4--light u-text-uppercase">{{ home_carousel_project.title }}</p>
+                <p class="heading5 heading5--light">
+                  <span class="heading5__prominent">{{ home_carousel_project.cat }}</span>
+                  {{ home_carousel_project.sector }}
+                </p>
+              </div>
+              <div class="carousel__callout-r">
+                <a class="button button--primary button--square" href="{{ home_carousel_project.link }}">
+                  +
+                </a>
+              </div>
+            </div>
+            {% case forloop.index %}
+              {% when 1 %}
+                <a class="carousel__control-secondary-r" href="#proyecto-2">
+                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+                </a>
+              {% when 2 %}
+                <a class="carousel__control-secondary-l" href="#proyecto-1">
+                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+                </a>
+                <a class="carousel__control-secondary-r" href="#proyecto-3">
+                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+                </a>
+              {% when 3 %}
+                <a class="carousel__control-secondary-l" href="#proyecto-2">
+                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+                </a>
+                <a class="carousel__control-secondary-r" href="#proyecto-4">
+                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+                </a>
+              {% when 4 %}
+                <a class="carousel__control-secondary-l" href="#proyecto-3">
+                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+                </a>
+                <a class="carousel__control-secondary-r" href="#proyecto-5">
+                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
+                </a>
+              {% when 5 %}
+                <a class="carousel__control-secondary-l" href="#proyecto-4">
+                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
+                </a>
+            {% endcase %}
+          </figure>
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+</div>

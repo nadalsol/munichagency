@@ -109,6 +109,9 @@ collections:
   home_customers:
     output: true
     permalink: /:collection/:path/
+  home_carousel_projects:
+    output: true
+    permalink: /:collection/:path/
   home_visions:
     output: true
     permalink: /:collection/:path/
