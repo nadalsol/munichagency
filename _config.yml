@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Munich Agency
-email: nadalsoler@gmail.com
+email: info@munichagency.com
 description: >- # this means to ignore newlines until "baseurl:"
   Munich Agency es un estudio de publicidad y comunicación situado en Málaga (España)
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -25,7 +25,7 @@ github_username: nadalsol
 address_link: https://goo.gl/maps/1tMN7qASPXF2
 address: C/ Lancelot, 22 - 29738 - Torrre de Benagalbón, Málaga.
 phone_country_code: 34
-phone: 123 456 789
+phone: 627 81 50 41
 lang: es
 
 # Build settings
