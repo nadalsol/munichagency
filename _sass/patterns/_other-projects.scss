@@ -7,4 +7,30 @@
       font-size: $fz-colossal;
     }
   }
+
+  &__list {
+    @include list-reset;
+    width: 100%;
+
+    @media ($medium-up) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-top: -$br-base;
+    border-top: $br-base solid $c-light;
+    border-bottom: $br-base solid $c-light;
+
+    @media ($medium-up) {
+      width: 33.333%;
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    @include size(100%, 100%);
+    display: block;
+  }
 }

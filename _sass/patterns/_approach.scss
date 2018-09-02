@@ -10,8 +10,8 @@
   }
 
   &__item {
-    margin-bottom: $br-base;
     padding: $sp-small $sp-small $sp-big;
+    border-bottom: $br-base solid $c-light;
     background: $c-neutral no-repeat center center;
     background-size: cover;
     overflow: hidden;
@@ -20,8 +20,8 @@
       flex: 1 1 0;
       min-height: 300px;
       padding: $sp-medium;
-      margin-right: $br-base;
-      margin-left: $br-base;
+      border-right: $br-base solid $c-light;
+      border-left: $br-base solid $c-light;
     }
   }
 
