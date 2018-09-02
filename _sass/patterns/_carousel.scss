@@ -175,7 +175,7 @@
   }
 
   .carousel__callout {
-    @include positioner(absolute, 100%, auto, bottom, 0, left, 0);
+    @include positioner(absolute, 100%, auto, bottom, 0, left, 0, $zi-100);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -223,10 +223,6 @@
 
     @media ($medium-up) {
       display: block;
-      position: absolute;
-      top: 0;
-      width: 80px;
-      height: 100%;
       line-height: $carousel-item-ht-medium-up;
       text-align: center;
       color: $c-light;
@@ -234,7 +230,7 @@
   }
 
   .carousel__control-secondary-l {
-    left: 0;
+    @include positioner(absolute, 80px, 100%, top, 0, left, 0);
 
     &:hover > .icon--chevron {
       margin-right: $sp-xxsmall;
@@ -242,7 +238,7 @@
   }
 
   .carousel__control-secondary-r {
-    right: 0;
+    @include positioner(absolute, 80px, 100%, top, 0, right, 0);
 
     &:hover > .icon--chevron {
       margin-left: $sp-xxsmall;
