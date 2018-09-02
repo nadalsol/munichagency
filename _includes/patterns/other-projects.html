@@ -5,8 +5,9 @@
       <div class="other-projects">
         <h2 class="heading2 heading2--light">{{ site.other_projects.heading }}</h2>
         <ul class="other-projects__list">
+        {% comment %}Getting other projects from the same category{% endcomment %}
         {% for the_project in site.the_projects %}
-          {% if the_project.cat == current_category %}
+          {% if the_project.cat == current_category and the_project.slug != current_section %}
           <li class="other-projects__item">
             <a class="other-projects__link" href="{{ site.baseurl }}{{ the_project.permalink }}">
               <img class="u-img-responsive-full" src="{{ the_project.img_cover }}" alt="{{ the_project.img_cover_alt }}">
