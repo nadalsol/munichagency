@@ -1,7 +1,8 @@
 ---
 title: Creatividad
-description: A sint arbitror tractavissent. Id amet export quorum laborum hic se labore
-  incurreret appellat. Noster laborum se occaecat ubi de ex instituendarum, a excepteur.
+description: "El corazón de la creatividad está en identificar \nel problema. Convertimos
+  los problemas de los \nclientes en oportunidades. Para ello nos basamos \nen una
+  sólida estrategia que busca la efectividad. "
 link: "#"
 img: https://www.datocms-assets.com/5249/1535040101-approach-creativity.jpg
 ---

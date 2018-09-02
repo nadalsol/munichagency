@@ -102,19 +102,19 @@ title: Pattern Library
         </nav>
       </div>
 
-      <!-- Pages -->
-      <div class="patlab-section">
-        <ul>
-          {% for p in site.pages %}
-            <li>{{ p.title }} : <a href="{{ p.url | absolute_url }}">{{ p.url | absolute_url }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-
       <!-- Address -->
       <div class="patlab-section" id="patlab-address">
         <h2 class="patlab-heading2">Address</h2>
-        {% include patterns/address.html %}
+        <div class="patlab-margin-bottom panel-light">
+          <div class="u-inner-medium">
+            {% include patterns/address.html %}
+          </div>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <div class="u-inner-medium">
+            {% include patterns/address.html css-class-text="text--light" css-class-link="link--light" %}
+          </div>
+        </div>
       </div>
 
       <!-- Blockquote -->
@@ -138,16 +138,16 @@ title: Pattern Library
               <a class="button button--primary is-disabled" href="#">
                 Button primary disabled
               </a>
-              <br>
-              <br>
+              <br />
+              <br />
               <a class="button button--primary button--large" href="#">
                 Button primary large
               </a>
               <a class="button button--primary button--large is-disabled" href="#">
                 Button primary large disabled
               </a>
-              <br>
-              <br>
+              <br />
+              <br />
               <a class="button button--primary button--square" href="#">
                 +
               </a>
@@ -162,16 +162,16 @@ title: Pattern Library
               <a class="button button--secondary is-disabled" href="#">
                 Button secondary disabled
               </a>
-              <br>
-              <br>
+              <br />
+              <br />
               <a class="button button--secondary button--large" href="#">
                 Button secondary large
               </a>
               <a class="button button--secondary button--large is-disabled" href="#">
                 Button secondary large disabled
               </a>
-              <br>
-              <br>
+              <br />
+              <br />
               <a class="button button--secondary button--square" href="#">
                 +
               </a>
@@ -233,11 +233,20 @@ title: Pattern Library
         <div class="patlab-inner u-inner-xlarge">
           u-inner-xlarge
         </div>
+        <div class="patlab-inner u-inner-other-projects">
+          u-inner-other-projects
+        </div>
         <div class="patlab-inner u-inner-footer">
           u-inner-footer
         </div>
         <div class="patlab-inner u-inner-vision">
           u-inner-vision
+        </div>
+        <div class="patlab-inner u-inner-projects">
+          u-inner-projects
+        </div>
+        <div class="patlab-inner u-inner-the-project">
+          u-inner-the-project
         </div>
         <div class="patlab-inner u-inner-carousel">
           u-inner-carousel
@@ -247,14 +256,18 @@ title: Pattern Library
       <!-- Link -->
       <div class="patlab-section" id="patlab-link">
         <h2 class="patlab-heading2">Link</h2>
-        <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
-        <p class="text">This is <a class="link link--secondary" href="#">link secondary</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--light">This is <a class="link link--light" href="#">link light</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
       </div>
 
       <!-- Nav secondary -->
       <div class="patlab-section" id="patlab-nav-secondary">
         <h2 class="patlab-heading2">Nav secondary</h2>
-        {% include patterns/nav-secondary.html css-class='panel-dark' %}
+        {% include patterns/nav-secondary.html css-class='panel-dark' type='services' %}
       </div>
 
       <!-- Panel -->
@@ -296,6 +309,12 @@ title: Pattern Library
         </div>
         <div class="patlab-margin-bottom panel-neutral">
           <p class="text text--medium text--light">This is <strong>text medium light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-light">
+          <p class="text text--small">This is <strong>text small</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+        </div>
+        <div class="patlab-margin-bottom panel-neutral">
+          <p class="text text--small text--light">This is <strong>text small light</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
         </div>
       </div>
 

@@ -3,14 +3,14 @@
   https://stackoverflow.com/a/19273580
 {% endcomment %}
 {% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_section = current_url[1] %}
 {% assign current_text_1 = site.nav_main.text_1 | downcase %}
 {% assign current_text_2 = site.nav_main.text_2 | downcase %}
 {% assign current_text_3 = site.nav_main.text_3 | downcase %}
 {% assign current_text_4 = site.nav_main.text_4 | downcase %}
-{% assign current_section = current_url[1] %}
 
 {% comment %}
-  Get the first `services` category, in order to build dynamic urls from the CMS
+  Get the first `service`, in order to build dynamic urls from the CMS
 {% endcomment %}
 {% assign services_sorted = site.services | sort: "order" %}
 {% for service in services_sorted %}
@@ -18,18 +18,6 @@
     {% assign service_cat = service.cat %}
   {% endif %}
 {% endfor %}
-
-{% comment %}
-  Get the first `projects` category, in order to build dynamic urls from the CMS
-{% endcomment %}
-{% comment %}
-{% assign projects_sorted = site.projects | sort: "order" %}
-{% for project in projects_sorted %}
-  {% if forloop.first %}
-    {% assign project_cat = project.cat %}
-  {% endif %}
-{% endfor %}
-{% endcomment %}
 
 <ul class="nav-main u-text-uppercase">
   <li>
@@ -39,7 +27,7 @@
     <a class="nav-main__link {% if current_section == current_text_2 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_2 }}/{{ service_cat }}">{{ site.nav_main.text_2 }}</a>
   </li>
   <li>
-    <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_3 }}/{{ project_cat }}">{{ site.nav_main.text_3 }}</a>
+    <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_3 }}/{{ service_cat }}">{{ site.nav_main.text_3 }}</a>
   </li>
   <li>
     <a id="modal-trigger-contact" class="nav-main__link {% if current_section == current_text_4 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.nav_main.link_4 }}">{{ site.nav_main.text_4 }}</a>

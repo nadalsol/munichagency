@@ -2,7 +2,11 @@
 // -----------------------------------------------------------------------------
 
 .link {
-  &--secondary {
-    @include link($link-secondary-c, $link-secondary-hover-c);
+  &--chartreuse {
+    @include link($link-chartreuse-c, $link-chartreuse-hover-c, none);
+  }
+
+  &--light {
+    @include link($link-light-c, $link-light-hover-c);
   }
 }

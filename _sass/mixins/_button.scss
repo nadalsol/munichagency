@@ -157,13 +157,9 @@
 // Button icon
 //
 @mixin button-icon {
-  @include size($button-icon-wd, $button-icon-ht);
   display: block;
   padding: 0;
-
-  @media ($medium-up) {
-    @include size($button-icon-wd-medium-up, $button-icon-ht-medium-up);
-  }
+  line-height: 0;
 
   > svg,
   > img {

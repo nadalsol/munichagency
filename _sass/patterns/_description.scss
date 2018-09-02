@@ -6,6 +6,29 @@
   ol,
   p {
     @extend .text;
-    @extend .text--medium;
+  }
+
+  &--small {
+    ul,
+    ol,
+    p {
+      @extend .text--small;
+    }
+  }
+
+  &--medium {
+    ul,
+    ol,
+    p {
+      @extend .text--medium;
+    }
+  }
+
+  &--light {
+    ul,
+    ol,
+    p {
+      @extend .text--light;
+    }
   }
 }

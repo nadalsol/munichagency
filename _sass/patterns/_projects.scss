@@ -2,9 +2,63 @@
 // -----------------------------------------------------------------------------
 
 .projects {
-  //
+  @include list-reset;
+  width: 100%;
 
   @media ($medium-up) {
-    //
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: $br-base;
+    background-color: $c-dark;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-xxsmall;
+      width: 48%;
+    }
+  }
+
+  &__item:nth-child(odd) {
+    @media ($medium-up) {
+      margin-right: $sp-xxsmall;
+    }
+
+    @media ($large-up) {
+      margin-right: $sp-small;
+    }
+  }
+
+  &__item:nth-child(even) {
+    @media ($medium-up) {
+      margin-left: $sp-xxsmall;
+    }
+
+    @media ($large-up) {
+      margin-left: $sp-small;
+    }
+  }
+
+  &__link {
+    @include clearfix;
+    @include size(100%, 100%);
+    @include link($c-light, $c-chartreuse, none); // TODO : replace color
+    display: block;
+  }
+
+  &__img {
+    float: left;
+    width: 50%;
+  }
+
+  &__content {
+    float: left;
+    width: 50%;
+    padding: $sp-xxsmall;
+
+    @media ($medium-up) {
+      padding: $sp-small;
+    }
   }
 }

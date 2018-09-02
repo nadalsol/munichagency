@@ -2,9 +2,10 @@
 // -----------------------------------------------------------------------------
 
 // Link generation with states
-@mixin link($c, $c-hover) {
+@mixin link($c, $c-hover, $td: underline) {
   color: $c;
   transition: $transition-c;
+  text-decoration: $td;
 
   &:visited {
     color: $c;

@@ -16,5 +16,6 @@
 
   @media ($medium-up) {
     font-size: $fz-mu;
+    word-break: normal;
   }
 }

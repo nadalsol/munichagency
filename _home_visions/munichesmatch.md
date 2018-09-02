@@ -1,11 +1,12 @@
 ---
 title: "#munichesmatch"
-description: "<p>Cras posuere odio in libero cursus, vitae sagittis nisi congue. Fusce
-  ac augue in urna vestibulum scelerisque et sit amet orci. Curabitur dui augue, pulvinar
-  fermentum purus et, suscipit porta justo. Fusce feugiat interdum magna, eget sagittis
-  lorem. Suspendisse ac elit justo. Vivamus venenatis venenatis orci non tristique.
-  Aenean ullamcorper lacus a nunc accumsan consequat. Fusce dictum tortor vel tortor
-  tempor, sed tristique turpis lacinia. Donec tellus risus, pellentesque vel lacus
-  nec, consequat placerat erat.</p>"
+description: "<p>Para impactar al consumidor, adem&aacute;s de visible, hay que ser
+  memorable. Ya sea una campa&ntilde;a digital, una identidad corporativa o cualquier
+  trabajo de Munich, es una oportunidad de entrar en la mente del consumidor e introducir
+  en ella la marca del cliente, formando parte de su vida, generando una experiencia
+  sorprendente y positiva que desee compartir con los dem&aacute;s. Cuando logramos
+  este nivel de conexi&oacute;n hemos &ldquo;conseguido un Match&rdquo;, a partir
+  de ese momento, marca y consumidor van de la mano, obteniendo una experiencia diferente
+  y manteniendo una conversaci&oacute;n que enriquece a ambos.</p>"
 ---
 

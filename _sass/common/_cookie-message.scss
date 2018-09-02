@@ -15,7 +15,7 @@
   @include positioner(fixed, $cookie-msg-wd, $cookie-msg-ht, top, 0, left, 0, $zi-100);
   background-color: $cookie-msg-bg;
   overflow: hidden;
-  border-bottom: $br-small solid $c-mischka;
+  box-shadow: 0 $br-base $c-light;
 
   > .wrapper {
     position: relative;

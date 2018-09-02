@@ -7,8 +7,12 @@
         </button>
       </div>
       <div class="modal__body">
-        <h5 class="heading5 heading5--light">{{ site.modal_privacy.heading }}</h5>
-        <p class="text text--light">{{ site.modal_privacy.text }}</p>
+        {% for legal_privacy in site.legal_privacies %}
+        <h5 class="heading5 heading5--light">{{ legal_privacy.title }}</h5>
+        <div class="description description--light">
+          {{ legal_privacy.description }}
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

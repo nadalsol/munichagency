@@ -1,31 +1,37 @@
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_section = current_url[2] %}
+
 <main class="page-content" aria-label="Content">
 
   {% include patterns/hero-projects.html %}
 
-  {% for project in site.projects %}
-    <div class="panel-light">
-      <div class="wrapper">
-        <div class="u-inner-xlarge">
+  <div class="panel-light">
+    <div class="wrapper">
+      <div class="u-inner-projects">
 
-          <div class="project">
-            {% if forloop.first %}
-            <ul>
-              <li>layout: {{ project.layout }}</li>
-              <li>title: {{ project.title }}</li>
-              <!-- <li>cat: {{ project.cat }}</li> -->
-              <li>sector: {{ project.sector }}</li>
-              <li>description: {{ project.description }}</li>
-              <li>link: {{ project.link }}</li>
-              <li>img_cover: {{ project.img_cover }}</li>
-              <li>img_cover_alt: {{ project.img_cover_alt }}</li>
-              <li>img_carousel: {{ project.img_carousel }}</li>
-            </ul>
-            {% endif %}
-          </div>
+        <ul class="projects">
+        {% for project in site.projects %}
+          {% if project.cat == current_section %}
+          <li class="projects__item">
+            <a class="projects__link" href="{{ site.baseurl }}{{ project.permalink_to }}">
+              <div class="projects__img">
+                <img class="u-img-responsive-full" src="{{ project.img_cover }}" alt="{{ project.img_cover_alt }}">
+              </div>
+              <div class="projects__content">
+                <h2 class="heading4 heading4--light u-text-uppercase">{{ project.title }}</h2>
+                <p class="heading5 heading5--light">
+                  <span class="heading5__prominent">{{ project.cat }}</span>
+                  {{ project.sector }}
+                </p>
+              </div>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
 
-        </div>
       </div>
     </div>
-  {% endfor %}
+  </div>
 
 </main>

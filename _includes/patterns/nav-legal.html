@@ -1,11 +1,8 @@
 <ul class="nav-legal">
   <li>
-    <a id="modal-trigger-privacy" class="nav-legal__link" href="#">{{ site.footer_legal.privacy }}</a>
+    <a id="modal-trigger-privacy" class="nav-legal__link" href="{{ site.footer_legal.privacy | slugify: 'latin' }}">{{ site.footer_legal.privacy }}</a>
   </li>
   <li>
-    <a id="modal-trigger-cookie" class="nav-legal__link" href="#">{{ site.footer_legal.cookies }}</a>
-  </li>
-  <li>
-    <a id="modal-trigger-terms" class="nav-legal__link" href="#">{{ site.footer_legal.terms }}</a>
+    <a id="modal-trigger-cookie" class="nav-legal__link" href="{{ site.footer_legal.cookies | slugify: 'latin' }}">{{ site.footer_legal.cookies }}</a>
   </li>
 </ul>

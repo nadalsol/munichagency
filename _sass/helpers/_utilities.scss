@@ -53,6 +53,14 @@
   }
 }
 
+.u-inner-other-projects {
+  padding: $u-inner-other-projects-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-other-projects-pd-medium-up;
+  }
+}
+
 .u-inner-footer {
   @media ($medium-up) {
     padding: $u-inner-footer-pd-medium-up;
@@ -64,6 +72,22 @@
 
   @media ($medium-up) {
     padding: $u-inner-vision-pd-medium-up;
+  }
+}
+
+.u-inner-projects {
+  padding: $u-inner-projects-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-projects-pd-medium-up;
+  }
+}
+
+.u-inner-the-project {
+  padding: $u-inner-the-project-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-the-project-pd-medium-up;
   }
 }
 
@@ -94,6 +118,11 @@
 
 .u-img-responsive-full {
   @include img-responsive-full;
+}
+
+// Margin
+.u-margin-bottom {
+  margin-bottom: $sp-large;
 }
 
 // Text

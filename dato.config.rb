@@ -1,3 +1,18 @@
+################################################################################
+#                                                                              #
+# Dump all the remote data into local files                                    #
+#                                                                              #
+# This script will fetch the data from DatoCMS and will create the new files   #
+# thanks to the create_post helper that the dato gem exposes.                  #
+#                                                                              #
+# Just fire the following command to fetch data:                               #
+# `$ bundle exec dato dump --token=SITE_READONLY_TOKEN`                        #
+#                                                                              #
+# More info:                                                                   #
+# https://www.datocms.com/blog/datocms-with-jekyll-a-beginners-guide/          #
+#                                                                              #
+################################################################################
+
 directory "_about_callouts" do
   dato.about_callouts.each do |about_callout|
     create_post "#{about_callout.title.parameterize}.md" do
@@ -70,13 +85,57 @@ directory "_home_visions" do
   end
 end
 
+directory "_legal_cookies" do
+  dato.legal_cookies.each do |legal_cookie|
+    create_post "#{legal_cookie.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: legal_cookie.title,
+        description: legal_cookie.description
+      }
+    end
+  end
+end
+
+directory "_legal_privacies" do
+  dato.legal_privacies.each do |legal_privacy|
+    create_post "#{legal_privacy.title.parameterize}.md" do
+      frontmatter :yaml, {
+        title: legal_privacy.title,
+        description: legal_privacy.description
+      }
+    end
+  end
+end
+
 directory "_projects" do
   dato.projects.each do |project|
     create_post "#{project.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "projects",
         title: project.title,
-        cat: project.cat,
+        cat: project.cat.title.parameterize,
+        permalink: "/proyectos/#{project.cat.title.parameterize}",
+        permalink_to: "/proyectos/#{project.cat.title.parameterize}/#{project.title.parameterize}",
+        sector: project.sector,
+        description: project.description,
+        link: project.link,
+        img_cover: project.img_cover.url,
+        img_cover_alt: project.img_cover.alt,
+        img_carousel: project.img_carousel
+      }
+    end
+  end
+end
+
+directory "_the_projects" do
+  dato.projects.each do |project|
+    create_post "#{project.title.parameterize}.md" do
+      frontmatter :yaml, {
+        layout: "the-project",
+        title: project.title,
+        cat: project.cat.title.parameterize,
+        permalink: "/proyectos/#{project.cat.title.parameterize}/#{project.title.parameterize}",
+        slug: "#{project.title.parameterize}",
         sector: project.sector,
         description: project.description,
         link: project.link,
@@ -94,13 +153,14 @@ directory "_services" do
       frontmatter :yaml, {
         layout: "services",
         title: service.title,
+        cat: service.title.parameterize,
+        permalink: "/servicios/#{service.title.parameterize}",
         description: service.description,
         description_extended: service.description_extended,
         link: service.link,
         icon: service.icon.url,
         icon_alt: service.icon.alt,
-        order: service.order,
-        cat: service.title.parameterize
+        order: service.order
       }
     end
   end

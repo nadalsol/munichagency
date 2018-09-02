@@ -20,14 +20,14 @@
   }
 
   &__link {
-    @include link($nav-main-link-c, $nav-main-link-c-hover);
+    @include link($nav-main-link-c, $nav-main-link-c-hover, none);
     display: block; // 1
     padding: $sp-small $sp-xxlarge;
     background-color: $nav-main-link-bgc;
     transition: $transition-bg;
 
     @media ($medium-up) {
-      @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
+      @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up, none);
       padding: 0 $sp-small;
       background-color: $nav-main-link-bgc-medium-up;
     }

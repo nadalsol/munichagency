@@ -1,0 +1,47 @@
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_category = current_url[2] %}
+{% assign current_section = current_url[3] %}
+
+<main class="page-content" aria-label="Content">
+
+  {% for the_project in site.the_projects %}
+    {% if the_project.slug == current_section %}
+
+      {% include patterns/carousel-the-project.html %}
+
+      <div class="panel-dark">
+        <div class="wrapper">
+          <div class="u-inner-the-project">
+
+            <div class="the-project">
+              <div class="the-project__header">
+                <h1 class="heading3 heading3--light">{{ the_project.title }}</h1>
+                <p class="heading5 heading5--light">
+                  <span class="heading5__prominent">{{ the_project.cat }}</span>
+                  {% if the_project.sector %}{{ the_project.sector }}{% endif %}
+                </p>
+              </div>
+              <div class="the-project__body">
+                {% if the_project.link %}
+                <div class="u-margin-bottom">
+                  <p class="text text--medium">
+                    <a class="link link--chartreuse" href="{{ the_project.link }}" target="_blank">{{ the_project.link }}</a>
+                  </p>
+                </div>
+                {% endif %}
+                <div class="description description--light">
+                  {{ the_project.description }}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+  {% endfor %}
+
+  {% include patterns/other-projects.html %}
+
+</main>
