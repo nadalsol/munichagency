@@ -85,6 +85,8 @@ nav_main:
   text_3: "Proyectos"
   link_4: "contacto"
   text_4: "Contacto"
+other_projects:
+  heading: "Otros proyectos"
 projects:
   heading: "Proyectos"
 

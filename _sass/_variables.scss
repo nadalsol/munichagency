@@ -32,25 +32,6 @@ $c-chartreuse:           #e5ff00 !default;
 $c-tradewind:            #71b5a8 !default;
 $c-waterleaf:            #9ce8da !default;
 
-// TODO : remove TMD colors
-$c-downriver:            #0f1d5e !default;
-$c-balticsea:            #342d38 !default;
-$c-pelorous:             #33a5b4 !default;
-$c-java:                 #21b7ca !default;
-$c-surfie:               #0c7987 !default;
-$c-lynch:                #606c8c !default;
-$c-chetwode:             #869fe1 !default;
-$c-fiord:                #434f70 !default;
-$c-eastbay:              #455378 !default;
-$c-manatee:              #7481a3 !default;
-$c-jaggedice:            #c6e7eb !default;
-$c-mischka:              #d5d8e2 !default;
-$c-athens:               #edeff4 !default;
-$c-lilac:                #eef0f8 !default;
-$c-citron:               #95c11f !default;
-$c-watercourse:          #047154 !default;
-$c-cosmic:               #683361 !default;
-
 // Scaffolding
 $assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/images" !default;
@@ -100,9 +81,9 @@ $fz-xlarge:              24px !default;
 $fz-xxlarge:             30px !default;
 $fz-xxxlarge:            36px !default;
 $fz-big:                 40px !default;
-$fz-huge:                48px !default; // TODO : rounded from 50 to 48
+$fz-huge:                48px !default;
 $fz-giant:               60px !default;
-$fz-colossal:            70px !default; // TODO : rounded from 72 to 70
+$fz-colossal:            70px !default;
 $fz-titanic:             80px !default;
 $fz-galactic:            100px !default;
 
@@ -146,36 +127,39 @@ $zi-900:                 900 !default;
 
 // Helpers
 // -----------------------------------------------------------------------------
-$u-inner-small-pd:                $sp-small 0 !default;
-$u-inner-small-pd-medium-up:      $sp-large 0 !default;
+$u-inner-small-pd:                    $sp-small 0 !default;
+$u-inner-small-pd-medium-up:          $sp-large 0 !default;
 
-$u-inner-medium-pdv:              $sp-small !default;
-$u-inner-medium-pdh:              $sp-small !default;
-$u-inner-medium-pdv-medium-up:    $sp-xxlarge !default;
-$u-inner-medium-pdh-medium-up:    $sp-big !default;
+$u-inner-medium-pdv:                  $sp-small !default;
+$u-inner-medium-pdh:                  $sp-small !default;
+$u-inner-medium-pdv-medium-up:        $sp-xxlarge !default;
+$u-inner-medium-pdh-medium-up:        $sp-big !default;
 
-$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
-$u-inner-large-pd-medium-up:      80px $sp-big !default;
+$u-inner-large-pd:                    $sp-xxlarge $sp-small !default;
+$u-inner-large-pd-medium-up:          80px $sp-big !default;
 
-$u-inner-xlarge-pd:               $sp-xxlarge $sp-small !default;
-$u-inner-xlarge-pd-medium-up:     80px $sp-colossal !default;
+$u-inner-xlarge-pd:                   $sp-xxlarge $sp-small !default;
+$u-inner-xlarge-pd-medium-up:         80px $sp-colossal !default;
 
-$u-inner-footer-pd-medium-up:     $sp-big $sp-big 50px !default;
+$u-inner-other-projects-pd:           $sp-xxlarge $sp-small !default;
+$u-inner-other-projects-pd-medium-up: $sp-xxlarge 80px !default;
 
-$u-inner-vision-pd:               $sp-small !default;
-$u-inner-vision-pd-medium-up:     120px 200px $sp-large !default;
+$u-inner-footer-pd-medium-up:         $sp-big $sp-big 50px !default;
 
-$u-inner-projects-pd:             0 0 $sp-xxlarge !default;
-$u-inner-projects-pd-medium-up:   100px 0 !default;
+$u-inner-vision-pd:                   $sp-small !default;
+$u-inner-vision-pd-medium-up:         120px 200px $sp-large !default;
 
-$u-inner-the-project-pd:          $sp-xxlarge $sp-small $sp-colossal !default;
-$u-inner-the-project-pd-medium-up:$sp-xxlarge 80px $sp-colossal !default;
+$u-inner-projects-pd:                 0 0 $sp-xxlarge !default;
+$u-inner-projects-pd-medium-up:       100px 0 !default;
 
-$u-inner-carousel-pd:             100px $sp-small $sp-giant !default;
-$u-inner-carousel-pd-medium-up:   200px $sp-big 0 !default;
-$u-inner-carousel-pd-large-up:    275px $sp-big 0 !default;
-$u-inner-carousel-pd-xlarge-up:   350px $sp-big 0 !default;
-$u-inner-carousel-pd-xxlarge-up:  425px $sp-big 0 !default;
+$u-inner-the-project-pd:              $sp-xxlarge $sp-small $sp-colossal !default;
+$u-inner-the-project-pd-medium-up:    $sp-xxlarge 80px $sp-colossal !default;
+
+$u-inner-carousel-pd:                 100px $sp-small $sp-giant !default;
+$u-inner-carousel-pd-medium-up:       200px $sp-big 0 !default;
+$u-inner-carousel-pd-large-up:        275px $sp-big 0 !default;
+$u-inner-carousel-pd-xlarge-up:       350px $sp-big 0 !default;
+$u-inner-carousel-pd-xxlarge-up:      425px $sp-big 0 !default;
 
 
 // Common
@@ -339,6 +323,7 @@ $callout-bgi-waterleaf-medium-up: $assets-img-path + "/medium-up/callout-waterle
 
 // Carousel
 $carousel-item-bgc:               $c-neutral !default;
+$carousel-item-ht:                440px !default;
 $carousel-item-ht-medium-up:      660px !default;
 $carousel-item-display-duration:  5 !default; // seconds
 

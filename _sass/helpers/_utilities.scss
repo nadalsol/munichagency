@@ -11,27 +11,6 @@
   @include clearfix;
 }
 
-// Divider
-.u-divider {
-  position: relative;
-  padding-bottom: $sp-base;
-  margin-bottom: $sp-large;
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: $br-base;
-    background-color: $c-dark;
-  }
-
-  &--light:before {
-    background-color: $c-light;
-  }
-}
-
 // Floats
 .u-float-l {
   float: left;
@@ -71,6 +50,14 @@
 
   @media ($medium-up) {
     padding: $u-inner-xlarge-pd-medium-up;
+  }
+}
+
+.u-inner-other-projects {
+  padding: $u-inner-other-projects-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-other-projects-pd-medium-up;
   }
 }
 

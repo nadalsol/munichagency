@@ -128,8 +128,9 @@
 
   // Item (slide)
   .carousel__item {
-    overflow: hidden;
+    height: $carousel-item-ht;
     margin: 0;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -158,8 +159,11 @@
     font-size: $fz-xlarge;
 
     @media ($medium-up) {
-      display: block;
       font-size: $fz-xxxlarge;
+    }
+
+    @media ($large-up) {
+      display: block;
     }
   }
 

@@ -1,0 +1,9 @@
+// The project
+// -----------------------------------------------------------------------------
+
+.the-project {
+  &__header {
+    border-bottom: $br-base solid $c-light;
+    margin-bottom: $sp-large;
+  }
+}

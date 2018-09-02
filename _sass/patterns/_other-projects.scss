@@ -1,0 +1,10 @@
+// Other projects
+// -----------------------------------------------------------------------------
+
+.other-projects {
+  .heading2 {
+    @media ($medium-up) {
+      font-size: $fz-colossal;
+    }
+  }
+}

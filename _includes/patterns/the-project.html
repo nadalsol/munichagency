@@ -12,24 +12,26 @@
         <div class="wrapper">
           <div class="u-inner-the-project">
 
-            <div class="u-divider u-divider--light">
-              <h1 class="heading3 heading3--light">{{ the_project.title }}</h1>
-              <p class="heading5 heading5--light">
-                <span class="heading5__prominent">{{ the_project.cat }}</span>
-                {% if the_project.sector %}{{ the_project.sector }}{% endif %}
-              </p>
-            </div>
-
-            {% if the_project.link %}
-            <div class="u-margin-bottom">
-              <p class="text text--medium">
-                <a class="link link--chartreuse" href="{{ the_project.link }}" target="_blank">{{ the_project.link }}</a>
-              </p>
-            </div>
-            {% endif %}
-
-            <div class="description description--light">
-              {{ the_project.description }}
+            <div class="the-project">
+              <div class="the-project__header">
+                <h1 class="heading3 heading3--light">{{ the_project.title }}</h1>
+                <p class="heading5 heading5--light">
+                  <span class="heading5__prominent">{{ the_project.cat }}</span>
+                  {% if the_project.sector %}{{ the_project.sector }}{% endif %}
+                </p>
+              </div>
+              <div class="the-project__body">
+                {% if the_project.link %}
+                <div class="u-margin-bottom">
+                  <p class="text text--medium">
+                    <a class="link link--chartreuse" href="{{ the_project.link }}" target="_blank">{{ the_project.link }}</a>
+                  </p>
+                </div>
+                {% endif %}
+                <div class="description description--light">
+                  {{ the_project.description }}
+                </div>
+              </div>
             </div>
 
           </div>
@@ -38,5 +40,20 @@
 
     {% endif %}
   {% endfor %}
+
+  <div class="panel-dark">
+    <div class="wrapper">
+      <div class="u-inner-other-projects">
+
+        <div class="other-projects">
+          <h2 class="heading2 heading2--light">{{ site.other_projects.heading }}</h2>
+          <div class="the-project__body">
+            ...
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </main>
