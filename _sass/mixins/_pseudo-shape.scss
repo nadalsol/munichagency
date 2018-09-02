@@ -1,0 +1,13 @@
+// Pseudo shape
+// -----------------------------------------------------------------------------
+
+@mixin pseudo-rectangle($wd, $ht, $bgc) {
+  content: '';
+  position: absolute;
+  width: $wd;
+  height: $ht;
+  bottom: $sp-xlarge;
+  left: 50%;
+  margin-left: -(floor($wd / 2));
+  background-color: $bgc;
+}

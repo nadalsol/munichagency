@@ -8,6 +8,7 @@
   @include list-reset;
   font-family: $ff-sans-serif;
   font-size: $fz-big;
+  font-weight: $fw-thin;
   box-shadow: 0 $br-base $c-dark;
 
   @media ($medium-up) {
@@ -21,6 +22,7 @@
 
   &__link {
     @include link($nav-main-link-c, $nav-main-link-c-hover, none);
+    position: relative;
     display: block; // 1
     padding: $sp-small $sp-xxlarge;
     background-color: $nav-main-link-bgc;
@@ -28,7 +30,7 @@
 
     @media ($medium-up) {
       @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up, none);
-      padding: 0 $sp-small;
+      padding: 0 $sp-xsmall;
       background-color: $nav-main-link-bgc-medium-up;
     }
 
@@ -37,6 +39,12 @@
 
       @media ($medium-up) {
         background-color: $nav-main-link-bgc-hover-medium-up;
+      }
+
+      &:before {
+        @media ($medium-up) {
+          @include pseudo-rectangle($sp-huge, 4px, $c-chartreuse);
+        }
       }
     }
 
@@ -47,6 +55,12 @@
       @media ($medium-up) {
         color: $nav-main-link-c-active-medium-up;
         background-color: $nav-main-link-bgc-active-medium-up;
+      }
+
+      &:before {
+        @media ($medium-up) {
+          @include pseudo-rectangle($sp-huge, 4px, $c-dark);
+        }
       }
     }
   }
