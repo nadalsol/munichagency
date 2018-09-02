@@ -43,7 +43,7 @@
 
       &:before {
         @media ($medium-up) {
-          @include pseudo-rectangle($sp-huge, 4px, $c-chartreuse);
+          @include pseudo-rectangle($sp-huge, 4px, $sp-xlarge, $c-chartreuse);
         }
       }
     }
@@ -59,7 +59,7 @@
 
       &:before {
         @media ($medium-up) {
-          @include pseudo-rectangle($sp-huge, 4px, $c-dark);
+          @include pseudo-rectangle($sp-huge, 4px, $sp-xlarge, $c-dark);
         }
       }
     }

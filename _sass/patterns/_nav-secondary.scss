@@ -33,10 +33,19 @@
 
   &__link {
     @include link($nav-secondary-link-c, $nav-secondary-link-c-hover, none);
+    position: relative;
     display: block;
+    
+    &:hover {
+      &:before {
+        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-chartreuse);
+      }
+    }
 
     &.is-active {
-      color: $nav-secondary-link-c-active;
+      &:before {
+        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-light);
+      }
     }
   }
 
