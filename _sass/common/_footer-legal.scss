@@ -43,8 +43,9 @@
   }
 
   &__col-r {
-    text-align: center;
-    padding: $sp-small $sp-small $sp-big;
+    // text-align: center;
+    @include clearfix;
+    padding: $sp-small $sp-small $sp-large;
     background-color: $c-light;
 
     @media ($medium-up) {
@@ -53,9 +54,20 @@
       background-color: transparent;
     }
 
-    > nav,
-    > .copyright-legal {
+    > nav {
+      float: right;
+
       @media ($medium-up) {
+        float: none;
+        display: inline-block;
+      }
+    }
+
+    > .copyright-legal {
+      float: left;
+
+      @media ($medium-up) {
+        float: none;
         display: inline-block;
       }
     }
