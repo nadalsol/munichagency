@@ -192,6 +192,28 @@ $(document).ready(function() {
     });
   })();
 
+
+  /**
+   * Sticky contact
+   */
+  // (function() {
+  //   var stickyContact = function() {
+  //     var scrollTop = $(window).scrollTop(),
+  //         modalTriggerContact = $('#modal-trigger-contact-2');
+  //     if (scrollTop > 0) {
+  //       modalTriggerContact.addClass('is-sticky');
+  //     } else {
+  //       modalTriggerContact.removeClass('is-sticky');
+  //     }
+  //   };
+  //
+  //   stickyContact();
+  //
+  //   $(window).scroll(function() {
+  //     stickyContact();
+  //   });
+  // })();
+
 });
 
 

@@ -17,14 +17,6 @@
     position: relative;
   }
 
-  &__social {
-    @include positioner(absolute, auto, auto, top, $icon-social-top, right, 0, $zi-100);
-
-    @media ($medium-up) {
-      top: $icon-social-top-medium-up;
-    }
-  }
-
   .u-inner-footer {
     @media ($medium-up) {
       display: flex;
@@ -43,7 +35,6 @@
   }
 
   &__col-r {
-    // text-align: center;
     @include clearfix;
     padding: $sp-small $sp-small $sp-large;
     background-color: $c-light;

@@ -2,5 +2,33 @@
 // -----------------------------------------------------------------------------
 
 .nav-social {
-  @include list-inline-last(0, 0);
+  @include positioner(absolute, auto, auto, top, $icon-social-top, right, 0, $zi-100);
+
+  @media ($medium-up) {
+    top: $icon-social-top-medium-up;
+  }
+
+  &__facebook,
+  &__contact {
+    display: block;
+    line-height: 1;
+  }
+
+  &__facebook {
+    margin-right: floor($icon-social-wd + $sp-base);
+
+    @media ($medium-up) {
+      margin-right: floor($icon-social-wd-medium-up + $sp-base);
+    }
+  }
+
+  &__contact.is-sticky {
+    position: fixed;
+    right: 0;
+    bottom: 215px;
+
+    @media ($medium-up) {
+      bottom: 120px;
+    }
+  }
 }

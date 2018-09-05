@@ -1,12 +1,8 @@
-<ul class="nav-social">
-  <li>
-    <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
-      {% include icons/facebook.svg css-class="icon icon--social" %}
-    </a>
-  </li>
-  <li>
-    <a id="modal-trigger-contact-2" href="{{ site.baseurl }}/{{ site.nav_main.link_4 }}">
-      {% include icons/contact.svg css-class="icon icon--social" %}
-    </a>
-  </li>
-</ul>
+<nav class="nav-social">
+  <a class="nav-social__facebook" href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
+    {% include icons/facebook.svg css-class="icon icon--social" %}
+  </a>
+  <a class="nav-social__contact" id="modal-trigger-contact-2" href="{{ site.baseurl }}/{{ site.nav_main.link_4 }}">
+    {% include icons/contact.svg css-class="icon icon--social" %}
+  </a>
+</nav>
