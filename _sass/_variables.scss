@@ -121,45 +121,10 @@ $transition-m:           margin 250ms !default;
 $transition-o:           opacity 250ms !default;
 
 // Z-index table
+$zi-50:                  50 !default;
 $zi-100:                 100 !default;
+$zi-500:                 500 !default;
 $zi-900:                 900 !default;
-
-
-// Helpers
-// -----------------------------------------------------------------------------
-$u-inner-small-pd:                    $sp-small 0 !default;
-$u-inner-small-pd-medium-up:          $sp-large 0 !default;
-
-$u-inner-medium-pdv:                  $sp-small !default;
-$u-inner-medium-pdh:                  $sp-small !default;
-$u-inner-medium-pdv-medium-up:        $sp-xxlarge !default;
-$u-inner-medium-pdh-medium-up:        $sp-big !default;
-
-$u-inner-large-pd:                    $sp-xxlarge $sp-small !default;
-$u-inner-large-pd-medium-up:          80px $sp-big !default;
-
-$u-inner-xlarge-pd:                   $sp-xxlarge $sp-small !default;
-$u-inner-xlarge-pd-medium-up:         80px $sp-colossal !default;
-
-$u-inner-other-projects-pd:           0 $sp-small !default;
-$u-inner-other-projects-pd-medium-up: 0 80px !default;
-
-$u-inner-footer-pd-medium-up:         $sp-big $sp-big 50px !default;
-
-$u-inner-vision-pd:                   $sp-small !default;
-$u-inner-vision-pd-medium-up:         120px 200px $sp-large !default;
-
-$u-inner-projects-pd:                 0 0 $sp-xxlarge !default;
-$u-inner-projects-pd-medium-up:       100px 0 !default;
-
-$u-inner-the-project-pd:              $sp-xxlarge $sp-small $sp-colossal !default;
-$u-inner-the-project-pd-medium-up:    $sp-xxlarge 80px $sp-colossal !default;
-
-$u-inner-carousel-pd:                 100px $sp-small $sp-giant !default;
-$u-inner-carousel-pd-medium-up:       200px $sp-big 0 !default;
-$u-inner-carousel-pd-large-up:        275px $sp-big 0 !default;
-$u-inner-carousel-pd-xlarge-up:       350px $sp-big 0 !default;
-$u-inner-carousel-pd-xxlarge-up:      425px $sp-big 0 !default;
 
 
 // Common

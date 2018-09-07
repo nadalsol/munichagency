@@ -22,92 +22,100 @@
 
 // Inners
 .u-inner-small {
-  padding: $u-inner-small-pd;
+  padding: $sp-small 0;
 
   @media ($medium-up) {
-    padding: $u-inner-small-pd-medium-up;
+    padding: $sp-large 0;
   }
 }
 
 .u-inner-medium {
-  padding: $u-inner-medium-pdv $u-inner-medium-pdh;
+  padding: $sp-small;
 
   @media ($medium-up) {
-    padding: $u-inner-medium-pdv-medium-up $u-inner-medium-pdh-medium-up;
+    padding: $sp-xxlarge $sp-big;
   }
 }
 
 .u-inner-large {
-  padding: $u-inner-large-pd;
+  padding: $sp-xxlarge $sp-small;
 
   @media ($medium-up) {
-    padding: $u-inner-large-pd-medium-up;
+    padding: 80px $sp-big;
   }
 }
 
 .u-inner-xlarge {
-  padding: $u-inner-xlarge-pd;
+  padding: $sp-xxlarge $sp-small;
 
   @media ($medium-up) {
-    padding: $u-inner-xlarge-pd-medium-up;
+    padding: 80px $sp-colossal;
   }
 }
 
 .u-inner-other-projects {
-  padding: $u-inner-other-projects-pd;
+  padding: 0 $sp-small;
 
   @media ($medium-up) {
-    padding: $u-inner-other-projects-pd-medium-up;
+    padding: 0 80px;
+  }
+}
+
+.u-inner-approach {
+  padding: $sp-small 0 0;
+
+  @media ($medium-up) {
+    padding: $sp-large 0 0;
   }
 }
 
 .u-inner-footer {
   @media ($medium-up) {
-    padding: $u-inner-footer-pd-medium-up;
+    padding: $sp-big $sp-big 50px;
   }
 }
 
 .u-inner-vision {
-  padding: $u-inner-vision-pd;
+  padding: $sp-small;
 
   @media ($medium-up) {
-    padding: $u-inner-vision-pd-medium-up;
+    padding: 120px 200px $sp-large;
   }
 }
 
 .u-inner-projects {
-  padding: $u-inner-projects-pd;
+  padding: 0;
 
   @media ($medium-up) {
-    padding: $u-inner-projects-pd-medium-up;
+    padding: 100px 0;
   }
 }
 
 .u-inner-the-project {
-  padding: $u-inner-the-project-pd;
+  padding: $sp-xxlarge $sp-small $sp-colossal;
 
   @media ($medium-up) {
-    padding: $u-inner-the-project-pd-medium-up;
+    padding: $sp-xxlarge 80px $sp-colossal;
   }
 }
 
 .u-inner-carousel {
-  padding: $u-inner-carousel-pd;
+  padding: 100px $sp-small $sp-giant;
 
   @media ($medium-up) {
-    padding: $u-inner-carousel-pd-medium-up;
+    padding: 200px $sp-big 0;
   }
 
   @media ($large-up) {
-    padding: $u-inner-carousel-pd-large-up;
+    padding: 275px $sp-big 0;
   }
 
   @media ($xlarge-up) {
-    padding: $u-inner-carousel-pd-xlarge-up;
+    padding: 350px $sp-big 0;
   }
 
   @media ($xxlarge-up) {
-    padding: $u-inner-carousel-pd-xxlarge-up;
+    padding: 425px $sp-big 0;
   }
 }
 

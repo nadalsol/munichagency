@@ -8,6 +8,7 @@
   font-weight: $fw-base;
   color: $footer-legal-c;
   background-color: $footer-legal-bg;
+  box-shadow: 0 -1*($br-base) $c-light;
 
   @media ($medium-up) {
     color: $footer-legal-c-medium-up;
