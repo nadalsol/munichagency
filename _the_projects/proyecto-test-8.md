@@ -1,12 +1,12 @@
 ---
-layout: projects
-title: Proyecto test 7
+layout: the-project
+title: Proyecto test 8
 cat: redes-sociales
-permalink: "/proyectos/redes-sociales"
-permalink_to: "/proyectos/redes-sociales/proyecto-test-7"
-sector: What
-description: "<p>Bla bla bla...</p>"
-link: https://www.eldiario.es/
+permalink: "/proyectos/redes-sociales/proyecto-test-8"
+slug: proyecto-test-8
+sector: Hello
+description: "<p>Lorem ipsum dolor sit amet adescipli elit...</p>"
+link: https://alistapart.com/
 img_cover: https://www.datocms-assets.com/5249/1536340838-proyecto.jpg
 img_cover_alt: 
 img_carousel:

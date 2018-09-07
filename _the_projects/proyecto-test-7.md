@@ -4,11 +4,29 @@ title: Proyecto test 7
 cat: redes-sociales
 permalink: "/proyectos/redes-sociales/proyecto-test-7"
 slug: proyecto-test-7
-sector: Hello
-description: "<p>Lorem ipsum dolor sit amet adescipli elit...</p>"
-link: https://alistapart.com/
-img_cover: https://www.datocms-assets.com/5249/1535301691-placeholder-350x350.png
+sector: What
+description: "<p>Bla bla bla...</p>"
+link: https://www.eldiario.es/
+img_cover: https://www.datocms-assets.com/5249/1536340838-proyecto.jpg
 img_cover_alt: 
-img_carousel: []
+img_carousel:
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1535301599-placeholder-1440x735.png"
+  format: png
+  size: 4594
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 735
+  alt: Ejemplo carousel
+  title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1535301599-placeholder-1440x735.png"
+  format: png
+  size: 4594
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 735
+  alt: Ejemplo carousel
+  title: 
 ---
 

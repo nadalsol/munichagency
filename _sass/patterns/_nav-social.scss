@@ -2,5 +2,33 @@
 // -----------------------------------------------------------------------------
 
 .nav-social {
-  @include list-inline-last(0, 0);
+  @include positioner(fixed, auto, auto, bottom, 0, right, 0, $zi-100);
+  transition: $transition-bot;
+
+  &__facebook,
+  &__contact {
+    display: block;
+    float: left;
+    margin-left: $sp-base;
+    line-height: 1
+  }
+
+  &__facebook {
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-o;
+
+    .is-bottom & {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &.is-bottom {
+    bottom: 215px;
+
+    @media ($medium-up) {
+      bottom: 120px;
+    }
+  }
 }

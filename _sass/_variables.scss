@@ -113,11 +113,12 @@ $xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
 $transition-all:         all 250ms !default;
-$transition-bg:          background-color 250ms !default;
 $transition-bc:          border-color 250ms !default;
+$transition-bg:          background-color 250ms !default;
+$transition-bot:         bottom 250ms !default;
 $transition-c:           color 250ms !default;
 $transition-m:           margin 250ms !default;
-$transition-trf:         transform 250ms !default;
+$transition-o:           opacity 250ms !default;
 
 // Z-index table
 $zi-100:                 100 !default;
@@ -380,10 +381,8 @@ $hero-bgi-services-medium-up:     $assets-img-path + "/medium-up/hero-services.j
 // Icon
 $icon-social-wd:                  65px !default;
 $icon-social-ht:                  65px !default;
-$icon-social-top:                 -(floor($icon-social-ht / 2)) !default;
 $icon-social-wd-medium-up:        85px !default;
 $icon-social-ht-medium-up:        85px !default;
-$icon-social-top-medium-up:       -(floor($icon-social-ht-medium-up / 2)) !default;
 
 // Navigation legal
 $nav-legal-c:                        $c-dark !default;

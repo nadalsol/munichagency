@@ -121,19 +121,15 @@ $(document).ready(function() {
    */
   (function() {
     var body = $('body'),
-        modalTriggerCookieMessage = $('#modal-trigger-cookie-message'),
-        modalCookieMessage = $('#modal-cookie'),
-        modalCloseCookieMessage = modalCookieMessage.find('.js-modal-close'),
-        modalTriggerPrivacy = $('#modal-trigger-privacy'),
+        modalTriggerPrivacy = $('#modal-trigger-privacy, #modal-trigger-privacy-2'),
         modalPrivacy = $('#modal-privacy'),
         modalClosePrivacy = modalPrivacy.find('.js-modal-close'),
-        modalTriggerCookie = $('#modal-trigger-cookie'),
+        modalTriggerCookie = $('#modal-trigger-cookie, #modal-trigger-cookie-2'),
         modalCookie = $('#modal-cookie'),
         modalCloseCookie = modalCookie.find('.js-modal-close'),
-        modalTriggerContact = $('#modal-trigger-contact'),
+        modalTriggerContact = $('#modal-trigger-contact, #modal-trigger-contact-2'),
         modalContact = $('#modal-contact'),
-        modalCloseContact = modalContact.find('.js-modal-close'),
-        modalTriggerPrivacyForm = $('#modal-trigger-privacy-form');
+        modalCloseContact = modalContact.find('.js-modal-close');
 
     //
     // Modal open
@@ -141,12 +137,6 @@ $(document).ready(function() {
     // 1. Body scroll is removed.
     // 2. Modal is visible.
     //
-    modalTriggerCookieMessage.click(function(event) {
-      event.preventDefault();
-      body.addClass('is-modal-open'); // 1
-      modalCookieMessage.removeClass('is-hidden'); // 2
-    });
-
     modalTriggerPrivacy.click(function(event) {
       event.preventDefault();
       body.addClass('is-modal-open'); // 1
@@ -165,23 +155,12 @@ $(document).ready(function() {
       modalContact.removeClass('is-hidden'); // 2
     });
 
-    modalTriggerPrivacyForm.click(function(event) {
-      event.preventDefault();
-      body.addClass('is-modal-open'); // 1
-      modalPrivacy.removeClass('is-hidden'); // 2
-    });
-
     //
     // Modal close
     //
     // 1. Body scroll is back.
     // 2. Modal is hidden.
     //
-    modalCloseCookieMessage.click(function() {
-      body.removeClass('is-modal-open'); // 1
-      modalCookieMessage.addClass('is-hidden'); // 2
-    });
-
     modalClosePrivacy.click(function() {
       body.removeClass('is-modal-open'); // 1
       modalPrivacy.addClass('is-hidden'); // 2
@@ -206,11 +185,38 @@ $(document).ready(function() {
     $(document).keydown(function(event) {
       if (event.keyCode == 27 && body.hasClass('is-modal-open')) {
         body.removeClass('is-modal-open'); // 1
-        modalCookieMessage.addClass('is-hidden'); // 2
         modalPrivacy.addClass('is-hidden'); // 2
         modalCookie.addClass('is-hidden'); // 2
         modalContact.addClass('is-hidden'); // 2
       }
+    });
+  })();
+
+
+  /**
+   * Sticky nav-social
+   */
+  (function() {
+    //
+    // Repositioning nav-social on reaching the bottom of the page.
+    //
+    var stickyNavSocial = function() {
+      var scrollTop = $(window).scrollTop(),
+          navSocial = $('#nav-social'),
+          documentHeight = $(document).height(),
+          viewportHeight = $(window).height(),
+          footerOffset = Math.round(documentHeight - viewportHeight);
+      if (scrollTop >= footerOffset) {
+        navSocial.addClass('is-bottom');
+      } else {
+        navSocial.removeClass('is-bottom');
+      }
+    };
+
+    stickyNavSocial();
+    
+    $(window).scroll(function() {
+      stickyNavSocial();
     });
   })();
 

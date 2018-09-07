@@ -5,6 +5,6 @@ description: "El usuario final es el centro de todas nuestras\nestrategias. Cons
   se interiorice, maximizando los puntos \nde encuentro con él, para crear un fuerte
   vínculo \nque trascienda al momento de compra."
 link: "#"
-img: https://www.datocms-assets.com/5249/1535040107-approach-target.jpg
+img: https://www.datocms-assets.com/5249/1536336095-approach-target-m.jpg
 ---
 
