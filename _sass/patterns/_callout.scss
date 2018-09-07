@@ -2,7 +2,11 @@
 // -----------------------------------------------------------------------------
 
 .callout {
-  margin-bottom: $sp-base;
+  margin-bottom: $br-base;
+
+  @media ($medium-up) {
+    margin-bottom: $sp-base;
+  }
 
   .wrapper {
     background-repeat: no-repeat;
