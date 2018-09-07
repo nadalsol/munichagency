@@ -194,25 +194,31 @@ $(document).ready(function() {
 
 
   /**
-   * Sticky contact
+   * Sticky nav-social
    */
-  // (function() {
-  //   var stickyContact = function() {
-  //     var scrollTop = $(window).scrollTop(),
-  //         modalTriggerContact = $('#modal-trigger-contact-2');
-  //     if (scrollTop > 0) {
-  //       modalTriggerContact.addClass('is-sticky');
-  //     } else {
-  //       modalTriggerContact.removeClass('is-sticky');
-  //     }
-  //   };
-  //
-  //   stickyContact();
-  //
-  //   $(window).scroll(function() {
-  //     stickyContact();
-  //   });
-  // })();
+  (function() {
+    //
+    // Repositioning nav-social on reaching the bottom of the page.
+    //
+    var stickyNavSocial = function() {
+      var scrollTop = $(window).scrollTop(),
+          navSocial = $('#nav-social'),
+          documentHeight = $(document).height(),
+          viewportHeight = $(window).height(),
+          footerOffset = Math.round(documentHeight - viewportHeight);
+      if (scrollTop >= footerOffset) {
+        navSocial.addClass('is-bottom');
+      } else {
+        navSocial.removeClass('is-bottom');
+      }
+    };
+
+    stickyNavSocial();
+    
+    $(window).scroll(function() {
+      stickyNavSocial();
+    });
+  })();
 
 });
 

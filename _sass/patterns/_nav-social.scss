@@ -2,29 +2,29 @@
 // -----------------------------------------------------------------------------
 
 .nav-social {
-  @include positioner(absolute, auto, auto, top, $icon-social-top, right, 0, $zi-100);
-
-  @media ($medium-up) {
-    top: $icon-social-top-medium-up;
-  }
+  @include positioner(fixed, auto, auto, bottom, 0, right, 0, $zi-100);
+  transition: $transition-bot;
 
   &__facebook,
   &__contact {
     display: block;
-    line-height: 1;
+    float: left;
+    margin-left: $sp-base;
+    line-height: 1
   }
 
   &__facebook {
-    margin-right: floor($icon-social-wd + $sp-base);
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-o;
 
-    @media ($medium-up) {
-      margin-right: floor($icon-social-wd-medium-up + $sp-base);
+    .is-bottom & {
+      visibility: visible;
+      opacity: 1;
     }
   }
 
-  &__contact.is-sticky {
-    position: fixed;
-    right: 0;
+  &.is-bottom {
     bottom: 215px;
 
     @media ($medium-up) {
