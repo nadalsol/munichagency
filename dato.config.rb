@@ -19,7 +19,8 @@ directory "_about_callouts" do
       frontmatter :yaml, {
         title: about_callout.title,
         subtitle: about_callout.subtitle,
-        description: about_callout.description
+        description: about_callout.description,
+        order: about_callout.order
       }
     end
   end
