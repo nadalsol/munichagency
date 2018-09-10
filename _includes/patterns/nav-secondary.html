@@ -24,8 +24,8 @@
         {% for service in services_sorted %}
         <li class="nav-secondary__item">
           <a class="nav-secondary__link {% if current_section == service.cat %}is-active{% endif %}" href="{{ site.baseurl }}/{{ nav_link }}/{{ service.cat }}">
-            {% comment %}{% include icons/placeholder.svg css-class="icon icon--medium" %}{% endcomment %}
-            <img src="{{ service.icon }}" width="100" height="100" class="icon icon--medium" alt="{{ service.icon_alt }}">
+            {% comment %}{% include icons/placeholder.svg css-class="icon icon--nav-secondary" %}{% endcomment %}
+            <img src="{{ service.icon }}" width="100" height="100" class="icon icon--nav-secondary" alt="{{ service.icon_alt }}">
             {{ service.title }}
           </a>
         </li>

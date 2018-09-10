@@ -7,8 +7,8 @@
 .nav-main {
   @include list-reset;
   font-family: $ff-sans-serif;
-  font-size: $fz-big;
-  font-weight: $fw-thin;
+  font-size: $fz-xxlarge;
+  font-weight: $fw-base;
   box-shadow: 0 $br-base $c-dark;
 
   @media ($medium-up) {

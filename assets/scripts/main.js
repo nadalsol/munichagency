@@ -192,34 +192,6 @@ $(document).ready(function() {
     });
   })();
 
-
-  /**
-   * Sticky nav-social
-   */
-  (function() {
-    //
-    // Repositioning nav-social on reaching the bottom of the page.
-    //
-    var stickyNavSocial = function() {
-      var scrollTop = $(window).scrollTop(),
-          navSocial = $('#nav-social'),
-          documentHeight = $(document).height(),
-          viewportHeight = $(window).height(),
-          footerOffset = Math.round(documentHeight - viewportHeight);
-      if (scrollTop >= footerOffset) {
-        navSocial.addClass('is-bottom');
-      } else {
-        navSocial.removeClass('is-bottom');
-      }
-    };
-
-    stickyNavSocial();
-    
-    $(window).scroll(function() {
-      stickyNavSocial();
-    });
-  })();
-
 });
 
 
@@ -230,8 +202,15 @@ $(document).ready(function() {
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 
-// $(window).on('load', function() {
-//
-//   // your js code here...
-//
-// });
+/**
+ * Repositioning nav-social on reaching the bottom of the page
+ * https://stackoverflow.com/questions/9439725/javascript-how-to-detect-if-browser-window-is-scrolled-to-bottom
+ */
+window.onscroll = function(ev) {
+  var navSocial = $('#nav-social');
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
+    navSocial.addClass('is-bottom');
+  } else {
+    navSocial.removeClass('is-bottom');
+  }
+};
