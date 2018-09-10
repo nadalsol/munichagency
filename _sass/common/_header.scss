@@ -45,6 +45,10 @@
     @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, $zi-500);
     line-height: $header-hamburger-ht;
     background-color: $header-hamburger-bg;
+
+    &:focus {
+      @include tab-focus-silent;
+    }
   }
 
   .icon--brand {
