@@ -204,12 +204,13 @@ $(document).ready(function() {
 
 /**
  * Repositioning nav-social on reaching the bottom of the page
+ * https://stackoverflow.com/questions/9439725/javascript-how-to-detect-if-browser-window-is-scrolled-to-bottom
  */
 window.onscroll = function(ev) {
-  var navSocial = document.querySelectorAll('#nav-social');
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    navSocial.forEach(_element => _element.classList.add('is-bottom'));
+  var navSocial = $('#nav-social');
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
+    navSocial.addClass('is-bottom');
   } else {
-    navSocial.forEach(_element2 => _element2.classList.remove('is-bottom'));
+    navSocial.removeClass('is-bottom');
   }
 };
