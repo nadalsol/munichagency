@@ -27,7 +27,7 @@
 
   &__col-l {
     text-align: left;
-    padding: $sp-big $sp-small;
+    padding: $sp-small;
 
     @media ($medium-up) {
       @include col(30%, left);
@@ -37,7 +37,7 @@
 
   &__col-r {
     @include clearfix;
-    padding: $sp-small $sp-small $sp-large;
+    padding: $sp-small;
     background-color: $c-light;
 
     @media ($medium-up) {
