@@ -19,7 +19,7 @@
 
       <div class="form__group contact__col-r">
         <label class="form__label form__label--light is-hidden" for="phone">{{ site.contact.phone }}</label>
-        <input class="form__field" type="tel" id="phone" name="phone" tabindex="2" placeholder="{{ site.contact.phone }}">
+        <input class="form__field" type="tel" id="phone" name="phone" tabindex="2" placeholder="{{ site.contact.phone }}" required>
       </div>
 
     </fieldset>
@@ -33,7 +33,7 @@
 
       <div class="form__group">
         <label class="form__label form__label--light is-hidden" for="message">{{ site.contact.message }}</label>
-        <textarea class="form__textarea" id="message" name="message" rows="5" cols="80" tabindex="4" placeholder="{{ site.contact.message }}"></textarea>
+        <textarea class="form__textarea" id="message" name="message" rows="5" cols="80" tabindex="4" placeholder="{{ site.contact.message }}" required></textarea>
       </div>
 
       <input type="hidden" id="subject" name="_subject" value="{{ site.contact.subject }} {{ site.title }}">
