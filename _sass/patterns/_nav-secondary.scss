@@ -8,6 +8,7 @@
   width: 100%;
   text-align: center;
   font-size: $fz-medium;
+  line-height: $lh-xsmall;
   text-transform: lowercase;
 
   @media ($medium-up) {
@@ -16,14 +17,10 @@
   }
 
   &__item {
-    width: 50%;
+    width: 33.333%;
     margin-bottom: $sp-xxlarge;
-    padding-left: $sp-small;
-    padding-right: $sp-small;
-
-    @media ($medium-up) {
-      width: 33.333%;
-    }
+    padding-left: $sp-base;
+    padding-right: $sp-base;
 
     @media ($large-up) {
       width: 16.666%;
@@ -35,7 +32,7 @@
     @include link($nav-secondary-link-c, $nav-secondary-link-c-hover, none);
     position: relative;
     display: block;
-    
+
     &:hover {
       &:before {
         @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-chartreuse);

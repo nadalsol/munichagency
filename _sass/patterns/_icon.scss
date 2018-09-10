@@ -60,6 +60,15 @@
   @include size(140px, 80px);
 }
 
+.icon--nav-secondary {
+  @include size(70px, 70px);
+  vertical-align: middle;
+
+  @media ($medium-up) {
+    @include size(100px, 100px);
+  }
+}
+
 .icon--social {
   @include size($icon-social-wd, $icon-social-ht);
 
