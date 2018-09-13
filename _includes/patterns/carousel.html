@@ -21,9 +21,11 @@
             {% endif %}
             {{ home_carousel.title }}
           </p>
+          {% if home_carousel.link %}
           <a class="button button--primary button--square" href="{{ home_carousel.link }}">
             +
           </a>
+          {% endif %}
         </div>
       </div>
       {% case forloop.index %}

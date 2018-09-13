@@ -4,8 +4,10 @@
 
       {% for home_vision in site.home_visions %}
       <div class="vision">
-        <h2 class="heading2 u-text-center">{{ home_vision.title }}</h2>
-        <p class="text text--medium">{{ home_vision.description }}</p>
+        <h2 class="heading2 u-text-center-small">{{ home_vision.title }}</h2>
+        <div class="description u-text-center-small">
+          {{ home_vision.description }}
+        </div>
       </div>
       {% endfor %}
 

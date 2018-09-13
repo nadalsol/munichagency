@@ -2,16 +2,18 @@
   <div class="wrapper">
     <div class="u-inner-approach">
 
-      <h2 class="heading2 u-text-center">{{ site.approach.heading }}</h2>
+      <div class="u-inner-xsmall">
+        <h2 class="heading2 u-text-center-small">{{ site.approach.heading }}</h2>
+      </div>
       <ul class="approach">
-      {% for home_approach in site.home_approaches %}
+        {% for home_approach in site.home_approaches %}
         <li class="approach__item" style="background-image: url({{ home_approach.img }});">
           <a class="approach__link" href="{{ home_approach.link }}">
             <h3 class="heading4 heading4--light">{{ home_approach.title }}</h3>
             <p class="text text--light">{{ home_approach.description }}</p>
           </a>
         </li>
-      {% endfor %}
+        {% endfor %}
       </ul>
 
     </div>

@@ -3,14 +3,14 @@
   {% include patterns/hero-services.html %}
 
   {% for service in site.services %}
-    {% if service.cat == page.slug %}
+    {% if service.cat == page.slug and service.description_main %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">
 
           <div class="service">
             <h2 class="heading2">{{ service.title }}</h2>
-            <div class="description description--medium">
+            <div class="description">
               {{ service.description_main }}
             </div>
           </div>
@@ -24,13 +24,13 @@
   {% include patterns/carousel-secondary-services.html %}
 
   {% for service in site.services %}
-    {% if service.cat == page.slug %}
+    {% if service.cat == page.slug and service.description_secondary %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">
 
           <div class="service">
-            <div class="description description--medium">
+            <div class="description">
               {{ service.description_secondary }}
             </div>
           </div>

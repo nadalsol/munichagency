@@ -35,13 +35,13 @@
 
     &:hover {
       &:before {
-        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-chartreuse);
+        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-light);
       }
     }
 
     &.is-active {
       &:before {
-        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-light);
+        @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-chartreuse);
       }
     }
   }
