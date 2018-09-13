@@ -84,7 +84,7 @@
 }
 
 .u-inner-vision {
-  padding: $sp-small;
+  padding: $sp-xxlarge $sp-small $sp-small;
 
   @media ($medium-up) {
     padding: 120px 200px $sp-large;
