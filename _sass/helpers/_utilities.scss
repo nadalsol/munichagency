@@ -21,6 +21,14 @@
 }
 
 // Inners
+.u-inner-xsmall {
+  padding: 0 $sp-small;
+
+  @media ($medium-up) {
+    padding: 0;
+  }
+}
+
 .u-inner-small {
   padding: $sp-small 0;
 
@@ -140,6 +148,14 @@
 
 .u-text-center {
   text-align: center;
+}
+
+.u-text-center-small {
+  text-align: left;
+
+  @media ($medium-up) {
+    text-align: center;
+  }
 }
 
 .u-text-uppercase {
