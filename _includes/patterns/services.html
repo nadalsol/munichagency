@@ -3,7 +3,7 @@
   {% include patterns/hero-services.html %}
 
   {% for service in site.services %}
-    {% if service.cat == page.slug %}
+    {% if service.cat == page.slug and service.description_main %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">
@@ -24,7 +24,7 @@
   {% include patterns/carousel-secondary-services.html %}
 
   {% for service in site.services %}
-    {% if service.cat == page.slug %}
+    {% if service.cat == page.slug and service.description_secondary %}
     <div class="panel-light">
       <div class="wrapper">
         <div class="u-inner-xlarge">
