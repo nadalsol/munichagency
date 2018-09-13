@@ -3,6 +3,7 @@
 // Based on the code of [Bootstrap Modals](https://getbootstrap.com/docs/4.0/components/modal/)
 //
 // 3. Enable modal scrolling.
+// 4. Fixes modal scrolling [bug for iOS devices](http://patrickmuff.ch/blog/2014/10/01/how-we-fixed-the-webkit-overflow-scrolling-touch-bug-on-ios/).
 //
 
 .modal-contact {
@@ -86,7 +87,14 @@
   }
 }
 
-body.is-modal-open .modal-contact { // 3
-  overflow-x: hidden;
-  overflow-y: auto;
+body.is-modal-open { // 3
+  .modal-contact {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; // 4
+  }
+
+  .modal-contact__dialog {
+    height: calc(100% + 1px); // 4
+  }
 }
