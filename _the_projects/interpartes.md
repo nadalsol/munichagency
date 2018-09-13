@@ -5,13 +5,9 @@ cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa/interpartes"
 slug: interpartes
 sector: Branding
-description: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-  qui officia deserunt mollit anim id est laborum.</p>"
-link: http://www.interpartes.com
+description: "<p>Identidad corporativa realizada para una&nbsp;<span>consultor&iacute;a
+  y auditor&iacute;a de Barcelons, especializada en igualdad de g&eacute;nero.</span></p>"
+link: http://interpartes.cat/es/
 img_cover: https://www.datocms-assets.com/5249/1536351585-brandinginterpartes350x350.jpg
 img_cover_alt: 
 img_carousel:
