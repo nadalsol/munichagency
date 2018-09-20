@@ -1,8 +1,7 @@
 <div class="address">
   <p class="text {{ include.css-class-text }}">
     {{ site.address_1 }}<br />
-    {{ site.address_2 }}<br />
-    <a class="link {{ include.css-class-link }}" href="tel:{{ site.phone_country_code }}{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
+    {{ site.address_2 }}
   </p>
   <p class="text {{ include.css-class-text }}">
     <a class="link {{ include.css-class-link }}" href="{{ site.address_link }}" target="_blank">
