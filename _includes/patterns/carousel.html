@@ -5,7 +5,7 @@
   {% endif %}
 {% endfor %}
 
-<div class="carousel is-items-{{ home_carousel_length }}">
+<div class="carousel is-items-{{ home_carousel_length }} is-autoplay">
 
   {% for home_carousel in site.home_carousels %}
     <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
@@ -21,7 +21,7 @@
             {% endif %}
             {{ home_carousel.title }}
           </p>
-          {% if home_carousel.link %}
+          {% if home_carousel.link != '' %}
           <a class="button button--primary button--square" href="{{ home_carousel.link }}">
             +
           </a>

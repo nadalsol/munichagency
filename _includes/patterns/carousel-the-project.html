@@ -5,7 +5,7 @@
   {% endif %}
 {% endfor %}
 
-<div class="carousel is-items-{{ the_project_img_carousel_length }}">
+<div class="carousel is-items-{{ the_project_img_carousel_length }} is-autoplay">
 
   {% for the_project_img_carousel in the_project.img_carousel %}
     <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
