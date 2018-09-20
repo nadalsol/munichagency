@@ -5,12 +5,13 @@ cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa/the-mount-data"
 slug: the-mount-data
 sector: Big data
+link: http://themountdata.com/
+video: 
 description: "<p>Dise&ntilde;o de identidad corporativa y de website para Mountdata,&nbsp;<span>empresa
   dedicada a la gesti&oacute;n y an&aacute;lisis de la informaci&oacute;n dentro de
   las &aacute;reas de marketing y ventas (consultor&iacute;a: CRM y digital y soluciones
   tecnol&oacute;gicas: bases de datos y aplicaciones, integraciones, an&aacute;lisis
   y dashboard).</span></p>"
-link: http://themountdata.com/
 img_cover: https://www.datocms-assets.com/5249/1536351886-brandingtmd350x350.jpg
 img_cover_alt: 
 img_carousel:

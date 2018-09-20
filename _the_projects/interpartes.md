@@ -5,9 +5,18 @@ cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa/interpartes"
 slug: interpartes
 sector: Branding
+link: http://interpartes.cat/es/
+video: !ruby/object:Dato::Local::FieldType::Video
+  url: https://www.youtube.com/watch?v=o8NPllzkFhE
+  thumbnail_url: https://i.ytimg.com/vi/o8NPllzkFhE/hqdefault.jpg
+  title: The mind behind Linux | Linus Torvalds
+  width: 480
+  height: 270
+  provider: youtube
+  provider_url: 
+  provider_uid: o8NPllzkFhE
 description: "<p>Identidad corporativa realizada para una&nbsp;<span>consultor&iacute;a
   y auditor&iacute;a de Barcelons, especializada en igualdad de g&eacute;nero.</span></p>"
-link: http://interpartes.cat/es/
 img_cover: https://www.datocms-assets.com/5249/1536351585-brandinginterpartes350x350.jpg
 img_cover_alt: 
 img_carousel:

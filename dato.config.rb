@@ -132,8 +132,8 @@ directory "_projects" do
         permalink: "/proyectos/#{project.cat.title.parameterize}",
         permalink_to: "/proyectos/#{project.cat.title.parameterize}/#{project.title.parameterize}",
         sector: project.sector,
-        description: project.description,
         link: project.link,
+        description: project.description,
         img_cover: project.img_cover.url,
         img_cover_alt: project.img_cover.alt,
         img_carousel: project.img_carousel
@@ -152,8 +152,9 @@ directory "_the_projects" do
         permalink: "/proyectos/#{project.cat.title.parameterize}/#{project.title.parameterize}",
         slug: "#{project.title.parameterize}",
         sector: project.sector,
-        description: project.description,
         link: project.link,
+        video: project.video,
+        description: project.description,
         img_cover: project.img_cover.url,
         img_cover_alt: project.img_cover.alt,
         img_carousel: project.img_carousel
