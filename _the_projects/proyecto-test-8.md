@@ -5,8 +5,9 @@ cat: redes-sociales
 permalink: "/proyectos/redes-sociales/proyecto-test-8"
 slug: proyecto-test-8
 sector: Hello
-description: "<p>Lorem ipsum dolor sit amet adescipli elit...</p>"
 link: https://alistapart.com/
+video: 
+description: "<p>Lorem ipsum dolor sit amet adescipli elit...</p>"
 img_cover: https://www.datocms-assets.com/5249/1536340838-proyecto.jpg
 img_cover_alt: 
 img_carousel:

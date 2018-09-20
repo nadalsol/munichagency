@@ -29,6 +29,24 @@
                   </p>
                 </div>
                 {% endif %}
+                {% if the_project.video %}
+                  {% assign the_project_video_provider = the_project.video.provider %}
+                  {% case the_project_video_provider %}
+                    {% when 'youtube' %}
+                      <div class="u-video-responsive u-margin-bottom">
+                        <iframe src="https://www.youtube.com/embed/{{ the_project.video.provider_uid }}" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                    {% when 'vimeo' %}
+                      <div class="u-video-responsive u-margin-bottom">
+                        <iframe src="https://player.vimeo.com/video/{{ the_project.video.provider_uid }}?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                      <script src="https://player.vimeo.com/api/player.js"></script>
+                    {% when 'facebook' %}
+                      <div class="u-video-responsive u-margin-bottom">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href={{ the_project.video.url }}&show_text=0&width=560" width="560" height="315" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                      </div>
+                  {% endcase %}
+                {% endif %}
                 <div class="description description--light">
                   {{ the_project.description }}
                 </div>

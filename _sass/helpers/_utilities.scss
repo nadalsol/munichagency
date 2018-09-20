@@ -136,6 +136,11 @@
   @include img-responsive-full;
 }
 
+// Responsive videos
+.u-video-responsive {
+  @include video-responsive;
+}
+
 // Margin
 .u-margin-bottom {
   margin-bottom: $sp-large;

@@ -5,8 +5,8 @@ cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa"
 permalink_to: "/proyectos/identidad-corporativa/requena-i-sanchez-advocats"
 sector: Branding
-description: "<p>Identidad corporativa trabajada para un bufete de abogados de Barcelona.</p>"
 link: http://www.requenaadvocats.cat/
+description: "<p>Identidad corporativa trabajada para un bufete de abogados de Barcelona.</p>"
 img_cover: https://www.datocms-assets.com/5249/1536351795-brandingrsa350x350.jpg
 img_cover_alt: 
 img_carousel:

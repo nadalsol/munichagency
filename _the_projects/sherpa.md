@@ -5,10 +5,19 @@ cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa/sherpa"
 slug: sherpa
 sector: Big data, Marketing
+link: ''
+video: !ruby/object:Dato::Local::FieldType::Video
+  url: https://vimeo.com/18685220
+  thumbnail_url: https://i.vimeocdn.com/video/117794637_295x166.jpg
+  title: Behind the TED Talk
+  width: 480
+  height: 272
+  provider: vimeo
+  provider_url: 
+  provider_uid: '18685220'
 description: "<p>Dise&ntilde;o de identidad corporativa de la applicaci&oacute;n desktop
   para la monitorizaci&oacute;n de campa&ntilde;as de marketing. Dise&ntilde;o UI
   &amp; Visual de la aplicaci&oacute;n.</p>"
-link: 
 img_cover: https://www.datocms-assets.com/5249/1536745290-brandingsherpa350x350.jpg
 img_cover_alt: 
 img_carousel:
