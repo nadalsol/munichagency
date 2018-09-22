@@ -57,7 +57,8 @@ directory "_home_carousels" do
         title: home_carousel.title,
         subtitle: home_carousel.subtitle,
         link: home_carousel.link,
-        img: home_carousel.img.url
+        img: home_carousel.img.url,
+        order: home_carousel.order
       }
     end
   end
@@ -126,7 +127,7 @@ directory "_projects" do
   dato.projects.each do |project|
     create_post "#{project.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "projects",
+        layout: "projects-from-cat",
         title: project.title,
         cat: project.cat.title.parameterize,
         permalink: "/proyectos/#{project.cat.title.parameterize}",

@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: projects-from-cat
 title: Requena i Sánchez advocats
 cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa"

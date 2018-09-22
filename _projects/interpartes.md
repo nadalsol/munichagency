@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: projects-from-cat
 title: Interpartes
 cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa"

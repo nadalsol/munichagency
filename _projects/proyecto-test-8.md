@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: projects-from-cat
 title: Proyecto test 8
 cat: redes-sociales
 permalink: "/proyectos/redes-sociales"

@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: projects-from-cat
 title: skxñflksd
 cat: web
 permalink: "/proyectos/web"
