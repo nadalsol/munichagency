@@ -1,11 +1,11 @@
-{% comment %}Getting the number of carousel items{% endcomment %}
+{% comment %}Get the number of carousel items{% endcomment %}
 {% for home_carousel in site.home_carousels %}
   {% if forloop.first %}
     {% assign home_carousel_length = forloop.length %}
   {% endif %}
 {% endfor %}
 
-{% comment %}Getting carousel items, in order{% endcomment %}
+{% comment %}Get carousel items, ordered by 'order'{% endcomment %}
 {% assign home_carousels_sorted = site.home_carousels | sort: "order" %}
 
 <div class="carousel is-items-{{ home_carousel_length }} is-autoplay">

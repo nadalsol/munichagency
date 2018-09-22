@@ -4,7 +4,7 @@
 <div class="panel-light">
   <div class="wrapper">
 
-    {% comment %}Getting the number of carousel items{% endcomment %}
+    {% comment %}Get the number of carousel items{% endcomment %}
     {% for project in site.projects %}
       {% if forloop.first and project.cat == current_section %}
         {% assign project_length = forloop.length %}
@@ -21,7 +21,7 @@
 
       {% for project in site.projects %}
         {% if project.cat == current_section %}
-          {% comment %}Getting first carousel image for each project{% endcomment %}
+          {% comment %}Get first carousel image for each project{% endcomment %}
           {% for project_img_carousel in project.img_carousel %}
             {% if forloop.first %}
               {% assign project_img_carousel_host = project_img_carousel.imgix_host %}

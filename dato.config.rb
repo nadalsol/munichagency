@@ -127,7 +127,7 @@ directory "_projects" do
   dato.projects.each do |project|
     create_post "#{project.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "projects",
+        layout: "projects-from-cat",
         title: project.title,
         cat: project.cat.title.parameterize,
         permalink: "/proyectos/#{project.cat.title.parameterize}",

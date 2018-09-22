@@ -1,6 +1,4 @@
-{% comment %}
-  Get callouts, in order
-{% endcomment %}
+{% comment %}Get callouts, ordered by 'order'{% endcomment %}
 {% assign about_callouts_sorted = site.about_callouts | sort: "order" %}
 {% for about_callout in about_callouts_sorted %}
 <div class="callout {% cycle 'callout--dark', 'callout--waterleaf', 'callout--carnation' %}">
