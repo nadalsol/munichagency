@@ -5,13 +5,16 @@
   {% endif %}
 {% endfor %}
 
+{% comment %}Getting carousel items, in order{% endcomment %}
+{% assign home_carousels_sorted = site.home_carousels | sort: "order" %}
+
 <div class="carousel is-items-{{ home_carousel_length }} is-autoplay">
 
-  {% for home_carousel in site.home_carousels %}
+  {% for home_carousel in home_carousels_sorted %}
     <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
   {% endfor %}
 
-  {% for home_carousel in site.home_carousels %}
+  {% for home_carousel in home_carousels_sorted %}
     <figure class="carousel__item" style="background-image: url({{ home_carousel.img }});">
       <div class="wrapper">
         <div class="u-inner-carousel">
@@ -64,7 +67,7 @@
 
   <div class="carousel__controls">
     <div class="wrapper">
-    {% for home_carousel in site.home_carousels %}
+    {% for home_carousel in home_carousels_sorted %}
       <a class="carousel__controls__control-button" href="#slide-{{ forloop.index }}"></a>
     {% endfor %}
     </div>

@@ -4,7 +4,7 @@ title: Redes sociales
 cat: redes-sociales
 permalink: "/servicios/redes-sociales"
 description_main: |-
-  <p>Una de las herramientas de comunicaci&oacute;n m&aacute;s potentes de la actualidad. En Munich le dotamos de un car&aacute;cter estrat&eacute;gico, imprescindible para generar marca, conversaci&oacute;n, seguidores y viralidad.</p>
+  <p>Una de las herramientas de comunicaci&oacute;n m&aacute;s potentes de la actualidad. En Munich le dotamos de un car&aacute;cter estrat&eacute;gico, imprescindible para generar marca, difusi&oacute;n y clientes</p>
   <p>Utilizamos los &uacute;ltimos recursos de comunicaci&oacute;n, as&iacute; como el storytelling para introducirnos en la mente del consumidor. El contenido interesante hace que conectemos y consigamos un match a trav&eacute;s de las historias, de las buenas historias.</p>
 description_secondary: "<p>Ayudamos a nuestros clientes a enfocar los objetivos de
   sus redes sociales, teniendo en cuenta sus necesidades reales, para lograr conectar
