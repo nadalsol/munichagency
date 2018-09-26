@@ -87,6 +87,10 @@
   padding: $sp-xxlarge $sp-small $sp-small;
 
   @media ($medium-up) {
+    padding: $sp-giant $sp-big $sp-large;
+  }
+
+  @media ($large-up) {
     padding: 120px 200px $sp-large;
   }
 }
