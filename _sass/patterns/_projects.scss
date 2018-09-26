@@ -45,6 +45,7 @@
     @include size(100%, 100%);
     @include link($c-light, $c-chartreuse, none);
     display: block;
+    overflow: hidden;
   }
 
   &__img {
@@ -59,6 +60,10 @@
 
     @media ($medium-up) {
       padding: $sp-small;
+    }
+
+    .heading5 {
+      margin-bottom: 0;
     }
   }
 }
