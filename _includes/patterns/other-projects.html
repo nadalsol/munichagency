@@ -19,7 +19,7 @@
           {% if the_project.cat == current_category and the_project.slug != current_section and index < 3 %}
           <li class="other-projects__item">
             <a class="other-projects__link" href="{{ site.baseurl }}{{ the_project.permalink }}">
-              <img class="u-img-responsive-full" src="{{ the_project.img_cover }}" alt="{{ the_project.img_cover_alt }}">
+              <img class="u-img-responsive-100" src="{{ the_project.img_cover }}" alt="{{ the_project.img_cover_alt }}">
             </a>
           </li>
           {% assign index = index | plus: 1 %}

@@ -8,6 +8,10 @@
     @include text;
   }
 
+  img {
+    @include img-responsive-75;
+  }
+
   &--small {
     ul,
     ol,

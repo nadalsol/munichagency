@@ -136,13 +136,21 @@
   @include img-responsive;
 }
 
-.u-img-responsive-full {
-  @include img-responsive-full;
+.u-img-responsive-75 {
+  @include img-responsive-75;
+}
+
+.u-img-responsive-100 {
+  @include img-responsive-100;
 }
 
 // Responsive videos
-.u-video-responsive {
-  @include video-responsive;
+.u-video-responsive-75 {
+  @include video-responsive-75;
+}
+
+.u-video-responsive-100 {
+  @include video-responsive-100;
 }
 
 // Margin
