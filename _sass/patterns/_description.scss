@@ -30,5 +30,9 @@
     p {
       color: $c-light;
     }
+
+    a {
+      @include link($link-light-c, $link-light-hover-c);
+    }
   }
 }
