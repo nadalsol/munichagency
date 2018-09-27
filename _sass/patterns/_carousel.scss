@@ -219,13 +219,12 @@
   // Secondary controls (chevrons)
   .carousel__control-secondary-l,
   .carousel__control-secondary-r {
-    display: none;
+    display: block;
+    text-align: center;
+    line-height: $carousel-item-ht;
 
     @media ($medium-up) {
-      display: block;
       line-height: $carousel-item-ht-medium-up;
-      text-align: center;
-      color: $c-light;
     }
   }
 
