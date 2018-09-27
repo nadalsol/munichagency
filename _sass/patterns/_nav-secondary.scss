@@ -33,6 +33,10 @@
     position: relative;
     display: block;
 
+    &:before {
+      @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, transparent);
+    }
+
     &:hover {
       &:before {
         @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, $c-light);
