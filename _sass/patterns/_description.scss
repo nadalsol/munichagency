@@ -8,6 +8,10 @@
     @include text;
   }
 
+  img {
+    @include img-responsive-75;
+  }
+
   &--small {
     ul,
     ol,
@@ -29,6 +33,10 @@
     ol,
     p {
       color: $c-light;
+    }
+
+    a {
+      @include link($link-light-c, $link-light-hover-c);
     }
   }
 }

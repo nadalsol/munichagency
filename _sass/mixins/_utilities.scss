@@ -32,22 +32,52 @@
   height: auto; // 2
 }
 
-// Responsive image, full width
-// Force images to scale the same width of their parents
+// Responsive image, 75% width
+// Force images to scale 75% width of their parents
 //
-// 1. Same width relative to the parent
+// 1. 75% width relative to the parent
 // 2. Scale the height according to the width, otherwise you get stretching
 //
-@mixin img-responsive-full($dp: block) {
+@mixin img-responsive-75($dp: block) {
+  display: $dp;
+  width: 75%; // 1
+  height: auto; // 2
+}
+
+// Responsive image, 100% width
+// Force images to scale the same width of their parents
+//
+// 1. 100% width relative to the parent
+// 2. Scale the height according to the width, otherwise you get stretching
+//
+@mixin img-responsive-100($dp: block) {
   display: $dp;
   width: 100%; // 1
   height: auto; // 2
 }
 
-// Responsive video
+// Responsive video, 75% width
 // Useful for YouTube, Vimeo and Facebook videos
 //
-@mixin video-responsive() {
+@mixin video-responsive-75() {
+  padding: 42.1875% 0 0;
+  position: relative;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+// Responsive video, 100% width
+// Useful for YouTube, Vimeo and Facebook videos
+//
+@mixin video-responsive-100() {
   padding: 56.25% 0 0;
   position: relative;
 

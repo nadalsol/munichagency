@@ -6,9 +6,9 @@
 
     <div class="{% cycle 'panel-dark', 'panel-waterleaf', 'panel-carnation' %}">
       <div class="u-inner-large">
-        <h2 class="heading2">{{ about_callout.title }}</h2>
-        <h3 class="heading6">{{ about_callout.subtitle }}</h3>
-        <div class="description">
+        <h2 class="heading2 {% cycle 'heading2--light', '', 'heading2--light' %}">{{ about_callout.title }}</h2>
+        <h3 class="heading6 {% cycle 'heading6--light', '', 'heading6--light' %}">{{ about_callout.subtitle }}</h3>
+        <div class="description {% cycle 'description--light', '', 'description--light' %}">
           {{ about_callout.description }}
         </div>
       </div>

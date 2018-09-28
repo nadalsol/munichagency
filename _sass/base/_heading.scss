@@ -21,7 +21,7 @@ h2,
 .heading2 {
   @include heading(
     $ff-sans-serif,
-    $fz-huge,
+    $fz-xxxlarge,
     $fw-thin,
     $lh-xsmall,
     $c-dark,
@@ -57,7 +57,7 @@ h4,
     $c-dark,
     lowercase,
     normal,
-    $fz-huge
+    $fz-xxxlarge
   );
 }
 
@@ -72,7 +72,7 @@ h5,
     $c-dark,
     uppercase,
     normal,
-    $fz-large
+    $fz-base
   );
 }
 
