@@ -204,22 +204,22 @@
   }
 
   .carousel__control-secondary-l {
-    @include positioner(absolute, 80px, 100%, top, 0, left, 0);
+    @include positioner(absolute, 65px, 100%, top, 0, left, 0);
 
-    &:hover > .icon--chevron {
-      margin-right: $sp-xxsmall;
+    &:hover > .icon--chevron-fill {
+      margin-right: $sp-base;
     }
   }
 
   .carousel__control-secondary-r {
-    @include positioner(absolute, 80px, 100%, top, 0, right, 0);
+    @include positioner(absolute, 65px, 100%, top, 0, right, 0);
 
-    &:hover > .icon--chevron {
-      margin-left: $sp-xxsmall;
+    &:hover > .icon--chevron-fill {
+      margin-left: $sp-base;
     }
   }
 
-  .icon--chevron {
+  .icon--chevron-fill {
     vertical-align: middle;
     transition: $transition-m;
   }
