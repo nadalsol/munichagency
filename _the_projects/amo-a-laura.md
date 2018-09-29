@@ -48,5 +48,23 @@ img_carousel:
   height: 183
   alt: 
   title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1536351807-brandingrsa1440x7201.jpg"
+  format: jpg
+  size: 397535
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 720
+  alt: 
+  title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1536351814-brandingrsa1440x7202.jpg"
+  format: jpg
+  size: 383455
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 720
+  alt: 
+  title: 
 ---
 

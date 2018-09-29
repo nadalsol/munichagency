@@ -99,12 +99,14 @@ $lh-large:               2 !default;
 $lh-xlarge:              2.5 !default;
 
 // Media queries
+$screen-xs-min:          375px !default;
 $screen-sm-min:          480px !default;
 $screen-md-min:          768px !default;
 $screen-lg-min:          992px !default;
 $screen-xl-min:          1200px !default;
 $screen-xxl-min:         1440px !default;
 
+$xsmall-up:              "min-width:#{$screen-xs-min}" !default;
 $small-up:               "min-width:#{$screen-sm-min}" !default;
 $medium-up:              "min-width:#{$screen-md-min}" !default;
 $large-up:               "min-width:#{$screen-lg-min}" !default;
@@ -375,3 +377,14 @@ $nav-main-link-bgc-active-medium-up: transparent !default;
 $nav-secondary-link-c:               $c-light !default;
 $nav-secondary-link-c-hover:         $c-light !default;
 $nav-secondary-link-c-active:        $c-light !default;
+
+// Slick slider
+$slick-loader-path:                      "/assets/images/" !default;
+$slick-icons-path:                       "/assets/icons/" !default;
+$slick-prev-icon:                        $slick-icons-path + "chevron-l.svg" !default;
+$slick-next-icon:                        $slick-icons-path + "chevron-r.svg" !default;
+$slick-prevnext-icon-position:           $sp-base !default;
+$slick-prevnext-icon-position-medium-up: $sp-medium !default;
+$slick-opacity-default:                  1 !default;
+$slick-opacity-on-hover:                 1 !default;
+$slick-opacity-not-active:               .25 !default;

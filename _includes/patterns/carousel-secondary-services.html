@@ -4,80 +4,35 @@
 <div class="panel-light">
   <div class="wrapper">
 
-    {% comment %}Get the number of carousel items{% endcomment %}
+    <div class="slick-slider">
     {% for project in site.projects %}
-      {% if forloop.first and project.cat == current_section %}
-        {% assign project_length = forloop.length %}
+      {% if project.cat == current_section %}
+        {% comment %}Get first carousel image for each project{% endcomment %}
+        {% for project_img_carousel in project.img_carousel %}
+          {% if forloop.first %}
+            {% assign project_img_carousel_host = project_img_carousel.imgix_host %}
+            {% assign project_img_carousel_path = project_img_carousel.path %}
+          {% endif %}
+        {% endfor %}
+        <div>
+          <img src="https://{{ project_img_carousel_host }}{{ project_img_carousel_path }}">
+          <div class="slick-callout">
+            <div class="slick-callout__l">
+              <p class="heading4 heading4--light u-text-uppercase">{{ project.title }}</p>
+              <p class="heading5 heading5--light">
+                <span class="heading5__prominent">{{ project.cat }}</span>
+                {{ project.sector }}
+              </p>
+            </div>
+            <div class="slick-callout__r">
+              <a class="button button--primary button--square" href="{{ project.permalink_to }}">
+                +
+              </a>
+            </div>
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
-
-    <div class="carousel carousel--secondary is-items-{{ project_length }}">
-
-      {% for project in site.projects %}
-        {% if project.cat == current_section %}
-        <div class="carousel__control-operator" id="proyecto-{{ forloop.index }}"></div>
-        {% endif %}
-      {% endfor %}
-
-      {% for project in site.projects %}
-        {% if project.cat == current_section %}
-          {% comment %}Get first carousel image for each project{% endcomment %}
-          {% for project_img_carousel in project.img_carousel %}
-            {% if forloop.first %}
-              {% assign project_img_carousel_host = project_img_carousel.imgix_host %}
-              {% assign project_img_carousel_path = project_img_carousel.path %}
-            {% endif %}
-          {% endfor %}
-          <figure class="carousel__item" style="background-image: url(https://{{ project_img_carousel_host }}{{ project_img_carousel_path }});">
-            <div class="carousel__callout">
-              <div class="carousel__callout-l">
-                <p class="heading4 heading4--light u-text-uppercase">{{ project.title }}</p>
-                <p class="heading5 heading5--light">
-                  <span class="heading5__prominent">{{ project.cat }}</span>
-                  {{ project.sector }}
-                </p>
-              </div>
-              <div class="carousel__callout-r">
-                <a class="button button--primary button--square" href="{{ project.permalink_to }}">
-                  +
-                </a>
-              </div>
-            </div>
-            {% case forloop.index %}
-              {% when 1 %}
-                <a class="carousel__control-secondary-r" href="#proyecto-2">
-                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-                </a>
-              {% when 2 %}
-                <a class="carousel__control-secondary-l" href="#proyecto-1">
-                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-                </a>
-                <a class="carousel__control-secondary-r" href="#proyecto-3">
-                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-                </a>
-              {% when 3 %}
-                <a class="carousel__control-secondary-l" href="#proyecto-2">
-                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-                </a>
-                <a class="carousel__control-secondary-r" href="#proyecto-4">
-                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-                </a>
-              {% when 4 %}
-                <a class="carousel__control-secondary-l" href="#proyecto-3">
-                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-                </a>
-                <a class="carousel__control-secondary-r" href="#proyecto-5">
-                  {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-                </a>
-              {% when 5 %}
-                <a class="carousel__control-secondary-l" href="#proyecto-4">
-                  {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-                </a>
-            {% endcase %}
-          </figure>
-        {% endif %}
-      {% endfor %}
-
     </div>
 
   </div>

@@ -1,5 +1,10 @@
 // Navigation secondary
 // -----------------------------------------------------------------------------
+//
+// 1. The presence of the pseudo-element in the normal state, even being
+// transparent/invisible, prevents [The Annoying Mobile Double-Tap Link Issue]
+// (https://css-tricks.com/annoying-mobile-double-tap-link-issue/).
+//
 
 .nav-secondary {
   @include list-reset;
@@ -33,7 +38,7 @@
     position: relative;
     display: block;
 
-    &:before {
+    &:before { // 1
       @include pseudo-rectangle($sp-huge, 4px, -$sp-xsmall, transparent);
     }
 
