@@ -1,0 +1,188 @@
+// Slick slider theme
+// -----------------------------------------------------------------------------
+// Based on the code of Slick Carousel:
+// https://kenwheeler.github.io/slick/
+// https://github.com/kenwheeler/slick/
+//
+// Styling customisations.
+//
+// 1. Ensures same width for all images, even if they are originally uploaded
+// at different sizes., from the CMS.
+//
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  }
+  @else {
+    @return url($slick-loader-path + $url);
+  }
+}
+
+// Slider
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+  }
+}
+
+// Arrows
+.slick-prev,
+.slick-next {
+  @include size(19px, 60px);
+  position: absolute;
+  display: block;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: -30px;
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+
+    &:before {
+      opacity: $slick-opacity-on-hover;
+    }
+  }
+
+  &.slick-disabled:before {
+    opacity: $slick-opacity-not-active;
+  }
+
+  &:before {
+    @include size(19px, 60px);
+    content: '';
+    display: block;
+    opacity: $slick-opacity-default;
+  }
+}
+
+.slick-prev {
+  left: $slick-prevnext-icon-position;
+
+  @media ($medium-up) {
+    left: $slick-prevnext-icon-position-medium-up;
+  }
+
+  [dir="rtl"] & {
+    left: auto;
+    right: -$slick-prevnext-icon-position;
+
+    @media ($medium-up) {
+      left: -$slick-prevnext-icon-position-medium-up;
+    }
+  }
+
+  &:before {
+    background-image: url($slick-prev-icon);
+
+    [dir="rtl"] & {
+      background-image: url($slick-next-icon);
+    }
+  }
+}
+
+.slick-next {
+  right: $slick-prevnext-icon-position;
+
+  @media ($medium-up) {
+    right: $slick-prevnext-icon-position-medium-up;
+  }
+
+  [dir="rtl"] & {
+    left: -$slick-prevnext-icon-position;
+    right: auto;
+
+    @media ($medium-up) {
+      left: -$slick-prevnext-icon-position-medium-up;
+    }
+  }
+
+  &:before {
+    background-image: url($slick-next-icon);
+
+    [dir="rtl"] & {
+      background-image: url($slick-prev-icon);
+    }
+  }
+}
+
+// Slide and callout
+.slick-slide {
+  position: relative;
+  margin-top: -85px;
+
+  &:focus {
+    @include tab-focus-silent;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $c-dark;
+    opacity: .7;
+  }
+
+  img {
+    @include size(710px, auto); // 1
+  }
+
+  &.slick-current {
+    margin-top: 0;
+    border-right: $br-base solid $c-light;
+    border-left: $br-base solid $c-light;
+
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.slick-callout {
+  @include positioner(absolute, 100%, auto, bottom, 0, left, 0, $zi-50);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: $sp-small 220px;
+  background-color: $c-dark;
+
+  @media ($xsmall-up) {
+    padding: $sp-small $sp-titanic;
+  }
+
+  @media ($small-up) {
+    padding: $sp-xxlarge 100px;
+  }
+
+  @media ($medium-up) {
+    align-items: flex-start;
+    padding: $sp-xxlarge;
+  }
+
+  .heading5 {
+    margin-bottom: 0;
+  }
+
+  .slick-slide & {
+    display: none;
+  }
+
+  .slick-slide.slick-current & {
+    display: flex;
+  }
+}

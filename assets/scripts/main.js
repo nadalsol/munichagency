@@ -6,7 +6,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 $(document).ready(function() {
-
   /**
    * Cookie message
    * Based on the code of [Studio 24](https://github.com/studio24/cookie-message)
@@ -191,6 +190,22 @@ $(document).ready(function() {
       }
     });
   })();
+
+
+  /**
+   * Slick slider
+   * https://kenwheeler.github.io/slick/
+   * https://github.com/kenwheeler/slick/
+   */
+  //
+  // Initializes the slider
+  //
+  $('.slick-slider').slick({
+    arrows: true,
+    centerMode: true,
+    slidesToShow: 3,
+    variableWidth: true
+  });
 
 });
 

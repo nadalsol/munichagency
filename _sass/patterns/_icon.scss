@@ -40,6 +40,10 @@
   @include size(185px, 50px);
 }
 
+.icon--chevron {
+  @include size(19px, 60px);
+}
+
 .icon--contact-form {
   @include size(64px, 79px);
 }
