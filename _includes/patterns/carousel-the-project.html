@@ -13,37 +13,7 @@
 
   {% for the_project_img_carousel in the_project.img_carousel %}
     <figure class="carousel__item" style="background-image: url(https://{{ the_project_img_carousel.imgix_host }}{{ the_project_img_carousel.path }});">
-      {% case forloop.index %}
-        {% when 1 %}
-          <a class="carousel__control-secondary-r" href="#slide-2">
-            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-          </a>
-        {% when 2 %}
-          <a class="carousel__control-secondary-l" href="#slide-1">
-            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-          </a>
-          <a class="carousel__control-secondary-r" href="#slide-3">
-            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-          </a>
-        {% when 3 %}
-          <a class="carousel__control-secondary-l" href="#slide-2">
-            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-          </a>
-          <a class="carousel__control-secondary-r" href="#slide-4">
-            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-          </a>
-        {% when 4 %}
-          <a class="carousel__control-secondary-l" href="#slide-3">
-            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-          </a>
-          <a class="carousel__control-secondary-r" href="#slide-5">
-            {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
-          </a>
-        {% when 5 %}
-          <a class="carousel__control-secondary-l" href="#slide-4">
-            {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
-          </a>
-      {% endcase %}
+      {% include patterns/carousel-control.html %}
     </figure>
   {% endfor %}
 

@@ -1,0 +1,1 @@
+<svg class="{{ include.css-class }}" width="65" height="65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg"><title>Siguiente</title><g fill="none" fill-rule="evenodd"><path fill-opacity=".2" fill="#000" d="M0 0h65v65H0z"/><path stroke="#E5FF00" stroke-width="3" stroke-linecap="square" d="M27 18l12 14.012-12 15.133"/></g></svg>

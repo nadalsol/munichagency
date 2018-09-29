@@ -1,0 +1,31 @@
+{% case forloop.index %}
+  {% when 1 %}
+    <a class="carousel__control-secondary-r" href="#slide-2">
+      {% include icons/chevron-fill-r.svg css-class="icon icon--chevron-fill" %}
+    </a>
+  {% when 2 %}
+    <a class="carousel__control-secondary-l" href="#slide-1">
+      {% include icons/chevron-fill-l.svg css-class="icon icon--chevron-fill" %}
+    </a>
+    <a class="carousel__control-secondary-r" href="#slide-3">
+      {% include icons/chevron-fill-r.svg css-class="icon icon--chevron-fill" %}
+    </a>
+  {% when 3 %}
+    <a class="carousel__control-secondary-l" href="#slide-2">
+      {% include icons/chevron-fill-l.svg css-class="icon icon--chevron-fill" %}
+    </a>
+    <a class="carousel__control-secondary-r" href="#slide-4">
+      {% include icons/chevron-fill-r.svg css-class="icon icon--chevron-fill" %}
+    </a>
+  {% when 4 %}
+    <a class="carousel__control-secondary-l" href="#slide-3">
+      {% include icons/chevron-fill-l.svg css-class="icon icon--chevron-fill" %}
+    </a>
+    <a class="carousel__control-secondary-r" href="#slide-5">
+      {% include icons/chevron-fill-r.svg css-class="icon icon--chevron-fill" %}
+    </a>
+  {% when 5 %}
+    <a class="carousel__control-secondary-l" href="#slide-4">
+      {% include icons/chevron-fill-l.svg css-class="icon icon--chevron-fill" %}
+    </a>
+{% endcase %}
