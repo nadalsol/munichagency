@@ -80,8 +80,6 @@
 }
 
 .carousel {
-  margin-bottom: $br-base;
-
   .carousel__item:first-of-type { // 1
     position: static;
     pointer-events: auto;
@@ -125,6 +123,7 @@
 //
 .carousel {
   position: relative;
+  margin-bottom: $br-base;
 
   // Item (slide)
   .carousel__item {
