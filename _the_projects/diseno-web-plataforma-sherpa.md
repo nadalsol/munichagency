@@ -1,35 +1,17 @@
 ---
 layout: the-project
-title: Sherpa
-cat: identidad-corporativa
-permalink: "/proyectos/identidad-corporativa/sherpa"
-slug: sherpa
-sector: Big data, Marketing
+title: Diseño web plataforma Sherpa
+cat: web
+permalink: "/proyectos/web/diseno-web-plataforma-sherpa"
+slug: diseno-web-plataforma-sherpa
+sector: ''
 link: ''
-video: !ruby/object:Dato::Local::FieldType::Video
-  url: https://vimeo.com/18685220
-  thumbnail_url: https://i.vimeocdn.com/video/117794637_295x166.jpg
-  title: Behind the TED Talk
-  width: 480
-  height: 272
-  provider: vimeo
-  provider_url: 
-  provider_uid: '18685220'
-description: "<p>Dise&ntilde;o de identidad corporativa de la applicaci&oacute;n desktop
-  para la monitorizaci&oacute;n de campa&ntilde;as de marketing. Dise&ntilde;o UI
-  &amp; Visual de la aplicaci&oacute;n.</p>"
+video: 
+description: "<p>Dise&ntilde;o de la aplicaci&oacute;n desktop para la monitorizaci&oacute;n
+  de campa&ntilde;as de marketing. Dise&ntilde;o UI &amp; Visual de la aplicaci&oacute;n.</p>"
 img_cover: https://www.datocms-assets.com/5249/1536745290-brandingsherpa350x350.jpg
 img_cover_alt: 
 img_carousel:
-- !ruby/object:Dato::Local::FieldType::Image
-  path: "/5249/1536744111-brandingsherpa1440x7201.jpg"
-  format: jpg
-  size: 106895
-  imgix_host: www.datocms-assets.com
-  width: 1440
-  height: 720
-  alt: 
-  title: 
 - !ruby/object:Dato::Local::FieldType::Image
   path: "/5249/1536744116-brandingsherpa1440x7202.jpg"
   format: jpg
@@ -61,6 +43,15 @@ img_carousel:
   path: "/5249/1536744128-brandingsherpa1440x7205.jpg"
   format: jpg
   size: 196160
+  imgix_host: www.datocms-assets.com
+  width: 1440
+  height: 720
+  alt: 
+  title: 
+- !ruby/object:Dato::Local::FieldType::Image
+  path: "/5249/1536744111-brandingsherpa1440x7201.jpg"
+  format: jpg
+  size: 106895
   imgix_host: www.datocms-assets.com
   width: 1440
   height: 720

@@ -1,13 +1,12 @@
 ---
-layout: the-project
-title: The Mount Data
+layout: projects-from-cat
+title: Construcción de marca The Mount Data
 cat: identidad-corporativa
-permalink: "/proyectos/identidad-corporativa/the-mount-data"
-slug: the-mount-data
-sector: Big data
+permalink: "/proyectos/identidad-corporativa"
+permalink_to: "/proyectos/identidad-corporativa/construccion-de-marca-the-mount-data"
+sector: ''
 link: http://themountdata.com/
-video: 
-description: "<p>Dise&ntilde;o de identidad corporativa y de website para Mountdata,&nbsp;<span>empresa
+description: "<p>Construcci&oacute;n de marca y dise&ntilde;o de website para Mountdata,&nbsp;<span>empresa
   dedicada a la gesti&oacute;n y an&aacute;lisis de la informaci&oacute;n dentro de
   las &aacute;reas de marketing y ventas (consultor&iacute;a: CRM y digital y soluciones
   tecnol&oacute;gicas: bases de datos y aplicaciones, integraciones, an&aacute;lisis

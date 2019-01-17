@@ -1,12 +1,13 @@
 ---
 layout: projects-from-cat
-title: Requena i Sánchez advocats
+title: 'Diseño de marca Requena i Sánchez '
 cat: identidad-corporativa
 permalink: "/proyectos/identidad-corporativa"
-permalink_to: "/proyectos/identidad-corporativa/requena-i-sanchez-advocats"
-sector: Branding
+permalink_to: "/proyectos/identidad-corporativa/diseno-de-marca-requena-i-sanchez"
+sector: ''
 link: http://www.requenaadvocats.cat/
-description: "<p>Identidad corporativa trabajada para un bufete de abogados de Barcelona.</p>"
+description: "<p>Identidad corporativa trabajada para el bufete de abogados Requena
+  i S&aacute;nchez de Barcelona.</p>"
 img_cover: https://www.datocms-assets.com/5249/1536351795-brandingrsa350x350.jpg
 img_cover_alt: 
 img_carousel:
