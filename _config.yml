@@ -29,6 +29,7 @@ address_location: ubicación
 phone_country_code: 34
 phone: 627 81 50 41
 lang: es
+google_analytics: UA-131310822-1
 
 # Build settings
 markdown: kramdown
