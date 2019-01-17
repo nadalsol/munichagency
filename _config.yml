@@ -16,7 +16,7 @@
 title: Munich Agency
 email: irene3molina@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Munich Agency es un estudio de publicidad y comunicación situado en Málaga (España)
+  Munich Agency es una agencia de publicidad situada en Málaga (España)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.munichagency.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: munichagency
