@@ -89,20 +89,15 @@ ruby_dep-1.5.0 requires ruby version >= 2.2.5, which is incompatible with the cu
 Error during gem install
 ```
 
-Netlify's default Ruby version is `2.1.2` but you can pick a different version by adding a `/.ruby-version` file to your repository. It should contain nothing but one of the below version strings. Netlify currently support the following ruby versions:
+Netlify's default Ruby version is `2.3.6` but you can specify a different version by adding a `/.ruby-version` file to your repository. It should contain nothing but one of the below version strings. Netlify currently support the following ruby versions:
 
 ```
-2.0.0-p247
-2.1.2
-2.2.1
-2.2.3
-2.3.0
-2.3.1
-2.3.3
-2.4.0
-2.4.1
-2.4.2
+2.2.9
+2.3.6
+2.4.3
 ```
+
+More info: [Netlify documentation: Continuous Deployment > Set Node, Ruby, or Python version](https://www.netlify.com/docs/continuous-deployment/#set-node-ruby-or-python-version)
 
 ## Publish content
 
