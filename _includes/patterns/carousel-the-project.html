@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 {% comment %}Get the number of carousel items{% endcomment %}
 {% for the_project_img_carousel in the_project.img_carousel %}
   {% if forloop.first %}
@@ -5,16 +6,21 @@
   {% endif %}
 {% endfor %}
 
-<div class="carousel is-items-{{ the_project_img_carousel_length }} is-autoplay">
-
+<div
+  class="carousel is-items-{{ the_project_img_carousel_length }} is-autoplay"
+>
+  <!-- prettier-ignore -->
   {% for the_project_img_carousel in the_project.img_carousel %}
-    <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
+  <div class="carousel__control-operator" id="slide-{{ forloop.index }}"></div>
   {% endfor %}
 
+  <!-- prettier-ignore -->
   {% for the_project_img_carousel in the_project.img_carousel %}
-    <figure class="carousel__item" style="background-image: url(https://{{ the_project_img_carousel.imgix_host }}{{ the_project_img_carousel.path }});">
-      {% include patterns/carousel-control.html %}
-    </figure>
+  <figure
+    class="carousel__item"
+    style="background-image: url(https://{{ the_project_img_carousel.imgix_host }}{{ the_project_img_carousel.upload.payload.attributes.path }});"
+  >
+    {% include patterns/carousel-control.html %}
+  </figure>
   {% endfor %}
-
 </div>

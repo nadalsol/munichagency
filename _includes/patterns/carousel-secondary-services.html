@@ -1,39 +1,47 @@
+<!-- prettier-ignore -->
 {% assign current_url = page.url | downcase | split: '/' %}
 {% assign current_section = current_url[2] %}
 
 <div class="panel-light">
   <div class="wrapper">
-
     <div class="slick-slider">
-    {% for project in site.projects %}
-      {% if project.cat == current_section %}
-        {% comment %}Get first carousel image for each project{% endcomment %}
-        {% for project_img_carousel in project.img_carousel %}
-          {% if forloop.first %}
-            {% assign project_img_carousel_host = project_img_carousel.imgix_host %}
-            {% assign project_img_carousel_path = project_img_carousel.path %}
-          {% endif %}
-        {% endfor %}
-        <div>
-          <img src="https://{{ project_img_carousel_host }}{{ project_img_carousel_path }}">
-          <div class="slick-callout">
-            <div class="slick-callout__l">
-              <p class="heading4 heading4--light u-text-uppercase">{{ project.title }}</p>
-              <p class="heading5 heading5--light">
-                <span class="heading5__prominent">{{ project.cat }}</span>
-                {{ project.sector }}
-              </p>
-            </div>
-            <div class="slick-callout__r">
-              <a class="button button--primary button--square" href="{{ project.permalink_to }}">
-                +
-              </a>
-            </div>
+      <!-- prettier-ignore -->
+      {% for project in site.projects %}
+        {% if project.cat == current_section %}
+          {% comment %}Get first carousel image for each project{% endcomment %}
+          {% for project_img_carousel in project.img_carousel %}
+            {% if forloop.first %}
+              {% assign project_img_carousel_host = project_img_carousel.imgix_host %}
+              {% assign project_img_carousel_path = project_img_carousel.upload.payload.attributes.path %}
+            {% endif %}
+          {% endfor %}
+      <div>
+        <img
+          src="https://{{ project_img_carousel_host }}{{ project_img_carousel_path }}"
+        />
+        <div class="slick-callout">
+          <div class="slick-callout__l">
+            <p class="heading4 heading4--light u-text-uppercase">
+              {{ project.title }}
+            </p>
+            <p class="heading5 heading5--light">
+              <span class="heading5__prominent">{{ project.cat }}</span>
+              {{ project.sector }}
+            </p>
+          </div>
+          <div class="slick-callout__r">
+            <a
+              class="button button--primary button--square"
+              href="{{ project.permalink_to }}"
+            >
+              +
+            </a>
           </div>
         </div>
+      </div>
+      <!-- prettier-ignore -->
       {% endif %}
-    {% endfor %}
+      {% endfor %}
     </div>
-
   </div>
 </div>
