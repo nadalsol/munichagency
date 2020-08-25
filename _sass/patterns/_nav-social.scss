@@ -1,18 +1,25 @@
 // Social navigation
 // -----------------------------------------------------------------------------
+//
+// 1. Temporary hack to reduce inner spacing for Instagram icon. If someday the
+//    icon is provided with the expected dimensions (85x85), then the hack
+//    would be removed.
+//
 
 .nav-social {
   @include positioner(fixed, auto, auto, bottom, 0, right, 0, $zi-100);
   transition: $transition-bot;
 
+  &__instagram,
   &__facebook,
   &__contact {
     display: block;
     float: left;
     margin-left: $sp-base;
-    line-height: 1
+    line-height: 1;
   }
 
+  &__instagram,
   &__facebook {
     visibility: hidden;
     opacity: 0;
@@ -22,6 +29,11 @@
       visibility: visible;
       opacity: 1;
     }
+  }
+
+  // 1
+  &__instagram > .icon {
+    border: 8px solid $c-waterleaf;
   }
 
   &.is-bottom {

@@ -23,8 +23,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Munich Agency es una agencia de publicidad situada en Málaga (España)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.munichagency.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: munichagency
 facebook_username: munichagency
+twitter_username: munichagency
+instagram_username: munichagency/?hl=es
 github_username: nadalsol
 address_link: https://goo.gl/maps/1tMN7qASPXF2
 address_1: C/ Lancelot, 22 - 29738
