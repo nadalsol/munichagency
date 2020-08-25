@@ -7,14 +7,14 @@
 // Styling customisations.
 //
 // 1. Ensures same width for all images, even if they are originally uploaded
-// at different sizes., from the CMS.
+//    at different sizes, from the CMS.
+// 2. Ensures very wide and low images visibility.
 //
 
 @function slick-image-url($url) {
   @if function-exists(image-url) {
     @return image-url($url);
-  }
-  @else {
+  } @else {
     @return url($slick-loader-path + $url);
   }
 }
@@ -62,7 +62,7 @@
 
   &:before {
     @include size(19px, 60px);
-    content: '';
+    content: "";
     display: block;
     opacity: $slick-opacity-default;
   }
@@ -128,14 +128,14 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: $c-dark;
-    opacity: .7;
+    opacity: 0.7;
   }
 
   img {
@@ -143,6 +143,7 @@
   }
 
   &.slick-current {
+    min-height: 300px; // 2
     margin-top: 0;
     border-right: $br-base solid $c-light;
     border-left: $br-base solid $c-light;
