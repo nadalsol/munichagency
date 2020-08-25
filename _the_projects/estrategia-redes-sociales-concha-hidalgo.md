@@ -1,25 +1,28 @@
 ---
-layout: projects-from-cat
-title: Web corporativa Sternaliza
-cat: web
-permalink: "/proyectos/web"
-permalink_to: "/proyectos/web/web-corporativa-sternaliza"
+layout: the-project
+title: Estrategia redes sociales Concha Hidalgo
+cat: redes-sociales
+permalink: "/proyectos/redes-sociales/estrategia-redes-sociales-concha-hidalgo"
+slug: estrategia-redes-sociales-concha-hidalgo
 sector: ''
 link: ''
-description: ''
-img_cover: https://www.datocms-assets.com/5249/1545470701-1280x853new-hor-38.jpg
+video:
+description: "<p>Realizaci&oacute;n de estrategia de redes sociales para la psic&oacute;loga
+  Concha Hidalgo. Destacan la diferenciaci&oacute;n de contenidos y los ambiciosos
+  objetivos a conseguir en followers y engagement en un a&ntilde;o.</p>"
+img_cover: https://www.datocms-assets.com/5249/1598180619-concha-hidalgo-simbolo-ch-negro-tansparente.png
 img_cover_alt:
 img_carousel:
 - !ruby/object:Dato::Local::FieldType::File
   upload: &2 !ruby/object:Dato::Local::JsonApiEntity
     payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      id: '465174'
+      id: '2333102'
       type: upload
       attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-        size: 414560
-        width: 1280
-        height: 853
-        path: "/5249/1545470710-1280x853new-hor-38.jpg"
+        size: 383152
+        width: 7151
+        height: 1344
+        path: "/5249/1598180649-concha-hidalgo-logotipo-secundario-fondo-blanco.jpg"
         format: jpg
         author:
         notes:
@@ -30,50 +33,40 @@ img_carousel:
             title:
             custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
         is_image: true
-        created_at: '2018-12-22T09:25:12.607Z'
-        updated_at: '2019-12-03T21:22:53.493Z'
-        url: https://www.datocms-assets.com/5249/1545470710-1280x853new-hor-38.jpg
+        created_at: '2020-08-23T11:04:17.193Z'
+        updated_at: '2020-08-23T11:04:17.193Z'
+        url: https://www.datocms-assets.com/5249/1598180649-concha-hidalgo-logotipo-secundario-fondo-blanco.jpg
         tags: []
-        filename: 1280x853new-hor-38.jpg
-        basename: 1280x853new-hor-38
+        filename: concha-hidalgo-logotipo-secundario-fondo-blanco.jpg
+        basename: concha-hidalgo-logotipo-secundario-fondo-blanco
         exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
         mime_type: image/jpeg
         colors:
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 4
-          green: 185
-          blue: 232
+          red: 186
+          green: 187
+          blue: 187
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 211
-          green: 175
-          blue: 165
+          red: 67
+          green: 67
+          blue: 68
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 170
-          green: 104
-          blue: 93
+          red: 254
+          green: 255
+          blue: 255
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 40
-          green: 75
-          blue: 118
-          alpha: 255
-        - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 152
-          green: 214
-          blue: 237
-          alpha: 255
-        - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 44
-          green: 59
-          blue: 81
+          red: 127
+          green: 128
+          blue: 128
           alpha: 255
         smart_tags: []
         duration:
         frame_rate:
         mux_playback_id:
-        blurhash: LZLq@M~p%2?Hr=xuS6xZ?a%2M{kD
+        blurhash: LnRyvoxut7xu~qofj[of?bj[WBkC
         mux_mp4_highest_res:
     data_source: &1 !ruby/object:Dato::Local::EntitiesRepo
       entities:
@@ -2137,12 +2130,12 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '2333102'
-                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '2349719'
-                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: &5 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2020-08-25T21:09:56.138+02:00'
                 created_at: '2020-08-23T13:04:24.707+02:00'
                 position: 14
@@ -3079,7 +3072,7 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '465174'
-                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2018-12-22T10:25:38.962+01:00'
                 created_at: '2018-12-22T10:25:38.955+01:00'
                 position: 10
@@ -3845,7 +3838,7 @@ img_carousel:
                 current_version: '795055'
             data_source: *1
         upload:
-          '2349719': !ruby/object:Dato::Local::JsonApiEntity
+          '2349719': &4 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '2349719'
               type: upload
@@ -3910,61 +3903,7 @@ img_carousel:
                 blurhash: LHQcr5?b9F%M~qjYayxu_3t6t7t7
                 mux_mp4_highest_res:
             data_source: *1
-          '2333102': !ruby/object:Dato::Local::JsonApiEntity
-            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-              id: '2333102'
-              type: upload
-              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                size: 383152
-                width: 7151
-                height: 1344
-                path: "/5249/1598180649-concha-hidalgo-logotipo-secundario-fondo-blanco.jpg"
-                format: jpg
-                author:
-                notes:
-                copyright:
-                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                    alt:
-                    title:
-                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
-                is_image: true
-                created_at: '2020-08-23T11:04:17.193Z'
-                updated_at: '2020-08-23T11:04:17.193Z'
-                url: https://www.datocms-assets.com/5249/1598180649-concha-hidalgo-logotipo-secundario-fondo-blanco.jpg
-                tags: []
-                filename: concha-hidalgo-logotipo-secundario-fondo-blanco.jpg
-                basename: concha-hidalgo-logotipo-secundario-fondo-blanco
-                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
-                mime_type: image/jpeg
-                colors:
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 186
-                  green: 187
-                  blue: 187
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 67
-                  green: 67
-                  blue: 68
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 254
-                  green: 255
-                  blue: 255
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 127
-                  green: 128
-                  blue: 128
-                  alpha: 255
-                smart_tags: []
-                duration:
-                frame_rate:
-                mux_playback_id:
-                blurhash: LnRyvoxut7xu~qofj[of?bj[WBkC
-                mux_mp4_highest_res:
-            data_source: *1
+          '2333102': *2
           '2333101': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '2333101'
@@ -4715,7 +4654,71 @@ img_carousel:
                 blurhash: LLJk1Se7.mrXML?aI:n$KQD%a0oy
                 mux_mp4_highest_res:
             data_source: *1
-          '465174': *2
+          '465174': !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '465174'
+              type: upload
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                size: 414560
+                width: 1280
+                height: 853
+                path: "/5249/1545470710-1280x853new-hor-38.jpg"
+                format: jpg
+                author:
+                notes:
+                copyright:
+                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    alt:
+                    title:
+                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                is_image: true
+                created_at: '2018-12-22T09:25:12.607Z'
+                updated_at: '2019-12-03T21:22:53.493Z'
+                url: https://www.datocms-assets.com/5249/1545470710-1280x853new-hor-38.jpg
+                tags: []
+                filename: 1280x853new-hor-38.jpg
+                basename: 1280x853new-hor-38
+                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                mime_type: image/jpeg
+                colors:
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 4
+                  green: 185
+                  blue: 232
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 211
+                  green: 175
+                  blue: 165
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 170
+                  green: 104
+                  blue: 93
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 40
+                  green: 75
+                  blue: 118
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 152
+                  green: 214
+                  blue: 237
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 44
+                  green: 59
+                  blue: 81
+                  alpha: 255
+                smart_tags: []
+                duration:
+                frame_rate:
+                mux_playback_id:
+                blurhash: LZLq@M~p%2?Hr=xuS6xZ?a%2M{kD
+                mux_mp4_highest_res:
+            data_source: *1
           '465173': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '465173'
@@ -10419,6 +10422,12 @@ img_carousel:
   alt:
   title:
   custom_data: *3
+  imgix_host: www.datocms-assets.com
+- !ruby/object:Dato::Local::FieldType::File
+  upload: *4
+  alt:
+  title:
+  custom_data: *5
   imgix_host: www.datocms-assets.com
 ---
 
