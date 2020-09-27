@@ -1,0 +1,46 @@
+// No carousel
+// -----------------------------------------------------------------------------
+
+.no-carousel {
+  display: block;
+
+  @media ($large-up) {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    border-right: $br-base solid $c-light;
+    border-left: $br-base solid $c-light;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__item + &__item {
+    margin-top: $sp-xxsmall;
+
+    @media ($large-up) {
+      margin-top: 0;
+    }
+  }
+
+  .slick-callout {
+    padding: 40px;
+  }
+
+  // single
+  &--single {
+    display: block;
+  }
+
+  &--single &__item {
+    @media ($large-up) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
