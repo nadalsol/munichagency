@@ -1,26 +1,26 @@
 ---
 layout: projects-from-cat
-title: Diseño web plataforma Sherpa
-cat: web
-permalink: "/proyectos/web"
-permalink_to: "/proyectos/web/diseno-web-plataforma-sherpa"
+title: Identidad corporativa Dual Look
+cat: identidad-corporativa
+permalink: "/proyectos/identidad-corporativa"
+permalink_to: "/proyectos/identidad-corporativa/identidad-corporativa-dual-look"
 sector: ''
 link: ''
-description: "<p>Dise&ntilde;o de la aplicaci&oacute;n desktop para la monitorizaci&oacute;n
-  de campa&ntilde;as de marketing. Dise&ntilde;o UI &amp; Visual de la aplicaci&oacute;n.</p>"
-img_cover: https://www.datocms-assets.com/5249/1536745290-brandingsherpa350x350.jpg
+description: "<p>Dise&ntilde;o de identidad corporativa para la peluquer&iacute;a
+  y est&eacute;tica Dual Look.</p>"
+img_cover: https://www.datocms-assets.com/5249/1598460615-dualook.jpg
 img_cover_alt:
 img_carousel:
 - !ruby/object:Dato::Local::FieldType::File
   upload: &2 !ruby/object:Dato::Local::JsonApiEntity
     payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      id: '364657'
+      id: '2358213'
       type: upload
       attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-        size: 161069
+        size: 42070
         width: 1440
         height: 720
-        path: "/5249/1536744116-brandingsherpa1440x7202.jpg"
+        path: "/5249/1598460622-imagen-carrusel.jpg"
         format: jpg
         author:
         notes:
@@ -31,50 +31,50 @@ img_carousel:
             title:
             custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
         is_image: true
-        created_at: '2018-09-12T09:21:59.641Z'
-        updated_at: '2019-12-03T18:36:34.724Z'
-        url: https://www.datocms-assets.com/5249/1536744116-brandingsherpa1440x7202.jpg
+        created_at: '2020-08-26T16:50:25.259Z'
+        updated_at: '2020-08-26T16:50:25.259Z'
+        url: https://www.datocms-assets.com/5249/1598460622-imagen-carrusel.jpg
         tags: []
-        filename: brandingsherpa1440x7202.jpg
-        basename: brandingsherpa1440x7202
+        filename: imagen-carrusel.jpg
+        basename: imagen-carrusel
         exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
         mime_type: image/jpeg
         colors:
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 255
-          green: 193
-          blue: 3
+          red: 228
+          green: 152
+          blue: 126
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 174
-          green: 209
-          blue: 209
+          red: 200
+          green: 200
+          blue: 184
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 118
-          green: 165
-          blue: 150
+          red: 148
+          green: 119
+          blue: 111
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 10
-          green: 150
-          blue: 161
+          red: 110
+          green: 45
+          blue: 23
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 253
-          green: 201
-          blue: 46
+          red: 248
+          green: 158
+          blue: 133
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 85
-          green: 64
-          blue: 46
+          red: 96
+          green: 97
+          blue: 99
           alpha: 255
         smart_tags: []
         duration:
         frame_rate:
         mux_playback_id:
-        blurhash: LTK2qwu456~V.SWUM{t89FxG-;NH
+        blurhash: L4B:mc%M58xv-;j[j[fk0#WV=xj[
         mux_mp4_highest_res:
     data_source: &1 !ruby/object:Dato::Local::EntitiesRepo
       entities:
@@ -2220,12 +2220,12 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '2358213'
-                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '2358217'
-                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: &5 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2020-08-26T18:51:16.672+02:00'
                 created_at: '2020-08-26T18:51:16.668+02:00'
                 position: 17
@@ -3216,27 +3216,27 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '364657'
-                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364658'
-                  custom_data: &5 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364659'
-                  custom_data: &7 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364660'
-                  custom_data: &9 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364656'
-                  custom_data: &11 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2018-12-22T11:17:09.912+01:00'
                 created_at: '2018-09-12T11:22:17.797+02:00'
                 position: 2
@@ -4096,7 +4096,7 @@ img_carousel:
                 current_version: '795055'
             data_source: *1
         upload:
-          '2358217': !ruby/object:Dato::Local::JsonApiEntity
+          '2358217': &4 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '2358217'
               type: upload
@@ -4161,71 +4161,7 @@ img_carousel:
                 blurhash: LBB{_nso~V%LH@xux[RQxuM{WBxu
                 mux_mp4_highest_res:
             data_source: *1
-          '2358213': !ruby/object:Dato::Local::JsonApiEntity
-            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-              id: '2358213'
-              type: upload
-              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                size: 42070
-                width: 1440
-                height: 720
-                path: "/5249/1598460622-imagen-carrusel.jpg"
-                format: jpg
-                author:
-                notes:
-                copyright:
-                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                    alt:
-                    title:
-                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
-                is_image: true
-                created_at: '2020-08-26T16:50:25.259Z'
-                updated_at: '2020-08-26T16:50:25.259Z'
-                url: https://www.datocms-assets.com/5249/1598460622-imagen-carrusel.jpg
-                tags: []
-                filename: imagen-carrusel.jpg
-                basename: imagen-carrusel
-                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
-                mime_type: image/jpeg
-                colors:
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 228
-                  green: 152
-                  blue: 126
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 200
-                  green: 200
-                  blue: 184
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 148
-                  green: 119
-                  blue: 111
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 110
-                  green: 45
-                  blue: 23
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 248
-                  green: 158
-                  blue: 133
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 96
-                  green: 97
-                  blue: 99
-                  alpha: 255
-                smart_tags: []
-                duration:
-                frame_rate:
-                mux_playback_id:
-                blurhash: L4B:mc%M58xv-;j[j[fk0#WV=xj[
-                mux_mp4_highest_res:
-            data_source: *1
+          '2358213': *2
           '2358210': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '2358210'
@@ -9546,7 +9482,7 @@ img_carousel:
                 blurhash: LIEFf.tm0fcE-=j[IpWV56WV-Vj@
                 mux_mp4_highest_res:
             data_source: *1
-          '364660': &8 !ruby/object:Dato::Local::JsonApiEntity
+          '364660': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364660'
               type: upload
@@ -9611,7 +9547,7 @@ img_carousel:
                 blurhash: LMKB{.?^5k?v_NkCIUt7E1o1%2bF
                 mux_mp4_highest_res:
             data_source: *1
-          '364659': &6 !ruby/object:Dato::Local::JsonApiEntity
+          '364659': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364659'
               type: upload
@@ -9676,7 +9612,7 @@ img_carousel:
                 blurhash: LPLE.,.S0y?b?vbbIUt70Ko0?HW=
                 mux_mp4_highest_res:
             data_source: *1
-          '364658': &4 !ruby/object:Dato::Local::JsonApiEntity
+          '364658': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364658'
               type: upload
@@ -9741,8 +9677,72 @@ img_carousel:
                 blurhash: 'LXI~oU_NOWEL.8bHM{t7RiM{t7-:'
                 mux_mp4_highest_res:
             data_source: *1
-          '364657': *2
-          '364656': &10 !ruby/object:Dato::Local::JsonApiEntity
+          '364657': !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '364657'
+              type: upload
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                size: 161069
+                width: 1440
+                height: 720
+                path: "/5249/1536744116-brandingsherpa1440x7202.jpg"
+                format: jpg
+                author:
+                notes:
+                copyright:
+                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    alt:
+                    title:
+                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                is_image: true
+                created_at: '2018-09-12T09:21:59.641Z'
+                updated_at: '2019-12-03T18:36:34.724Z'
+                url: https://www.datocms-assets.com/5249/1536744116-brandingsherpa1440x7202.jpg
+                tags: []
+                filename: brandingsherpa1440x7202.jpg
+                basename: brandingsherpa1440x7202
+                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                mime_type: image/jpeg
+                colors:
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 255
+                  green: 193
+                  blue: 3
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 174
+                  green: 209
+                  blue: 209
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 118
+                  green: 165
+                  blue: 150
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 10
+                  green: 150
+                  blue: 161
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 253
+                  green: 201
+                  blue: 46
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 85
+                  green: 64
+                  blue: 46
+                  alpha: 255
+                smart_tags: []
+                duration:
+                frame_rate:
+                mux_playback_id:
+                blurhash: LTK2qwu456~V.SWUM{t89FxG-;NH
+                mux_mp4_highest_res:
+            data_source: *1
+          '364656': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364656'
               type: upload
@@ -11961,24 +11961,6 @@ img_carousel:
   alt:
   title:
   custom_data: *5
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *6
-  alt:
-  title:
-  custom_data: *7
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *8
-  alt:
-  title:
-  custom_data: *9
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *10
-  alt:
-  title:
-  custom_data: *11
   imgix_host: www.datocms-assets.com
 ---
 

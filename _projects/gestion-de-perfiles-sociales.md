@@ -1,29 +1,32 @@
 ---
 layout: projects-from-cat
-title: Diseño web plataforma Sherpa
-cat: web
-permalink: "/proyectos/web"
-permalink_to: "/proyectos/web/diseno-web-plataforma-sherpa"
+title: Gestión de perfiles sociales
+cat: redes-sociales
+permalink: "/proyectos/redes-sociales"
+permalink_to: "/proyectos/redes-sociales/gestion-de-perfiles-sociales"
 sector: ''
-link: ''
-description: "<p>Dise&ntilde;o de la aplicaci&oacute;n desktop para la monitorizaci&oacute;n
-  de campa&ntilde;as de marketing. Dise&ntilde;o UI &amp; Visual de la aplicaci&oacute;n.</p>"
-img_cover: https://www.datocms-assets.com/5249/1536745290-brandingsherpa350x350.jpg
+link: https://www.instagram.com/oposicioninteligente/?hl=es
+description: "<p>Realizaci&oacute;n de estrategia, creaci&oacute;n de contenidos y
+  gesti&oacute;n de sus perfiles sociales.</p><p>M&aacute;s de 125 followers org&aacute;nicos
+  conseguidos en el primer mes.</p><p></p>"
+img_cover: https://www.datocms-assets.com/5249/1598458506-oi.jpg
 img_cover_alt:
 img_carousel:
 - !ruby/object:Dato::Local::FieldType::File
   upload: &2 !ruby/object:Dato::Local::JsonApiEntity
     payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-      id: '364657'
+      id: '2357880'
       type: upload
       attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-        size: 161069
-        width: 1440
-        height: 720
-        path: "/5249/1536744116-brandingsherpa1440x7202.jpg"
+        size: 5185394
+        width: 4896
+        height: 3264
+        path: "/5249/1598456024-517.jpg"
         format: jpg
         author:
-        notes:
+        notes: Business woman hands connecting jigsaw puzzle. Business solutions,
+          success and strategy concept. Businessman hand connecting jigsaw puzzle.Close
+          up photo with selective focus.
         copyright:
         default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
           en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
@@ -31,50 +34,57 @@ img_carousel:
             title:
             custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
         is_image: true
-        created_at: '2018-09-12T09:21:59.641Z'
-        updated_at: '2019-12-03T18:36:34.724Z'
-        url: https://www.datocms-assets.com/5249/1536744116-brandingsherpa1440x7202.jpg
+        created_at: '2020-08-26T15:33:56.883Z'
+        updated_at: '2020-08-26T15:33:56.883Z'
+        url: https://www.datocms-assets.com/5249/1598456024-517.jpg
         tags: []
-        filename: brandingsherpa1440x7202.jpg
-        basename: brandingsherpa1440x7202
-        exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+        filename: 517.jpg
+        basename: '517'
+        exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+          iso: 200
+          model: X-T1
+          f_number: 3.2
+          flash_mode: 16
+          lens_model: XF18-55mmF2.8-4 R LM OIS
+          focal_length: 24.3
+          exposure_time: 0.008
         mime_type: image/jpeg
         colors:
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 255
-          green: 193
-          blue: 3
+          red: 197
+          green: 108
+          blue: 56
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 174
-          green: 209
-          blue: 209
+          red: 211
+          green: 186
+          blue: 169
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 118
-          green: 165
-          blue: 150
+          red: 170
+          green: 144
+          blue: 103
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 10
-          green: 150
-          blue: 161
+          red: 110
+          green: 48
+          blue: 21
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 253
-          green: 201
-          blue: 46
+          red: 227
+          green: 196
+          blue: 154
           alpha: 255
         - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-          red: 85
-          green: 64
-          blue: 46
+          red: 75
+          green: 56
+          blue: 44
           alpha: 255
         smart_tags: []
         duration:
         frame_rate:
         mux_playback_id:
-        blurhash: LTK2qwu456~V.SWUM{t89FxG-;NH
+        blurhash: L,LNSw_NtRX8%h%MWBRPtRt7s.WB
         mux_mp4_highest_res:
     data_source: &1 !ruby/object:Dato::Local::EntitiesRepo
       entities:
@@ -2330,7 +2340,7 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '2357880'
-                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2020-08-26T18:15:11.361+02:00'
                 created_at: '2020-08-26T17:34:01.136+02:00'
                 position: 15
@@ -3216,27 +3226,27 @@ img_carousel:
                   alt:
                   title:
                   upload_id: '364657'
-                  custom_data: &3 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364658'
-                  custom_data: &5 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364659'
-                  custom_data: &7 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364660'
-                  custom_data: &9 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   alt:
                   title:
                   upload_id: '364656'
-                  custom_data: &11 !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                  custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
                 updated_at: '2018-12-22T11:17:09.912+01:00'
                 created_at: '2018-09-12T11:22:17.797+02:00'
                 position: 2
@@ -4921,80 +4931,7 @@ img_carousel:
                 blurhash: LJRfnJ-;?b-;_3ofofWB~qofM{xu
                 mux_mp4_highest_res:
             data_source: *1
-          '2357880': !ruby/object:Dato::Local::JsonApiEntity
-            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-              id: '2357880'
-              type: upload
-              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                size: 5185394
-                width: 4896
-                height: 3264
-                path: "/5249/1598456024-517.jpg"
-                format: jpg
-                author:
-                notes: Business woman hands connecting jigsaw puzzle. Business solutions,
-                  success and strategy concept. Businessman hand connecting jigsaw
-                  puzzle.Close up photo with selective focus.
-                copyright:
-                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                    alt:
-                    title:
-                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
-                is_image: true
-                created_at: '2020-08-26T15:33:56.883Z'
-                updated_at: '2020-08-26T15:33:56.883Z'
-                url: https://www.datocms-assets.com/5249/1598456024-517.jpg
-                tags: []
-                filename: 517.jpg
-                basename: '517'
-                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  iso: 200
-                  model: X-T1
-                  f_number: 3.2
-                  flash_mode: 16
-                  lens_model: XF18-55mmF2.8-4 R LM OIS
-                  focal_length: 24.3
-                  exposure_time: 0.008
-                mime_type: image/jpeg
-                colors:
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 197
-                  green: 108
-                  blue: 56
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 211
-                  green: 186
-                  blue: 169
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 170
-                  green: 144
-                  blue: 103
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 110
-                  green: 48
-                  blue: 21
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 227
-                  green: 196
-                  blue: 154
-                  alpha: 255
-                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  red: 75
-                  green: 56
-                  blue: 44
-                  alpha: 255
-                smart_tags: []
-                duration:
-                frame_rate:
-                mux_playback_id:
-                blurhash: L,LNSw_NtRX8%h%MWBRPtRt7s.WB
-                mux_mp4_highest_res:
-            data_source: *1
+          '2357880': *2
           '2357879': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '2357879'
@@ -9546,7 +9483,7 @@ img_carousel:
                 blurhash: LIEFf.tm0fcE-=j[IpWV56WV-Vj@
                 mux_mp4_highest_res:
             data_source: *1
-          '364660': &8 !ruby/object:Dato::Local::JsonApiEntity
+          '364660': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364660'
               type: upload
@@ -9611,7 +9548,7 @@ img_carousel:
                 blurhash: LMKB{.?^5k?v_NkCIUt7E1o1%2bF
                 mux_mp4_highest_res:
             data_source: *1
-          '364659': &6 !ruby/object:Dato::Local::JsonApiEntity
+          '364659': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364659'
               type: upload
@@ -9676,7 +9613,7 @@ img_carousel:
                 blurhash: LPLE.,.S0y?b?vbbIUt70Ko0?HW=
                 mux_mp4_highest_res:
             data_source: *1
-          '364658': &4 !ruby/object:Dato::Local::JsonApiEntity
+          '364658': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364658'
               type: upload
@@ -9741,8 +9678,72 @@ img_carousel:
                 blurhash: 'LXI~oU_NOWEL.8bHM{t7RiM{t7-:'
                 mux_mp4_highest_res:
             data_source: *1
-          '364657': *2
-          '364656': &10 !ruby/object:Dato::Local::JsonApiEntity
+          '364657': !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '364657'
+              type: upload
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                size: 161069
+                width: 1440
+                height: 720
+                path: "/5249/1536744116-brandingsherpa1440x7202.jpg"
+                format: jpg
+                author:
+                notes:
+                copyright:
+                default_field_metadata: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  en: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    alt:
+                    title:
+                    custom_data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                is_image: true
+                created_at: '2018-09-12T09:21:59.641Z'
+                updated_at: '2019-12-03T18:36:34.724Z'
+                url: https://www.datocms-assets.com/5249/1536744116-brandingsherpa1440x7202.jpg
+                tags: []
+                filename: brandingsherpa1440x7202.jpg
+                basename: brandingsherpa1440x7202
+                exif_info: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                mime_type: image/jpeg
+                colors:
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 255
+                  green: 193
+                  blue: 3
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 174
+                  green: 209
+                  blue: 209
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 118
+                  green: 165
+                  blue: 150
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 10
+                  green: 150
+                  blue: 161
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 253
+                  green: 201
+                  blue: 46
+                  alpha: 255
+                - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  red: 85
+                  green: 64
+                  blue: 46
+                  alpha: 255
+                smart_tags: []
+                duration:
+                frame_rate:
+                mux_playback_id:
+                blurhash: LTK2qwu456~V.SWUM{t89FxG-;NH
+                mux_mp4_highest_res:
+            data_source: *1
+          '364656': !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '364656'
               type: upload
@@ -11955,30 +11956,6 @@ img_carousel:
   alt:
   title:
   custom_data: *3
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *4
-  alt:
-  title:
-  custom_data: *5
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *6
-  alt:
-  title:
-  custom_data: *7
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *8
-  alt:
-  title:
-  custom_data: *9
-  imgix_host: www.datocms-assets.com
-- !ruby/object:Dato::Local::FieldType::File
-  upload: *10
-  alt:
-  title:
-  custom_data: *11
   imgix_host: www.datocms-assets.com
 ---
 
